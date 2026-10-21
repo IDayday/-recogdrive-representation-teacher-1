@@ -45,6 +45,8 @@ cp configs/paths.example.json paths.continuation.local.json
 
 编辑模型、maps、logs、sensor、metric路径。评分缓存目录用自己可写的位置，如`/data/recogdrive-run/_data/metrics/navtrain`和`navtest`。
 
+如果模型验收仅在`configuration_internvl_chat.py`处指纹不符，原服务器对应文件现已补入[`assets/vlm_source/`](../assets/vlm_source/README.md)。按该目录说明先备份目标机文件、安装源版本，再重新执行`doctor --models-only`。
+
 目录层次：`navtrain_logs`下有`trainval/<log>.pkl`，`navtrain_sensor`下有`trainval/<log>/...`；测试对应`test/`。`navtrain_metric`下生成`<log>/unknown/<token>/metric_cache.pkl`。核对软链真实目标。
 
 以下命令均在仓库根目录、同一个私有环境执行；每条的workspace替换为同一绝对路径。

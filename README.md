@@ -11,6 +11,7 @@
 | 准备、冒烟、评分缓存、教师重建、训练、评价 | `python -m continuation.reproduce --help` |
 | 首42候选对应38份冻结修复资产，约493MB | `research_snapshot/`，`INDEX.json`记录SHA256 |
 | 固定R2的103,288场景选择、原轨迹和接口指纹 | `reference/continuation_20261022/r2/`及冻结清单 |
+| 源服务器VLM配置文件与带备份的安装步骤 | [VLM配置补件](assets/vlm_source/README.md) |
 | 第一批观察／修复、第二批专家化、第三批扩库、第四批蒸馏原代码 | `research_snapshot/<任务日期>/code/` |
 | 原计划、配置、报告和阶段验收 | `research_snapshot/`、`reference/continuation_20261022/` |
 | 10月20日11策略历史复现和旧教师导出 | [原版说明](docs/LEGACY_FIRST_BATCH.md)，原根目录脚本保留 |
