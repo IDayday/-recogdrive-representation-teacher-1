@@ -1,0 +1,3710 @@
+{
+  "candidate_scope": "formed",
+  "checkpoint_sha256": "23fb949b10387efeff87e093703d5faf41b61b9e5ead16d4076661e3c7c08a20",
+  "entries": [
+    {
+      "id": "formed_16d74b527fe5817a98e52b8d",
+      "kind": "batch2_learned",
+      "definition": {
+        "id": "em_arm_bc442aa4c7db7fcb1aab4322",
+        "kind": "learned",
+        "slot": 1,
+        "training_task": {
+          "id": "em_behavior_34f3a9eb03e0880208783ad8",
+          "system": "response_em1_K4_seed0",
+          "K": 4,
+          "expert": 1,
+          "responsibility_meta": "analysis/response_refinement/all/response_K4_seed0_em1.json",
+          "block": "interface_pre",
+          "group": "valid_mean",
+          "heldout_fold": -1,
+          "fit_seed": 2026101801,
+          "fit_path": "fullspace_references/all/interface_pre.npz",
+          "fit_sha256": "edd828cba1f2e17bf8658284c75100911a0cf09a2178c9d38e50cd70f0c44725",
+          "rank": 32,
+          "cap": 0.1,
+          "space_control": "full",
+          "steps": 512,
+          "checkpoints": [
+            256,
+            512
+          ],
+          "learning_rate": 0.003,
+          "edit_penalty": 0.0001,
+          "retention_weight": 2.0,
+          "training_noise_indices": [
+            0,
+            1,
+            2
+          ],
+          "formation_round": 1,
+          "parent_system": "response_K4_seed0"
+        },
+        "checkpoint": {
+          "step": 256,
+          "path": "learned_experts/native_v4_em_behavior_34f3a9eb03e0880208783ad8/step0256.npz",
+          "sha256": "a78f0a41108f4ac22013e868f59df3217fee04bebb4bfafcc9e2260e9ecfbb33"
+        },
+        "strength": 1.0
+      },
+      "semantic": {
+        "kind": "learned",
+        "block": "interface_pre",
+        "group": "valid_mean",
+        "cap": 0.1,
+        "strength": 1.0,
+        "checkpoint_sha256": "a78f0a41108f4ac22013e868f59df3217fee04bebb4bfafcc9e2260e9ecfbb33",
+        "checkpoint_path": "learned_experts/native_v4_em_behavior_34f3a9eb03e0880208783ad8/step0256.npz",
+        "training_task": "em_behavior_34f3a9eb03e0880208783ad8"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/analysis/variant_library_selection/variant_library_3b9cd6b906d4e5c4b0b23b58.json",
+          "sha256": "b01ed86c10f24b973ae6db41e32ee6643793fc8454e4d15db46c30f3e1d76c84"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_variant_hard_0edf02756d2ab948bb2747f6/POLICY.json",
+          "sha256": "69b9f4ab3395e725df1d1f04519f60b2eb6df56a24d8bbbc4df1df2e00ccebf2"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_variant_hard_3ecb155dd53d784db6c8d3f1/POLICY.json",
+          "sha256": "38a790205c339be80d23210a87bf5d0858f7b3625e52f4f4b97d9422971a5efe"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_variant_hard_3f13d19c0bc80a0f44381ca8/POLICY.json",
+          "sha256": "fcba6307f2b1bfbe5a1e0fb2472a5f256a36eb3dcffdc4dc9978446562389be2"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_variant_hard_69988f544f636cbe3db65bd6/POLICY.json",
+          "sha256": "0b7dd717df105d80f0b29539b2157ffe3a3d0c9d086ce6a36f2fc83f72e871ce"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_variant_hard_a0bc9c3b4e44a44a04898ea5/POLICY.json",
+          "sha256": "749bbf0b6bc0f168709bfb16a378cebe42f9c649745f6cff4693b9c84547d784"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_variant_hard_bd87ec41da3e4ed1dab29f04/POLICY.json",
+          "sha256": "9ff2b5d2b0dc8c2b5017f23352c179ab39a903982d457994d2b444a2acb9b4fd"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_variant_selector_0edf02756d2ab948bb2747f6/POLICY.json",
+          "sha256": "f64491f514e7dcb11c7c8b38db074ecbba7840f4a351ab0c472c490e68e76dd6"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_variant_selector_3ecb155dd53d784db6c8d3f1/POLICY.json",
+          "sha256": "194a77e9c9849cfc2117ec6c34e23757853dba4910c169b911036fb690f68751"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_variant_selector_69988f544f636cbe3db65bd6/POLICY.json",
+          "sha256": "d54051563b4a684bbb6c8d231fc571c005f56d4d7cb29846926ade45a9fdd966"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_variant_selector_bd87ec41da3e4ed1dab29f04/POLICY.json",
+          "sha256": "ed1abb07b82a302669b460bc63484768937a183f60cb10820928531eb5f1f9cb"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/additional_joint_policies/additional_joint_45ed886dd5e99d3b5fa1ef66/POLICY.json",
+          "sha256": "500f6f792413191e3158e57e56afd3de828caf3f8a905f5939dacb66f0aaa20b"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/additional_joint_policies/additional_joint_5b32065ac09921824716bcb4/POLICY.json",
+          "sha256": "ab44bcce3308135c56d8667a155777ecbda8e1405ba65ccea9e81e959213a435"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/additional_joint_policies/additional_joint_60c9cc6511ad813ab8833538/POLICY.json",
+          "sha256": "3c785a45e913214abdd511aba42277f2c3ee748a57f868c139f2b6cc53eb9df6"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/additional_joint_policies/additional_joint_660453dc49771e87f6b1c2a0/POLICY.json",
+          "sha256": "3e2cf535c69fab81a6bae164773126d934e81f8f6853e7eab7c83fd2a1b76c9a"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/additional_joint_policies/additional_joint_7afbcf34a6ecb704394caeff/POLICY.json",
+          "sha256": "2f3ddaa799a19b4f7ff7bd2cbae2b6e1c22add7893eba0898c148ebb8808d495"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/additional_joint_policies/additional_joint_871cc6439fecacbf24993e90/POLICY.json",
+          "sha256": "c153eb1d712c99f6d8b74c16682db2817fd9a6d783075a119f41c437b58dd586"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/additional_joint_policies/additional_joint_ae6b23c23e94835c84ef216d/POLICY.json",
+          "sha256": "0a83fb20fd5dd266c1d69335e37364bcad93b8ccec62fcb7d3545fbe7a9cf151"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/additional_joint_policies/additional_joint_aea8813fd2955ab41fa96ab6/POLICY.json",
+          "sha256": "2c04314a2de4ad94b3a1c465c0c39df266714cb4bf4b68f071a7daa9b260a702"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/additional_joint_policies/additional_joint_b17ff9867c65040fad009809/POLICY.json",
+          "sha256": "8b927e3a5b2abb654fe6ed0476f0a2527264c97a0ad9f506336180dd99f91a14"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/additional_joint_policies/additional_joint_d2ecdce7599090f3a4c1d427/POLICY.json",
+          "sha256": "4a3ab907d63709ac97938c03896a5595f6287a9eea0dc294fba0ad037fab5a6d"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/additional_joint_policies/additional_joint_d4e00e58a8aa82adb7d9f2c4/POLICY.json",
+          "sha256": "6e5fce1ac6845c395d50b555315fa1e0b1a1bf0f492a8b1270dc311acb1e0ea9"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/additional_joint_policies/additional_joint_e07596ccb9dde5cfc821f5ce/POLICY.json",
+          "sha256": "06e7b627d74937ec880c9c23e11268763fa57a7fd937cd7d95bb0a20b0a7432c"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/token_policies/token_cal_a3ec478e1eb6905ca8c6deef/POLICY.json",
+          "sha256": "cd8aef5393e514b8c53f543f479608c1c132b91779d847dcb998f11043e69841"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/token_policies/token_cal_d86db02d9e996fb97250d570/POLICY.json",
+          "sha256": "61fae89cec52526366665eb136564973a4b16c04dca7f52305f5fe5eb20ddf5d"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/token_policies/uniform_cal_507a74c79b8ee054c9e619d8/POLICY.json",
+          "sha256": "14ca3b3e2910758148cb9ac175f11711388407c328d93a5933b5efb0a3b7bda6"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/token_policies/uniform_cal_a83f6d96d678d1b255497389/POLICY.json",
+          "sha256": "0c87b668c8c721631a699fc2fc3578dff70d963d6137b0b2100cc772a7e71aeb"
+        }
+      ],
+      "aliases": [
+        "em_arm_bc442aa4c7db7fcb1aab4322"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_4f40ac9be6b601b9e9a5e0e1",
+      "kind": "batch2_learned",
+      "definition": {
+        "kind": "learned",
+        "id": "behavior_arm_4068ec5c0382a7842a85",
+        "slot": 1,
+        "training_task": {
+          "id": "behavior_f308b2f2b942b4a06a00e05e",
+          "system": "response_K4_seed2",
+          "K": 4,
+          "expert": 1,
+          "responsibility_meta": "analysis/outcome_groups/all/response_K4_seed2.json",
+          "block": "interface_pre",
+          "group": "valid_mean",
+          "heldout_fold": -1,
+          "fit_seed": 2026101803,
+          "fit_path": "fullspace_references/all/interface_pre.npz",
+          "fit_sha256": "edd828cba1f2e17bf8658284c75100911a0cf09a2178c9d38e50cd70f0c44725",
+          "rank": 32,
+          "cap": 0.1,
+          "space_control": "full",
+          "steps": 768,
+          "checkpoints": [
+            256,
+            512,
+            768
+          ],
+          "learning_rate": 0.003,
+          "edit_penalty": 0.0001,
+          "retention_weight": 2.0,
+          "training_noise_indices": [
+            0,
+            1,
+            2
+          ]
+        },
+        "checkpoint": {
+          "step": 768,
+          "path": "learned_experts/native_v4_behavior_f308b2f2b942b4a06a00e05e/step0768.npz",
+          "sha256": "32ca52f5e5cea65917ae88ceb5a13ebce10dce976c873959e8334f1891ae8c78"
+        },
+        "strength": 1.0
+      },
+      "semantic": {
+        "kind": "learned",
+        "block": "interface_pre",
+        "group": "valid_mean",
+        "cap": 0.1,
+        "strength": 1.0,
+        "checkpoint_sha256": "32ca52f5e5cea65917ae88ceb5a13ebce10dce976c873959e8334f1891ae8c78",
+        "checkpoint_path": "learned_experts/native_v4_behavior_f308b2f2b942b4a06a00e05e/step0768.npz",
+        "training_task": "behavior_f308b2f2b942b4a06a00e05e"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/analysis/expert_library_selection/library_3136825589dbf03df9b92636.json",
+          "sha256": "8d1019249dc9f7015d26b8d65a0a34693e095664e39869c9aebbf5fb144bf984"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_router_098c0f681f357f806be573f4/POLICY.json",
+          "sha256": "f0df3fe249c6d2b1e57649b924409b58a3da4db3812cc9abe8e90bcb1b525281"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_router_ab36f346c7fa29a9e386800a/POLICY.json",
+          "sha256": "3c1dcc6ce0613c4e5e4eb79e40112804b0c6bb0951a1cf1319782368e6fafc1e"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_router_dc71d070442c325ee8e96980/POLICY.json",
+          "sha256": "2b01ca055a5e0cdd220755bf69da99f3afee55be8160fc456696c646d1a93861"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_selector_098c0f681f357f806be573f4/POLICY.json",
+          "sha256": "d7cb01db150bcff8472ecb4f8fb960387686073ac91a1d90e33597c29b18edfc"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_selector_dc71d070442c325ee8e96980/POLICY.json",
+          "sha256": "76af744585d9bebde2df4589804c5a1c339a222b1c9e94a54f330eb75da6a6e9"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/token_policies/token_cal_2da4bcc25d9eb5eb7b07ea98/POLICY.json",
+          "sha256": "e93c46922c287d73ae71289a63f43b9d17d927fb620bd49ae8a353b9fb56ccac"
+        }
+      ],
+      "aliases": [
+        "behavior_arm_4068ec5c0382a7842a85"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_51f464e4c9d9b745f68d2f65",
+      "kind": "batch2_learned",
+      "definition": {
+        "kind": "learned",
+        "id": "behavior_arm_5f9d5d7f2dfe87576894",
+        "slot": 2,
+        "training_task": {
+          "id": "behavior_51ba65a985cc8bb35da56811",
+          "system": "response_K4_seed2",
+          "K": 4,
+          "expert": 2,
+          "responsibility_meta": "analysis/outcome_groups/all/response_K4_seed2.json",
+          "block": "interface_post",
+          "group": "valid_mean",
+          "heldout_fold": -1,
+          "fit_seed": 2026101803,
+          "fit_path": "fullspace_references/all/interface_post.npz",
+          "fit_sha256": "38eb4c2dbd13e8394dccddfc1922a8a0a673cbaa14e26ec5ea6fa52691037b9d",
+          "rank": 32,
+          "cap": 0.1,
+          "space_control": "full",
+          "steps": 512,
+          "checkpoints": [
+            128,
+            256,
+            512
+          ],
+          "learning_rate": 0.003,
+          "edit_penalty": 0.0001,
+          "retention_weight": 2.0,
+          "training_noise_indices": [
+            0,
+            1,
+            2
+          ]
+        },
+        "checkpoint": {
+          "step": 512,
+          "path": "learned_experts/native_v4_behavior_51ba65a985cc8bb35da56811/step0512.npz",
+          "sha256": "e5151541d75cd5bbe1865fc2f345fd3120347ac6d78010b41b74c1526c91e964"
+        },
+        "strength": 1.0
+      },
+      "semantic": {
+        "kind": "learned",
+        "block": "interface_post",
+        "group": "valid_mean",
+        "cap": 0.1,
+        "strength": 1.0,
+        "checkpoint_sha256": "e5151541d75cd5bbe1865fc2f345fd3120347ac6d78010b41b74c1526c91e964",
+        "checkpoint_path": "learned_experts/native_v4_behavior_51ba65a985cc8bb35da56811/step0512.npz",
+        "training_task": "behavior_51ba65a985cc8bb35da56811"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/analysis/expert_library_selection/library_3136825589dbf03df9b92636.json",
+          "sha256": "8d1019249dc9f7015d26b8d65a0a34693e095664e39869c9aebbf5fb144bf984"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_router_098c0f681f357f806be573f4/POLICY.json",
+          "sha256": "f0df3fe249c6d2b1e57649b924409b58a3da4db3812cc9abe8e90bcb1b525281"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_router_2a7560320afd55cfbb0df3a5/POLICY.json",
+          "sha256": "9b7eac2521e0b98d5cad3b40da15dfeb846d97db645ec316c5606daf5ddd52a9"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_router_3828701bc688c10cec600666/POLICY.json",
+          "sha256": "0b8ea6c2a9ac91be79e4e439a71bed5da51ebd7a9b85520dc2e24ba6e1f536a4"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_router_84b5fac82d32ea3bcf78933c/POLICY.json",
+          "sha256": "dbf2877361d5f1c449b0e249dc4d41b7ad56bdca4eb5a5497b0ffb397b5820eb"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_router_ab36f346c7fa29a9e386800a/POLICY.json",
+          "sha256": "3c1dcc6ce0613c4e5e4eb79e40112804b0c6bb0951a1cf1319782368e6fafc1e"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_router_dc71d070442c325ee8e96980/POLICY.json",
+          "sha256": "2b01ca055a5e0cdd220755bf69da99f3afee55be8160fc456696c646d1a93861"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_selector_098c0f681f357f806be573f4/POLICY.json",
+          "sha256": "d7cb01db150bcff8472ecb4f8fb960387686073ac91a1d90e33597c29b18edfc"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_selector_2a7560320afd55cfbb0df3a5/POLICY.json",
+          "sha256": "1183d4c00943a4695802a3e90f0d8fd0f693fd8d0384d5995dce304586ae0941"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_selector_84b5fac82d32ea3bcf78933c/POLICY.json",
+          "sha256": "2d70f0d59663fc59899a5126ca82ba4a3d28696a009187949a51e3b1e073247e"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_selector_dc71d070442c325ee8e96980/POLICY.json",
+          "sha256": "76af744585d9bebde2df4589804c5a1c339a222b1c9e94a54f330eb75da6a6e9"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/token_policies/token_cal_2da4bcc25d9eb5eb7b07ea98/POLICY.json",
+          "sha256": "e93c46922c287d73ae71289a63f43b9d17d927fb620bd49ae8a353b9fb56ccac"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/token_policies/token_cal_2f75e6e8a61a477f45fcca85/POLICY.json",
+          "sha256": "8b6a05dfc600755b7217c6d773529aa1b61a0cec7db2ce5d706d46b8787e697b"
+        }
+      ],
+      "aliases": [
+        "behavior_arm_5f9d5d7f2dfe87576894"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_556a4484d018db5ce964c013",
+      "kind": "batch2_learned",
+      "definition": {
+        "id": "em_arm_05e7e985cade7ea89d080ce8",
+        "kind": "learned",
+        "slot": 3,
+        "training_task": {
+          "id": "em_behavior_1fc7b1ed96f8e89164edc43a",
+          "system": "response_em1_K4_seed0",
+          "K": 4,
+          "expert": 3,
+          "responsibility_meta": "analysis/response_refinement/all/response_K4_seed0_em1.json",
+          "block": "interface_pre",
+          "group": "valid_mean",
+          "heldout_fold": -1,
+          "fit_seed": 2026101801,
+          "fit_path": "fullspace_references/all/interface_pre.npz",
+          "fit_sha256": "edd828cba1f2e17bf8658284c75100911a0cf09a2178c9d38e50cd70f0c44725",
+          "rank": 32,
+          "cap": 0.1,
+          "space_control": "full",
+          "steps": 512,
+          "checkpoints": [
+            256,
+            512
+          ],
+          "learning_rate": 0.003,
+          "edit_penalty": 0.0001,
+          "retention_weight": 2.0,
+          "training_noise_indices": [
+            0,
+            1,
+            2
+          ],
+          "formation_round": 1,
+          "parent_system": "response_K4_seed0"
+        },
+        "checkpoint": {
+          "step": 256,
+          "path": "learned_experts/native_v4_em_behavior_1fc7b1ed96f8e89164edc43a/step0256.npz",
+          "sha256": "4092d35e9c312585b7f218948ed80b66f7597e0a4302d61759b1257b757e7dac"
+        },
+        "strength": 1.0
+      },
+      "semantic": {
+        "kind": "learned",
+        "block": "interface_pre",
+        "group": "valid_mean",
+        "cap": 0.1,
+        "strength": 1.0,
+        "checkpoint_sha256": "4092d35e9c312585b7f218948ed80b66f7597e0a4302d61759b1257b757e7dac",
+        "checkpoint_path": "learned_experts/native_v4_em_behavior_1fc7b1ed96f8e89164edc43a/step0256.npz",
+        "training_task": "em_behavior_1fc7b1ed96f8e89164edc43a"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/analysis/variant_library_selection/variant_library_3b9cd6b906d4e5c4b0b23b58.json",
+          "sha256": "b01ed86c10f24b973ae6db41e32ee6643793fc8454e4d15db46c30f3e1d76c84"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_variant_hard_0edf02756d2ab948bb2747f6/POLICY.json",
+          "sha256": "69b9f4ab3395e725df1d1f04519f60b2eb6df56a24d8bbbc4df1df2e00ccebf2"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_variant_hard_3ecb155dd53d784db6c8d3f1/POLICY.json",
+          "sha256": "38a790205c339be80d23210a87bf5d0858f7b3625e52f4f4b97d9422971a5efe"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_variant_hard_3f13d19c0bc80a0f44381ca8/POLICY.json",
+          "sha256": "fcba6307f2b1bfbe5a1e0fb2472a5f256a36eb3dcffdc4dc9978446562389be2"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_variant_hard_69988f544f636cbe3db65bd6/POLICY.json",
+          "sha256": "0b7dd717df105d80f0b29539b2157ffe3a3d0c9d086ce6a36f2fc83f72e871ce"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_variant_hard_a0bc9c3b4e44a44a04898ea5/POLICY.json",
+          "sha256": "749bbf0b6bc0f168709bfb16a378cebe42f9c649745f6cff4693b9c84547d784"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_variant_hard_bd87ec41da3e4ed1dab29f04/POLICY.json",
+          "sha256": "9ff2b5d2b0dc8c2b5017f23352c179ab39a903982d457994d2b444a2acb9b4fd"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_variant_selector_0edf02756d2ab948bb2747f6/POLICY.json",
+          "sha256": "f64491f514e7dcb11c7c8b38db074ecbba7840f4a351ab0c472c490e68e76dd6"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_variant_selector_3ecb155dd53d784db6c8d3f1/POLICY.json",
+          "sha256": "194a77e9c9849cfc2117ec6c34e23757853dba4910c169b911036fb690f68751"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_variant_selector_69988f544f636cbe3db65bd6/POLICY.json",
+          "sha256": "d54051563b4a684bbb6c8d231fc571c005f56d4d7cb29846926ade45a9fdd966"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_variant_selector_bd87ec41da3e4ed1dab29f04/POLICY.json",
+          "sha256": "ed1abb07b82a302669b460bc63484768937a183f60cb10820928531eb5f1f9cb"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/additional_joint_policies/additional_joint_45ed886dd5e99d3b5fa1ef66/POLICY.json",
+          "sha256": "500f6f792413191e3158e57e56afd3de828caf3f8a905f5939dacb66f0aaa20b"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/additional_joint_policies/additional_joint_5b32065ac09921824716bcb4/POLICY.json",
+          "sha256": "ab44bcce3308135c56d8667a155777ecbda8e1405ba65ccea9e81e959213a435"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/additional_joint_policies/additional_joint_60c9cc6511ad813ab8833538/POLICY.json",
+          "sha256": "3c785a45e913214abdd511aba42277f2c3ee748a57f868c139f2b6cc53eb9df6"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/additional_joint_policies/additional_joint_660453dc49771e87f6b1c2a0/POLICY.json",
+          "sha256": "3e2cf535c69fab81a6bae164773126d934e81f8f6853e7eab7c83fd2a1b76c9a"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/additional_joint_policies/additional_joint_7afbcf34a6ecb704394caeff/POLICY.json",
+          "sha256": "2f3ddaa799a19b4f7ff7bd2cbae2b6e1c22add7893eba0898c148ebb8808d495"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/additional_joint_policies/additional_joint_871cc6439fecacbf24993e90/POLICY.json",
+          "sha256": "c153eb1d712c99f6d8b74c16682db2817fd9a6d783075a119f41c437b58dd586"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/additional_joint_policies/additional_joint_ae6b23c23e94835c84ef216d/POLICY.json",
+          "sha256": "0a83fb20fd5dd266c1d69335e37364bcad93b8ccec62fcb7d3545fbe7a9cf151"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/additional_joint_policies/additional_joint_aea8813fd2955ab41fa96ab6/POLICY.json",
+          "sha256": "2c04314a2de4ad94b3a1c465c0c39df266714cb4bf4b68f071a7daa9b260a702"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/additional_joint_policies/additional_joint_b17ff9867c65040fad009809/POLICY.json",
+          "sha256": "8b927e3a5b2abb654fe6ed0476f0a2527264c97a0ad9f506336180dd99f91a14"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/additional_joint_policies/additional_joint_d2ecdce7599090f3a4c1d427/POLICY.json",
+          "sha256": "4a3ab907d63709ac97938c03896a5595f6287a9eea0dc294fba0ad037fab5a6d"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/additional_joint_policies/additional_joint_d4e00e58a8aa82adb7d9f2c4/POLICY.json",
+          "sha256": "6e5fce1ac6845c395d50b555315fa1e0b1a1bf0f492a8b1270dc311acb1e0ea9"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/additional_joint_policies/additional_joint_e07596ccb9dde5cfc821f5ce/POLICY.json",
+          "sha256": "06e7b627d74937ec880c9c23e11268763fa57a7fd937cd7d95bb0a20b0a7432c"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/token_policies/token_cal_a3ec478e1eb6905ca8c6deef/POLICY.json",
+          "sha256": "cd8aef5393e514b8c53f543f479608c1c132b91779d847dcb998f11043e69841"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/token_policies/token_cal_d86db02d9e996fb97250d570/POLICY.json",
+          "sha256": "61fae89cec52526366665eb136564973a4b16c04dca7f52305f5fe5eb20ddf5d"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/token_policies/uniform_cal_507a74c79b8ee054c9e619d8/POLICY.json",
+          "sha256": "14ca3b3e2910758148cb9ac175f11711388407c328d93a5933b5efb0a3b7bda6"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/token_policies/uniform_cal_a83f6d96d678d1b255497389/POLICY.json",
+          "sha256": "0c87b668c8c721631a699fc2fc3578dff70d963d6137b0b2100cc772a7e71aeb"
+        }
+      ],
+      "aliases": [
+        "em_arm_05e7e985cade7ea89d080ce8"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_58bbbf04f8b4cae8271c93b6",
+      "kind": "batch2_learned",
+      "definition": {
+        "id": "em_arm_0cf21864b65e1ad3247a7a17",
+        "kind": "learned",
+        "slot": 2,
+        "training_task": {
+          "id": "em_behavior_d305e4eb8886a0ef9418a694",
+          "system": "response_em1_K4_seed0",
+          "K": 4,
+          "expert": 2,
+          "responsibility_meta": "analysis/response_refinement/all/response_K4_seed0_em1.json",
+          "block": "interface_pre",
+          "group": "valid_mean",
+          "heldout_fold": -1,
+          "fit_seed": 2026101801,
+          "fit_path": "fullspace_references/all/interface_pre.npz",
+          "fit_sha256": "edd828cba1f2e17bf8658284c75100911a0cf09a2178c9d38e50cd70f0c44725",
+          "rank": 32,
+          "cap": 0.1,
+          "space_control": "full",
+          "steps": 512,
+          "checkpoints": [
+            256,
+            512
+          ],
+          "learning_rate": 0.003,
+          "edit_penalty": 0.0001,
+          "retention_weight": 2.0,
+          "training_noise_indices": [
+            0,
+            1,
+            2
+          ],
+          "formation_round": 1,
+          "parent_system": "response_K4_seed0"
+        },
+        "checkpoint": {
+          "step": 256,
+          "path": "learned_experts/native_v4_em_behavior_d305e4eb8886a0ef9418a694/step0256.npz",
+          "sha256": "f44c989c4065f71edbe8c2f96c724e3c70fd3f0019f91011352e749fc18a87e7"
+        },
+        "strength": 1.0
+      },
+      "semantic": {
+        "kind": "learned",
+        "block": "interface_pre",
+        "group": "valid_mean",
+        "cap": 0.1,
+        "strength": 1.0,
+        "checkpoint_sha256": "f44c989c4065f71edbe8c2f96c724e3c70fd3f0019f91011352e749fc18a87e7",
+        "checkpoint_path": "learned_experts/native_v4_em_behavior_d305e4eb8886a0ef9418a694/step0256.npz",
+        "training_task": "em_behavior_d305e4eb8886a0ef9418a694"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/analysis/variant_library_selection/variant_library_3b9cd6b906d4e5c4b0b23b58.json",
+          "sha256": "b01ed86c10f24b973ae6db41e32ee6643793fc8454e4d15db46c30f3e1d76c84"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_variant_hard_0edf02756d2ab948bb2747f6/POLICY.json",
+          "sha256": "69b9f4ab3395e725df1d1f04519f60b2eb6df56a24d8bbbc4df1df2e00ccebf2"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_variant_hard_3ecb155dd53d784db6c8d3f1/POLICY.json",
+          "sha256": "38a790205c339be80d23210a87bf5d0858f7b3625e52f4f4b97d9422971a5efe"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_variant_hard_3f13d19c0bc80a0f44381ca8/POLICY.json",
+          "sha256": "fcba6307f2b1bfbe5a1e0fb2472a5f256a36eb3dcffdc4dc9978446562389be2"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_variant_hard_69988f544f636cbe3db65bd6/POLICY.json",
+          "sha256": "0b7dd717df105d80f0b29539b2157ffe3a3d0c9d086ce6a36f2fc83f72e871ce"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_variant_hard_a0bc9c3b4e44a44a04898ea5/POLICY.json",
+          "sha256": "749bbf0b6bc0f168709bfb16a378cebe42f9c649745f6cff4693b9c84547d784"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_variant_hard_bd87ec41da3e4ed1dab29f04/POLICY.json",
+          "sha256": "9ff2b5d2b0dc8c2b5017f23352c179ab39a903982d457994d2b444a2acb9b4fd"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_variant_selector_0edf02756d2ab948bb2747f6/POLICY.json",
+          "sha256": "f64491f514e7dcb11c7c8b38db074ecbba7840f4a351ab0c472c490e68e76dd6"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_variant_selector_3ecb155dd53d784db6c8d3f1/POLICY.json",
+          "sha256": "194a77e9c9849cfc2117ec6c34e23757853dba4910c169b911036fb690f68751"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_variant_selector_69988f544f636cbe3db65bd6/POLICY.json",
+          "sha256": "d54051563b4a684bbb6c8d231fc571c005f56d4d7cb29846926ade45a9fdd966"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_variant_selector_bd87ec41da3e4ed1dab29f04/POLICY.json",
+          "sha256": "ed1abb07b82a302669b460bc63484768937a183f60cb10820928531eb5f1f9cb"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/additional_joint_policies/additional_joint_45ed886dd5e99d3b5fa1ef66/POLICY.json",
+          "sha256": "500f6f792413191e3158e57e56afd3de828caf3f8a905f5939dacb66f0aaa20b"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/additional_joint_policies/additional_joint_5b32065ac09921824716bcb4/POLICY.json",
+          "sha256": "ab44bcce3308135c56d8667a155777ecbda8e1405ba65ccea9e81e959213a435"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/additional_joint_policies/additional_joint_60c9cc6511ad813ab8833538/POLICY.json",
+          "sha256": "3c785a45e913214abdd511aba42277f2c3ee748a57f868c139f2b6cc53eb9df6"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/additional_joint_policies/additional_joint_660453dc49771e87f6b1c2a0/POLICY.json",
+          "sha256": "3e2cf535c69fab81a6bae164773126d934e81f8f6853e7eab7c83fd2a1b76c9a"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/additional_joint_policies/additional_joint_7afbcf34a6ecb704394caeff/POLICY.json",
+          "sha256": "2f3ddaa799a19b4f7ff7bd2cbae2b6e1c22add7893eba0898c148ebb8808d495"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/additional_joint_policies/additional_joint_871cc6439fecacbf24993e90/POLICY.json",
+          "sha256": "c153eb1d712c99f6d8b74c16682db2817fd9a6d783075a119f41c437b58dd586"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/additional_joint_policies/additional_joint_ae6b23c23e94835c84ef216d/POLICY.json",
+          "sha256": "0a83fb20fd5dd266c1d69335e37364bcad93b8ccec62fcb7d3545fbe7a9cf151"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/additional_joint_policies/additional_joint_aea8813fd2955ab41fa96ab6/POLICY.json",
+          "sha256": "2c04314a2de4ad94b3a1c465c0c39df266714cb4bf4b68f071a7daa9b260a702"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/additional_joint_policies/additional_joint_b17ff9867c65040fad009809/POLICY.json",
+          "sha256": "8b927e3a5b2abb654fe6ed0476f0a2527264c97a0ad9f506336180dd99f91a14"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/additional_joint_policies/additional_joint_d2ecdce7599090f3a4c1d427/POLICY.json",
+          "sha256": "4a3ab907d63709ac97938c03896a5595f6287a9eea0dc294fba0ad037fab5a6d"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/additional_joint_policies/additional_joint_d4e00e58a8aa82adb7d9f2c4/POLICY.json",
+          "sha256": "6e5fce1ac6845c395d50b555315fa1e0b1a1bf0f492a8b1270dc311acb1e0ea9"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/additional_joint_policies/additional_joint_e07596ccb9dde5cfc821f5ce/POLICY.json",
+          "sha256": "06e7b627d74937ec880c9c23e11268763fa57a7fd937cd7d95bb0a20b0a7432c"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/token_policies/token_cal_a3ec478e1eb6905ca8c6deef/POLICY.json",
+          "sha256": "cd8aef5393e514b8c53f543f479608c1c132b91779d847dcb998f11043e69841"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/token_policies/token_cal_d86db02d9e996fb97250d570/POLICY.json",
+          "sha256": "61fae89cec52526366665eb136564973a4b16c04dca7f52305f5fe5eb20ddf5d"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/token_policies/uniform_cal_507a74c79b8ee054c9e619d8/POLICY.json",
+          "sha256": "14ca3b3e2910758148cb9ac175f11711388407c328d93a5933b5efb0a3b7bda6"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/token_policies/uniform_cal_a83f6d96d678d1b255497389/POLICY.json",
+          "sha256": "0c87b668c8c721631a699fc2fc3578dff70d963d6137b0b2100cc772a7e71aeb"
+        }
+      ],
+      "aliases": [
+        "em_arm_0cf21864b65e1ad3247a7a17"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_89fdeda2adf0edc64f350c96",
+      "kind": "batch2_learned",
+      "definition": {
+        "id": "em_arm_c90c17bf585387f452dfd0b2",
+        "kind": "learned",
+        "slot": 0,
+        "training_task": {
+          "id": "em_behavior_86085afc3492855782ef73b4",
+          "system": "response_em1_K4_seed0",
+          "K": 4,
+          "expert": 0,
+          "responsibility_meta": "analysis/response_refinement/all/response_K4_seed0_em1.json",
+          "block": "interface_pre",
+          "group": "valid_mean",
+          "heldout_fold": -1,
+          "fit_seed": 2026101801,
+          "fit_path": "fullspace_references/all/interface_pre.npz",
+          "fit_sha256": "edd828cba1f2e17bf8658284c75100911a0cf09a2178c9d38e50cd70f0c44725",
+          "rank": 32,
+          "cap": 0.1,
+          "space_control": "full",
+          "steps": 512,
+          "checkpoints": [
+            256,
+            512
+          ],
+          "learning_rate": 0.003,
+          "edit_penalty": 0.0001,
+          "retention_weight": 2.0,
+          "training_noise_indices": [
+            0,
+            1,
+            2
+          ],
+          "formation_round": 1,
+          "parent_system": "response_K4_seed0"
+        },
+        "checkpoint": {
+          "step": 512,
+          "path": "learned_experts/native_v4_em_behavior_86085afc3492855782ef73b4/step0512.npz",
+          "sha256": "321a66473670d6ee70e74ea848f7c3fa531d19663a6b68df8071196165e8f07d"
+        },
+        "strength": 1.0
+      },
+      "semantic": {
+        "kind": "learned",
+        "block": "interface_pre",
+        "group": "valid_mean",
+        "cap": 0.1,
+        "strength": 1.0,
+        "checkpoint_sha256": "321a66473670d6ee70e74ea848f7c3fa531d19663a6b68df8071196165e8f07d",
+        "checkpoint_path": "learned_experts/native_v4_em_behavior_86085afc3492855782ef73b4/step0512.npz",
+        "training_task": "em_behavior_86085afc3492855782ef73b4"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/analysis/variant_library_selection/variant_library_3b9cd6b906d4e5c4b0b23b58.json",
+          "sha256": "b01ed86c10f24b973ae6db41e32ee6643793fc8454e4d15db46c30f3e1d76c84"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_variant_hard_0edf02756d2ab948bb2747f6/POLICY.json",
+          "sha256": "69b9f4ab3395e725df1d1f04519f60b2eb6df56a24d8bbbc4df1df2e00ccebf2"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_variant_hard_3ecb155dd53d784db6c8d3f1/POLICY.json",
+          "sha256": "38a790205c339be80d23210a87bf5d0858f7b3625e52f4f4b97d9422971a5efe"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_variant_hard_3f13d19c0bc80a0f44381ca8/POLICY.json",
+          "sha256": "fcba6307f2b1bfbe5a1e0fb2472a5f256a36eb3dcffdc4dc9978446562389be2"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_variant_hard_69988f544f636cbe3db65bd6/POLICY.json",
+          "sha256": "0b7dd717df105d80f0b29539b2157ffe3a3d0c9d086ce6a36f2fc83f72e871ce"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_variant_hard_a0bc9c3b4e44a44a04898ea5/POLICY.json",
+          "sha256": "749bbf0b6bc0f168709bfb16a378cebe42f9c649745f6cff4693b9c84547d784"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_variant_hard_bd87ec41da3e4ed1dab29f04/POLICY.json",
+          "sha256": "9ff2b5d2b0dc8c2b5017f23352c179ab39a903982d457994d2b444a2acb9b4fd"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_variant_selector_0edf02756d2ab948bb2747f6/POLICY.json",
+          "sha256": "f64491f514e7dcb11c7c8b38db074ecbba7840f4a351ab0c472c490e68e76dd6"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_variant_selector_3ecb155dd53d784db6c8d3f1/POLICY.json",
+          "sha256": "194a77e9c9849cfc2117ec6c34e23757853dba4910c169b911036fb690f68751"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_variant_selector_69988f544f636cbe3db65bd6/POLICY.json",
+          "sha256": "d54051563b4a684bbb6c8d231fc571c005f56d4d7cb29846926ade45a9fdd966"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_variant_selector_bd87ec41da3e4ed1dab29f04/POLICY.json",
+          "sha256": "ed1abb07b82a302669b460bc63484768937a183f60cb10820928531eb5f1f9cb"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/additional_joint_policies/additional_joint_45ed886dd5e99d3b5fa1ef66/POLICY.json",
+          "sha256": "500f6f792413191e3158e57e56afd3de828caf3f8a905f5939dacb66f0aaa20b"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/additional_joint_policies/additional_joint_5b32065ac09921824716bcb4/POLICY.json",
+          "sha256": "ab44bcce3308135c56d8667a155777ecbda8e1405ba65ccea9e81e959213a435"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/additional_joint_policies/additional_joint_60c9cc6511ad813ab8833538/POLICY.json",
+          "sha256": "3c785a45e913214abdd511aba42277f2c3ee748a57f868c139f2b6cc53eb9df6"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/additional_joint_policies/additional_joint_660453dc49771e87f6b1c2a0/POLICY.json",
+          "sha256": "3e2cf535c69fab81a6bae164773126d934e81f8f6853e7eab7c83fd2a1b76c9a"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/additional_joint_policies/additional_joint_7afbcf34a6ecb704394caeff/POLICY.json",
+          "sha256": "2f3ddaa799a19b4f7ff7bd2cbae2b6e1c22add7893eba0898c148ebb8808d495"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/additional_joint_policies/additional_joint_871cc6439fecacbf24993e90/POLICY.json",
+          "sha256": "c153eb1d712c99f6d8b74c16682db2817fd9a6d783075a119f41c437b58dd586"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/additional_joint_policies/additional_joint_ae6b23c23e94835c84ef216d/POLICY.json",
+          "sha256": "0a83fb20fd5dd266c1d69335e37364bcad93b8ccec62fcb7d3545fbe7a9cf151"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/additional_joint_policies/additional_joint_aea8813fd2955ab41fa96ab6/POLICY.json",
+          "sha256": "2c04314a2de4ad94b3a1c465c0c39df266714cb4bf4b68f071a7daa9b260a702"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/additional_joint_policies/additional_joint_b17ff9867c65040fad009809/POLICY.json",
+          "sha256": "8b927e3a5b2abb654fe6ed0476f0a2527264c97a0ad9f506336180dd99f91a14"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/additional_joint_policies/additional_joint_d2ecdce7599090f3a4c1d427/POLICY.json",
+          "sha256": "4a3ab907d63709ac97938c03896a5595f6287a9eea0dc294fba0ad037fab5a6d"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/additional_joint_policies/additional_joint_d4e00e58a8aa82adb7d9f2c4/POLICY.json",
+          "sha256": "6e5fce1ac6845c395d50b555315fa1e0b1a1bf0f492a8b1270dc311acb1e0ea9"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/additional_joint_policies/additional_joint_e07596ccb9dde5cfc821f5ce/POLICY.json",
+          "sha256": "06e7b627d74937ec880c9c23e11268763fa57a7fd937cd7d95bb0a20b0a7432c"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/token_policies/token_cal_a3ec478e1eb6905ca8c6deef/POLICY.json",
+          "sha256": "cd8aef5393e514b8c53f543f479608c1c132b91779d847dcb998f11043e69841"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/token_policies/token_cal_d86db02d9e996fb97250d570/POLICY.json",
+          "sha256": "61fae89cec52526366665eb136564973a4b16c04dca7f52305f5fe5eb20ddf5d"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/token_policies/uniform_cal_507a74c79b8ee054c9e619d8/POLICY.json",
+          "sha256": "14ca3b3e2910758148cb9ac175f11711388407c328d93a5933b5efb0a3b7bda6"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/token_policies/uniform_cal_a83f6d96d678d1b255497389/POLICY.json",
+          "sha256": "0c87b668c8c721631a699fc2fc3578dff70d963d6137b0b2100cc772a7e71aeb"
+        }
+      ],
+      "aliases": [
+        "em_arm_c90c17bf585387f452dfd0b2"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_915006ccf3de8160568ab237",
+      "kind": "batch2_learned",
+      "definition": {
+        "kind": "learned",
+        "id": "behavior_arm_721960d9a87252453dfa",
+        "slot": 0,
+        "training_task": {
+          "id": "behavior_413fd83b742c15356405ad32",
+          "system": "response_K4_seed2",
+          "K": 4,
+          "expert": 0,
+          "responsibility_meta": "analysis/outcome_groups/all/response_K4_seed2.json",
+          "block": "interface_pre",
+          "group": "valid_mean",
+          "heldout_fold": -1,
+          "fit_seed": 2026101803,
+          "fit_path": "fullspace_references/all/interface_pre.npz",
+          "fit_sha256": "edd828cba1f2e17bf8658284c75100911a0cf09a2178c9d38e50cd70f0c44725",
+          "rank": 32,
+          "cap": 0.1,
+          "space_control": "full",
+          "steps": 768,
+          "checkpoints": [
+            256,
+            512,
+            768
+          ],
+          "learning_rate": 0.003,
+          "edit_penalty": 0.0001,
+          "retention_weight": 2.0,
+          "training_noise_indices": [
+            0,
+            1,
+            2
+          ]
+        },
+        "checkpoint": {
+          "step": 256,
+          "path": "learned_experts/cached_v3_behavior_413fd83b742c15356405ad32/step0256.npz",
+          "sha256": "d0ee867314f4afb61ff26108906420ffbf1704d1fed425cce7680d2394136f96"
+        },
+        "strength": 1.0
+      },
+      "semantic": {
+        "kind": "learned",
+        "block": "interface_pre",
+        "group": "valid_mean",
+        "cap": 0.1,
+        "strength": 1.0,
+        "checkpoint_sha256": "d0ee867314f4afb61ff26108906420ffbf1704d1fed425cce7680d2394136f96",
+        "checkpoint_path": "learned_experts/cached_v3_behavior_413fd83b742c15356405ad32/step0256.npz",
+        "training_task": "behavior_413fd83b742c15356405ad32"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/analysis/expert_library_selection/library_3136825589dbf03df9b92636.json",
+          "sha256": "8d1019249dc9f7015d26b8d65a0a34693e095664e39869c9aebbf5fb144bf984"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_router_098c0f681f357f806be573f4/POLICY.json",
+          "sha256": "f0df3fe249c6d2b1e57649b924409b58a3da4db3812cc9abe8e90bcb1b525281"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_router_2a7560320afd55cfbb0df3a5/POLICY.json",
+          "sha256": "9b7eac2521e0b98d5cad3b40da15dfeb846d97db645ec316c5606daf5ddd52a9"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_router_3828701bc688c10cec600666/POLICY.json",
+          "sha256": "0b8ea6c2a9ac91be79e4e439a71bed5da51ebd7a9b85520dc2e24ba6e1f536a4"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_router_84b5fac82d32ea3bcf78933c/POLICY.json",
+          "sha256": "dbf2877361d5f1c449b0e249dc4d41b7ad56bdca4eb5a5497b0ffb397b5820eb"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_router_ab36f346c7fa29a9e386800a/POLICY.json",
+          "sha256": "3c1dcc6ce0613c4e5e4eb79e40112804b0c6bb0951a1cf1319782368e6fafc1e"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_router_dc71d070442c325ee8e96980/POLICY.json",
+          "sha256": "2b01ca055a5e0cdd220755bf69da99f3afee55be8160fc456696c646d1a93861"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_selector_098c0f681f357f806be573f4/POLICY.json",
+          "sha256": "d7cb01db150bcff8472ecb4f8fb960387686073ac91a1d90e33597c29b18edfc"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_selector_2a7560320afd55cfbb0df3a5/POLICY.json",
+          "sha256": "1183d4c00943a4695802a3e90f0d8fd0f693fd8d0384d5995dce304586ae0941"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_selector_84b5fac82d32ea3bcf78933c/POLICY.json",
+          "sha256": "2d70f0d59663fc59899a5126ca82ba4a3d28696a009187949a51e3b1e073247e"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_selector_dc71d070442c325ee8e96980/POLICY.json",
+          "sha256": "76af744585d9bebde2df4589804c5a1c339a222b1c9e94a54f330eb75da6a6e9"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/token_policies/token_cal_2da4bcc25d9eb5eb7b07ea98/POLICY.json",
+          "sha256": "e93c46922c287d73ae71289a63f43b9d17d927fb620bd49ae8a353b9fb56ccac"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/token_policies/token_cal_2f75e6e8a61a477f45fcca85/POLICY.json",
+          "sha256": "8b6a05dfc600755b7217c6d773529aa1b61a0cec7db2ce5d706d46b8787e697b"
+        }
+      ],
+      "aliases": [
+        "behavior_arm_721960d9a87252453dfa"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_e9139ebbbe80efab71392a68",
+      "kind": "batch2_learned",
+      "definition": {
+        "kind": "learned",
+        "id": "behavior_arm_6242d10597dfb7d6543a",
+        "slot": 1,
+        "training_task": {
+          "id": "behavior_34f43d677630ab7311ccb193",
+          "system": "response_K4_seed2",
+          "K": 4,
+          "expert": 1,
+          "responsibility_meta": "analysis/outcome_groups/all/response_K4_seed2.json",
+          "block": "interface_post",
+          "group": "valid_mean",
+          "heldout_fold": -1,
+          "fit_seed": 2026101803,
+          "fit_path": "fullspace_references/all/interface_post.npz",
+          "fit_sha256": "38eb4c2dbd13e8394dccddfc1922a8a0a673cbaa14e26ec5ea6fa52691037b9d",
+          "rank": 32,
+          "cap": 0.1,
+          "space_control": "full",
+          "steps": 512,
+          "checkpoints": [
+            128,
+            256,
+            512
+          ],
+          "learning_rate": 0.003,
+          "edit_penalty": 0.0001,
+          "retention_weight": 2.0,
+          "training_noise_indices": [
+            0,
+            1,
+            2
+          ]
+        },
+        "checkpoint": {
+          "step": 128,
+          "path": "learned_experts/native_v4_behavior_34f43d677630ab7311ccb193/step0128.npz",
+          "sha256": "785cf093124710784892e53548813a7fb91a390ac00b3955a964aaf04dea683f"
+        },
+        "strength": 1.0
+      },
+      "semantic": {
+        "kind": "learned",
+        "block": "interface_post",
+        "group": "valid_mean",
+        "cap": 0.1,
+        "strength": 1.0,
+        "checkpoint_sha256": "785cf093124710784892e53548813a7fb91a390ac00b3955a964aaf04dea683f",
+        "checkpoint_path": "learned_experts/native_v4_behavior_34f43d677630ab7311ccb193/step0128.npz",
+        "training_task": "behavior_34f43d677630ab7311ccb193"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/analysis/expert_library_selection/library_3136825589dbf03df9b92636.json",
+          "sha256": "8d1019249dc9f7015d26b8d65a0a34693e095664e39869c9aebbf5fb144bf984"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_router_2a7560320afd55cfbb0df3a5/POLICY.json",
+          "sha256": "9b7eac2521e0b98d5cad3b40da15dfeb846d97db645ec316c5606daf5ddd52a9"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_router_3828701bc688c10cec600666/POLICY.json",
+          "sha256": "0b8ea6c2a9ac91be79e4e439a71bed5da51ebd7a9b85520dc2e24ba6e1f536a4"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_router_84b5fac82d32ea3bcf78933c/POLICY.json",
+          "sha256": "dbf2877361d5f1c449b0e249dc4d41b7ad56bdca4eb5a5497b0ffb397b5820eb"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_selector_2a7560320afd55cfbb0df3a5/POLICY.json",
+          "sha256": "1183d4c00943a4695802a3e90f0d8fd0f693fd8d0384d5995dce304586ae0941"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_selector_84b5fac82d32ea3bcf78933c/POLICY.json",
+          "sha256": "2d70f0d59663fc59899a5126ca82ba4a3d28696a009187949a51e3b1e073247e"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/token_policies/token_cal_2f75e6e8a61a477f45fcca85/POLICY.json",
+          "sha256": "8b6a05dfc600755b7217c6d773529aa1b61a0cec7db2ce5d706d46b8787e697b"
+        }
+      ],
+      "aliases": [
+        "behavior_arm_6242d10597dfb7d6543a"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_f9f3a97ed98bc4660d5cc72c",
+      "kind": "batch2_learned",
+      "definition": {
+        "kind": "learned",
+        "id": "behavior_arm_ea6d8db70c45efc282b6",
+        "slot": 3,
+        "training_task": {
+          "id": "behavior_f37ecb0f57e2bb764437b965",
+          "system": "response_K4_seed2",
+          "K": 4,
+          "expert": 3,
+          "responsibility_meta": "analysis/outcome_groups/all/response_K4_seed2.json",
+          "block": "interface_pre",
+          "group": "valid_mean",
+          "heldout_fold": -1,
+          "fit_seed": 2026101803,
+          "fit_path": "fullspace_references/all/interface_pre.npz",
+          "fit_sha256": "edd828cba1f2e17bf8658284c75100911a0cf09a2178c9d38e50cd70f0c44725",
+          "rank": 32,
+          "cap": 0.1,
+          "space_control": "full",
+          "steps": 768,
+          "checkpoints": [
+            256,
+            512,
+            768
+          ],
+          "learning_rate": 0.003,
+          "edit_penalty": 0.0001,
+          "retention_weight": 2.0,
+          "training_noise_indices": [
+            0,
+            1,
+            2
+          ]
+        },
+        "checkpoint": {
+          "step": 768,
+          "path": "learned_experts/native_v4_behavior_f37ecb0f57e2bb764437b965/step0768.npz",
+          "sha256": "81392a7f74648831161244ea871dc8483d3894dbf9635a142124280a19b2d36d"
+        },
+        "strength": 1.0
+      },
+      "semantic": {
+        "kind": "learned",
+        "block": "interface_pre",
+        "group": "valid_mean",
+        "cap": 0.1,
+        "strength": 1.0,
+        "checkpoint_sha256": "81392a7f74648831161244ea871dc8483d3894dbf9635a142124280a19b2d36d",
+        "checkpoint_path": "learned_experts/native_v4_behavior_f37ecb0f57e2bb764437b965/step0768.npz",
+        "training_task": "behavior_f37ecb0f57e2bb764437b965"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/analysis/expert_library_selection/library_3136825589dbf03df9b92636.json",
+          "sha256": "8d1019249dc9f7015d26b8d65a0a34693e095664e39869c9aebbf5fb144bf984"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_router_098c0f681f357f806be573f4/POLICY.json",
+          "sha256": "f0df3fe249c6d2b1e57649b924409b58a3da4db3812cc9abe8e90bcb1b525281"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_router_2a7560320afd55cfbb0df3a5/POLICY.json",
+          "sha256": "9b7eac2521e0b98d5cad3b40da15dfeb846d97db645ec316c5606daf5ddd52a9"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_router_3828701bc688c10cec600666/POLICY.json",
+          "sha256": "0b8ea6c2a9ac91be79e4e439a71bed5da51ebd7a9b85520dc2e24ba6e1f536a4"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_router_84b5fac82d32ea3bcf78933c/POLICY.json",
+          "sha256": "dbf2877361d5f1c449b0e249dc4d41b7ad56bdca4eb5a5497b0ffb397b5820eb"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_router_ab36f346c7fa29a9e386800a/POLICY.json",
+          "sha256": "3c1dcc6ce0613c4e5e4eb79e40112804b0c6bb0951a1cf1319782368e6fafc1e"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_router_dc71d070442c325ee8e96980/POLICY.json",
+          "sha256": "2b01ca055a5e0cdd220755bf69da99f3afee55be8160fc456696c646d1a93861"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_selector_098c0f681f357f806be573f4/POLICY.json",
+          "sha256": "d7cb01db150bcff8472ecb4f8fb960387686073ac91a1d90e33597c29b18edfc"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_selector_2a7560320afd55cfbb0df3a5/POLICY.json",
+          "sha256": "1183d4c00943a4695802a3e90f0d8fd0f693fd8d0384d5995dce304586ae0941"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_selector_84b5fac82d32ea3bcf78933c/POLICY.json",
+          "sha256": "2d70f0d59663fc59899a5126ca82ba4a3d28696a009187949a51e3b1e073247e"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_selector_dc71d070442c325ee8e96980/POLICY.json",
+          "sha256": "76af744585d9bebde2df4589804c5a1c339a222b1c9e94a54f330eb75da6a6e9"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/token_policies/token_cal_2da4bcc25d9eb5eb7b07ea98/POLICY.json",
+          "sha256": "e93c46922c287d73ae71289a63f43b9d17d927fb620bd49ae8a353b9fb56ccac"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/token_policies/token_cal_2f75e6e8a61a477f45fcca85/POLICY.json",
+          "sha256": "8b6a05dfc600755b7217c6d773529aa1b61a0cec7db2ce5d706d46b8787e697b"
+        }
+      ],
+      "aliases": [
+        "behavior_arm_ea6d8db70c45efc282b6"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_0432ad33b8d497fc3f461d36",
+      "kind": "batch2_policy_hard",
+      "definition": {
+        "policy_path": "routers/outcome_variant_hard_69988f544f636cbe3db65bd6/POLICY.json",
+        "policy_sha256": "0b7dd717df105d80f0b29539b2157ffe3a3d0c9d086ce6a36f2fc83f72e871ce"
+      },
+      "semantic": {
+        "model_sha256": "4e475ed28326d33ba3f8f59292c91c3fff0a08a35cb791e66dd3f546dc7c1a00",
+        "tier": "trajectory",
+        "feature_sha256": "89f6e6933854916e0b530288dcd6eaf4f51be42f70612339c2df85d18ed1fff5",
+        "risk_penalty": 5.0,
+        "threshold": 0.005,
+        "parts": [
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "321a66473670d6ee70e74ea848f7c3fa531d19663a6b68df8071196165e8f07d",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_86085afc3492855782ef73b4/step0512.npz",
+              "training_task": "em_behavior_86085afc3492855782ef73b4"
+            },
+            "slot": 0
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "a78f0a41108f4ac22013e868f59df3217fee04bebb4bfafcc9e2260e9ecfbb33",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_34f3a9eb03e0880208783ad8/step0256.npz",
+              "training_task": "em_behavior_34f3a9eb03e0880208783ad8"
+            },
+            "slot": 1
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "f44c989c4065f71edbe8c2f96c724e3c70fd3f0019f91011352e749fc18a87e7",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_d305e4eb8886a0ef9418a694/step0256.npz",
+              "training_task": "em_behavior_d305e4eb8886a0ef9418a694"
+            },
+            "slot": 2
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "4092d35e9c312585b7f218948ed80b66f7597e0a4302d61759b1257b757e7dac",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_1fc7b1ed96f8e89164edc43a/step0256.npz",
+              "training_task": "em_behavior_1fc7b1ed96f8e89164edc43a"
+            },
+            "slot": 3
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_variant_hard_69988f544f636cbe3db65bd6/POLICY.json",
+          "sha256": "0b7dd717df105d80f0b29539b2157ffe3a3d0c9d086ce6a36f2fc83f72e871ce"
+        }
+      ],
+      "aliases": [
+        "response_em1_K4_seed0/PDMS_trajectory"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_0ce2b87743f2e134aa5d8e40",
+      "kind": "batch2_policy_candidate",
+      "definition": {
+        "policy_path": "candidate_selectors/outcome_selector_098c0f681f357f806be573f4/POLICY.json",
+        "policy_sha256": "d7cb01db150bcff8472ecb4f8fb960387686073ac91a1d90e33597c29b18edfc"
+      },
+      "semantic": {
+        "model_sha256": "e22fbcd1fc3d709e0b924da947686cfea3e2b12c594276512f5a9463889b081a",
+        "tier": "denoising",
+        "feature_sha256": "89f6e6933854916e0b530288dcd6eaf4f51be42f70612339c2df85d18ed1fff5",
+        "risk_penalty": 5.0,
+        "threshold": 0.01,
+        "parts": [
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "d0ee867314f4afb61ff26108906420ffbf1704d1fed425cce7680d2394136f96",
+              "checkpoint_path": "learned_experts/cached_v3_behavior_413fd83b742c15356405ad32/step0256.npz",
+              "training_task": "behavior_413fd83b742c15356405ad32"
+            },
+            "slot": 0
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "32ca52f5e5cea65917ae88ceb5a13ebce10dce976c873959e8334f1891ae8c78",
+              "checkpoint_path": "learned_experts/native_v4_behavior_f308b2f2b942b4a06a00e05e/step0768.npz",
+              "training_task": "behavior_f308b2f2b942b4a06a00e05e"
+            },
+            "slot": 1
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_post",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "e5151541d75cd5bbe1865fc2f345fd3120347ac6d78010b41b74c1526c91e964",
+              "checkpoint_path": "learned_experts/native_v4_behavior_51ba65a985cc8bb35da56811/step0512.npz",
+              "training_task": "behavior_51ba65a985cc8bb35da56811"
+            },
+            "slot": 2
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "81392a7f74648831161244ea871dc8483d3894dbf9635a142124280a19b2d36d",
+              "checkpoint_path": "learned_experts/native_v4_behavior_f37ecb0f57e2bb764437b965/step0768.npz",
+              "training_task": "behavior_f37ecb0f57e2bb764437b965"
+            },
+            "slot": 3
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_selector_098c0f681f357f806be573f4/POLICY.json",
+          "sha256": "d7cb01db150bcff8472ecb4f8fb960387686073ac91a1d90e33597c29b18edfc"
+        }
+      ],
+      "aliases": [
+        "response_K4_seed2/PDMS_denoising"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_1f4a9205cb12731c1857a30e",
+      "kind": "batch2_policy_joint",
+      "definition": {
+        "policy_path": "additional_joint_policies/additional_joint_871cc6439fecacbf24993e90/POLICY.json",
+        "policy_sha256": "c153eb1d712c99f6d8b74c16682db2817fd9a6d783075a119f41c437b58dd586"
+      },
+      "semantic": {
+        "checkpoint_sha256": "c0c2a7673ed2ecb7d5640633ab4b98e55aec67a1dd57b842e4df63c06cb36c70",
+        "tier": "observation",
+        "model_kind": "hard_continuous",
+        "input_dimension": 64,
+        "multiplier": 0.5,
+        "identity_threshold": 0.5,
+        "force_Base": false,
+        "parts": [
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "321a66473670d6ee70e74ea848f7c3fa531d19663a6b68df8071196165e8f07d",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_86085afc3492855782ef73b4/step0512.npz",
+              "training_task": "em_behavior_86085afc3492855782ef73b4"
+            },
+            "slot": 0
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "a78f0a41108f4ac22013e868f59df3217fee04bebb4bfafcc9e2260e9ecfbb33",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_34f3a9eb03e0880208783ad8/step0256.npz",
+              "training_task": "em_behavior_34f3a9eb03e0880208783ad8"
+            },
+            "slot": 1
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "f44c989c4065f71edbe8c2f96c724e3c70fd3f0019f91011352e749fc18a87e7",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_d305e4eb8886a0ef9418a694/step0256.npz",
+              "training_task": "em_behavior_d305e4eb8886a0ef9418a694"
+            },
+            "slot": 2
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "4092d35e9c312585b7f218948ed80b66f7597e0a4302d61759b1257b757e7dac",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_1fc7b1ed96f8e89164edc43a/step0256.npz",
+              "training_task": "em_behavior_1fc7b1ed96f8e89164edc43a"
+            },
+            "slot": 3
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/additional_joint_policies/additional_joint_871cc6439fecacbf24993e90/POLICY.json",
+          "sha256": "c153eb1d712c99f6d8b74c16682db2817fd9a6d783075a119f41c437b58dd586"
+        }
+      ],
+      "aliases": [
+        "response_em1_K4_seed0/PDMS_observation"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_238291719f78ca4cf4019f6c",
+      "kind": "batch2_policy_joint",
+      "definition": {
+        "policy_path": "additional_joint_policies/additional_joint_5b32065ac09921824716bcb4/POLICY.json",
+        "policy_sha256": "ab44bcce3308135c56d8667a155777ecbda8e1405ba65ccea9e81e959213a435"
+      },
+      "semantic": {
+        "checkpoint_sha256": "8d4c54e13ced9268a48849d50b2a4778b4999e0fb5b3f7eb6c27ebdaa492d66f",
+        "tier": "denoising",
+        "model_kind": "soft_joint",
+        "input_dimension": 216,
+        "multiplier": 1.0,
+        "identity_threshold": 0.9,
+        "force_Base": false,
+        "parts": [
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "321a66473670d6ee70e74ea848f7c3fa531d19663a6b68df8071196165e8f07d",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_86085afc3492855782ef73b4/step0512.npz",
+              "training_task": "em_behavior_86085afc3492855782ef73b4"
+            },
+            "slot": 0
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "a78f0a41108f4ac22013e868f59df3217fee04bebb4bfafcc9e2260e9ecfbb33",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_34f3a9eb03e0880208783ad8/step0256.npz",
+              "training_task": "em_behavior_34f3a9eb03e0880208783ad8"
+            },
+            "slot": 1
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "f44c989c4065f71edbe8c2f96c724e3c70fd3f0019f91011352e749fc18a87e7",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_d305e4eb8886a0ef9418a694/step0256.npz",
+              "training_task": "em_behavior_d305e4eb8886a0ef9418a694"
+            },
+            "slot": 2
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "4092d35e9c312585b7f218948ed80b66f7597e0a4302d61759b1257b757e7dac",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_1fc7b1ed96f8e89164edc43a/step0256.npz",
+              "training_task": "em_behavior_1fc7b1ed96f8e89164edc43a"
+            },
+            "slot": 3
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/additional_joint_policies/additional_joint_5b32065ac09921824716bcb4/POLICY.json",
+          "sha256": "ab44bcce3308135c56d8667a155777ecbda8e1405ba65ccea9e81e959213a435"
+        }
+      ],
+      "aliases": [
+        "response_em1_K4_seed0/safety_denoising"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_2a7b208c531d8eacfca5e805",
+      "kind": "batch2_policy_token",
+      "definition": {
+        "policy_path": "token_policies/token_cal_2da4bcc25d9eb5eb7b07ea98/POLICY.json",
+        "policy_sha256": "e93c46922c287d73ae71289a63f43b9d17d927fb620bd49ae8a353b9fb56ccac"
+      },
+      "semantic": {
+        "checkpoint_sha256": "a517625cdca05c5d3d877522b8924694fb8377a4257f73fe9ccc8b9e8c02eac2",
+        "context_view": "post_valid",
+        "risk_penalty": 1.0,
+        "threshold": 0.0,
+        "parts": [
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "d0ee867314f4afb61ff26108906420ffbf1704d1fed425cce7680d2394136f96",
+              "checkpoint_path": "learned_experts/cached_v3_behavior_413fd83b742c15356405ad32/step0256.npz",
+              "training_task": "behavior_413fd83b742c15356405ad32"
+            },
+            "slot": 0
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "32ca52f5e5cea65917ae88ceb5a13ebce10dce976c873959e8334f1891ae8c78",
+              "checkpoint_path": "learned_experts/native_v4_behavior_f308b2f2b942b4a06a00e05e/step0768.npz",
+              "training_task": "behavior_f308b2f2b942b4a06a00e05e"
+            },
+            "slot": 1
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_post",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "e5151541d75cd5bbe1865fc2f345fd3120347ac6d78010b41b74c1526c91e964",
+              "checkpoint_path": "learned_experts/native_v4_behavior_51ba65a985cc8bb35da56811/step0512.npz",
+              "training_task": "behavior_51ba65a985cc8bb35da56811"
+            },
+            "slot": 2
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "81392a7f74648831161244ea871dc8483d3894dbf9635a142124280a19b2d36d",
+              "checkpoint_path": "learned_experts/native_v4_behavior_f37ecb0f57e2bb764437b965/step0768.npz",
+              "training_task": "behavior_f37ecb0f57e2bb764437b965"
+            },
+            "slot": 3
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/token_policies/token_cal_2da4bcc25d9eb5eb7b07ea98/POLICY.json",
+          "sha256": "e93c46922c287d73ae71289a63f43b9d17d927fb620bd49ae8a353b9fb56ccac"
+        }
+      ],
+      "aliases": [
+        "/token_cal_2da4bcc25d9eb5eb7b07ea98"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_2e1979bec5e44d2f7953994a",
+      "kind": "batch2_policy_hard",
+      "definition": {
+        "policy_path": "routers/outcome_variant_hard_0edf02756d2ab948bb2747f6/POLICY.json",
+        "policy_sha256": "69b9f4ab3395e725df1d1f04519f60b2eb6df56a24d8bbbc4df1df2e00ccebf2"
+      },
+      "semantic": {
+        "model_sha256": "e9956419a06410159d0206989fae54c1f627c84a794e211fe558f0da1eeda6a5",
+        "tier": "denoising",
+        "feature_sha256": "89f6e6933854916e0b530288dcd6eaf4f51be42f70612339c2df85d18ed1fff5",
+        "risk_penalty": 0.1,
+        "threshold": 0.005,
+        "parts": [
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "321a66473670d6ee70e74ea848f7c3fa531d19663a6b68df8071196165e8f07d",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_86085afc3492855782ef73b4/step0512.npz",
+              "training_task": "em_behavior_86085afc3492855782ef73b4"
+            },
+            "slot": 0
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "a78f0a41108f4ac22013e868f59df3217fee04bebb4bfafcc9e2260e9ecfbb33",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_34f3a9eb03e0880208783ad8/step0256.npz",
+              "training_task": "em_behavior_34f3a9eb03e0880208783ad8"
+            },
+            "slot": 1
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "f44c989c4065f71edbe8c2f96c724e3c70fd3f0019f91011352e749fc18a87e7",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_d305e4eb8886a0ef9418a694/step0256.npz",
+              "training_task": "em_behavior_d305e4eb8886a0ef9418a694"
+            },
+            "slot": 2
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "4092d35e9c312585b7f218948ed80b66f7597e0a4302d61759b1257b757e7dac",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_1fc7b1ed96f8e89164edc43a/step0256.npz",
+              "training_task": "em_behavior_1fc7b1ed96f8e89164edc43a"
+            },
+            "slot": 3
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_variant_hard_0edf02756d2ab948bb2747f6/POLICY.json",
+          "sha256": "69b9f4ab3395e725df1d1f04519f60b2eb6df56a24d8bbbc4df1df2e00ccebf2"
+        }
+      ],
+      "aliases": [
+        "response_em1_K4_seed0/PDMS_denoising"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_4896d156c323d94f55de87e3",
+      "kind": "batch2_policy_candidate",
+      "definition": {
+        "policy_path": "candidate_selectors/outcome_selector_2a7560320afd55cfbb0df3a5/POLICY.json",
+        "policy_sha256": "1183d4c00943a4695802a3e90f0d8fd0f693fd8d0384d5995dce304586ae0941"
+      },
+      "semantic": {
+        "model_sha256": "b5252f85d5937e9abc8645c92e75e5edb20cf36e510068234bc3bcfc4342cb76",
+        "tier": "trajectory",
+        "feature_sha256": "89f6e6933854916e0b530288dcd6eaf4f51be42f70612339c2df85d18ed1fff5",
+        "risk_penalty": 5.0,
+        "threshold": 0.0,
+        "parts": [
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "d0ee867314f4afb61ff26108906420ffbf1704d1fed425cce7680d2394136f96",
+              "checkpoint_path": "learned_experts/cached_v3_behavior_413fd83b742c15356405ad32/step0256.npz",
+              "training_task": "behavior_413fd83b742c15356405ad32"
+            },
+            "slot": 0
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_post",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "785cf093124710784892e53548813a7fb91a390ac00b3955a964aaf04dea683f",
+              "checkpoint_path": "learned_experts/native_v4_behavior_34f43d677630ab7311ccb193/step0128.npz",
+              "training_task": "behavior_34f43d677630ab7311ccb193"
+            },
+            "slot": 1
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_post",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "e5151541d75cd5bbe1865fc2f345fd3120347ac6d78010b41b74c1526c91e964",
+              "checkpoint_path": "learned_experts/native_v4_behavior_51ba65a985cc8bb35da56811/step0512.npz",
+              "training_task": "behavior_51ba65a985cc8bb35da56811"
+            },
+            "slot": 2
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "81392a7f74648831161244ea871dc8483d3894dbf9635a142124280a19b2d36d",
+              "checkpoint_path": "learned_experts/native_v4_behavior_f37ecb0f57e2bb764437b965/step0768.npz",
+              "training_task": "behavior_f37ecb0f57e2bb764437b965"
+            },
+            "slot": 3
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_selector_2a7560320afd55cfbb0df3a5/POLICY.json",
+          "sha256": "1183d4c00943a4695802a3e90f0d8fd0f693fd8d0384d5995dce304586ae0941"
+        }
+      ],
+      "aliases": [
+        "response_K4_seed2/safety_trajectory"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_495acc1d961053fb9a6228c0",
+      "kind": "batch2_policy_hard",
+      "definition": {
+        "policy_path": "routers/outcome_router_098c0f681f357f806be573f4/POLICY.json",
+        "policy_sha256": "f0df3fe249c6d2b1e57649b924409b58a3da4db3812cc9abe8e90bcb1b525281"
+      },
+      "semantic": {
+        "model_sha256": "ec2be0ba32c9d44b0560118b2dabcf60eea5fdce492a8224d7b7aca3241f1dcc",
+        "tier": "denoising",
+        "feature_sha256": "89f6e6933854916e0b530288dcd6eaf4f51be42f70612339c2df85d18ed1fff5",
+        "risk_penalty": 2.0,
+        "threshold": 0.05,
+        "parts": [
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "d0ee867314f4afb61ff26108906420ffbf1704d1fed425cce7680d2394136f96",
+              "checkpoint_path": "learned_experts/cached_v3_behavior_413fd83b742c15356405ad32/step0256.npz",
+              "training_task": "behavior_413fd83b742c15356405ad32"
+            },
+            "slot": 0
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "32ca52f5e5cea65917ae88ceb5a13ebce10dce976c873959e8334f1891ae8c78",
+              "checkpoint_path": "learned_experts/native_v4_behavior_f308b2f2b942b4a06a00e05e/step0768.npz",
+              "training_task": "behavior_f308b2f2b942b4a06a00e05e"
+            },
+            "slot": 1
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_post",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "e5151541d75cd5bbe1865fc2f345fd3120347ac6d78010b41b74c1526c91e964",
+              "checkpoint_path": "learned_experts/native_v4_behavior_51ba65a985cc8bb35da56811/step0512.npz",
+              "training_task": "behavior_51ba65a985cc8bb35da56811"
+            },
+            "slot": 2
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "81392a7f74648831161244ea871dc8483d3894dbf9635a142124280a19b2d36d",
+              "checkpoint_path": "learned_experts/native_v4_behavior_f37ecb0f57e2bb764437b965/step0768.npz",
+              "training_task": "behavior_f37ecb0f57e2bb764437b965"
+            },
+            "slot": 3
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_router_098c0f681f357f806be573f4/POLICY.json",
+          "sha256": "f0df3fe249c6d2b1e57649b924409b58a3da4db3812cc9abe8e90bcb1b525281"
+        }
+      ],
+      "aliases": [
+        "response_K4_seed2/PDMS_denoising"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_4a8f879e1b7eaca01d68da92",
+      "kind": "batch2_policy_candidate",
+      "definition": {
+        "policy_path": "candidate_selectors/outcome_variant_selector_69988f544f636cbe3db65bd6/POLICY.json",
+        "policy_sha256": "d54051563b4a684bbb6c8d231fc571c005f56d4d7cb29846926ade45a9fdd966"
+      },
+      "semantic": {
+        "model_sha256": "d3daf5f811b69aca95ab9a8e604b4d572220d4b9f4b90a8252788b9664c714a0",
+        "tier": "trajectory",
+        "feature_sha256": "89f6e6933854916e0b530288dcd6eaf4f51be42f70612339c2df85d18ed1fff5",
+        "risk_penalty": 2.0,
+        "threshold": 0.001,
+        "parts": [
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "321a66473670d6ee70e74ea848f7c3fa531d19663a6b68df8071196165e8f07d",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_86085afc3492855782ef73b4/step0512.npz",
+              "training_task": "em_behavior_86085afc3492855782ef73b4"
+            },
+            "slot": 0
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "a78f0a41108f4ac22013e868f59df3217fee04bebb4bfafcc9e2260e9ecfbb33",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_34f3a9eb03e0880208783ad8/step0256.npz",
+              "training_task": "em_behavior_34f3a9eb03e0880208783ad8"
+            },
+            "slot": 1
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "f44c989c4065f71edbe8c2f96c724e3c70fd3f0019f91011352e749fc18a87e7",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_d305e4eb8886a0ef9418a694/step0256.npz",
+              "training_task": "em_behavior_d305e4eb8886a0ef9418a694"
+            },
+            "slot": 2
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "4092d35e9c312585b7f218948ed80b66f7597e0a4302d61759b1257b757e7dac",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_1fc7b1ed96f8e89164edc43a/step0256.npz",
+              "training_task": "em_behavior_1fc7b1ed96f8e89164edc43a"
+            },
+            "slot": 3
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_variant_selector_69988f544f636cbe3db65bd6/POLICY.json",
+          "sha256": "d54051563b4a684bbb6c8d231fc571c005f56d4d7cb29846926ade45a9fdd966"
+        }
+      ],
+      "aliases": [
+        "response_em1_K4_seed0/PDMS_trajectory"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_4a9a0e8a3bf7ff7f077404bd",
+      "kind": "batch2_policy_hard",
+      "definition": {
+        "policy_path": "routers/outcome_router_84b5fac82d32ea3bcf78933c/POLICY.json",
+        "policy_sha256": "dbf2877361d5f1c449b0e249dc4d41b7ad56bdca4eb5a5497b0ffb397b5820eb"
+      },
+      "semantic": {
+        "model_sha256": "18bc6a195b8e8145873c5b38004800a705d262414d279a143c0b53de764aed4d",
+        "tier": "denoising",
+        "feature_sha256": "89f6e6933854916e0b530288dcd6eaf4f51be42f70612339c2df85d18ed1fff5",
+        "risk_penalty": 2.0,
+        "threshold": 0.0,
+        "parts": [
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "d0ee867314f4afb61ff26108906420ffbf1704d1fed425cce7680d2394136f96",
+              "checkpoint_path": "learned_experts/cached_v3_behavior_413fd83b742c15356405ad32/step0256.npz",
+              "training_task": "behavior_413fd83b742c15356405ad32"
+            },
+            "slot": 0
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_post",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "785cf093124710784892e53548813a7fb91a390ac00b3955a964aaf04dea683f",
+              "checkpoint_path": "learned_experts/native_v4_behavior_34f43d677630ab7311ccb193/step0128.npz",
+              "training_task": "behavior_34f43d677630ab7311ccb193"
+            },
+            "slot": 1
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_post",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "e5151541d75cd5bbe1865fc2f345fd3120347ac6d78010b41b74c1526c91e964",
+              "checkpoint_path": "learned_experts/native_v4_behavior_51ba65a985cc8bb35da56811/step0512.npz",
+              "training_task": "behavior_51ba65a985cc8bb35da56811"
+            },
+            "slot": 2
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "81392a7f74648831161244ea871dc8483d3894dbf9635a142124280a19b2d36d",
+              "checkpoint_path": "learned_experts/native_v4_behavior_f37ecb0f57e2bb764437b965/step0768.npz",
+              "training_task": "behavior_f37ecb0f57e2bb764437b965"
+            },
+            "slot": 3
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_router_84b5fac82d32ea3bcf78933c/POLICY.json",
+          "sha256": "dbf2877361d5f1c449b0e249dc4d41b7ad56bdca4eb5a5497b0ffb397b5820eb"
+        }
+      ],
+      "aliases": [
+        "response_K4_seed2/safety_denoising"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_4ce9ce34066d8107acd81ff3",
+      "kind": "batch2_policy_hard",
+      "definition": {
+        "policy_path": "routers/outcome_router_2a7560320afd55cfbb0df3a5/POLICY.json",
+        "policy_sha256": "9b7eac2521e0b98d5cad3b40da15dfeb846d97db645ec316c5606daf5ddd52a9"
+      },
+      "semantic": {
+        "model_sha256": "2f753ba530429545104465d0da4dbf40ffeb67362f227cf9aeda9f9d39a4d058",
+        "tier": "trajectory",
+        "feature_sha256": "89f6e6933854916e0b530288dcd6eaf4f51be42f70612339c2df85d18ed1fff5",
+        "risk_penalty": 2.0,
+        "threshold": 0.005,
+        "parts": [
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "d0ee867314f4afb61ff26108906420ffbf1704d1fed425cce7680d2394136f96",
+              "checkpoint_path": "learned_experts/cached_v3_behavior_413fd83b742c15356405ad32/step0256.npz",
+              "training_task": "behavior_413fd83b742c15356405ad32"
+            },
+            "slot": 0
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_post",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "785cf093124710784892e53548813a7fb91a390ac00b3955a964aaf04dea683f",
+              "checkpoint_path": "learned_experts/native_v4_behavior_34f43d677630ab7311ccb193/step0128.npz",
+              "training_task": "behavior_34f43d677630ab7311ccb193"
+            },
+            "slot": 1
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_post",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "e5151541d75cd5bbe1865fc2f345fd3120347ac6d78010b41b74c1526c91e964",
+              "checkpoint_path": "learned_experts/native_v4_behavior_51ba65a985cc8bb35da56811/step0512.npz",
+              "training_task": "behavior_51ba65a985cc8bb35da56811"
+            },
+            "slot": 2
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "81392a7f74648831161244ea871dc8483d3894dbf9635a142124280a19b2d36d",
+              "checkpoint_path": "learned_experts/native_v4_behavior_f37ecb0f57e2bb764437b965/step0768.npz",
+              "training_task": "behavior_f37ecb0f57e2bb764437b965"
+            },
+            "slot": 3
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_router_2a7560320afd55cfbb0df3a5/POLICY.json",
+          "sha256": "9b7eac2521e0b98d5cad3b40da15dfeb846d97db645ec316c5606daf5ddd52a9"
+        }
+      ],
+      "aliases": [
+        "response_K4_seed2/safety_trajectory"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_52a9c3ef0a32fa3862ee807a",
+      "kind": "batch2_policy_hard",
+      "definition": {
+        "policy_path": "routers/outcome_variant_hard_bd87ec41da3e4ed1dab29f04/POLICY.json",
+        "policy_sha256": "9ff2b5d2b0dc8c2b5017f23352c179ab39a903982d457994d2b444a2acb9b4fd"
+      },
+      "semantic": {
+        "model_sha256": "e4ccf526fe4e17de65536e14adac06273dc3b7a0792823178753db7d86911c73",
+        "tier": "trajectory",
+        "feature_sha256": "89f6e6933854916e0b530288dcd6eaf4f51be42f70612339c2df85d18ed1fff5",
+        "risk_penalty": 0.0,
+        "threshold": 0.001,
+        "parts": [
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "321a66473670d6ee70e74ea848f7c3fa531d19663a6b68df8071196165e8f07d",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_86085afc3492855782ef73b4/step0512.npz",
+              "training_task": "em_behavior_86085afc3492855782ef73b4"
+            },
+            "slot": 0
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "a78f0a41108f4ac22013e868f59df3217fee04bebb4bfafcc9e2260e9ecfbb33",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_34f3a9eb03e0880208783ad8/step0256.npz",
+              "training_task": "em_behavior_34f3a9eb03e0880208783ad8"
+            },
+            "slot": 1
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "f44c989c4065f71edbe8c2f96c724e3c70fd3f0019f91011352e749fc18a87e7",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_d305e4eb8886a0ef9418a694/step0256.npz",
+              "training_task": "em_behavior_d305e4eb8886a0ef9418a694"
+            },
+            "slot": 2
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "4092d35e9c312585b7f218948ed80b66f7597e0a4302d61759b1257b757e7dac",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_1fc7b1ed96f8e89164edc43a/step0256.npz",
+              "training_task": "em_behavior_1fc7b1ed96f8e89164edc43a"
+            },
+            "slot": 3
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_variant_hard_bd87ec41da3e4ed1dab29f04/POLICY.json",
+          "sha256": "9ff2b5d2b0dc8c2b5017f23352c179ab39a903982d457994d2b444a2acb9b4fd"
+        }
+      ],
+      "aliases": [
+        "response_em1_K4_seed0/safety_trajectory"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_59c03b81ce6dac38e3d4aef3",
+      "kind": "batch2_policy_joint",
+      "definition": {
+        "policy_path": "additional_joint_policies/additional_joint_b17ff9867c65040fad009809/POLICY.json",
+        "policy_sha256": "8b927e3a5b2abb654fe6ed0476f0a2527264c97a0ad9f506336180dd99f91a14"
+      },
+      "semantic": {
+        "checkpoint_sha256": "2dd74202b5bddfdaec3e875a9434bbb087e9f3981a201cebec5fc27054ec00e5",
+        "tier": "denoising",
+        "model_kind": "hard_continuous",
+        "input_dimension": 216,
+        "multiplier": 1.0,
+        "identity_threshold": 0.5,
+        "force_Base": false,
+        "parts": [
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "321a66473670d6ee70e74ea848f7c3fa531d19663a6b68df8071196165e8f07d",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_86085afc3492855782ef73b4/step0512.npz",
+              "training_task": "em_behavior_86085afc3492855782ef73b4"
+            },
+            "slot": 0
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "a78f0a41108f4ac22013e868f59df3217fee04bebb4bfafcc9e2260e9ecfbb33",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_34f3a9eb03e0880208783ad8/step0256.npz",
+              "training_task": "em_behavior_34f3a9eb03e0880208783ad8"
+            },
+            "slot": 1
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "f44c989c4065f71edbe8c2f96c724e3c70fd3f0019f91011352e749fc18a87e7",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_d305e4eb8886a0ef9418a694/step0256.npz",
+              "training_task": "em_behavior_d305e4eb8886a0ef9418a694"
+            },
+            "slot": 2
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "4092d35e9c312585b7f218948ed80b66f7597e0a4302d61759b1257b757e7dac",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_1fc7b1ed96f8e89164edc43a/step0256.npz",
+              "training_task": "em_behavior_1fc7b1ed96f8e89164edc43a"
+            },
+            "slot": 3
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/additional_joint_policies/additional_joint_b17ff9867c65040fad009809/POLICY.json",
+          "sha256": "8b927e3a5b2abb654fe6ed0476f0a2527264c97a0ad9f506336180dd99f91a14"
+        }
+      ],
+      "aliases": [
+        "response_em1_K4_seed0/PDMS_denoising"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_5bc6023f2fcab010291d631a",
+      "kind": "batch2_policy_token",
+      "definition": {
+        "policy_path": "token_policies/token_cal_2f75e6e8a61a477f45fcca85/POLICY.json",
+        "policy_sha256": "8b6a05dfc600755b7217c6d773529aa1b61a0cec7db2ce5d706d46b8787e697b"
+      },
+      "semantic": {
+        "checkpoint_sha256": "b88d6dee20906e06fa81f49cfe64a4b9aca4ce72623fbbb52480f64e6d21345c",
+        "context_view": "post_valid",
+        "risk_penalty": 0.1,
+        "threshold": 0.0,
+        "parts": [
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "d0ee867314f4afb61ff26108906420ffbf1704d1fed425cce7680d2394136f96",
+              "checkpoint_path": "learned_experts/cached_v3_behavior_413fd83b742c15356405ad32/step0256.npz",
+              "training_task": "behavior_413fd83b742c15356405ad32"
+            },
+            "slot": 0
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_post",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "785cf093124710784892e53548813a7fb91a390ac00b3955a964aaf04dea683f",
+              "checkpoint_path": "learned_experts/native_v4_behavior_34f43d677630ab7311ccb193/step0128.npz",
+              "training_task": "behavior_34f43d677630ab7311ccb193"
+            },
+            "slot": 1
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_post",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "e5151541d75cd5bbe1865fc2f345fd3120347ac6d78010b41b74c1526c91e964",
+              "checkpoint_path": "learned_experts/native_v4_behavior_51ba65a985cc8bb35da56811/step0512.npz",
+              "training_task": "behavior_51ba65a985cc8bb35da56811"
+            },
+            "slot": 2
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "81392a7f74648831161244ea871dc8483d3894dbf9635a142124280a19b2d36d",
+              "checkpoint_path": "learned_experts/native_v4_behavior_f37ecb0f57e2bb764437b965/step0768.npz",
+              "training_task": "behavior_f37ecb0f57e2bb764437b965"
+            },
+            "slot": 3
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/token_policies/token_cal_2f75e6e8a61a477f45fcca85/POLICY.json",
+          "sha256": "8b6a05dfc600755b7217c6d773529aa1b61a0cec7db2ce5d706d46b8787e697b"
+        }
+      ],
+      "aliases": [
+        "/token_cal_2f75e6e8a61a477f45fcca85"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_5fc3caa5eb7b1b5dd12174b2",
+      "kind": "batch2_policy_hard",
+      "definition": {
+        "policy_path": "routers/outcome_variant_hard_a0bc9c3b4e44a44a04898ea5/POLICY.json",
+        "policy_sha256": "749bbf0b6bc0f168709bfb16a378cebe42f9c649745f6cff4693b9c84547d784"
+      },
+      "semantic": {
+        "model_sha256": "4bb9bca4887e869ce07b4ba39d978c683d919f9b6545b6b3ca933c1b7da5bc26",
+        "tier": "observation",
+        "feature_sha256": "89f6e6933854916e0b530288dcd6eaf4f51be42f70612339c2df85d18ed1fff5",
+        "risk_penalty": 2.0,
+        "threshold": 0.005,
+        "parts": [
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "321a66473670d6ee70e74ea848f7c3fa531d19663a6b68df8071196165e8f07d",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_86085afc3492855782ef73b4/step0512.npz",
+              "training_task": "em_behavior_86085afc3492855782ef73b4"
+            },
+            "slot": 0
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "a78f0a41108f4ac22013e868f59df3217fee04bebb4bfafcc9e2260e9ecfbb33",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_34f3a9eb03e0880208783ad8/step0256.npz",
+              "training_task": "em_behavior_34f3a9eb03e0880208783ad8"
+            },
+            "slot": 1
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "f44c989c4065f71edbe8c2f96c724e3c70fd3f0019f91011352e749fc18a87e7",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_d305e4eb8886a0ef9418a694/step0256.npz",
+              "training_task": "em_behavior_d305e4eb8886a0ef9418a694"
+            },
+            "slot": 2
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "4092d35e9c312585b7f218948ed80b66f7597e0a4302d61759b1257b757e7dac",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_1fc7b1ed96f8e89164edc43a/step0256.npz",
+              "training_task": "em_behavior_1fc7b1ed96f8e89164edc43a"
+            },
+            "slot": 3
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_variant_hard_a0bc9c3b4e44a44a04898ea5/POLICY.json",
+          "sha256": "749bbf0b6bc0f168709bfb16a378cebe42f9c649745f6cff4693b9c84547d784"
+        }
+      ],
+      "aliases": [
+        "response_em1_K4_seed0/PDMS_observation"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_6353a4b17525cc42932353e7",
+      "kind": "batch2_policy_joint",
+      "definition": {
+        "policy_path": "additional_joint_policies/additional_joint_60c9cc6511ad813ab8833538/POLICY.json",
+        "policy_sha256": "3c785a45e913214abdd511aba42277f2c3ee748a57f868c139f2b6cc53eb9df6"
+      },
+      "semantic": {
+        "checkpoint_sha256": "57741d6f28b77488211002ec2074d4f4db337e3cfe9dfee611988f09659445ea",
+        "tier": "observation",
+        "model_kind": "soft_joint",
+        "input_dimension": 64,
+        "multiplier": 1.0,
+        "identity_threshold": 0.5,
+        "force_Base": false,
+        "parts": [
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "321a66473670d6ee70e74ea848f7c3fa531d19663a6b68df8071196165e8f07d",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_86085afc3492855782ef73b4/step0512.npz",
+              "training_task": "em_behavior_86085afc3492855782ef73b4"
+            },
+            "slot": 0
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "a78f0a41108f4ac22013e868f59df3217fee04bebb4bfafcc9e2260e9ecfbb33",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_34f3a9eb03e0880208783ad8/step0256.npz",
+              "training_task": "em_behavior_34f3a9eb03e0880208783ad8"
+            },
+            "slot": 1
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "f44c989c4065f71edbe8c2f96c724e3c70fd3f0019f91011352e749fc18a87e7",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_d305e4eb8886a0ef9418a694/step0256.npz",
+              "training_task": "em_behavior_d305e4eb8886a0ef9418a694"
+            },
+            "slot": 2
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "4092d35e9c312585b7f218948ed80b66f7597e0a4302d61759b1257b757e7dac",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_1fc7b1ed96f8e89164edc43a/step0256.npz",
+              "training_task": "em_behavior_1fc7b1ed96f8e89164edc43a"
+            },
+            "slot": 3
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/additional_joint_policies/additional_joint_60c9cc6511ad813ab8833538/POLICY.json",
+          "sha256": "3c785a45e913214abdd511aba42277f2c3ee748a57f868c139f2b6cc53eb9df6"
+        }
+      ],
+      "aliases": [
+        "response_em1_K4_seed0/safety_observation"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_7332e9dfdcb5a96dc78add01",
+      "kind": "batch2_policy_candidate",
+      "definition": {
+        "policy_path": "candidate_selectors/outcome_selector_dc71d070442c325ee8e96980/POLICY.json",
+        "policy_sha256": "76af744585d9bebde2df4589804c5a1c339a222b1c9e94a54f330eb75da6a6e9"
+      },
+      "semantic": {
+        "model_sha256": "4ea9bec0759c89166942102cdb8748f7df6251938f45280f1833b4caf8f8cece",
+        "tier": "trajectory",
+        "feature_sha256": "89f6e6933854916e0b530288dcd6eaf4f51be42f70612339c2df85d18ed1fff5",
+        "risk_penalty": 5.0,
+        "threshold": 0.0,
+        "parts": [
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "d0ee867314f4afb61ff26108906420ffbf1704d1fed425cce7680d2394136f96",
+              "checkpoint_path": "learned_experts/cached_v3_behavior_413fd83b742c15356405ad32/step0256.npz",
+              "training_task": "behavior_413fd83b742c15356405ad32"
+            },
+            "slot": 0
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "32ca52f5e5cea65917ae88ceb5a13ebce10dce976c873959e8334f1891ae8c78",
+              "checkpoint_path": "learned_experts/native_v4_behavior_f308b2f2b942b4a06a00e05e/step0768.npz",
+              "training_task": "behavior_f308b2f2b942b4a06a00e05e"
+            },
+            "slot": 1
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_post",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "e5151541d75cd5bbe1865fc2f345fd3120347ac6d78010b41b74c1526c91e964",
+              "checkpoint_path": "learned_experts/native_v4_behavior_51ba65a985cc8bb35da56811/step0512.npz",
+              "training_task": "behavior_51ba65a985cc8bb35da56811"
+            },
+            "slot": 2
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "81392a7f74648831161244ea871dc8483d3894dbf9635a142124280a19b2d36d",
+              "checkpoint_path": "learned_experts/native_v4_behavior_f37ecb0f57e2bb764437b965/step0768.npz",
+              "training_task": "behavior_f37ecb0f57e2bb764437b965"
+            },
+            "slot": 3
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_selector_dc71d070442c325ee8e96980/POLICY.json",
+          "sha256": "76af744585d9bebde2df4589804c5a1c339a222b1c9e94a54f330eb75da6a6e9"
+        }
+      ],
+      "aliases": [
+        "response_K4_seed2/PDMS_trajectory"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_7431df8cfa47858cd9be203d",
+      "kind": "batch2_policy_hard",
+      "definition": {
+        "policy_path": "routers/outcome_router_dc71d070442c325ee8e96980/POLICY.json",
+        "policy_sha256": "2b01ca055a5e0cdd220755bf69da99f3afee55be8160fc456696c646d1a93861"
+      },
+      "semantic": {
+        "model_sha256": "bb0fb9245bc015d6d6cb12d78e418ecd8aede1b6e560659aa5eb123ed44a476c",
+        "tier": "trajectory",
+        "feature_sha256": "89f6e6933854916e0b530288dcd6eaf4f51be42f70612339c2df85d18ed1fff5",
+        "risk_penalty": 5.0,
+        "threshold": 0.05,
+        "parts": [
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "d0ee867314f4afb61ff26108906420ffbf1704d1fed425cce7680d2394136f96",
+              "checkpoint_path": "learned_experts/cached_v3_behavior_413fd83b742c15356405ad32/step0256.npz",
+              "training_task": "behavior_413fd83b742c15356405ad32"
+            },
+            "slot": 0
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "32ca52f5e5cea65917ae88ceb5a13ebce10dce976c873959e8334f1891ae8c78",
+              "checkpoint_path": "learned_experts/native_v4_behavior_f308b2f2b942b4a06a00e05e/step0768.npz",
+              "training_task": "behavior_f308b2f2b942b4a06a00e05e"
+            },
+            "slot": 1
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_post",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "e5151541d75cd5bbe1865fc2f345fd3120347ac6d78010b41b74c1526c91e964",
+              "checkpoint_path": "learned_experts/native_v4_behavior_51ba65a985cc8bb35da56811/step0512.npz",
+              "training_task": "behavior_51ba65a985cc8bb35da56811"
+            },
+            "slot": 2
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "81392a7f74648831161244ea871dc8483d3894dbf9635a142124280a19b2d36d",
+              "checkpoint_path": "learned_experts/native_v4_behavior_f37ecb0f57e2bb764437b965/step0768.npz",
+              "training_task": "behavior_f37ecb0f57e2bb764437b965"
+            },
+            "slot": 3
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_router_dc71d070442c325ee8e96980/POLICY.json",
+          "sha256": "2b01ca055a5e0cdd220755bf69da99f3afee55be8160fc456696c646d1a93861"
+        }
+      ],
+      "aliases": [
+        "response_K4_seed2/PDMS_trajectory"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_8b28f1b24fcb64a09af18243",
+      "kind": "batch2_policy_hard",
+      "definition": {
+        "policy_path": "routers/outcome_variant_hard_3f13d19c0bc80a0f44381ca8/POLICY.json",
+        "policy_sha256": "fcba6307f2b1bfbe5a1e0fb2472a5f256a36eb3dcffdc4dc9978446562389be2"
+      },
+      "semantic": {
+        "model_sha256": "4457a489a9879233339e00a981e73d47bcb174be684b92965f53f8978ca7c120",
+        "tier": "observation",
+        "feature_sha256": "89f6e6933854916e0b530288dcd6eaf4f51be42f70612339c2df85d18ed1fff5",
+        "risk_penalty": 2.0,
+        "threshold": 0.001,
+        "parts": [
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "321a66473670d6ee70e74ea848f7c3fa531d19663a6b68df8071196165e8f07d",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_86085afc3492855782ef73b4/step0512.npz",
+              "training_task": "em_behavior_86085afc3492855782ef73b4"
+            },
+            "slot": 0
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "a78f0a41108f4ac22013e868f59df3217fee04bebb4bfafcc9e2260e9ecfbb33",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_34f3a9eb03e0880208783ad8/step0256.npz",
+              "training_task": "em_behavior_34f3a9eb03e0880208783ad8"
+            },
+            "slot": 1
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "f44c989c4065f71edbe8c2f96c724e3c70fd3f0019f91011352e749fc18a87e7",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_d305e4eb8886a0ef9418a694/step0256.npz",
+              "training_task": "em_behavior_d305e4eb8886a0ef9418a694"
+            },
+            "slot": 2
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "4092d35e9c312585b7f218948ed80b66f7597e0a4302d61759b1257b757e7dac",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_1fc7b1ed96f8e89164edc43a/step0256.npz",
+              "training_task": "em_behavior_1fc7b1ed96f8e89164edc43a"
+            },
+            "slot": 3
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_variant_hard_3f13d19c0bc80a0f44381ca8/POLICY.json",
+          "sha256": "fcba6307f2b1bfbe5a1e0fb2472a5f256a36eb3dcffdc4dc9978446562389be2"
+        }
+      ],
+      "aliases": [
+        "response_em1_K4_seed0/safety_observation"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_8ffe0356966e3a848a77359b",
+      "kind": "batch2_policy_candidate",
+      "definition": {
+        "policy_path": "candidate_selectors/outcome_selector_84b5fac82d32ea3bcf78933c/POLICY.json",
+        "policy_sha256": "2d70f0d59663fc59899a5126ca82ba4a3d28696a009187949a51e3b1e073247e"
+      },
+      "semantic": {
+        "model_sha256": "824a5f37a0ab1a9af1048b5eee935e3f2f4e70b24be43b9cc7ff4393ba1a1413",
+        "tier": "denoising",
+        "feature_sha256": "89f6e6933854916e0b530288dcd6eaf4f51be42f70612339c2df85d18ed1fff5",
+        "risk_penalty": 2.0,
+        "threshold": 0.0,
+        "parts": [
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "d0ee867314f4afb61ff26108906420ffbf1704d1fed425cce7680d2394136f96",
+              "checkpoint_path": "learned_experts/cached_v3_behavior_413fd83b742c15356405ad32/step0256.npz",
+              "training_task": "behavior_413fd83b742c15356405ad32"
+            },
+            "slot": 0
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_post",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "785cf093124710784892e53548813a7fb91a390ac00b3955a964aaf04dea683f",
+              "checkpoint_path": "learned_experts/native_v4_behavior_34f43d677630ab7311ccb193/step0128.npz",
+              "training_task": "behavior_34f43d677630ab7311ccb193"
+            },
+            "slot": 1
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_post",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "e5151541d75cd5bbe1865fc2f345fd3120347ac6d78010b41b74c1526c91e964",
+              "checkpoint_path": "learned_experts/native_v4_behavior_51ba65a985cc8bb35da56811/step0512.npz",
+              "training_task": "behavior_51ba65a985cc8bb35da56811"
+            },
+            "slot": 2
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "81392a7f74648831161244ea871dc8483d3894dbf9635a142124280a19b2d36d",
+              "checkpoint_path": "learned_experts/native_v4_behavior_f37ecb0f57e2bb764437b965/step0768.npz",
+              "training_task": "behavior_f37ecb0f57e2bb764437b965"
+            },
+            "slot": 3
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_selector_84b5fac82d32ea3bcf78933c/POLICY.json",
+          "sha256": "2d70f0d59663fc59899a5126ca82ba4a3d28696a009187949a51e3b1e073247e"
+        }
+      ],
+      "aliases": [
+        "response_K4_seed2/safety_denoising"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_9205b3274f92c40dfca9035a",
+      "kind": "batch2_policy_joint",
+      "definition": {
+        "policy_path": "additional_joint_policies/additional_joint_660453dc49771e87f6b1c2a0/POLICY.json",
+        "policy_sha256": "3e2cf535c69fab81a6bae164773126d934e81f8f6853e7eab7c83fd2a1b76c9a"
+      },
+      "semantic": {
+        "checkpoint_sha256": "98be5dabb8a34496269aa4b8520d244994c28e8a79f9e499751c611a1ed5924f",
+        "tier": "observation",
+        "model_kind": "soft_joint",
+        "input_dimension": 64,
+        "multiplier": 1.0,
+        "identity_threshold": 0.5,
+        "force_Base": false,
+        "parts": [
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "321a66473670d6ee70e74ea848f7c3fa531d19663a6b68df8071196165e8f07d",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_86085afc3492855782ef73b4/step0512.npz",
+              "training_task": "em_behavior_86085afc3492855782ef73b4"
+            },
+            "slot": 0
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "a78f0a41108f4ac22013e868f59df3217fee04bebb4bfafcc9e2260e9ecfbb33",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_34f3a9eb03e0880208783ad8/step0256.npz",
+              "training_task": "em_behavior_34f3a9eb03e0880208783ad8"
+            },
+            "slot": 1
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "f44c989c4065f71edbe8c2f96c724e3c70fd3f0019f91011352e749fc18a87e7",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_d305e4eb8886a0ef9418a694/step0256.npz",
+              "training_task": "em_behavior_d305e4eb8886a0ef9418a694"
+            },
+            "slot": 2
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "4092d35e9c312585b7f218948ed80b66f7597e0a4302d61759b1257b757e7dac",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_1fc7b1ed96f8e89164edc43a/step0256.npz",
+              "training_task": "em_behavior_1fc7b1ed96f8e89164edc43a"
+            },
+            "slot": 3
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/additional_joint_policies/additional_joint_660453dc49771e87f6b1c2a0/POLICY.json",
+          "sha256": "3e2cf535c69fab81a6bae164773126d934e81f8f6853e7eab7c83fd2a1b76c9a"
+        }
+      ],
+      "aliases": [
+        "response_em1_K4_seed0/PDMS_observation"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_9a2c1232cb8f637b771d2cf0",
+      "kind": "batch2_policy_joint",
+      "definition": {
+        "policy_path": "additional_joint_policies/additional_joint_d4e00e58a8aa82adb7d9f2c4/POLICY.json",
+        "policy_sha256": "6e5fce1ac6845c395d50b555315fa1e0b1a1bf0f492a8b1270dc311acb1e0ea9"
+      },
+      "semantic": {
+        "checkpoint_sha256": "7ebd0f907b9e77195bcfb088ebef733f94efb2ce594dd55eb67a21f4b4bd6728",
+        "tier": "trajectory",
+        "model_kind": "soft_joint",
+        "input_dimension": 96,
+        "multiplier": 1.0,
+        "identity_threshold": 0.5,
+        "force_Base": false,
+        "parts": [
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "321a66473670d6ee70e74ea848f7c3fa531d19663a6b68df8071196165e8f07d",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_86085afc3492855782ef73b4/step0512.npz",
+              "training_task": "em_behavior_86085afc3492855782ef73b4"
+            },
+            "slot": 0
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "a78f0a41108f4ac22013e868f59df3217fee04bebb4bfafcc9e2260e9ecfbb33",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_34f3a9eb03e0880208783ad8/step0256.npz",
+              "training_task": "em_behavior_34f3a9eb03e0880208783ad8"
+            },
+            "slot": 1
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "f44c989c4065f71edbe8c2f96c724e3c70fd3f0019f91011352e749fc18a87e7",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_d305e4eb8886a0ef9418a694/step0256.npz",
+              "training_task": "em_behavior_d305e4eb8886a0ef9418a694"
+            },
+            "slot": 2
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "4092d35e9c312585b7f218948ed80b66f7597e0a4302d61759b1257b757e7dac",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_1fc7b1ed96f8e89164edc43a/step0256.npz",
+              "training_task": "em_behavior_1fc7b1ed96f8e89164edc43a"
+            },
+            "slot": 3
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/additional_joint_policies/additional_joint_d4e00e58a8aa82adb7d9f2c4/POLICY.json",
+          "sha256": "6e5fce1ac6845c395d50b555315fa1e0b1a1bf0f492a8b1270dc311acb1e0ea9"
+        }
+      ],
+      "aliases": [
+        "response_em1_K4_seed0/PDMS_trajectory"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_b4bb86a69662629ac2da864e",
+      "kind": "batch2_policy_joint",
+      "definition": {
+        "policy_path": "additional_joint_policies/additional_joint_7afbcf34a6ecb704394caeff/POLICY.json",
+        "policy_sha256": "2f3ddaa799a19b4f7ff7bd2cbae2b6e1c22add7893eba0898c148ebb8808d495"
+      },
+      "semantic": {
+        "checkpoint_sha256": "029fe3e66283aa9d882f630246a12925b4e8b9d8952ccd0a4921d623b1c5cea5",
+        "tier": "observation",
+        "model_kind": "hard_continuous",
+        "input_dimension": 64,
+        "multiplier": 0.5,
+        "identity_threshold": 0.5,
+        "force_Base": false,
+        "parts": [
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "321a66473670d6ee70e74ea848f7c3fa531d19663a6b68df8071196165e8f07d",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_86085afc3492855782ef73b4/step0512.npz",
+              "training_task": "em_behavior_86085afc3492855782ef73b4"
+            },
+            "slot": 0
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "a78f0a41108f4ac22013e868f59df3217fee04bebb4bfafcc9e2260e9ecfbb33",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_34f3a9eb03e0880208783ad8/step0256.npz",
+              "training_task": "em_behavior_34f3a9eb03e0880208783ad8"
+            },
+            "slot": 1
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "f44c989c4065f71edbe8c2f96c724e3c70fd3f0019f91011352e749fc18a87e7",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_d305e4eb8886a0ef9418a694/step0256.npz",
+              "training_task": "em_behavior_d305e4eb8886a0ef9418a694"
+            },
+            "slot": 2
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "4092d35e9c312585b7f218948ed80b66f7597e0a4302d61759b1257b757e7dac",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_1fc7b1ed96f8e89164edc43a/step0256.npz",
+              "training_task": "em_behavior_1fc7b1ed96f8e89164edc43a"
+            },
+            "slot": 3
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/additional_joint_policies/additional_joint_7afbcf34a6ecb704394caeff/POLICY.json",
+          "sha256": "2f3ddaa799a19b4f7ff7bd2cbae2b6e1c22add7893eba0898c148ebb8808d495"
+        }
+      ],
+      "aliases": [
+        "response_em1_K4_seed0/safety_observation"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_c1bcb713c0cfa5553958a1d6",
+      "kind": "batch2_policy_hard",
+      "definition": {
+        "policy_path": "routers/outcome_variant_hard_3ecb155dd53d784db6c8d3f1/POLICY.json",
+        "policy_sha256": "38a790205c339be80d23210a87bf5d0858f7b3625e52f4f4b97d9422971a5efe"
+      },
+      "semantic": {
+        "model_sha256": "57aac39f2d87bc0e7c2933e96ccef4a8f4427a24fb8ff6bf27d20a32bba0e2bf",
+        "tier": "denoising",
+        "feature_sha256": "89f6e6933854916e0b530288dcd6eaf4f51be42f70612339c2df85d18ed1fff5",
+        "risk_penalty": 0.0,
+        "threshold": 0.01,
+        "parts": [
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "321a66473670d6ee70e74ea848f7c3fa531d19663a6b68df8071196165e8f07d",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_86085afc3492855782ef73b4/step0512.npz",
+              "training_task": "em_behavior_86085afc3492855782ef73b4"
+            },
+            "slot": 0
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "a78f0a41108f4ac22013e868f59df3217fee04bebb4bfafcc9e2260e9ecfbb33",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_34f3a9eb03e0880208783ad8/step0256.npz",
+              "training_task": "em_behavior_34f3a9eb03e0880208783ad8"
+            },
+            "slot": 1
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "f44c989c4065f71edbe8c2f96c724e3c70fd3f0019f91011352e749fc18a87e7",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_d305e4eb8886a0ef9418a694/step0256.npz",
+              "training_task": "em_behavior_d305e4eb8886a0ef9418a694"
+            },
+            "slot": 2
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "4092d35e9c312585b7f218948ed80b66f7597e0a4302d61759b1257b757e7dac",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_1fc7b1ed96f8e89164edc43a/step0256.npz",
+              "training_task": "em_behavior_1fc7b1ed96f8e89164edc43a"
+            },
+            "slot": 3
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_variant_hard_3ecb155dd53d784db6c8d3f1/POLICY.json",
+          "sha256": "38a790205c339be80d23210a87bf5d0858f7b3625e52f4f4b97d9422971a5efe"
+        }
+      ],
+      "aliases": [
+        "response_em1_K4_seed0/safety_denoising"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_c4b429e4b073085170fd3209",
+      "kind": "batch2_policy_candidate",
+      "definition": {
+        "policy_path": "candidate_selectors/outcome_variant_selector_3ecb155dd53d784db6c8d3f1/POLICY.json",
+        "policy_sha256": "194a77e9c9849cfc2117ec6c34e23757853dba4910c169b911036fb690f68751"
+      },
+      "semantic": {
+        "model_sha256": "3624ee2d4c608a830e170212ed7df8e0c9e5abcdd1be913c051f2bdaf8389bce",
+        "tier": "denoising",
+        "feature_sha256": "89f6e6933854916e0b530288dcd6eaf4f51be42f70612339c2df85d18ed1fff5",
+        "risk_penalty": 0.1,
+        "threshold": 0.005,
+        "parts": [
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "321a66473670d6ee70e74ea848f7c3fa531d19663a6b68df8071196165e8f07d",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_86085afc3492855782ef73b4/step0512.npz",
+              "training_task": "em_behavior_86085afc3492855782ef73b4"
+            },
+            "slot": 0
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "a78f0a41108f4ac22013e868f59df3217fee04bebb4bfafcc9e2260e9ecfbb33",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_34f3a9eb03e0880208783ad8/step0256.npz",
+              "training_task": "em_behavior_34f3a9eb03e0880208783ad8"
+            },
+            "slot": 1
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "f44c989c4065f71edbe8c2f96c724e3c70fd3f0019f91011352e749fc18a87e7",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_d305e4eb8886a0ef9418a694/step0256.npz",
+              "training_task": "em_behavior_d305e4eb8886a0ef9418a694"
+            },
+            "slot": 2
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "4092d35e9c312585b7f218948ed80b66f7597e0a4302d61759b1257b757e7dac",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_1fc7b1ed96f8e89164edc43a/step0256.npz",
+              "training_task": "em_behavior_1fc7b1ed96f8e89164edc43a"
+            },
+            "slot": 3
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_variant_selector_3ecb155dd53d784db6c8d3f1/POLICY.json",
+          "sha256": "194a77e9c9849cfc2117ec6c34e23757853dba4910c169b911036fb690f68751"
+        }
+      ],
+      "aliases": [
+        "response_em1_K4_seed0/safety_denoising"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_cb2dd206153ab766872c9a80",
+      "kind": "batch2_policy_joint",
+      "definition": {
+        "policy_path": "additional_joint_policies/additional_joint_aea8813fd2955ab41fa96ab6/POLICY.json",
+        "policy_sha256": "2c04314a2de4ad94b3a1c465c0c39df266714cb4bf4b68f071a7daa9b260a702"
+      },
+      "semantic": {
+        "checkpoint_sha256": "850bba7d76983bc8cffe8ae2da8bfff42d287cca0f10f3de9c4d79af78a97ced",
+        "tier": "denoising",
+        "model_kind": "hard_continuous",
+        "input_dimension": 216,
+        "multiplier": 1.0,
+        "identity_threshold": 0.5,
+        "force_Base": false,
+        "parts": [
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "321a66473670d6ee70e74ea848f7c3fa531d19663a6b68df8071196165e8f07d",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_86085afc3492855782ef73b4/step0512.npz",
+              "training_task": "em_behavior_86085afc3492855782ef73b4"
+            },
+            "slot": 0
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "a78f0a41108f4ac22013e868f59df3217fee04bebb4bfafcc9e2260e9ecfbb33",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_34f3a9eb03e0880208783ad8/step0256.npz",
+              "training_task": "em_behavior_34f3a9eb03e0880208783ad8"
+            },
+            "slot": 1
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "f44c989c4065f71edbe8c2f96c724e3c70fd3f0019f91011352e749fc18a87e7",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_d305e4eb8886a0ef9418a694/step0256.npz",
+              "training_task": "em_behavior_d305e4eb8886a0ef9418a694"
+            },
+            "slot": 2
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "4092d35e9c312585b7f218948ed80b66f7597e0a4302d61759b1257b757e7dac",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_1fc7b1ed96f8e89164edc43a/step0256.npz",
+              "training_task": "em_behavior_1fc7b1ed96f8e89164edc43a"
+            },
+            "slot": 3
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/additional_joint_policies/additional_joint_aea8813fd2955ab41fa96ab6/POLICY.json",
+          "sha256": "2c04314a2de4ad94b3a1c465c0c39df266714cb4bf4b68f071a7daa9b260a702"
+        }
+      ],
+      "aliases": [
+        "response_em1_K4_seed0/safety_denoising"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_d49724fd9c0fc2dae620e3d3",
+      "kind": "batch2_policy_candidate",
+      "definition": {
+        "policy_path": "candidate_selectors/outcome_variant_selector_bd87ec41da3e4ed1dab29f04/POLICY.json",
+        "policy_sha256": "ed1abb07b82a302669b460bc63484768937a183f60cb10820928531eb5f1f9cb"
+      },
+      "semantic": {
+        "model_sha256": "98f801e02dcd79e164dc32b90a41770081301ab3eaa310f744057a271b63c236",
+        "tier": "trajectory",
+        "feature_sha256": "89f6e6933854916e0b530288dcd6eaf4f51be42f70612339c2df85d18ed1fff5",
+        "risk_penalty": 5.0,
+        "threshold": 0.01,
+        "parts": [
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "321a66473670d6ee70e74ea848f7c3fa531d19663a6b68df8071196165e8f07d",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_86085afc3492855782ef73b4/step0512.npz",
+              "training_task": "em_behavior_86085afc3492855782ef73b4"
+            },
+            "slot": 0
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "a78f0a41108f4ac22013e868f59df3217fee04bebb4bfafcc9e2260e9ecfbb33",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_34f3a9eb03e0880208783ad8/step0256.npz",
+              "training_task": "em_behavior_34f3a9eb03e0880208783ad8"
+            },
+            "slot": 1
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "f44c989c4065f71edbe8c2f96c724e3c70fd3f0019f91011352e749fc18a87e7",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_d305e4eb8886a0ef9418a694/step0256.npz",
+              "training_task": "em_behavior_d305e4eb8886a0ef9418a694"
+            },
+            "slot": 2
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "4092d35e9c312585b7f218948ed80b66f7597e0a4302d61759b1257b757e7dac",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_1fc7b1ed96f8e89164edc43a/step0256.npz",
+              "training_task": "em_behavior_1fc7b1ed96f8e89164edc43a"
+            },
+            "slot": 3
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_variant_selector_bd87ec41da3e4ed1dab29f04/POLICY.json",
+          "sha256": "ed1abb07b82a302669b460bc63484768937a183f60cb10820928531eb5f1f9cb"
+        }
+      ],
+      "aliases": [
+        "response_em1_K4_seed0/safety_trajectory"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_de23653974447c0b238434ae",
+      "kind": "batch2_policy_candidate",
+      "definition": {
+        "policy_path": "candidate_selectors/outcome_variant_selector_0edf02756d2ab948bb2747f6/POLICY.json",
+        "policy_sha256": "f64491f514e7dcb11c7c8b38db074ecbba7840f4a351ab0c472c490e68e76dd6"
+      },
+      "semantic": {
+        "model_sha256": "24ee3c00800c77daa2df32e2ee7d32c069b96fbbe228bf95bf3d5b416fb3ebc4",
+        "tier": "denoising",
+        "feature_sha256": "89f6e6933854916e0b530288dcd6eaf4f51be42f70612339c2df85d18ed1fff5",
+        "risk_penalty": 0.0,
+        "threshold": 0.01,
+        "parts": [
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "321a66473670d6ee70e74ea848f7c3fa531d19663a6b68df8071196165e8f07d",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_86085afc3492855782ef73b4/step0512.npz",
+              "training_task": "em_behavior_86085afc3492855782ef73b4"
+            },
+            "slot": 0
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "a78f0a41108f4ac22013e868f59df3217fee04bebb4bfafcc9e2260e9ecfbb33",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_34f3a9eb03e0880208783ad8/step0256.npz",
+              "training_task": "em_behavior_34f3a9eb03e0880208783ad8"
+            },
+            "slot": 1
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "f44c989c4065f71edbe8c2f96c724e3c70fd3f0019f91011352e749fc18a87e7",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_d305e4eb8886a0ef9418a694/step0256.npz",
+              "training_task": "em_behavior_d305e4eb8886a0ef9418a694"
+            },
+            "slot": 2
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "4092d35e9c312585b7f218948ed80b66f7597e0a4302d61759b1257b757e7dac",
+              "checkpoint_path": "learned_experts/native_v4_em_behavior_1fc7b1ed96f8e89164edc43a/step0256.npz",
+              "training_task": "em_behavior_1fc7b1ed96f8e89164edc43a"
+            },
+            "slot": 3
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_variant_selector_0edf02756d2ab948bb2747f6/POLICY.json",
+          "sha256": "f64491f514e7dcb11c7c8b38db074ecbba7840f4a351ab0c472c490e68e76dd6"
+        }
+      ],
+      "aliases": [
+        "response_em1_K4_seed0/PDMS_denoising"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_ea45d931f49d0578b05e2749",
+      "kind": "batch2_policy_hard",
+      "definition": {
+        "policy_path": "routers/outcome_router_ab36f346c7fa29a9e386800a/POLICY.json",
+        "policy_sha256": "3c1dcc6ce0613c4e5e4eb79e40112804b0c6bb0951a1cf1319782368e6fafc1e"
+      },
+      "semantic": {
+        "model_sha256": "d15720f24a9f188e9407b05bf8af3659bc822db0135b67aef6f0b1a790262c6d",
+        "tier": "observation",
+        "feature_sha256": "89f6e6933854916e0b530288dcd6eaf4f51be42f70612339c2df85d18ed1fff5",
+        "risk_penalty": 0.5,
+        "threshold": 0.05,
+        "parts": [
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "d0ee867314f4afb61ff26108906420ffbf1704d1fed425cce7680d2394136f96",
+              "checkpoint_path": "learned_experts/cached_v3_behavior_413fd83b742c15356405ad32/step0256.npz",
+              "training_task": "behavior_413fd83b742c15356405ad32"
+            },
+            "slot": 0
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "32ca52f5e5cea65917ae88ceb5a13ebce10dce976c873959e8334f1891ae8c78",
+              "checkpoint_path": "learned_experts/native_v4_behavior_f308b2f2b942b4a06a00e05e/step0768.npz",
+              "training_task": "behavior_f308b2f2b942b4a06a00e05e"
+            },
+            "slot": 1
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_post",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "e5151541d75cd5bbe1865fc2f345fd3120347ac6d78010b41b74c1526c91e964",
+              "checkpoint_path": "learned_experts/native_v4_behavior_51ba65a985cc8bb35da56811/step0512.npz",
+              "training_task": "behavior_51ba65a985cc8bb35da56811"
+            },
+            "slot": 2
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "81392a7f74648831161244ea871dc8483d3894dbf9635a142124280a19b2d36d",
+              "checkpoint_path": "learned_experts/native_v4_behavior_f37ecb0f57e2bb764437b965/step0768.npz",
+              "training_task": "behavior_f37ecb0f57e2bb764437b965"
+            },
+            "slot": 3
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_router_ab36f346c7fa29a9e386800a/POLICY.json",
+          "sha256": "3c1dcc6ce0613c4e5e4eb79e40112804b0c6bb0951a1cf1319782368e6fafc1e"
+        }
+      ],
+      "aliases": [
+        "response_K4_seed2/PDMS_observation"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_f50e9181489ea24b78950a38",
+      "kind": "batch2_policy_hard",
+      "definition": {
+        "policy_path": "routers/outcome_router_3828701bc688c10cec600666/POLICY.json",
+        "policy_sha256": "0b8ea6c2a9ac91be79e4e439a71bed5da51ebd7a9b85520dc2e24ba6e1f536a4"
+      },
+      "semantic": {
+        "model_sha256": "fe222b4d45a97758ed5a3295d20b8404a4373bdf87ac6cbd0bd0a096f3b793aa",
+        "tier": "observation",
+        "feature_sha256": "89f6e6933854916e0b530288dcd6eaf4f51be42f70612339c2df85d18ed1fff5",
+        "risk_penalty": 2.0,
+        "threshold": 0.0,
+        "parts": [
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "d0ee867314f4afb61ff26108906420ffbf1704d1fed425cce7680d2394136f96",
+              "checkpoint_path": "learned_experts/cached_v3_behavior_413fd83b742c15356405ad32/step0256.npz",
+              "training_task": "behavior_413fd83b742c15356405ad32"
+            },
+            "slot": 0
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_post",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "785cf093124710784892e53548813a7fb91a390ac00b3955a964aaf04dea683f",
+              "checkpoint_path": "learned_experts/native_v4_behavior_34f43d677630ab7311ccb193/step0128.npz",
+              "training_task": "behavior_34f43d677630ab7311ccb193"
+            },
+            "slot": 1
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_post",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "e5151541d75cd5bbe1865fc2f345fd3120347ac6d78010b41b74c1526c91e964",
+              "checkpoint_path": "learned_experts/native_v4_behavior_51ba65a985cc8bb35da56811/step0512.npz",
+              "training_task": "behavior_51ba65a985cc8bb35da56811"
+            },
+            "slot": 2
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "81392a7f74648831161244ea871dc8483d3894dbf9635a142124280a19b2d36d",
+              "checkpoint_path": "learned_experts/native_v4_behavior_f37ecb0f57e2bb764437b965/step0768.npz",
+              "training_task": "behavior_f37ecb0f57e2bb764437b965"
+            },
+            "slot": 3
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_router_3828701bc688c10cec600666/POLICY.json",
+          "sha256": "0b8ea6c2a9ac91be79e4e439a71bed5da51ebd7a9b85520dc2e24ba6e1f536a4"
+        }
+      ],
+      "aliases": [
+        "response_K4_seed2/safety_observation"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    }
+  ],
+  "runtime_admission": "/mnt/workspace/ReCogDrive/1021-representation_repair_batch3/provenance/FORMED_RUNTIME_MULTI_DEVICE_ADMISSION.json",
+  "runtime_admission_sha256": "08097e3e817d308dd5da821b2ab793e64d6684aa0375e7fc2a4e88a0a1819676",
+  "catalog_sha256": "d1e5cb4547c887f31a70a1b8648c76f8f9f775bf2e2ddd5143b96a877e99862d",
+  "schedule_sha256": "2ccf9528101708a408502f8b87f813b1c8b0fbdd3a2c93a304c669ce834b7d10",
+  "id": "formed_pack_fad8f996c7bf177fba52b227",
+  "full_evaluation_required_without_unresolved_prescreen": true
+}

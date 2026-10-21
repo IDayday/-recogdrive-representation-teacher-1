@@ -1,0 +1,2607 @@
+{
+  "candidate_scope": "formed",
+  "checkpoint_sha256": "23fb949b10387efeff87e093703d5faf41b61b9e5ead16d4076661e3c7c08a20",
+  "entries": [
+    {
+      "id": "formed_00bf5de3d3cc0ea8ab807c53",
+      "kind": "batch2_learned",
+      "definition": {
+        "kind": "learned",
+        "id": "behavior_arm_21c3e7955e7815f0760a",
+        "slot": 1,
+        "training_task": {
+          "id": "behavior_dbf42d3fe69858f9297fd3c0",
+          "system": "representation_K3_seed1",
+          "K": 3,
+          "expert": 1,
+          "responsibility_meta": "analysis/initial_groups/all/representation_K3_seed1.json",
+          "block": "interface_pre",
+          "group": "valid_mean",
+          "heldout_fold": -1,
+          "fit_seed": 2026101802,
+          "fit_path": "fullspace_references/all/interface_pre.npz",
+          "fit_sha256": "edd828cba1f2e17bf8658284c75100911a0cf09a2178c9d38e50cd70f0c44725",
+          "rank": 32,
+          "cap": 0.1,
+          "space_control": "full",
+          "steps": 768,
+          "checkpoints": [
+            256,
+            512,
+            768
+          ],
+          "learning_rate": 0.003,
+          "edit_penalty": 0.0001,
+          "retention_weight": 2.0,
+          "training_noise_indices": [
+            0,
+            1,
+            2
+          ]
+        },
+        "checkpoint": {
+          "step": 256,
+          "path": "learned_experts/behavior_dbf42d3fe69858f9297fd3c0/step0256.npz",
+          "sha256": "7160e2855e61abebc03c79e56c05ca2cc65bc86174bab42a36ae36142b255cb1"
+        },
+        "strength": 1.0
+      },
+      "semantic": {
+        "kind": "learned",
+        "block": "interface_pre",
+        "group": "valid_mean",
+        "cap": 0.1,
+        "strength": 1.0,
+        "checkpoint_sha256": "7160e2855e61abebc03c79e56c05ca2cc65bc86174bab42a36ae36142b255cb1"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/analysis/expert_library_selection/library_866a80f9558e4d117f65313b.json",
+          "sha256": "4985fae14cba3fedba2e2a0f09f056faf699ff0450dde244854c4b9569c8fb1d"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_router_4646d40e658b29c09a124fc0/POLICY.json",
+          "sha256": "6dc868b4b9afbfeb782d31f98ae7b31f4e2ac81e1125d4cd81769f0d517c369f"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_router_620dbea526eac0409426f690/POLICY.json",
+          "sha256": "87f8d7e668502e4714c444b5f75b524689a27353a1716cc4a98486edaf53db6e"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_router_cd7343b8b2d5c9406949b995/POLICY.json",
+          "sha256": "d180940acfbea0b61ade4db4e75da8ea46f0194c96773209176e0a8e9d1dd65b"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_router_cd8626813dfd7df82ae230cd/POLICY.json",
+          "sha256": "a7e4631eddadb8de7a4ec71e7e482ea08e0ff6300bde0951dfff278528226411"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_router_f7e49bc21ffdc91d8cb36e05/POLICY.json",
+          "sha256": "ff3329729753be9de2148d143a44bbc4d71e293353d6826171e7e3b066862e28"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_router_fd18b0f87348a9fff1171454/POLICY.json",
+          "sha256": "3b64cd153fa969a819d2e759b231e75880d02c778f0ad3ea5ddbefd15877a7c1"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_selector_4646d40e658b29c09a124fc0/POLICY.json",
+          "sha256": "17fa680ee5598d577bce4cafdf1991381c2285678da70b13f094283b801cbffd"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_selector_cd7343b8b2d5c9406949b995/POLICY.json",
+          "sha256": "32cccaf618274a99bde56c440aa5c8ac78deafecc4a661fc80fb56ae16074d40"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_selector_cd8626813dfd7df82ae230cd/POLICY.json",
+          "sha256": "b72f015100deedfc4793355da1152aea1aa19fbdc3499e50eae48b444031637a"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_selector_fd18b0f87348a9fff1171454/POLICY.json",
+          "sha256": "736f2f370d94c5662f91489dd989db8454ba5c2454f6086292f8d953458a3a89"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/joint_policies/joint_router_05aea587cabd7594480c1070/POLICY.json",
+          "sha256": "bf407289289f0a103053070903d63ce3af6f62080ca9e1e8c8c2574f08c14051"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/joint_policies/joint_router_08e0dba3b21820f50f9ad0ad/POLICY.json",
+          "sha256": "82fe212cba739312db430ecb90b7a0cbfe103683c6c41c793d6460426964f2ad"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/joint_policies/joint_router_0b6d7abdd328ed638dfcf695/POLICY.json",
+          "sha256": "098b13165b09c1355979e597e34f77a7860e643fc5ef9f0c04eace36dea79ea1"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/joint_policies/joint_router_11c281d54721ba5eb7a24b06/POLICY.json",
+          "sha256": "93ec3babdaa52d86bd135a40d273088b6b852a5fc5b40cad9239f1df8528d4fc"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/joint_policies/joint_router_2702662dd776567d9a070bf4/POLICY.json",
+          "sha256": "59383fbf7c6abbc7ada1f51a3c43487fd2c7fc287e86645d4730bf9fbce9a69a"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/joint_policies/joint_router_59e1d6a9703c641d2a84a8bb/POLICY.json",
+          "sha256": "2e4ded85b8c3235c553069698888808bbb058717c372381e2f8e2912873c6d75"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/joint_policies/joint_router_62853cd54bf816aa73df8bc4/POLICY.json",
+          "sha256": "e91f22e4a5d370377fcd6777f6cee41e4e7cbc1c54a3d4137e944f487fa7f8b8"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/joint_policies/joint_router_6cf6d172b75ca1a931c50709/POLICY.json",
+          "sha256": "7a2c4798d534d3b494377af1802e4f00199051b037d8e0b16f1c3e79dc0213fd"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/joint_policies/joint_router_d457021875544a69b28eb5cb/POLICY.json",
+          "sha256": "cf974e0dcc3a245c661fae185b63dba9cdf713b56a766588a3e8cf4bd27b18d2"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/joint_policies/joint_router_dfc56c155e9f915da04c4dd8/POLICY.json",
+          "sha256": "b01d7e6e045caf57e33518fb4333741f8c59e49338e00af295033d7332f08dd4"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/joint_policies/joint_router_e998f2fefd59d2edae10f29f/POLICY.json",
+          "sha256": "64c70b1a74755e5317355e359df5d306d12264474b484c1fd730a39956b7dd8e"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/joint_policies/joint_router_edbf55d616e8d27f53189bdd/POLICY.json",
+          "sha256": "5a9649aa6caa3bd17848a3c041cf102a95df88836e63acc5f0d6e4995c813c4b"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/token_policies/token_cal_41f438802f7ea0ce01b9f07e/POLICY.json",
+          "sha256": "449a4ffa556c726717abb6f63b1e616d1fe8d15fcec864c15f482d17b891c7b0"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/token_policies/token_cal_f86ec6f77607b7c5a89323dc/POLICY.json",
+          "sha256": "8d0fabd626ebe243207648a1641336574b9698da3d9da1a94eb3e8452dfb6f6f"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/token_policies/uniform_cal_23af98106d90a50e096deaa3/POLICY.json",
+          "sha256": "0fb543f6b3c0338e1add10a64405929a574b94f10010acf1fa10c24836daa23f"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/token_policies/uniform_cal_7523c93842e2fa3d318986e8/POLICY.json",
+          "sha256": "de85c715cc596f544f4c563824fd27d8ecea6cb29bff435cea0de05fb1a7e159"
+        }
+      ],
+      "aliases": [
+        "behavior_arm_21c3e7955e7815f0760a"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_00ae770e839d2cd7c84a4ecd",
+      "kind": "batch2_delta",
+      "definition": {
+        "id": "causal_arm_ff0da304e2f7bc0b9952a8f0",
+        "kind": "delta",
+        "fit": {
+          "status": "FIT_NOT_BEHAVIOR_EVALUATED",
+          "time": "2026-10-17T23:20:19.822301+00:00",
+          "id": "delta_fc4b2ae7983243194947583c",
+          "path": "delta_experts/delta_fc/delta_fc4b2ae7983243194947583c.npz",
+          "sha256": "faa4e5c4c428d8521f20fd9f4ac2ad2721f035e01adcc8dcbd9a88011f811ec0",
+          "block": "interface_pre",
+          "group": "valid_mean",
+          "cap": 0.1,
+          "input_rank": 1536,
+          "output_rank": 128,
+          "ridge": 0.01,
+          "fit_seed": 2026101802,
+          "heldout_fold": -1,
+          "system": "correction_K2_seed1",
+          "K": 2,
+          "expert": 0,
+          "responsibility_meta": "analysis/outcome_groups/all/correction_K2_seed1.json",
+          "source": "outcome_causal_fit_4c9a0a5c0c96507a90ee8e4d",
+          "target": "Actually effective per-case hidden delta; zero retention targets",
+          "normalized_training_error": 0.6803702146868469,
+          "causal_output_space_rank": 1536,
+          "teacher_improved_cases": 1817,
+          "effective_cases": 1760.9066626086696,
+          "retained_successes": 1024,
+          "retained_intermediate": 256,
+          "safety_targets": false,
+          "deployment_uses_GT_or_PDMS": false
+        },
+        "strength": 1.0,
+        "slot": 0
+      },
+      "semantic": {
+        "kind": "delta",
+        "block": "interface_pre",
+        "group": "valid_mean",
+        "cap": 0.1,
+        "strength": 1.0,
+        "fit_sha256": "faa4e5c4c428d8521f20fd9f4ac2ad2721f035e01adcc8dcbd9a88011f811ec0"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/analysis/unified_bc_library_selection/unified_bc_fb7891f83f5467ae875a8dd2.json",
+          "sha256": "dce9f6d96bcc5c551b75bb9011fe77226f2943e89451fce0ae9de80c9d229cfe"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/analysis/unified_bcs_library_selection/unified_bcs_fb7891f83f5467ae875a8dd2.json",
+          "sha256": "5d8047c02618324435ff09069ef49de968bd2cbd191cdd0e4776afa7b9a86e4d"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/analysis/causal_library_selection/causal_library_fb7891f83f5467ae875a8dd2.json",
+          "sha256": "bfa935f963a0b1f4a4a86a5706b78d4eae0a25af4f9de7e1e815a6bc1d0788f8"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_additional_hard_0824584e9fb2da4c0216fa4e/POLICY.json",
+          "sha256": "5a86386a4bed92c451fe21d8e623a602a5953f2cabbcf2ce8e1c6b3e4fb30595"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_additional_hard_0a7c49e978c0b8bfb1ffc660/POLICY.json",
+          "sha256": "8726d5333ee161289107400ebec69b69ec59bdb89fb9679472c1fbc2cc07eee5"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_additional_hard_17f4964415c72ce50075d401/POLICY.json",
+          "sha256": "e94e0f796eeb17aa090213c0fb0ef2ac1028ac19a3783670c68f5b6b1f273c88"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_additional_hard_2ed40c38e08be6eb262a975b/POLICY.json",
+          "sha256": "10ec6a25aba4c8e343e780352a5af7de58d44d110a63a4743c051d1e3f37020b"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_additional_hard_44bae1074f333f1d21e0feec/POLICY.json",
+          "sha256": "c8ba1679679ecc953ed4689ab8660a762205cf1a07b946353945705bf3011ce3"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_additional_hard_76d2183892d38f3af8cf34da/POLICY.json",
+          "sha256": "626f5b8628d53db1bd97e1a72faa6433a289383fe1c0a01353ee7f005eeb9fac"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_additional_hard_7892716ecda744d175fcb754/POLICY.json",
+          "sha256": "610e4e35b5cea4fba964ab88ecca042b36a0f2c476365f82cdf3697009ae558c"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_additional_hard_a8ea622ede85d9337c2ecddc/POLICY.json",
+          "sha256": "59d11bf8ff9b102de0e3ab3ba050661b6936efa18e91e8154976ccaec6d87015"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_additional_hard_c84e92f7fabb7ff533f0c5ed/POLICY.json",
+          "sha256": "d1d2eb2335ae9e7eb6f8359788ad51505562317d95205444b72fb8f83b88e427"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_additional_hard_dbc49b4b9dceed1cb18a3f89/POLICY.json",
+          "sha256": "b4f4c8a235e0cc37a18b69e4e4e3bb91b10ad95a36a62311040e514a4f01399d"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_additional_hard_df3946fdd3c9bcef09663977/POLICY.json",
+          "sha256": "b35be8f1a59dd9a9dd25aa1c02e7c333be82d4b137d51594c4cbb20e01db6971"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_additional_hard_f962b80506d5d3cd90e7399e/POLICY.json",
+          "sha256": "bf1d2a4a6b48e97eda01aecca3e26c01ac9eefca5da516d619f837abfa635370"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_causal_hard_0c04496598e2997c53fe1e37/POLICY.json",
+          "sha256": "c553569ab70bcf27dd00159c42f7ca8f7a54ff5a0c58e1385e68cf656350a46f"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_causal_hard_17c04fd8a983aa93ce83267e/POLICY.json",
+          "sha256": "23001f4a67455efeb1313f4f9d558aac012a6db79620147a9fac7552441885f1"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_causal_hard_a4a916bf7e57dc0d42ec8122/POLICY.json",
+          "sha256": "366d691b92a27c97f77170900032db63c5df9db7c77a815d5e190333a16f364a"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_causal_hard_e140e1c459d788e25aecbbcf/POLICY.json",
+          "sha256": "ea5ab37f4af110ee7beced31bc1da43cb234ab31a55aa8b008044ae4ee58c5c8"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_causal_hard_f014ff0be2fa9246ad391362/POLICY.json",
+          "sha256": "1618f50323594881435966c6df5c9caaa7286ddc2ac51e6cd2db1603cac5c481"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_causal_hard_f8f41fa0c1579ebc10efcad5/POLICY.json",
+          "sha256": "2e81cbc44f3f1b6aa7a74059c542f1002fde43637857baa4a3f4a5e76c722f8f"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_additional_selector_17f4964415c72ce50075d401/POLICY.json",
+          "sha256": "4de40587a39304662888ecd6b0de1cd83a53a254b5ce7b8bf181d64e75b2e595"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_additional_selector_2ed40c38e08be6eb262a975b/POLICY.json",
+          "sha256": "0b6e4e2cb506c1b3540e5296787790504e314d321c484a1dab1b2ddb76c9e0fa"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_additional_selector_44bae1074f333f1d21e0feec/POLICY.json",
+          "sha256": "03bcbbfb89ad08071c73cf3d86d618a9af1f54afebc88663d9d14a7f92d3b918"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_additional_selector_7892716ecda744d175fcb754/POLICY.json",
+          "sha256": "7164569e4ac1a2aa9d82e2d69f2f38832a6563e131bf8cf71422264eb4d060e5"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_additional_selector_a8ea622ede85d9337c2ecddc/POLICY.json",
+          "sha256": "2be2aa51aee82bd2229bf69600a949dbeba152b907e81e6fa995f5135087cf87"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_additional_selector_c84e92f7fabb7ff533f0c5ed/POLICY.json",
+          "sha256": "13b625a20283f4a0396dfe8a02c7bcbabbb2f901eb730870f0d50eff085f2e6d"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_additional_selector_df3946fdd3c9bcef09663977/POLICY.json",
+          "sha256": "959440263037c302e51bf4fd413da313c589529c78bd14a7a381260adeb1f21b"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_additional_selector_f962b80506d5d3cd90e7399e/POLICY.json",
+          "sha256": "7dc4d99ccc73044831c99739d6678d8c8dfa1317f05aa3c073d6c85e9b2d7524"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_causal_selector_17c04fd8a983aa93ce83267e/POLICY.json",
+          "sha256": "f627024ca24212d055a884632bff09dcdd06940a7c1320466da1abb8da6a29f7"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_causal_selector_a4a916bf7e57dc0d42ec8122/POLICY.json",
+          "sha256": "89f7b628dc7e0a9b916125329e2bcee0f2c23dddf9200887da357b0c9d133fae"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_causal_selector_f014ff0be2fa9246ad391362/POLICY.json",
+          "sha256": "2030a7f571cf1b5e0943858689fad6393159bbafa66f8b964bca62bed44d98ba"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_causal_selector_f8f41fa0c1579ebc10efcad5/POLICY.json",
+          "sha256": "a55b48e1540ed6d5accd75caee457c5e3a3637dc1a0f01beb99dd579e94b7b10"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/token_policies/token_cal_5f62de2ed40485600f04c4de/POLICY.json",
+          "sha256": "d444ab2ef06f8388942db206733a8c594c5e192be553841f13709da2c9d24da7"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/token_policies/token_cal_9994e3af4233d1385724b2ac/POLICY.json",
+          "sha256": "bff1402310c87628d7db41255b12673ad7a8e1a2d6d311c15d9e0c738e1a9b1f"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/token_policies/token_cal_affc0b6d2184c41a6caf6298/POLICY.json",
+          "sha256": "15a9772919b0c887085be67a941753ba6cfc9102986a2526fb949f90c8e8e5e0"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/token_policies/token_cal_b34fc55506cc17819333a4ac/POLICY.json",
+          "sha256": "ed2fe300da24afdf0771e104c7505389145f85c5456a8c60c8b8a2710a1aeae0"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/token_policies/token_cal_c300df8049a40ade9b18952d/POLICY.json",
+          "sha256": "ef60d6db37150baf21510302a09a822fbc8d07d86b2dae847f81362578b32489"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/token_policies/token_cal_cb1ae65d0c215a889375f177/POLICY.json",
+          "sha256": "2173bd61961191d64708526638bef9b80dd58b9ba6b7aac78cfc0c97c5bc2f0d"
+        }
+      ],
+      "aliases": [
+        "causal_arm_ff0da304e2f7bc0b9952a8f0"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_035a3d59e5f64bd69717b427",
+      "kind": "batch2_analytic",
+      "definition": {
+        "id": "spatial_part_500ba7f8dc21f3fdaa84a33a",
+        "kind": "analytic",
+        "arm": {
+          "id": "probe_b683aad03a83955a3bd76e",
+          "block": "bridge_pre",
+          "group": "grid_10",
+          "method": "ot",
+          "alpha": 1.0,
+          "cap": 0.1,
+          "gate": "none",
+          "fit_path": "fits/6c/6c85876728de89d723f08ba8.npz",
+          "fit_sha256": "4de3e6de6e3443b073842f372e6bc3dfc0fcfc664016009f563d8dc5f3232ae1"
+        },
+        "slot": 0
+      },
+      "semantic": {
+        "kind": "analytic",
+        "arm": {
+          "block": "bridge_pre",
+          "group": "grid_10",
+          "method": "ot",
+          "alpha": 1.0,
+          "cap": 0.1,
+          "gate": "none",
+          "fit_sha256": "4de3e6de6e3443b073842f372e6bc3dfc0fcfc664016009f563d8dc5f3232ae1"
+        }
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/analysis/spatial_library_selection/spatial_library_2be32e97796731c764626c59.json",
+          "sha256": "bc0f10caad9d73671e23b991417ff3adda47430bead46f7acb8740be7456a470"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_additional_hard_51603d1ad2a2354d8575d916/POLICY.json",
+          "sha256": "149fe14868e948e294eeb9b26f1b305c9dca865f76c1cb02f0b0de5bfe3f02bd"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_additional_hard_74632ceff5ed22037890ecd1/POLICY.json",
+          "sha256": "1f020911a4cba71d4628d731922391100b4854aff5ab952c10f82f6e77a9da76"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_additional_hard_c86301933697547eb024148b/POLICY.json",
+          "sha256": "b683f02001b72e82c612b0ccd9bc81759416d7c402dd474a2205a453e6b59230"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_additional_hard_d339a135be5148fab5d50097/POLICY.json",
+          "sha256": "bb0d8b3b198a897126a27d6d487f4431e15b7ddbdebaa1fc9096533a67579f56"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_additional_hard_ddf9b44f82a44758ade85cc3/POLICY.json",
+          "sha256": "3d92a673fc241b7ef85e2b469208d9895fe7a33acea7216d264c76ef0ad76998"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_additional_hard_f2ac64bf921873350471d1a0/POLICY.json",
+          "sha256": "09433cac156027ed76ab195a25ccf3d0d6e9c078e270ae82521cdb57beca56ef"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_additional_selector_51603d1ad2a2354d8575d916/POLICY.json",
+          "sha256": "c102fb3617592d3df88c9b3925286d8b5240522072c875888336200efcb978c8"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_additional_selector_74632ceff5ed22037890ecd1/POLICY.json",
+          "sha256": "0136ae1fae8f0d0e399702ff7e36d6a59ff8104016331d505dc47f18789677fb"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_additional_selector_c86301933697547eb024148b/POLICY.json",
+          "sha256": "4a3e5d9d84821242a333f991f2aca21de69f3dd133a14ff332cb0c79fa9ca7ff"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_additional_selector_f2ac64bf921873350471d1a0/POLICY.json",
+          "sha256": "f992e1d6aa587bd28f624435b2cad610bb84db494ee79bae0a7333e29b8576a9"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/token_policies/token_cal_12feabe65d3b1669819e78a9/POLICY.json",
+          "sha256": "de4f72628ad30df47b7a07320c4009858cbc880b505c1f77f967d19b670f2608"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/token_policies/token_cal_4fc6c434b126e7852e04875d/POLICY.json",
+          "sha256": "91be3268ca4a785ecbed9157c3e61db08c70ff2db9c47d1ec58b6bb2619ff52b"
+        }
+      ],
+      "aliases": [
+        "spatial_part_500ba7f8dc21f3fdaa84a33a"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_11b38af8ecbb2d9f260fd46d",
+      "kind": "batch1_upstream",
+      "definition": {
+        "root": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis",
+        "arm": {
+          "fit_path": "vlm_repair_v1/global_funnel/gates/vr_2cce3fe5fd7c120c0f.npz",
+          "fit_sha256": "fc1585b2b9a1b6454a017759ceee9853d5717136d6b654c1e55f6cf1d9a43bf8",
+          "fit_id": "f16be6b7319e6d75c071",
+          "block": "vision_23",
+          "group": "patch_mean",
+          "method": "support_projection",
+          "alpha": 1.0,
+          "cap": 0.1,
+          "gate": "none",
+          "config": {
+            "kind": "basis_residual",
+            "ks": 128,
+            "kf": 128,
+            "r": 128,
+            "equal": true
+          },
+          "centering": "pooled_centered",
+          "r": 128,
+          "parent": "vr_2cce3fe5fd7c120c0f",
+          "ungated_parent": "vr_a76ed505b44077a0d9",
+          "oracle_diagnostic": true,
+          "id": "vlm_ungated_4c52f51db2e01a1acc"
+        }
+      },
+      "semantic": {
+        "fit_sha256": "fc1585b2b9a1b6454a017759ceee9853d5717136d6b654c1e55f6cf1d9a43bf8",
+        "block": "vision_23",
+        "group": "patch_mean",
+        "method": "support_projection",
+        "alpha": 1.0,
+        "cap": 0.1,
+        "gate": "none",
+        "config": {
+          "kind": "basis_residual",
+          "ks": 128,
+          "kf": 128,
+          "r": 128,
+          "equal": true
+        },
+        "centering": "pooled_centered",
+        "r": 128
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/vlm_ungated_primary__failure_gated.json",
+          "sha256": "2f96fd9a62eb5ec219de3e2f81c1704460a26a5d13902c6dbb19678a1e63da89"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/vlm_ungated_observation_qda__failure_gated.json",
+          "sha256": "079734eea1f739c6dd6877329f404a6d98dcbb09790f45a165e9307420ae0108"
+        }
+      ],
+      "aliases": [
+        "vlm_ungated_4c52f51db2e01a1acc",
+        "ungated_3473150436c5dc27"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_6b6ae03efe447ac5e4dbc039",
+      "kind": "batch1_upstream",
+      "definition": {
+        "root": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis",
+        "arm": {
+          "fit_path": "vlm_repair_v1/global_funnel/gates/vr_2cce3fe5fd7c120c0f.npz",
+          "fit_sha256": "fc1585b2b9a1b6454a017759ceee9853d5717136d6b654c1e55f6cf1d9a43bf8",
+          "fit_id": "f16be6b7319e6d75c071",
+          "block": "vision_23",
+          "group": "patch_mean",
+          "method": "support_projection",
+          "alpha": 1.0,
+          "cap": 0.1,
+          "gate": "external_observation_qda_hard",
+          "config": {
+            "kind": "basis_residual",
+            "ks": 128,
+            "kf": 128,
+            "r": 128,
+            "equal": true
+          },
+          "centering": "pooled_centered",
+          "r": 128,
+          "parent": "vr_2cce3fe5fd7c120c0f",
+          "id": "obs_qda_f9869f96a93bc8c62c85",
+          "ungated_parent": "vr_a76ed505b44077a0d9",
+          "observation_gate": {
+            "fit": {
+              "status": "PASS",
+              "time": "2026-10-17T04:38:01.318124+00:00",
+              "id": "4eb07dba5c2c5fe591b7",
+              "cell": "bridge_3__thumbnail_mean",
+              "block": "bridge_3",
+              "group": "thumbnail_mean",
+              "config": {
+                "kind": "success_pca",
+                "r": 64,
+                "ks": null,
+                "kf": null,
+                "equal": null,
+                "replicate": null
+              },
+              "centering": "pooled_centered",
+              "path": "vlm_repair_v1/fits/4eb07dba5c2c5fe591b7.npz",
+              "sha256": "c4666002d00a2645c6a8e0ee5d79cb99139768b86d90200319b663956780b175",
+              "spec": {
+                "cell": "bridge_3__thumbnail_mean",
+                "block": "bridge_3",
+                "group": "thumbnail_mean",
+                "config": {
+                  "kind": "success_pca",
+                  "r": 64,
+                  "ks": null,
+                  "kf": null,
+                  "equal": null,
+                  "replicate": null
+                },
+                "centering": "pooled_centered",
+                "metrics": {
+                  "auc": 0.7378640994510135,
+                  "weighted_ap": 0.0587403828591065,
+                  "standardized_gap": 0.8216680427782924,
+                  "gap_training_units": 8.674447413306863,
+                  "session_positive_fraction": 0.8583333333333333,
+                  "session_macro_gap": 3.6023532334754558,
+                  "session_p": 3.0251617516112974e-15,
+                  "sessions_with_both": 120.0,
+                  "class_prevalence": 0.024104234527687295
+                },
+                "auc_fold_min": 0.7039309346567393,
+                "auc_fold_std": 0.03147002814597037,
+                "other_sampling_seeds": [
+                  {
+                    "seed_index": 1,
+                    "metrics": {
+                      "auc": 0.7411279254732759,
+                      "weighted_ap": 0.05958573452172804,
+                      "standardized_gap": 0.833760217163581,
+                      "gap_training_units": 8.813325262524366,
+                      "session_positive_fraction": 0.8487394957983193,
+                      "session_macro_gap": 3.703688406750287,
+                      "session_p": 1.3740888207732859e-14,
+                      "sessions_with_both": 119.0,
+                      "class_prevalence": 0.023720878189065354
+                    }
+                  },
+                  {
+                    "seed_index": 2,
+                    "metrics": {
+                      "auc": 0.7484959342234667,
+                      "weighted_ap": 0.062133115528820435,
+                      "standardized_gap": 0.8631730139202901,
+                      "gap_training_units": 9.057913493901747,
+                      "session_positive_fraction": 0.8487394957983193,
+                      "session_macro_gap": 3.663326058074215,
+                      "session_p": 1.955210573879093e-12,
+                      "sessions_with_both": 119.0,
+                      "class_prevalence": 0.024026681281868228
+                    }
+                  }
+                ],
+                "source_result_sha256": "6e990da0c5ae74c8373318cb23c1281365a31e4d21bbdfdbb6b2b5516046736c",
+                "moment": {
+                  "path": "vlm_repair_v1/rapid/moments/bridge_3__thumbnail_mean.npz",
+                  "sha256": "3bf3b8a65e59e15f8502f2d76c4f5b08ac2c812c135547461a113a467754baa4"
+                },
+                "cell_proof_path": "vlm_repair_v1/cells/bridge_3__thumbnail_mean.json",
+                "analysis_source": "cached_quadratic_cv",
+                "stable_cv_region": true,
+                "neighbor_supported": 2,
+                "neighbor_auc": [
+                  0.7462369351773649,
+                  0.750441234691723
+                ],
+                "selection_readout": "fixed_5_percent_shrink_QDA",
+                "existing_qda_confirmation_id": "qda_control_e83a2218ff628279293c",
+                "late_group": "qda_bridge_r64"
+              },
+              "source_sha256": "34597bab3e4a07503205c24d4c68bd38b63e95d042c4be7ad4bcb8c022332d4f",
+              "cell_proof_path": "vlm_repair_v1/cells/bridge_3__thumbnail_mean.json",
+              "r": 64,
+              "full_dim": 1536,
+              "native_source": "full valid exploration only",
+              "class_sizes": [
+                74900,
+                1850
+              ],
+              "continuous_quality_cases": 85813,
+              "quality_preconditioner": "full projected covariance",
+              "haar_applicable": true,
+              "full_covariance_ot": true,
+              "cutoff_degenerate": false
+            },
+            "quantile": 0.95,
+            "threshold": 6.397722146829359,
+            "missing": "retain_base",
+            "id": "qda_risk_821bd9c49e68872da88a",
+            "column": 0
+          },
+          "underlying_arm_id": "ungated_3473150436c5dc27",
+          "policy_definition": "Use the complete fixed ungated-parent trajectory if the natural-observation risk exceeds the frozen exploration-high quantile; otherwise use the exact frozen Base. No PDMS/GT at runtime."
+        }
+      },
+      "semantic": {
+        "fit_sha256": "fc1585b2b9a1b6454a017759ceee9853d5717136d6b654c1e55f6cf1d9a43bf8",
+        "block": "vision_23",
+        "group": "patch_mean",
+        "method": "support_projection",
+        "alpha": 1.0,
+        "cap": 0.1,
+        "gate": "external_observation_qda_hard",
+        "config": {
+          "kind": "basis_residual",
+          "ks": 128,
+          "kf": 128,
+          "r": 128,
+          "equal": true
+        },
+        "centering": "pooled_centered",
+        "r": 128,
+        "observation_gate": {
+          "fit": {
+            "status": "PASS",
+            "time": "2026-10-17T04:38:01.318124+00:00",
+            "id": "4eb07dba5c2c5fe591b7",
+            "cell": "bridge_3__thumbnail_mean",
+            "block": "bridge_3",
+            "group": "thumbnail_mean",
+            "config": {
+              "kind": "success_pca",
+              "r": 64,
+              "ks": null,
+              "kf": null,
+              "equal": null,
+              "replicate": null
+            },
+            "centering": "pooled_centered",
+            "path": "vlm_repair_v1/fits/4eb07dba5c2c5fe591b7.npz",
+            "sha256": "c4666002d00a2645c6a8e0ee5d79cb99139768b86d90200319b663956780b175",
+            "spec": {
+              "cell": "bridge_3__thumbnail_mean",
+              "block": "bridge_3",
+              "group": "thumbnail_mean",
+              "config": {
+                "kind": "success_pca",
+                "r": 64,
+                "ks": null,
+                "kf": null,
+                "equal": null,
+                "replicate": null
+              },
+              "centering": "pooled_centered",
+              "metrics": {
+                "auc": 0.7378640994510135,
+                "weighted_ap": 0.0587403828591065,
+                "standardized_gap": 0.8216680427782924,
+                "gap_training_units": 8.674447413306863,
+                "session_positive_fraction": 0.8583333333333333,
+                "session_macro_gap": 3.6023532334754558,
+                "session_p": 3.0251617516112974e-15,
+                "sessions_with_both": 120.0,
+                "class_prevalence": 0.024104234527687295
+              },
+              "auc_fold_min": 0.7039309346567393,
+              "auc_fold_std": 0.03147002814597037,
+              "other_sampling_seeds": [
+                {
+                  "seed_index": 1,
+                  "metrics": {
+                    "auc": 0.7411279254732759,
+                    "weighted_ap": 0.05958573452172804,
+                    "standardized_gap": 0.833760217163581,
+                    "gap_training_units": 8.813325262524366,
+                    "session_positive_fraction": 0.8487394957983193,
+                    "session_macro_gap": 3.703688406750287,
+                    "session_p": 1.3740888207732859e-14,
+                    "sessions_with_both": 119.0,
+                    "class_prevalence": 0.023720878189065354
+                  }
+                },
+                {
+                  "seed_index": 2,
+                  "metrics": {
+                    "auc": 0.7484959342234667,
+                    "weighted_ap": 0.062133115528820435,
+                    "standardized_gap": 0.8631730139202901,
+                    "gap_training_units": 9.057913493901747,
+                    "session_positive_fraction": 0.8487394957983193,
+                    "session_macro_gap": 3.663326058074215,
+                    "session_p": 1.955210573879093e-12,
+                    "sessions_with_both": 119.0,
+                    "class_prevalence": 0.024026681281868228
+                  }
+                }
+              ],
+              "source_result_sha256": "6e990da0c5ae74c8373318cb23c1281365a31e4d21bbdfdbb6b2b5516046736c",
+              "moment": {
+                "path": "vlm_repair_v1/rapid/moments/bridge_3__thumbnail_mean.npz",
+                "sha256": "3bf3b8a65e59e15f8502f2d76c4f5b08ac2c812c135547461a113a467754baa4"
+              },
+              "cell_proof_path": "vlm_repair_v1/cells/bridge_3__thumbnail_mean.json",
+              "analysis_source": "cached_quadratic_cv",
+              "stable_cv_region": true,
+              "neighbor_supported": 2,
+              "neighbor_auc": [
+                0.7462369351773649,
+                0.750441234691723
+              ],
+              "selection_readout": "fixed_5_percent_shrink_QDA",
+              "existing_qda_confirmation_id": "qda_control_e83a2218ff628279293c",
+              "late_group": "qda_bridge_r64"
+            },
+            "source_sha256": "34597bab3e4a07503205c24d4c68bd38b63e95d042c4be7ad4bcb8c022332d4f",
+            "cell_proof_path": "vlm_repair_v1/cells/bridge_3__thumbnail_mean.json",
+            "r": 64,
+            "full_dim": 1536,
+            "native_source": "full valid exploration only",
+            "class_sizes": [
+              74900,
+              1850
+            ],
+            "continuous_quality_cases": 85813,
+            "quality_preconditioner": "full projected covariance",
+            "haar_applicable": true,
+            "full_covariance_ot": true,
+            "cutoff_degenerate": false
+          },
+          "quantile": 0.95,
+          "threshold": 6.397722146829359,
+          "missing": "retain_base",
+          "id": "qda_risk_821bd9c49e68872da88a",
+          "column": 0
+        },
+        "underlying_arm_id": "ungated_3473150436c5dc27",
+        "policy_definition": "Use the complete fixed ungated-parent trajectory if the natural-observation risk exceeds the frozen exploration-high quantile; otherwise use the exact frozen Base. No PDMS/GT at runtime."
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/vlm_repair_v1__final_test_obs_qda_gate.json",
+          "sha256": "e5f61a0c339310f2ed67b375b5c93953432e899526e3d48ad41eb7d6478d56c2"
+        }
+      ],
+      "aliases": [
+        "obs_qda_f9869f96a93bc8c62c85"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_008f140377aef2c04238cb47",
+      "kind": "batch1_action_or_postprocess",
+      "definition": {
+        "root": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis",
+        "arm": {
+          "fit": "r1_pooled_centered_unequal_region0__time4",
+          "candidate": "r1_pooled_centered_unequal_region0",
+          "route": "r1",
+          "step": 4,
+          "layer": 16,
+          "token": 6,
+          "r": 24,
+          "space": "candidate",
+          "method": "mean",
+          "alpha": 0.5,
+          "calibration": "n",
+          "gate": "none",
+          "cap": 0.05,
+          "mechanism": "target_time_calibration",
+          "timing_type": "late_transfer",
+          "control": true,
+          "control_kind": "haar_rotation",
+          "alternative_basis": "r1_pooled_centered_unequal_region0__haar2",
+          "id": "cr_26b18311905ae224",
+          "parent": "cr_774b7ee8eef1ab62"
+        }
+      },
+      "semantic": {
+        "fit": "r1_pooled_centered_unequal_region0__time4",
+        "candidate": "r1_pooled_centered_unequal_region0",
+        "route": "r1",
+        "step": 4,
+        "layer": 16,
+        "token": 6,
+        "r": 24,
+        "space": "candidate",
+        "method": "mean",
+        "alpha": 0.5,
+        "calibration": "n",
+        "gate": "none",
+        "cap": 0.05,
+        "mechanism": "target_time_calibration",
+        "timing_type": "late_transfer",
+        "control": true,
+        "control_kind": "haar_rotation",
+        "alternative_basis": "r1_pooled_centered_unequal_region0__haar2"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/candidate_repair_v1__final_test.json",
+          "sha256": "b854a71b1da35f94d4ec6320df790e7c8772b38e8be05af715382462272c8aca"
+        }
+      ],
+      "aliases": [
+        "cr_26b18311905ae224"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_0520ef4c09f069638a0883e5",
+      "kind": "batch1_action_or_postprocess",
+      "definition": {
+        "root": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis",
+        "arm": {
+          "id": "ungated_b46cba8fe3a91ccc",
+          "method": "legacy",
+          "legacy_arm": {
+            "method": "mean",
+            "source": "p",
+            "layer": 6,
+            "steps": [
+              4
+            ],
+            "k": 8,
+            "alpha": 0.5,
+            "tokens": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "cap": 0.05,
+            "gate": "none",
+            "id": "benefit_gate_50de88521d78",
+            "benefit_threshold": 0.0,
+            "parent": "mean_p_l6_a0.5_20135a1a"
+          },
+          "route": "legacy",
+          "candidate": "legacy",
+          "cap": 0.05,
+          "control": true,
+          "oracle_diagnostic": true,
+          "ungated_parent": "legacy_pdms_priority"
+        }
+      },
+      "semantic": {
+        "method": "legacy",
+        "legacy_arm": {
+          "method": "mean",
+          "source": "p",
+          "layer": 6,
+          "steps": [
+            4
+          ],
+          "k": 8,
+          "alpha": 0.5,
+          "tokens": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "cap": 0.05,
+          "gate": "none",
+          "id": "benefit_gate_50de88521d78",
+          "benefit_threshold": 0.0,
+          "parent": "mean_p_l6_a0.5_20135a1a"
+        },
+        "route": "legacy",
+        "candidate": "legacy",
+        "cap": 0.05,
+        "control": true
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/legacy_ungated_test__failure_gated.json",
+          "sha256": "4faa0777c4a81829e85206e84c035cce6313efcaf71bddb2bad3fa58f811a213"
+        }
+      ],
+      "aliases": [
+        "ungated_b46cba8fe3a91ccc"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_102f5e5ac08005774aa7c7f0",
+      "kind": "batch1_action_or_postprocess",
+      "definition": {
+        "root": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis",
+        "arm": {
+          "id": "legacy_pdms_priority",
+          "method": "legacy",
+          "legacy_arm": {
+            "method": "mean",
+            "source": "p",
+            "layer": 6,
+            "steps": [
+              4
+            ],
+            "k": 8,
+            "alpha": 0.5,
+            "tokens": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "cap": 0.05,
+            "gate": "benefit",
+            "id": "benefit_gate_50de88521d78",
+            "benefit_path": "repair_v1/gates/mean_p_l6_a0.5_20135a1a.npz",
+            "benefit_threshold": 0.0,
+            "parent": "mean_p_l6_a0.5_20135a1a"
+          },
+          "route": "legacy",
+          "candidate": "legacy",
+          "cap": 0.05,
+          "control": true
+        }
+      },
+      "semantic": {
+        "method": "legacy",
+        "legacy_arm": {
+          "method": "mean",
+          "source": "p",
+          "layer": 6,
+          "steps": [
+            4
+          ],
+          "k": 8,
+          "alpha": 0.5,
+          "tokens": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "cap": 0.05,
+          "gate": "benefit",
+          "id": "benefit_gate_50de88521d78",
+          "benefit_path": "repair_v1/gates/mean_p_l6_a0.5_20135a1a.npz",
+          "benefit_threshold": 0.0,
+          "parent": "mean_p_l6_a0.5_20135a1a"
+        },
+        "route": "legacy",
+        "candidate": "legacy",
+        "cap": 0.05,
+        "control": true
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/candidate_repair_v1__final_test.json",
+          "sha256": "b854a71b1da35f94d4ec6320df790e7c8772b38e8be05af715382462272c8aca"
+        }
+      ],
+      "aliases": [
+        "legacy_pdms_priority"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_11a659b81370c56789fd7d46",
+      "kind": "batch1_action_or_postprocess",
+      "definition": {
+        "root": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis",
+        "arm": {
+          "fit": "r1_pooled_centered_unequal_region0__time4",
+          "candidate": "r1_pooled_centered_unequal_region0",
+          "route": "r1",
+          "step": 4,
+          "layer": 16,
+          "token": 6,
+          "r": 24,
+          "space": "candidate",
+          "method": "mean",
+          "alpha": 0.5,
+          "calibration": "n",
+          "gate": "none",
+          "cap": 0.05,
+          "mechanism": "target_time_calibration",
+          "timing_type": "late_transfer",
+          "control": true,
+          "control_kind": "reverse",
+          "id": "cr_ffd60fe7e54241c9",
+          "parent": "cr_774b7ee8eef1ab62"
+        }
+      },
+      "semantic": {
+        "fit": "r1_pooled_centered_unequal_region0__time4",
+        "candidate": "r1_pooled_centered_unequal_region0",
+        "route": "r1",
+        "step": 4,
+        "layer": 16,
+        "token": 6,
+        "r": 24,
+        "space": "candidate",
+        "method": "mean",
+        "alpha": 0.5,
+        "calibration": "n",
+        "gate": "none",
+        "cap": 0.05,
+        "mechanism": "target_time_calibration",
+        "timing_type": "late_transfer",
+        "control": true,
+        "control_kind": "reverse"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/candidate_repair_v1__final_test.json",
+          "sha256": "b854a71b1da35f94d4ec6320df790e7c8772b38e8be05af715382462272c8aca"
+        }
+      ],
+      "aliases": [
+        "cr_ffd60fe7e54241c9"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_2a512a4371ae1e9f0d254626",
+      "kind": "batch1_action_or_postprocess",
+      "definition": {
+        "root": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis",
+        "arm": {
+          "fit": "r2_uncentered_equal_region14",
+          "candidate": "r2_uncentered_equal_region14",
+          "route": "r2",
+          "step": 4,
+          "layer": 13,
+          "token": 6,
+          "r": 4,
+          "space": "candidate",
+          "method": "contract",
+          "alpha": 0.5,
+          "calibration": "n",
+          "gate": "benefit",
+          "cap": 0.05,
+          "benefit_path": "candidate_repair_v1/gates/cr_de02484dcb5ba5f6.npz",
+          "benefit_threshold": 0.0,
+          "parent": "cr_ece3a3e1d5b3268a",
+          "control": true,
+          "control_kind": "reverse",
+          "id": "cr_0aeb4030e823aa29"
+        }
+      },
+      "semantic": {
+        "fit": "r2_uncentered_equal_region14",
+        "candidate": "r2_uncentered_equal_region14",
+        "route": "r2",
+        "step": 4,
+        "layer": 13,
+        "token": 6,
+        "r": 4,
+        "space": "candidate",
+        "method": "contract",
+        "alpha": 0.5,
+        "calibration": "n",
+        "gate": "benefit",
+        "cap": 0.05,
+        "benefit_path": "candidate_repair_v1/gates/cr_de02484dcb5ba5f6.npz",
+        "benefit_threshold": 0.0,
+        "control": true,
+        "control_kind": "reverse"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/candidate_repair_v1__final_test.json",
+          "sha256": "b854a71b1da35f94d4ec6320df790e7c8772b38e8be05af715382462272c8aca"
+        }
+      ],
+      "aliases": [
+        "cr_0aeb4030e823aa29"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_3b65aa133cdffd27d237bad1",
+      "kind": "batch1_action_or_postprocess",
+      "definition": {
+        "root": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis",
+        "arm": {
+          "fit": "r1_pooled_centered_unequal_region0__time4",
+          "candidate": "r1_pooled_centered_unequal_region0",
+          "route": "r1",
+          "step": 4,
+          "layer": 16,
+          "token": 6,
+          "r": 24,
+          "space": "candidate",
+          "method": "mean",
+          "alpha": 0.5,
+          "calibration": "n",
+          "gate": "none",
+          "cap": 0.05,
+          "mechanism": "target_time_calibration",
+          "timing_type": "late_transfer",
+          "control": true,
+          "control_kind": "haar_rotation",
+          "alternative_basis": "r1_pooled_centered_unequal_region0__haar0",
+          "id": "cr_9d319bed3a1d64ed",
+          "parent": "cr_774b7ee8eef1ab62"
+        }
+      },
+      "semantic": {
+        "fit": "r1_pooled_centered_unequal_region0__time4",
+        "candidate": "r1_pooled_centered_unequal_region0",
+        "route": "r1",
+        "step": 4,
+        "layer": 16,
+        "token": 6,
+        "r": 24,
+        "space": "candidate",
+        "method": "mean",
+        "alpha": 0.5,
+        "calibration": "n",
+        "gate": "none",
+        "cap": 0.05,
+        "mechanism": "target_time_calibration",
+        "timing_type": "late_transfer",
+        "control": true,
+        "control_kind": "haar_rotation",
+        "alternative_basis": "r1_pooled_centered_unequal_region0__haar0"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/candidate_repair_v1__final_test.json",
+          "sha256": "b854a71b1da35f94d4ec6320df790e7c8772b38e8be05af715382462272c8aca"
+        }
+      ],
+      "aliases": [
+        "cr_9d319bed3a1d64ed"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_4a12ee785ec21a5fa86ac2d0",
+      "kind": "batch1_action_or_postprocess",
+      "definition": {
+        "root": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis",
+        "arm": {
+          "fit": "r1_pooled_centered_unequal_region0__time4",
+          "candidate": "r1_pooled_centered_unequal_region0",
+          "route": "r1",
+          "step": 4,
+          "layer": 16,
+          "token": 6,
+          "r": 24,
+          "space": "candidate",
+          "method": "mean",
+          "alpha": 0.5,
+          "calibration": "n",
+          "gate": "none",
+          "cap": 0.05,
+          "mechanism": "target_time_calibration",
+          "timing_type": "late_transfer",
+          "control": true,
+          "control_kind": "haar_rotation",
+          "alternative_basis": "r1_pooled_centered_unequal_region0__haar1",
+          "id": "cr_503fe19f2b9d9a01",
+          "parent": "cr_774b7ee8eef1ab62"
+        }
+      },
+      "semantic": {
+        "fit": "r1_pooled_centered_unequal_region0__time4",
+        "candidate": "r1_pooled_centered_unequal_region0",
+        "route": "r1",
+        "step": 4,
+        "layer": 16,
+        "token": 6,
+        "r": 24,
+        "space": "candidate",
+        "method": "mean",
+        "alpha": 0.5,
+        "calibration": "n",
+        "gate": "none",
+        "cap": 0.05,
+        "mechanism": "target_time_calibration",
+        "timing_type": "late_transfer",
+        "control": true,
+        "control_kind": "haar_rotation",
+        "alternative_basis": "r1_pooled_centered_unequal_region0__haar1"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/candidate_repair_v1__final_test.json",
+          "sha256": "b854a71b1da35f94d4ec6320df790e7c8772b38e8be05af715382462272c8aca"
+        }
+      ],
+      "aliases": [
+        "cr_503fe19f2b9d9a01"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_590ab7cedab56aeda4b216fa",
+      "kind": "batch1_action_or_postprocess",
+      "definition": {
+        "root": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis",
+        "arm": {
+          "fit": "r2_uncentered_equal_region14",
+          "candidate": "r2_uncentered_equal_region14",
+          "route": "r2",
+          "step": 4,
+          "layer": 13,
+          "token": 6,
+          "r": 4,
+          "space": "candidate",
+          "method": "contract",
+          "alpha": 0.5,
+          "calibration": "n",
+          "gate": "benefit",
+          "cap": 0.05,
+          "benefit_path": "candidate_repair_v1/gates/cr_de02484dcb5ba5f6.npz",
+          "benefit_threshold": 0.0,
+          "parent": "cr_ece3a3e1d5b3268a",
+          "control": true,
+          "control_kind": "haar_rotation",
+          "alternative_basis": "r2_uncentered_equal_region14__haar1",
+          "id": "cr_cff5309e8f6f2a3e"
+        }
+      },
+      "semantic": {
+        "fit": "r2_uncentered_equal_region14",
+        "candidate": "r2_uncentered_equal_region14",
+        "route": "r2",
+        "step": 4,
+        "layer": 13,
+        "token": 6,
+        "r": 4,
+        "space": "candidate",
+        "method": "contract",
+        "alpha": 0.5,
+        "calibration": "n",
+        "gate": "benefit",
+        "cap": 0.05,
+        "benefit_path": "candidate_repair_v1/gates/cr_de02484dcb5ba5f6.npz",
+        "benefit_threshold": 0.0,
+        "control": true,
+        "control_kind": "haar_rotation",
+        "alternative_basis": "r2_uncentered_equal_region14__haar1"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/candidate_repair_v1__final_test.json",
+          "sha256": "b854a71b1da35f94d4ec6320df790e7c8772b38e8be05af715382462272c8aca"
+        }
+      ],
+      "aliases": [
+        "cr_cff5309e8f6f2a3e"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_64f7f53aa37556cf02338b99",
+      "kind": "batch1_action_or_postprocess",
+      "definition": {
+        "root": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis",
+        "arm": {
+          "fit": "r2_uncentered_equal_region14",
+          "candidate": "r2_uncentered_equal_region14",
+          "route": "r2",
+          "step": 4,
+          "layer": 13,
+          "token": 6,
+          "r": 4,
+          "space": "candidate",
+          "method": "contract",
+          "alpha": 0.5,
+          "calibration": "n",
+          "gate": "none",
+          "cap": 0.05,
+          "parent": "cr_de02484dcb5ba5f6",
+          "id": "ungated_f788b9ec900cf79f",
+          "oracle_diagnostic": true,
+          "ungated_parent": "cr_ece3a3e1d5b3268a"
+        }
+      },
+      "semantic": {
+        "fit": "r2_uncentered_equal_region14",
+        "candidate": "r2_uncentered_equal_region14",
+        "route": "r2",
+        "step": 4,
+        "layer": 13,
+        "token": 6,
+        "r": 4,
+        "space": "candidate",
+        "method": "contract",
+        "alpha": 0.5,
+        "calibration": "n",
+        "gate": "none",
+        "cap": 0.05
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/legacy_ungated_test__failure_gated.json",
+          "sha256": "4faa0777c4a81829e85206e84c035cce6313efcaf71bddb2bad3fa58f811a213"
+        }
+      ],
+      "aliases": [
+        "ungated_f788b9ec900cf79f"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_73ea9292a0866cf78f4aacdd",
+      "kind": "batch1_action_or_postprocess",
+      "definition": {
+        "root": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis",
+        "arm": {
+          "method": "mean",
+          "source": "p",
+          "layer": 6,
+          "steps": [
+            4
+          ],
+          "k": 8,
+          "alpha": 0.5,
+          "tokens": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "cap": 0.05,
+          "gate": "benefit",
+          "id": "benefit_gate_50de88521d78",
+          "benefit_path": "repair_v1/gates/mean_p_l6_a0.5_20135a1a.npz",
+          "benefit_threshold": 0.0,
+          "parent": "mean_p_l6_a0.5_20135a1a"
+        }
+      },
+      "semantic": {
+        "method": "mean",
+        "source": "p",
+        "layer": 6,
+        "steps": [
+          4
+        ],
+        "k": 8,
+        "alpha": 0.5,
+        "tokens": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "cap": 0.05,
+        "gate": "benefit",
+        "benefit_path": "repair_v1/gates/mean_p_l6_a0.5_20135a1a.npz",
+        "benefit_threshold": 0.0
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/repair_v1__final_test.json",
+          "sha256": "cbec97835e16da3b98e536df3fb299709a3507b572f69ab7c1dec110b8cad3f3"
+        }
+      ],
+      "aliases": [
+        "benefit_gate_50de88521d78"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_7a72fecac54d99a2570b823f",
+      "kind": "batch1_action_or_postprocess",
+      "definition": {
+        "root": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis",
+        "arm": {
+          "fit": "r2_uncentered_equal_region14",
+          "candidate": "r2_uncentered_equal_region14",
+          "route": "r2",
+          "step": 4,
+          "layer": 13,
+          "token": 6,
+          "r": 4,
+          "space": "candidate",
+          "method": "contract",
+          "alpha": 0.5,
+          "calibration": "n",
+          "gate": "benefit",
+          "cap": 0.05,
+          "benefit_path": "candidate_repair_v1/gates/cr_de02484dcb5ba5f6.npz",
+          "benefit_threshold": 0.0,
+          "parent": "cr_de02484dcb5ba5f6",
+          "id": "cr_ece3a3e1d5b3268a"
+        }
+      },
+      "semantic": {
+        "fit": "r2_uncentered_equal_region14",
+        "candidate": "r2_uncentered_equal_region14",
+        "route": "r2",
+        "step": 4,
+        "layer": 13,
+        "token": 6,
+        "r": 4,
+        "space": "candidate",
+        "method": "contract",
+        "alpha": 0.5,
+        "calibration": "n",
+        "gate": "benefit",
+        "cap": 0.05,
+        "benefit_path": "candidate_repair_v1/gates/cr_de02484dcb5ba5f6.npz",
+        "benefit_threshold": 0.0
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/candidate_repair_v1__final_test.json",
+          "sha256": "b854a71b1da35f94d4ec6320df790e7c8772b38e8be05af715382462272c8aca"
+        }
+      ],
+      "aliases": [
+        "cr_ece3a3e1d5b3268a"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_7be08a0267ee4461dc107fbe",
+      "kind": "batch1_action_or_postprocess",
+      "definition": {
+        "root": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis",
+        "arm": {
+          "method": "quality",
+          "source": "n",
+          "layer": 6,
+          "steps": [
+            2
+          ],
+          "k": 8,
+          "alpha": 0.25,
+          "tokens": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "cap": 0.05,
+          "gate": "none",
+          "control": false,
+          "early_quality": true,
+          "id": "early_quality_623ee7f924e8"
+        }
+      },
+      "semantic": {
+        "method": "quality",
+        "source": "n",
+        "layer": 6,
+        "steps": [
+          2
+        ],
+        "k": 8,
+        "alpha": 0.25,
+        "tokens": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "cap": 0.05,
+        "gate": "none",
+        "control": false,
+        "early_quality": true
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/repair_v1__final_test.json",
+          "sha256": "cbec97835e16da3b98e536df3fb299709a3507b572f69ab7c1dec110b8cad3f3"
+        }
+      ],
+      "aliases": [
+        "early_quality_623ee7f924e8"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_7bf16e85fb601b22bb96945d",
+      "kind": "batch1_action_or_postprocess",
+      "definition": {
+        "root": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis",
+        "arm": {
+          "fit": "r2_pooled_centered_unequal_region8",
+          "candidate": "r2_pooled_centered_unequal_region8",
+          "route": "r2",
+          "step": 4,
+          "layer": 15,
+          "token": 6,
+          "r": 24,
+          "space": "candidate",
+          "method": "mlp_replay",
+          "alpha": 1.0,
+          "calibration": "p",
+          "gate": "none",
+          "cap": 0.05,
+          "parent": "cr_fba51686f50d16ab",
+          "id": "ungated_1fa14e7e7b0f2bb4",
+          "oracle_diagnostic": true,
+          "ungated_parent": "cr_9deaf63467a50bd5"
+        }
+      },
+      "semantic": {
+        "fit": "r2_pooled_centered_unequal_region8",
+        "candidate": "r2_pooled_centered_unequal_region8",
+        "route": "r2",
+        "step": 4,
+        "layer": 15,
+        "token": 6,
+        "r": 24,
+        "space": "candidate",
+        "method": "mlp_replay",
+        "alpha": 1.0,
+        "calibration": "p",
+        "gate": "none",
+        "cap": 0.05
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/legacy_ungated_test__failure_gated.json",
+          "sha256": "4faa0777c4a81829e85206e84c035cce6313efcaf71bddb2bad3fa58f811a213"
+        }
+      ],
+      "aliases": [
+        "ungated_1fa14e7e7b0f2bb4"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_8c9580dce3482650a9482ee6",
+      "kind": "batch1_action_or_postprocess",
+      "definition": {
+        "root": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis",
+        "arm": {
+          "fit": "r2_uncentered_equal_region14",
+          "candidate": "r2_uncentered_equal_region14",
+          "route": "r2",
+          "step": 4,
+          "layer": 13,
+          "token": 6,
+          "r": 4,
+          "space": "candidate",
+          "method": "contract",
+          "alpha": 0.5,
+          "calibration": "n",
+          "gate": "benefit",
+          "cap": 0.05,
+          "benefit_path": "candidate_repair_v1/gates/cr_de02484dcb5ba5f6.npz",
+          "benefit_threshold": 0.0,
+          "parent": "cr_ece3a3e1d5b3268a",
+          "control": true,
+          "control_kind": "haar_rotation",
+          "alternative_basis": "r2_uncentered_equal_region14__haar0",
+          "id": "cr_34060367c563239a"
+        }
+      },
+      "semantic": {
+        "fit": "r2_uncentered_equal_region14",
+        "candidate": "r2_uncentered_equal_region14",
+        "route": "r2",
+        "step": 4,
+        "layer": 13,
+        "token": 6,
+        "r": 4,
+        "space": "candidate",
+        "method": "contract",
+        "alpha": 0.5,
+        "calibration": "n",
+        "gate": "benefit",
+        "cap": 0.05,
+        "benefit_path": "candidate_repair_v1/gates/cr_de02484dcb5ba5f6.npz",
+        "benefit_threshold": 0.0,
+        "control": true,
+        "control_kind": "haar_rotation",
+        "alternative_basis": "r2_uncentered_equal_region14__haar0"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/candidate_repair_v1__final_test.json",
+          "sha256": "b854a71b1da35f94d4ec6320df790e7c8772b38e8be05af715382462272c8aca"
+        }
+      ],
+      "aliases": [
+        "cr_34060367c563239a"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_9daee56a32d53d40fa7019ff",
+      "kind": "batch1_action_or_postprocess",
+      "definition": {
+        "root": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis",
+        "arm": {
+          "fit": "r1_pooled_centered_unequal_region0__time4",
+          "candidate": "r1_pooled_centered_unequal_region0",
+          "route": "r1",
+          "step": 4,
+          "layer": 16,
+          "token": 6,
+          "r": 24,
+          "space": "candidate",
+          "method": "mean",
+          "alpha": 0.5,
+          "calibration": "n",
+          "gate": "none",
+          "cap": 0.05,
+          "mechanism": "target_time_calibration",
+          "timing_type": "late_transfer",
+          "id": "cr_774b7ee8eef1ab62"
+        }
+      },
+      "semantic": {
+        "fit": "r1_pooled_centered_unequal_region0__time4",
+        "candidate": "r1_pooled_centered_unequal_region0",
+        "route": "r1",
+        "step": 4,
+        "layer": 16,
+        "token": 6,
+        "r": 24,
+        "space": "candidate",
+        "method": "mean",
+        "alpha": 0.5,
+        "calibration": "n",
+        "gate": "none",
+        "cap": 0.05,
+        "mechanism": "target_time_calibration",
+        "timing_type": "late_transfer"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/candidate_repair_v1__final_test.json",
+          "sha256": "b854a71b1da35f94d4ec6320df790e7c8772b38e8be05af715382462272c8aca"
+        }
+      ],
+      "aliases": [
+        "cr_774b7ee8eef1ab62"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_a634a08f6ae1938843816b15",
+      "kind": "batch1_action_or_postprocess",
+      "definition": {
+        "root": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis",
+        "arm": {
+          "fit": "r2_uncentered_equal_region14",
+          "candidate": "r2_uncentered_equal_region14",
+          "route": "r2",
+          "step": 4,
+          "layer": 13,
+          "token": 6,
+          "r": 4,
+          "space": "candidate",
+          "method": "contract",
+          "alpha": 0.5,
+          "calibration": "n",
+          "gate": "benefit",
+          "cap": 0.05,
+          "benefit_path": "candidate_repair_v1/gates/cr_de02484dcb5ba5f6.npz",
+          "benefit_threshold": 0.0,
+          "parent": "cr_ece3a3e1d5b3268a",
+          "control": true,
+          "control_kind": "haar_rotation",
+          "alternative_basis": "r2_uncentered_equal_region14__haar2",
+          "id": "cr_c71caf1d15f49805"
+        }
+      },
+      "semantic": {
+        "fit": "r2_uncentered_equal_region14",
+        "candidate": "r2_uncentered_equal_region14",
+        "route": "r2",
+        "step": 4,
+        "layer": 13,
+        "token": 6,
+        "r": 4,
+        "space": "candidate",
+        "method": "contract",
+        "alpha": 0.5,
+        "calibration": "n",
+        "gate": "benefit",
+        "cap": 0.05,
+        "benefit_path": "candidate_repair_v1/gates/cr_de02484dcb5ba5f6.npz",
+        "benefit_threshold": 0.0,
+        "control": true,
+        "control_kind": "haar_rotation",
+        "alternative_basis": "r2_uncentered_equal_region14__haar2"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/candidate_repair_v1__final_test.json",
+          "sha256": "b854a71b1da35f94d4ec6320df790e7c8772b38e8be05af715382462272c8aca"
+        }
+      ],
+      "aliases": [
+        "cr_c71caf1d15f49805"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_b5defbf406e61505747ca2ad",
+      "kind": "batch1_action_or_postprocess",
+      "definition": {
+        "root": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis",
+        "arm": {
+          "id": "scale_1.005",
+          "method": "trajectory_scale",
+          "factor": 1.005,
+          "cap": 0.0,
+          "route": "control",
+          "candidate": "scale",
+          "control": true
+        }
+      },
+      "semantic": {
+        "method": "trajectory_scale",
+        "factor": 1.005,
+        "cap": 0.0,
+        "route": "control",
+        "candidate": "scale",
+        "control": true
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/candidate_repair_v1__final_test.json",
+          "sha256": "b854a71b1da35f94d4ec6320df790e7c8772b38e8be05af715382462272c8aca"
+        }
+      ],
+      "aliases": [
+        "scale_1.005"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_d867c845266e6e233dffd14d",
+      "kind": "batch1_action_or_postprocess",
+      "definition": {
+        "root": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis",
+        "arm": {
+          "id": "trajectory_scale_1.02",
+          "method": "trajectory_scale",
+          "factor": 1.02,
+          "source": "action_space_control",
+          "cap": 0.0
+        }
+      },
+      "semantic": {
+        "method": "trajectory_scale",
+        "factor": 1.02,
+        "source": "action_space_control",
+        "cap": 0.0
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/repair_v1__final_test.json",
+          "sha256": "cbec97835e16da3b98e536df3fb299709a3507b572f69ab7c1dec110b8cad3f3"
+        }
+      ],
+      "aliases": [
+        "trajectory_scale_1.02"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_e77f4518b7fa9ba12ec2bb50",
+      "kind": "batch1_action_or_postprocess",
+      "definition": {
+        "root": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis",
+        "arm": {
+          "id": "scale_1.02",
+          "method": "trajectory_scale",
+          "factor": 1.02,
+          "cap": 0.0,
+          "route": "control",
+          "candidate": "scale",
+          "control": true
+        }
+      },
+      "semantic": {
+        "method": "trajectory_scale",
+        "factor": 1.02,
+        "cap": 0.0,
+        "route": "control",
+        "candidate": "scale",
+        "control": true
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/candidate_repair_v1__final_test.json",
+          "sha256": "b854a71b1da35f94d4ec6320df790e7c8772b38e8be05af715382462272c8aca"
+        }
+      ],
+      "aliases": [
+        "scale_1.02"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_ed6154bb9612211e5de8dc14",
+      "kind": "batch1_action_or_postprocess",
+      "definition": {
+        "root": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis",
+        "arm": {
+          "id": "legacy_safety_priority",
+          "method": "legacy",
+          "legacy_arm": {
+            "method": "quality",
+            "source": "n",
+            "layer": 6,
+            "steps": [
+              2
+            ],
+            "k": 8,
+            "alpha": 0.25,
+            "tokens": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "cap": 0.05,
+            "gate": "none",
+            "control": false,
+            "early_quality": true,
+            "id": "early_quality_623ee7f924e8"
+          },
+          "route": "legacy",
+          "candidate": "legacy",
+          "cap": 0.05,
+          "control": true
+        }
+      },
+      "semantic": {
+        "method": "legacy",
+        "legacy_arm": {
+          "method": "quality",
+          "source": "n",
+          "layer": 6,
+          "steps": [
+            2
+          ],
+          "k": 8,
+          "alpha": 0.25,
+          "tokens": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "cap": 0.05,
+          "gate": "none",
+          "control": false,
+          "early_quality": true,
+          "id": "early_quality_623ee7f924e8"
+        },
+        "route": "legacy",
+        "candidate": "legacy",
+        "cap": 0.05,
+        "control": true
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/candidate_repair_v1__final_test.json",
+          "sha256": "b854a71b1da35f94d4ec6320df790e7c8772b38e8be05af715382462272c8aca"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/legacy_ungated_test__failure_gated.json",
+          "sha256": "4faa0777c4a81829e85206e84c035cce6313efcaf71bddb2bad3fa58f811a213"
+        }
+      ],
+      "aliases": [
+        "legacy_safety_priority",
+        "ungated_88dc65191d245777"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_f1030570300329f98e0dbc6f",
+      "kind": "batch1_action_or_postprocess",
+      "definition": {
+        "root": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis",
+        "arm": {
+          "id": "trajectory_scale_1.005",
+          "method": "trajectory_scale",
+          "factor": 1.005,
+          "source": "action_space_control",
+          "cap": 0.0
+        }
+      },
+      "semantic": {
+        "method": "trajectory_scale",
+        "factor": 1.005,
+        "source": "action_space_control",
+        "cap": 0.0
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/repair_v1__final_test.json",
+          "sha256": "cbec97835e16da3b98e536df3fb299709a3507b572f69ab7c1dec110b8cad3f3"
+        }
+      ],
+      "aliases": [
+        "trajectory_scale_1.005"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_00228f06d25feebbc95932b9",
+      "kind": "batch2_policy_hard",
+      "definition": {
+        "policy_path": "routers/outcome_variant_hard_56eb615b57a01cd915609443/POLICY.json",
+        "policy_sha256": "fbd5f89a4a3743a553343f7d487e659fbfadf25250f8e36f044f1dd671c5d8d6"
+      },
+      "semantic": {
+        "model_sha256": "0cb85f891cbd1492e3a07291f748b1004c24f5df68556496777689e671f89d5e",
+        "tier": "observation",
+        "feature_sha256": "89f6e6933854916e0b530288dcd6eaf4f51be42f70612339c2df85d18ed1fff5",
+        "risk_penalty": 0.0,
+        "threshold": 0.001,
+        "parts": [
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "c69f2fcb98c4b7cace2132a0f54dbc33273575f8adccc0143fc78ee2eef78088"
+            },
+            "slot": 0
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_post",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "433565ac501bb17c73cceb7c0bdad36c00b8ea7093ff19b4855e5ab9cc07084a"
+            },
+            "slot": 1
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "b24204fb2dd25df3fb74bdf3910573c231afc192768507905704dcf74d6d97cd"
+            },
+            "slot": 2
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_post",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "f1f5b27acb1cef02503ce643b9d13b6c9a529ddb6dbb8af061d20d3a3efe420e"
+            },
+            "slot": 3
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "a7473c36790a1b0fba40344219bf53462eeba1f54c17dcebb0518c755ae987bb"
+            },
+            "slot": 4
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "1dd7225c90e7114b936231e67dd0436207a1758f56b1d085d240505c053a1cf3"
+            },
+            "slot": 5
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/routers/outcome_variant_hard_56eb615b57a01cd915609443/POLICY.json",
+          "sha256": "fbd5f89a4a3743a553343f7d487e659fbfadf25250f8e36f044f1dd671c5d8d6"
+        }
+      ],
+      "aliases": [
+        "representation_em1_K6_seed0/PDMS_observation"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_009619a367a25427e66e84e7",
+      "kind": "batch2_policy_candidate",
+      "definition": {
+        "policy_path": "candidate_selectors/outcome_selector_29c936345dd71db9e622899b/POLICY.json",
+        "policy_sha256": "33b8c065e9077e6b677cdfcc5c54089f07805eaaaa48477e1099d2a6a35bef3d"
+      },
+      "semantic": {
+        "model_sha256": "98da8c569e369620575eea0f633a78e14ad10db7b87061c8501fb84536bd3d49",
+        "tier": "trajectory",
+        "feature_sha256": "89f6e6933854916e0b530288dcd6eaf4f51be42f70612339c2df85d18ed1fff5",
+        "risk_penalty": 0.0,
+        "threshold": 0.02,
+        "parts": [
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "b35101fdc8dfed1e5a227befd6d249d4ee9312aad5e27399c2480654f7006922"
+            },
+            "slot": 0
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "bb9f8e789106b204463f1e253ed4217db5f580a71237b1a355682062113e1095"
+            },
+            "slot": 1
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "5068398a8eae14200ff8be452b3546527368ce35c8f6c079acb1ead2c0747477"
+            },
+            "slot": 2
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "1aa626699f67063682e9cc1d3f398f63cf07313d9eab636e8c735bcc9dade6f8"
+            },
+            "slot": 3
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "e6dff1334c21977308c23de7cb72548537524fe422136901e2a820b53e14921f"
+            },
+            "slot": 4
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/candidate_selectors/outcome_selector_29c936345dd71db9e622899b/POLICY.json",
+          "sha256": "33b8c065e9077e6b677cdfcc5c54089f07805eaaaa48477e1099d2a6a35bef3d"
+        }
+      ],
+      "aliases": [
+        "response_K5_seed1/PDMS_trajectory"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_009e603c24d89b0ee0919b9f",
+      "kind": "batch2_policy_token",
+      "definition": {
+        "policy_path": "token_policies/token_cal_412497d0b436b316b9e4ffe2/POLICY.json",
+        "policy_sha256": "c39b471bc74d345526b8af6101c3575821954645ca224d1dc6bc47f4d7d90a31"
+      },
+      "semantic": {
+        "checkpoint_sha256": "b4338534a2d07ba3c8d288973469dc5f071809e3863eccc22bd50c923541aaf4",
+        "context_view": "post_valid",
+        "risk_penalty": 0.0,
+        "threshold": 0.1,
+        "parts": [
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "d3531d068c9424ced7426b780f370bd37aadff5c878471ec53df1bc53dc75851"
+            },
+            "slot": 0
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "7e6c1af0234fef340a56d3baf67b43679932304a4b19229098d5607b19155a06"
+            },
+            "slot": 1
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "241ae39fb87d5605191233accd6142a7ba1c95dd7840850522340d00f6cf2a41"
+            },
+            "slot": 2
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "9f57bf74be06e910b767efd367369222decc2d340e7bf85c571ab04e787ca450"
+            },
+            "slot": 3
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/token_policies/token_cal_412497d0b436b316b9e4ffe2/POLICY.json",
+          "sha256": "c39b471bc74d345526b8af6101c3575821954645ca224d1dc6bc47f4d7d90a31"
+        }
+      ],
+      "aliases": [
+        "/token_cal_412497d0b436b316b9e4ffe2"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_1f8aa6662d148ebab7224f2a",
+      "kind": "batch2_policy_finite",
+      "definition": {
+        "policy_path": "provenance/final_confirmation/finite_policies/688a9b08c50067af2458_fit1.json",
+        "policy_sha256": "cd280308677844f30c67845ad35ed07d035fe37d224ef59e8d299da604969f38"
+      },
+      "semantic": {
+        "checkpoint_sha256": "f5bf64b85f4dfc815a353024de2580930fbe6715b779c6ac1047043ca7c18fc9",
+        "tier": "trajectory",
+        "model_kind": "finite_fixed_strength_argmax",
+        "input_dimension": 96,
+        "multiplier": 1.0,
+        "identity_threshold": 1.01,
+        "force_Base": false,
+        "parts": [
+          {
+            "definition": {
+              "kind": "analytic",
+              "arm": {
+                "block": "bridge_pre",
+                "group": "grid_10",
+                "method": "ot",
+                "alpha": 1.0,
+                "cap": 0.1,
+                "gate": "none",
+                "fit_sha256": "f9c12d30342c7c12f531cdae8bd31bfc5365e3d3c7927798e397d588109e21f0"
+              }
+            },
+            "slot": 0
+          },
+          {
+            "definition": {
+              "kind": "analytic",
+              "arm": {
+                "block": "language_04",
+                "group": "text_mean",
+                "method": "project",
+                "alpha": 1.0,
+                "cap": 0.02,
+                "gate": "none",
+                "fit_sha256": "24914fb60c740e05199a64d88a7e55b12dcb136caa3a8bf81c4c19b34b9f9a58"
+              }
+            },
+            "slot": 1
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/provenance/final_confirmation/finite_policies/688a9b08c50067af2458_fit1.json",
+          "sha256": "cd280308677844f30c67845ad35ed07d035fe37d224ef59e8d299da604969f38"
+        }
+      ],
+      "aliases": [
+        "/Safety_fit1"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_016af3ef0e23f76bcc126208",
+      "kind": "batch2_policy_joint",
+      "definition": {
+        "policy_path": "additional_joint_policies/additional_joint_60c9cc6511ad813ab8833538/POLICY.json",
+        "policy_sha256": "3c785a45e913214abdd511aba42277f2c3ee748a57f868c139f2b6cc53eb9df6"
+      },
+      "semantic": {
+        "checkpoint_sha256": "57741d6f28b77488211002ec2074d4f4db337e3cfe9dfee611988f09659445ea",
+        "tier": "observation",
+        "model_kind": "soft_joint",
+        "input_dimension": 64,
+        "multiplier": 1.0,
+        "identity_threshold": 0.5,
+        "force_Base": false,
+        "parts": [
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "321a66473670d6ee70e74ea848f7c3fa531d19663a6b68df8071196165e8f07d"
+            },
+            "slot": 0
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "a78f0a41108f4ac22013e868f59df3217fee04bebb4bfafcc9e2260e9ecfbb33"
+            },
+            "slot": 1
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "f44c989c4065f71edbe8c2f96c724e3c70fd3f0019f91011352e749fc18a87e7"
+            },
+            "slot": 2
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "4092d35e9c312585b7f218948ed80b66f7597e0a4302d61759b1257b757e7dac"
+            },
+            "slot": 3
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/additional_joint_policies/additional_joint_60c9cc6511ad813ab8833538/POLICY.json",
+          "sha256": "3c785a45e913214abdd511aba42277f2c3ee748a57f868c139f2b6cc53eb9df6"
+        }
+      ],
+      "aliases": [
+        "response_em1_K4_seed0/safety_observation"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_01db6b01c8d14d7e85a3e038",
+      "kind": "batch2_policy_joint",
+      "definition": {
+        "policy_path": "joint_policies/joint_router_4c1e9b93b6d87762fee6900c/POLICY.json",
+        "policy_sha256": "88442f618bede1e3bf555cbecfbbf8704d908f09c8b591fd02e208cc82973014"
+      },
+      "semantic": {
+        "checkpoint_sha256": "ba69e8bff229e924a52d431d8dc8febaadb775b8cf0721c04758bd157948a5d1",
+        "tier": "denoising",
+        "model_kind": "hard_continuous",
+        "input_dimension": 216,
+        "multiplier": 1.0,
+        "identity_threshold": 0.5,
+        "force_Base": false,
+        "parts": [
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_post",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "a49f3b7dc97db499fb72379549f3af6582f3be45af21217d99daf154e28954f5"
+            },
+            "slot": 0
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "b8bc3c619d4dc815565e9dc08d8ce5dc3a738c207dd6591d6a6f981d328ad186"
+            },
+            "slot": 1
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "9098ad80c4fedeb86fdc4779efbf8284719eec6157460f24face184a84ea8986"
+            },
+            "slot": 2
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "daeae6656f29ae37dce0c0cdcf3aa0bdc849de5182869696647090a0055bed30"
+            },
+            "slot": 3
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "f0a6b92e6dc43f706cc0b75e5d5bad70e41e5051436295b65740bc73eb4c776b"
+            },
+            "slot": 4
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "52048373e7dc72312815d5296b0742c701d1aeabeab719c0593610638c904fc2"
+            },
+            "slot": 5
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "e422993009d2414b859f1c7e14460408e54aade13ab29e2515a005acb7d92abe"
+            },
+            "slot": 6
+          },
+          {
+            "definition": {
+              "kind": "learned",
+              "block": "interface_pre",
+              "group": "valid_mean",
+              "cap": 0.1,
+              "strength": 1.0,
+              "checkpoint_sha256": "4b37aeb35ae2e392cc108d7bc5f08e44c5c428b49b24e89b2c9692798b074e00"
+            },
+            "slot": 7
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/joint_policies/joint_router_4c1e9b93b6d87762fee6900c/POLICY.json",
+          "sha256": "88442f618bede1e3bf555cbecfbbf8704d908f09c8b591fd02e208cc82973014"
+        }
+      ],
+      "aliases": [
+        "correction_K8_seed0/PDMS_denoising"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    }
+  ],
+  "engineering_only": true,
+  "not_a_formal_extension_pool": true
+}

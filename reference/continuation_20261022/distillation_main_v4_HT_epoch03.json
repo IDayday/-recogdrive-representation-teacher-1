@@ -1,0 +1,317 @@
+{
+  "status": "REVIEWED_EPOCH_DEVELOPMENT_DIAGNOSTIC",
+  "time": "2026-10-21T21:01:36.008379+00:00",
+  "group": "HT",
+  "epoch": 3,
+  "cases": 512,
+  "source_summary": "runs/distillation_main_v4_HT/development/epoch03/SUMMARY.json",
+  "source_summary_sha256": "b2a3c9bd5782b6e89e16cc52effa3a122a4f6ff639233123b4897c6eafc70582",
+  "configuration_sha256": "b2e8d6a9fb9f019aefddb35280e1f415fef7e43d118f2d621e2c53cb943a9fb6",
+  "results": {
+    "all": {
+      "student_vs_Base": {
+        "cases": 512,
+        "sessions": 30,
+        "outputs": 2560,
+        "noises": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "left_PDMS": 94.61035615423323,
+        "right_PDMS": 94.43596593711007,
+        "difference": 0.17439021712314762,
+        "difference_session_bootstrap_CI95": [
+          -0.16282833027911697,
+          0.5756181425307287
+        ],
+        "positive_mean_scenes": 234,
+        "negative_mean_scenes": 59,
+        "safety_events": {
+          "no_at_fault_collisions": {
+            "left_bad": 14,
+            "right_bad": 13,
+            "new": 1,
+            "removed": 0
+          },
+          "drivable_area_compliance": {
+            "left_bad": 28,
+            "right_bad": 31,
+            "new": 2,
+            "removed": 5
+          },
+          "time_to_collision_within_bound": {
+            "left_bad": 46,
+            "right_bad": 35,
+            "new": 15,
+            "removed": 4
+          }
+        },
+        "zero_count_difference": -2,
+        "failure_below70_count_difference": 7,
+        "high_above90_count_difference": 61
+      },
+      "Base_initial_interface_MSE": 0.4027219533787242,
+      "student_interface_MSE": 0.4527098917751573,
+      "ratio_to_Base_initial_MSE": 1.1241251885501855,
+      "fixed_R2_teacher_PDMS": 95.8629899291509
+    },
+    "pool_I": {
+      "student_vs_Base": {
+        "cases": 294,
+        "sessions": 29,
+        "outputs": 1470,
+        "noises": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "left_PDMS": 91.86187633209572,
+        "right_PDMS": 91.33066176802845,
+        "difference": 0.531214564067258,
+        "difference_session_bootstrap_CI95": [
+          -0.07872218168646025,
+          1.2241325590156638
+        ],
+        "positive_mean_scenes": 234,
+        "negative_mean_scenes": 55,
+        "safety_events": {
+          "no_at_fault_collisions": {
+            "left_bad": 4,
+            "right_bad": 3,
+            "new": 1,
+            "removed": 0
+          },
+          "drivable_area_compliance": {
+            "left_bad": 23,
+            "right_bad": 26,
+            "new": 2,
+            "removed": 5
+          },
+          "time_to_collision_within_bound": {
+            "left_bad": 28,
+            "right_bad": 25,
+            "new": 7,
+            "removed": 4
+          }
+        },
+        "zero_count_difference": -2,
+        "failure_below70_count_difference": -1,
+        "high_above90_count_difference": 69
+      },
+      "Base_initial_interface_MSE": 0.7013389120064857,
+      "student_interface_MSE": 0.6398485356143543,
+      "ratio_to_Base_initial_MSE": 0.9123243052118535,
+      "fixed_R2_teacher_PDMS": 93.81581919634445
+    },
+    "pool_P": {
+      "student_vs_Base": {
+        "cases": 215,
+        "sessions": 27,
+        "outputs": 1075,
+        "noises": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "left_PDMS": 99.68888702014547,
+        "right_PDMS": 100.0,
+        "difference": -0.3111129798545222,
+        "difference_session_bootstrap_CI95": [
+          -0.7049158206348572,
+          0.0
+        ],
+        "positive_mean_scenes": 0,
+        "negative_mean_scenes": 4,
+        "safety_events": {
+          "no_at_fault_collisions": {
+            "left_bad": 0,
+            "right_bad": 0,
+            "new": 0,
+            "removed": 0
+          },
+          "drivable_area_compliance": {
+            "left_bad": 0,
+            "right_bad": 0,
+            "new": 0,
+            "removed": 0
+          },
+          "time_to_collision_within_bound": {
+            "left_bad": 8,
+            "right_bad": 0,
+            "new": 8,
+            "removed": 0
+          }
+        },
+        "zero_count_difference": 0,
+        "failure_below70_count_difference": 8,
+        "high_above90_count_difference": -8
+      },
+      "Base_initial_interface_MSE": 0.0,
+      "student_interface_MSE": 0.2005765040253484,
+      "ratio_to_Base_initial_MSE": null,
+      "fixed_R2_teacher_PDMS": 100.0
+    },
+    "pool_E": {
+      "student_vs_Base": {
+        "cases": 3,
+        "sessions": 3,
+        "outputs": 15,
+        "noises": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "left_PDMS": 0.0,
+        "right_PDMS": 0.0,
+        "difference": 0.0,
+        "difference_session_bootstrap_CI95": [
+          0.0,
+          0.0
+        ],
+        "positive_mean_scenes": 0,
+        "negative_mean_scenes": 0,
+        "safety_events": {
+          "no_at_fault_collisions": {
+            "left_bad": 10,
+            "right_bad": 10,
+            "new": 0,
+            "removed": 0
+          },
+          "drivable_area_compliance": {
+            "left_bad": 5,
+            "right_bad": 5,
+            "new": 0,
+            "removed": 0
+          },
+          "time_to_collision_within_bound": {
+            "left_bad": 10,
+            "right_bad": 10,
+            "new": 0,
+            "removed": 0
+          }
+        },
+        "zero_count_difference": 0,
+        "failure_below70_count_difference": 0,
+        "high_above90_count_difference": 0
+      },
+      "Base_initial_interface_MSE": 0.0,
+      "student_interface_MSE": 0.18268225093682608,
+      "ratio_to_Base_initial_MSE": null,
+      "fixed_R2_teacher_PDMS": 0.0
+    },
+    "hard_I": {
+      "student_vs_Base": {
+        "cases": 12,
+        "sessions": 8,
+        "outputs": 60,
+        "noises": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "left_PDMS": 39.56086885431975,
+        "right_PDMS": 35.8969219980942,
+        "difference": 3.6639468562255515,
+        "difference_session_bootstrap_CI95": [
+          -12.620245720765858,
+          18.089800526086176
+        ],
+        "positive_mean_scenes": 4,
+        "negative_mean_scenes": 3,
+        "safety_events": {
+          "no_at_fault_collisions": {
+            "left_bad": 4,
+            "right_bad": 3,
+            "new": 1,
+            "removed": 0
+          },
+          "drivable_area_compliance": {
+            "left_bad": 23,
+            "right_bad": 26,
+            "new": 2,
+            "removed": 5
+          },
+          "time_to_collision_within_bound": {
+            "left_bad": 26,
+            "right_bad": 25,
+            "new": 5,
+            "removed": 4
+          }
+        },
+        "zero_count_difference": -2,
+        "failure_below70_count_difference": -3,
+        "high_above90_count_difference": 2
+      },
+      "Base_initial_interface_MSE": 0.8303168711965045,
+      "student_interface_MSE": 0.7921700303753217,
+      "ratio_to_Base_initial_MSE": 0.9540574904057865,
+      "fixed_R2_teacher_PDMS": 76.98847055893904
+    },
+    "other_I": {
+      "student_vs_Base": {
+        "cases": 282,
+        "sessions": 29,
+        "outputs": 1410,
+        "noises": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "left_PDMS": 94.08745111838402,
+        "right_PDMS": 93.6895443114299,
+        "difference": 0.39790680695413916,
+        "difference_session_bootstrap_CI95": [
+          0.22847570227107988,
+          0.5272156049806962
+        ],
+        "positive_mean_scenes": 230,
+        "negative_mean_scenes": 52,
+        "safety_events": {
+          "no_at_fault_collisions": {
+            "left_bad": 0,
+            "right_bad": 0,
+            "new": 0,
+            "removed": 0
+          },
+          "drivable_area_compliance": {
+            "left_bad": 0,
+            "right_bad": 0,
+            "new": 0,
+            "removed": 0
+          },
+          "time_to_collision_within_bound": {
+            "left_bad": 2,
+            "right_bad": 0,
+            "new": 2,
+            "removed": 0
+          }
+        },
+        "zero_count_difference": 0,
+        "failure_below70_count_difference": 2,
+        "high_above90_count_difference": 67
+      },
+      "Base_initial_interface_MSE": 0.6958504882111657,
+      "student_interface_MSE": 0.633366769879845,
+      "ratio_to_Base_initial_MSE": 0.9102052532980919,
+      "fixed_R2_teacher_PDMS": 94.5318765851702
+    }
+  },
+  "development_panel_is_not_full_validation": true,
+  "GT_used": false,
+  "test_or_new_noise_used": false,
+  "first_round_training_configuration_unchanged": true,
+  "not_a_final_student_result": true
+}

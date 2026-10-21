@@ -1,0 +1,938 @@
+{
+  "status": "ENGINEERING_ONLY_NOT_CANDIDATE_SELECTION",
+  "rows": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/manifests/natural_s0.json",
+  "indices": [
+    60,
+    1
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "candidates": [
+    {
+      "id": "Base",
+      "kind": "Base",
+      "specification": {}
+    },
+    {
+      "id": "batch1_upstream_reference",
+      "kind": "batch1_upstream",
+      "specification": {
+        "fit_path": "vlm_repair_v1/global_funnel/gates/vr_9e7a943f62a03d9984.npz",
+        "fit_sha256": "d9d29e59ac2bdb162f54038a9eca73dd6e37ba9b1bebb6dcaae6cce84989fe90",
+        "fit_id": "878d4cf17958e70513a9",
+        "block": "bridge_pre",
+        "group": "thumbnail_mean",
+        "method": "contract",
+        "alpha": 1.0,
+        "cap": 0.1,
+        "gate": "none",
+        "config": {
+          "kind": "success_pca128_shrink_qda",
+          "r": 128,
+          "ks": null,
+          "kf": null,
+          "equal": null
+        },
+        "centering": "uncentered",
+        "r": 128,
+        "parent": "vr_9e7a943f62a03d9984",
+        "id": "ungated_973d3a55a27aeaf1",
+        "ungated_parent": "vr_9b4453800cb5569742"
+      }
+    },
+    {
+      "id": "batch2_learned_reference",
+      "kind": "batch2_learned",
+      "specification": {
+        "kind": "learned",
+        "id": "behavior_arm_e1671d79f707328feb03",
+        "slot": 0,
+        "training_task": {
+          "id": "behavior_2bdfd83ac0e73ce4dea4eccb",
+          "system": "correction_K4_seed1",
+          "K": 4,
+          "expert": 0,
+          "responsibility_meta": "analysis/outcome_groups/all/correction_K4_seed1.json",
+          "block": "interface_pre",
+          "group": "valid_mean",
+          "heldout_fold": -1,
+          "fit_seed": 2026101802,
+          "fit_path": "fullspace_references/all/interface_pre.npz",
+          "fit_sha256": "edd828cba1f2e17bf8658284c75100911a0cf09a2178c9d38e50cd70f0c44725",
+          "rank": 32,
+          "cap": 0.1,
+          "space_control": "full",
+          "steps": 768,
+          "checkpoints": [
+            256,
+            512,
+            768
+          ],
+          "learning_rate": 0.003,
+          "edit_penalty": 0.0001,
+          "retention_weight": 2.0,
+          "training_noise_indices": [
+            0,
+            1,
+            2
+          ]
+        },
+        "checkpoint": {
+          "step": 256,
+          "path": "learned_experts/native_v4_behavior_2bdfd83ac0e73ce4dea4eccb/step0256.npz",
+          "sha256": "14fbc98f55e1c465d607596f3b5be243d8e9a06ecedd2a4fa4d925e6b76877f3"
+        },
+        "strength": 0.5
+      }
+    },
+    {
+      "id": "batch2_delta_reference",
+      "kind": "batch2_delta",
+      "specification": {
+        "id": "causal_arm_dac5753f9757390f5bf18fe4",
+        "kind": "delta",
+        "fit": {
+          "status": "FIT_NOT_BEHAVIOR_EVALUATED",
+          "time": "2026-10-17T23:20:24.429194+00:00",
+          "id": "delta_c8726e99aeddbca3221afcc3",
+          "path": "delta_experts/delta_c8/delta_c8726e99aeddbca3221afcc3.npz",
+          "sha256": "04056eb235a0b7cf36f2c05fb3ce010d44091fb470beed0288d8e21bf8dae023",
+          "block": "interface_pre",
+          "group": "valid_mean",
+          "cap": 0.1,
+          "input_rank": 1536,
+          "output_rank": 128,
+          "ridge": 0.01,
+          "fit_seed": 2026101802,
+          "heldout_fold": -1,
+          "system": "correction_K4_seed1",
+          "K": 4,
+          "expert": 0,
+          "responsibility_meta": "analysis/outcome_groups/all/correction_K4_seed1.json",
+          "source": "outcome_causal_fit_edca3aab4933465e96737714",
+          "target": "Actually effective per-case hidden delta; zero retention targets",
+          "normalized_training_error": 0.667078953712499,
+          "causal_output_space_rank": 1536,
+          "teacher_improved_cases": 1817,
+          "effective_cases": 1633.673208422578,
+          "retained_successes": 1024,
+          "retained_intermediate": 256,
+          "safety_targets": false,
+          "deployment_uses_GT_or_PDMS": false
+        },
+        "strength": 1.0,
+        "slot": 0
+      }
+    },
+    {
+      "id": "batch2_analytic_reference",
+      "kind": "batch2_analytic",
+      "specification": {
+        "id": "spatial_part_13237a3a3c8e403354144c47",
+        "kind": "analytic",
+        "arm": {
+          "id": "arm_d45126cac8d10ad18f5480",
+          "block": "vision_20",
+          "group": "thumbnail_mean",
+          "method": "ot",
+          "alpha": 1.0,
+          "cap": 0.1,
+          "gate": "none",
+          "fit_path": "fits/0f/0fcc695d06bed703916e5210.npz",
+          "fit_sha256": "8c111c96ca9fd7a0b53cb79530df08aa6560e66e7ccf7285b210111e3c95a6f8"
+        },
+        "slot": 0
+      }
+    },
+    {
+      "id": "batch2_joint_reference",
+      "kind": "batch2_policy_joint",
+      "specification": {
+        "kind": "joint",
+        "configuration": {
+          "id": "joint_router_0037a05db05c56c7dc58adcc_selected",
+          "model": {
+            "status": "TRAINED_NOT_ACTUAL_PDMS_VALIDATED",
+            "time": "2026-10-17T23:54:15.939139+00:00",
+            "task": {
+              "id": "joint_router_0037a05db05c56c7dc58adcc",
+              "selection": "analysis/expert_library_selection/library_045f4fe0f1eda6636b4b1574.json",
+              "responses": [
+                "analysis/responses/expert_library_S0_v1/library_045f4fe0f1eda6636b4b1574.json",
+                "analysis/responses/expert_library_noise_v1/library_045f4fe0f1eda6636b4b1574.json"
+              ],
+              "kind": "hard_continuous",
+              "tier": "trajectory",
+              "role": "PDMS",
+              "steps": 512,
+              "checkpoints": [
+                256,
+                512
+              ],
+              "warmup_steps": 128,
+              "retention_weight": 2.0,
+              "fit_seed": 2026101801
+            },
+            "kind": "hard_continuous",
+            "tier": "trajectory",
+            "role": "PDMS",
+            "parts": [
+              {
+                "kind": "learned",
+                "id": "behavior_arm_fb16000bfc6f6c83e476",
+                "slot": 0,
+                "training_task": {
+                  "id": "behavior_68a3d04ad25b4de77dbdd66d",
+                  "system": "representation_K8_seed0",
+                  "K": 8,
+                  "expert": 0,
+                  "responsibility_meta": "analysis/initial_groups/all/representation_K8_seed0.json",
+                  "block": "interface_pre",
+                  "group": "valid_mean",
+                  "heldout_fold": -1,
+                  "fit_seed": 2026101801,
+                  "fit_path": "fullspace_references/all/interface_pre.npz",
+                  "fit_sha256": "edd828cba1f2e17bf8658284c75100911a0cf09a2178c9d38e50cd70f0c44725",
+                  "rank": 32,
+                  "cap": 0.1,
+                  "space_control": "full",
+                  "steps": 768,
+                  "checkpoints": [
+                    256,
+                    512,
+                    768
+                  ],
+                  "learning_rate": 0.003,
+                  "edit_penalty": 0.0001,
+                  "retention_weight": 2.0,
+                  "training_noise_indices": [
+                    0,
+                    1,
+                    2
+                  ]
+                },
+                "checkpoint": {
+                  "step": 768,
+                  "path": "learned_experts/cached_v3_behavior_68a3d04ad25b4de77dbdd66d/step0768.npz",
+                  "sha256": "4ac1867d5a5ec8107214a659a6ae97d64de2454152e9bb48c2287dd13c247995"
+                },
+                "strength": 1.0
+              },
+              {
+                "kind": "learned",
+                "id": "behavior_arm_70e6854c43e0c7d4cb04",
+                "slot": 1,
+                "training_task": {
+                  "id": "behavior_95501490fa617a605e397190",
+                  "system": "representation_K8_seed0",
+                  "K": 8,
+                  "expert": 1,
+                  "responsibility_meta": "analysis/initial_groups/all/representation_K8_seed0.json",
+                  "block": "interface_pre",
+                  "group": "valid_mean",
+                  "heldout_fold": -1,
+                  "fit_seed": 2026101801,
+                  "fit_path": "fullspace_references/all/interface_pre.npz",
+                  "fit_sha256": "edd828cba1f2e17bf8658284c75100911a0cf09a2178c9d38e50cd70f0c44725",
+                  "rank": 32,
+                  "cap": 0.1,
+                  "space_control": "full",
+                  "steps": 768,
+                  "checkpoints": [
+                    256,
+                    512,
+                    768
+                  ],
+                  "learning_rate": 0.003,
+                  "edit_penalty": 0.0001,
+                  "retention_weight": 2.0,
+                  "training_noise_indices": [
+                    0,
+                    1,
+                    2
+                  ]
+                },
+                "checkpoint": {
+                  "step": 256,
+                  "path": "learned_experts/cached_v3_behavior_95501490fa617a605e397190/step0256.npz",
+                  "sha256": "ca656745740e64244516f2027775977fe2fdaaac294f553e8155ade11c42ebb3"
+                },
+                "strength": 1.0
+              },
+              {
+                "kind": "learned",
+                "id": "behavior_arm_1291facdb2197ebe0834",
+                "slot": 2,
+                "training_task": {
+                  "id": "behavior_f2ce561a1172bf59881f838a",
+                  "system": "representation_K8_seed0",
+                  "K": 8,
+                  "expert": 2,
+                  "responsibility_meta": "analysis/initial_groups/all/representation_K8_seed0.json",
+                  "block": "interface_pre",
+                  "group": "valid_mean",
+                  "heldout_fold": -1,
+                  "fit_seed": 2026101801,
+                  "fit_path": "fullspace_references/all/interface_pre.npz",
+                  "fit_sha256": "edd828cba1f2e17bf8658284c75100911a0cf09a2178c9d38e50cd70f0c44725",
+                  "rank": 32,
+                  "cap": 0.1,
+                  "space_control": "full",
+                  "steps": 768,
+                  "checkpoints": [
+                    256,
+                    512,
+                    768
+                  ],
+                  "learning_rate": 0.003,
+                  "edit_penalty": 0.0001,
+                  "retention_weight": 2.0,
+                  "training_noise_indices": [
+                    0,
+                    1,
+                    2
+                  ]
+                },
+                "checkpoint": {
+                  "step": 256,
+                  "path": "learned_experts/cached_v3_behavior_f2ce561a1172bf59881f838a/step0256.npz",
+                  "sha256": "13f88e9af75ac1391cb1c4768b8db30ad79e6c77cc806660d0eb5529d3a467ba"
+                },
+                "strength": 1.0
+              },
+              {
+                "kind": "learned",
+                "id": "behavior_arm_f9c86985faed7edae805",
+                "slot": 3,
+                "training_task": {
+                  "id": "behavior_c62ff735489b292aa9b26d66",
+                  "system": "representation_K8_seed0",
+                  "K": 8,
+                  "expert": 3,
+                  "responsibility_meta": "analysis/initial_groups/all/representation_K8_seed0.json",
+                  "block": "interface_pre",
+                  "group": "valid_mean",
+                  "heldout_fold": -1,
+                  "fit_seed": 2026101801,
+                  "fit_path": "fullspace_references/all/interface_pre.npz",
+                  "fit_sha256": "edd828cba1f2e17bf8658284c75100911a0cf09a2178c9d38e50cd70f0c44725",
+                  "rank": 32,
+                  "cap": 0.1,
+                  "space_control": "full",
+                  "steps": 768,
+                  "checkpoints": [
+                    256,
+                    512,
+                    768
+                  ],
+                  "learning_rate": 0.003,
+                  "edit_penalty": 0.0001,
+                  "retention_weight": 2.0,
+                  "training_noise_indices": [
+                    0,
+                    1,
+                    2
+                  ]
+                },
+                "checkpoint": {
+                  "step": 256,
+                  "path": "learned_experts/cached_v3_behavior_c62ff735489b292aa9b26d66/step0256.npz",
+                  "sha256": "896030c25cc41965468d0cb300d3f0f818df67f8714e3d376ea5a6e89da31279"
+                },
+                "strength": 1.0
+              },
+              {
+                "kind": "learned",
+                "id": "behavior_arm_6749dec90a4dbd8b2c60",
+                "slot": 4,
+                "training_task": {
+                  "id": "behavior_2988ac7b8a84bccd80656da8",
+                  "system": "representation_K8_seed0",
+                  "K": 8,
+                  "expert": 4,
+                  "responsibility_meta": "analysis/initial_groups/all/representation_K8_seed0.json",
+                  "block": "interface_pre",
+                  "group": "valid_mean",
+                  "heldout_fold": -1,
+                  "fit_seed": 2026101801,
+                  "fit_path": "fullspace_references/all/interface_pre.npz",
+                  "fit_sha256": "edd828cba1f2e17bf8658284c75100911a0cf09a2178c9d38e50cd70f0c44725",
+                  "rank": 32,
+                  "cap": 0.1,
+                  "space_control": "full",
+                  "steps": 768,
+                  "checkpoints": [
+                    256,
+                    512,
+                    768
+                  ],
+                  "learning_rate": 0.003,
+                  "edit_penalty": 0.0001,
+                  "retention_weight": 2.0,
+                  "training_noise_indices": [
+                    0,
+                    1,
+                    2
+                  ]
+                },
+                "checkpoint": {
+                  "step": 256,
+                  "path": "learned_experts/cached_v3_behavior_2988ac7b8a84bccd80656da8/step0256.npz",
+                  "sha256": "fb0c207d21406daad0461eb6351c20a1fd9a286d5f3b02aa2313506da71d8e6a"
+                },
+                "strength": 1.0
+              },
+              {
+                "kind": "learned",
+                "id": "behavior_arm_d693809c7a2b68b6a3a4",
+                "slot": 5,
+                "training_task": {
+                  "id": "behavior_95b432388fcbea51f1370880",
+                  "system": "representation_K8_seed0",
+                  "K": 8,
+                  "expert": 5,
+                  "responsibility_meta": "analysis/initial_groups/all/representation_K8_seed0.json",
+                  "block": "interface_pre",
+                  "group": "valid_mean",
+                  "heldout_fold": -1,
+                  "fit_seed": 2026101801,
+                  "fit_path": "fullspace_references/all/interface_pre.npz",
+                  "fit_sha256": "edd828cba1f2e17bf8658284c75100911a0cf09a2178c9d38e50cd70f0c44725",
+                  "rank": 32,
+                  "cap": 0.1,
+                  "space_control": "full",
+                  "steps": 768,
+                  "checkpoints": [
+                    256,
+                    512,
+                    768
+                  ],
+                  "learning_rate": 0.003,
+                  "edit_penalty": 0.0001,
+                  "retention_weight": 2.0,
+                  "training_noise_indices": [
+                    0,
+                    1,
+                    2
+                  ]
+                },
+                "checkpoint": {
+                  "step": 768,
+                  "path": "learned_experts/cached_v3_behavior_95b432388fcbea51f1370880/step0768.npz",
+                  "sha256": "2708d3141cfd14f80dea94cd572600e316234b9e4a306f562b0b5a4b276cf23b"
+                },
+                "strength": 1.0
+              },
+              {
+                "kind": "learned",
+                "id": "behavior_arm_c95d372633b2d5019516",
+                "slot": 6,
+                "training_task": {
+                  "id": "behavior_639eb6a4fcdee55f19ee1d53",
+                  "system": "representation_K8_seed0",
+                  "K": 8,
+                  "expert": 6,
+                  "responsibility_meta": "analysis/initial_groups/all/representation_K8_seed0.json",
+                  "block": "interface_pre",
+                  "group": "valid_mean",
+                  "heldout_fold": -1,
+                  "fit_seed": 2026101801,
+                  "fit_path": "fullspace_references/all/interface_pre.npz",
+                  "fit_sha256": "edd828cba1f2e17bf8658284c75100911a0cf09a2178c9d38e50cd70f0c44725",
+                  "rank": 32,
+                  "cap": 0.1,
+                  "space_control": "full",
+                  "steps": 768,
+                  "checkpoints": [
+                    256,
+                    512,
+                    768
+                  ],
+                  "learning_rate": 0.003,
+                  "edit_penalty": 0.0001,
+                  "retention_weight": 2.0,
+                  "training_noise_indices": [
+                    0,
+                    1,
+                    2
+                  ]
+                },
+                "checkpoint": {
+                  "step": 256,
+                  "path": "learned_experts/cached_v3_behavior_639eb6a4fcdee55f19ee1d53/step0256.npz",
+                  "sha256": "4cefa02a3bd93251e34d936f369c5bd79d11a90a44ce809a6cc1699e5953f8f3"
+                },
+                "strength": 1.0
+              },
+              {
+                "kind": "learned",
+                "id": "behavior_arm_3e889e8147b8263c1b72",
+                "slot": 7,
+                "training_task": {
+                  "id": "behavior_4cf8615ec7dc7dda36d17ce7",
+                  "system": "representation_K8_seed0",
+                  "K": 8,
+                  "expert": 7,
+                  "responsibility_meta": "analysis/initial_groups/all/representation_K8_seed0.json",
+                  "block": "interface_pre",
+                  "group": "valid_mean",
+                  "heldout_fold": -1,
+                  "fit_seed": 2026101801,
+                  "fit_path": "fullspace_references/all/interface_pre.npz",
+                  "fit_sha256": "edd828cba1f2e17bf8658284c75100911a0cf09a2178c9d38e50cd70f0c44725",
+                  "rank": 32,
+                  "cap": 0.1,
+                  "space_control": "full",
+                  "steps": 768,
+                  "checkpoints": [
+                    256,
+                    512,
+                    768
+                  ],
+                  "learning_rate": 0.003,
+                  "edit_penalty": 0.0001,
+                  "retention_weight": 2.0,
+                  "training_noise_indices": [
+                    0,
+                    1,
+                    2
+                  ]
+                },
+                "checkpoint": {
+                  "step": 256,
+                  "path": "learned_experts/cached_v3_behavior_4cf8615ec7dc7dda36d17ce7/step0256.npz",
+                  "sha256": "7950b26fb1482fbd46bd2e43eb00651ca5f38cfe464306439cfaaeb34b712f6d"
+                },
+                "strength": 0.25
+              }
+            ],
+            "system": "representation_K8_seed0",
+            "nominal_K": 8,
+            "active_K": 8,
+            "heldout_fold": -1,
+            "input_dimension": 96,
+            "checkpoints": [
+              {
+                "step": 256,
+                "path": "behavior_routers/joint_router_0037a05db05c56c7dc58adcc/step0256.npz",
+                "sha256": "ef8e60fe755ed091f2d640a61035adbe9b28e37f2797a4499b0da9be6b43b4ef"
+              },
+              {
+                "step": 512,
+                "path": "behavior_routers/joint_router_0037a05db05c56c7dc58adcc/step0512.npz",
+                "sha256": "be8205b3a11d5437e325f8af68518a5d236c99810e0a6097be5b16443d8bdc6b"
+              }
+            ],
+            "trace": [
+              {
+                "step": 0,
+                "index": 34565,
+                "noise": 0,
+                "group": "failure",
+                "loss": 0.006128990091383457,
+                "trajectory_loss": 0.006128129083663225,
+                "gradient_norm": 0.06369147449731827,
+                "identity_weight": 0.0,
+                "edit_squared": 0.008612053468823433
+              },
+              {
+                "step": 16,
+                "index": 85221,
+                "noise": 1,
+                "group": "failure",
+                "loss": 0.00021740436204709113,
+                "trajectory_loss": 0.000216699147131294,
+                "gradient_norm": 0.0017918861703947186,
+                "identity_weight": 0.0,
+                "edit_squared": 0.007052171975374222
+              },
+              {
+                "step": 32,
+                "index": 37281,
+                "noise": 2,
+                "group": "failure",
+                "loss": 0.0032522662077099085,
+                "trajectory_loss": 0.0032522662077099085,
+                "gradient_norm": 0.00038089894223958254,
+                "identity_weight": 1.0,
+                "edit_squared": 0.0
+              },
+              {
+                "step": 48,
+                "index": 30291,
+                "noise": 0,
+                "group": "failure",
+                "loss": 0.00047497329069301486,
+                "trajectory_loss": 0.00047497329069301486,
+                "gradient_norm": 0.00022102476214058697,
+                "identity_weight": 1.0,
+                "edit_squared": 0.0
+              },
+              {
+                "step": 64,
+                "index": 56438,
+                "noise": 1,
+                "group": "failure",
+                "loss": 0.0006282669492065907,
+                "trajectory_loss": 0.0006282669492065907,
+                "gradient_norm": 0.0004221246053930372,
+                "identity_weight": 1.0,
+                "edit_squared": 0.0
+              },
+              {
+                "step": 80,
+                "index": 25127,
+                "noise": 2,
+                "group": "failure",
+                "loss": 0.0013033264549449086,
+                "trajectory_loss": 0.0013033264549449086,
+                "gradient_norm": 0.000680335855577141,
+                "identity_weight": 1.0,
+                "edit_squared": 0.0
+              },
+              {
+                "step": 96,
+                "index": 86764,
+                "noise": 0,
+                "group": "failure",
+                "loss": 0.00017118861433118582,
+                "trajectory_loss": 0.00017091655172407627,
+                "gradient_norm": 0.0008264750358648598,
+                "identity_weight": 0.0,
+                "edit_squared": 0.0027206195518374443
+              },
+              {
+                "step": 112,
+                "index": 47812,
+                "noise": 1,
+                "group": "failure",
+                "loss": 0.0012645734241232276,
+                "trajectory_loss": 0.0012645734241232276,
+                "gradient_norm": 0.0010173965711146593,
+                "identity_weight": 1.0,
+                "edit_squared": 0.0
+              },
+              {
+                "step": 128,
+                "index": 69634,
+                "noise": 2,
+                "group": "failure",
+                "loss": 9.239377686753869e-05,
+                "trajectory_loss": 9.239377686753869e-05,
+                "gradient_norm": 0.0002074676740448922,
+                "identity_weight": 1.0,
+                "edit_squared": 0.0
+              },
+              {
+                "step": 144,
+                "index": 13272,
+                "noise": 0,
+                "group": "failure",
+                "loss": 8.047678420552984e-06,
+                "trajectory_loss": 8.047678420552984e-06,
+                "gradient_norm": 0.00010482034849701449,
+                "identity_weight": 1.0,
+                "edit_squared": 0.0
+              },
+              {
+                "step": 160,
+                "index": 82119,
+                "noise": 1,
+                "group": "failure",
+                "loss": 0.00010779313743114471,
+                "trajectory_loss": 0.00010779313743114471,
+                "gradient_norm": 2.510893318685703e-05,
+                "identity_weight": 1.0,
+                "edit_squared": 0.0
+              },
+              {
+                "step": 176,
+                "index": 68648,
+                "noise": 2,
+                "group": "failure",
+                "loss": 0.002007637871429324,
+                "trajectory_loss": 0.002007637871429324,
+                "gradient_norm": 0.0006685662665404379,
+                "identity_weight": 1.0,
+                "edit_squared": 0.0
+              },
+              {
+                "step": 192,
+                "index": 11124,
+                "noise": 0,
+                "group": "failure",
+                "loss": 7.051981810946018e-05,
+                "trajectory_loss": 6.957472214708105e-05,
+                "gradient_norm": 0.00021938211284577847,
+                "identity_weight": 0.0,
+                "edit_squared": 0.009450973011553288
+              },
+              {
+                "step": 208,
+                "index": 84586,
+                "noise": 1,
+                "group": "failure",
+                "loss": 0.00014862061652820557,
+                "trajectory_loss": 0.0001483420783188194,
+                "gradient_norm": 0.0015008467016741633,
+                "identity_weight": 0.0,
+                "edit_squared": 0.0027853890787810087
+              },
+              {
+                "step": 224,
+                "index": 73403,
+                "noise": 2,
+                "group": "failure",
+                "loss": 0.00019460948533378541,
+                "trajectory_loss": 0.00019460948533378541,
+                "gradient_norm": 0.00045135640539228916,
+                "identity_weight": 1.0,
+                "edit_squared": 0.0
+              },
+              {
+                "step": 240,
+                "index": 85624,
+                "noise": 0,
+                "group": "failure",
+                "loss": 1.5008873560873326e-05,
+                "trajectory_loss": 1.5008873560873326e-05,
+                "gradient_norm": 6.231453153304756e-05,
+                "identity_weight": 1.0,
+                "edit_squared": 0.0
+              },
+              {
+                "step": 255,
+                "index": 90629,
+                "noise": 0,
+                "group": "intermediate_retention",
+                "loss": 0.0011605053441599011,
+                "trajectory_loss": 0.0,
+                "gradient_norm": 0.0028011947870254517,
+                "identity_weight": 1.0,
+                "edit_squared": 0.0
+              },
+              {
+                "step": 256,
+                "index": 99592,
+                "noise": 1,
+                "group": "failure",
+                "loss": 0.0004569715529214591,
+                "trajectory_loss": 0.0004569715529214591,
+                "gradient_norm": 0.0013129140716046095,
+                "identity_weight": 1.0,
+                "edit_squared": 0.0
+              },
+              {
+                "step": 272,
+                "index": 41825,
+                "noise": 2,
+                "group": "failure",
+                "loss": 5.424057599157095e-05,
+                "trajectory_loss": 5.424057599157095e-05,
+                "gradient_norm": 7.711470971116796e-05,
+                "identity_weight": 1.0,
+                "edit_squared": 0.0
+              },
+              {
+                "step": 288,
+                "index": 49201,
+                "noise": 0,
+                "group": "failure",
+                "loss": 0.0006466170307248831,
+                "trajectory_loss": 0.0006463517784141004,
+                "gradient_norm": 0.007464050780981779,
+                "identity_weight": 0.0,
+                "edit_squared": 0.002652727533131838
+              },
+              {
+                "step": 304,
+                "index": 85768,
+                "noise": 1,
+                "group": "failure",
+                "loss": 0.00023784642689861357,
+                "trajectory_loss": 0.00023784642689861357,
+                "gradient_norm": 0.0002875156351365149,
+                "identity_weight": 1.0,
+                "edit_squared": 0.0
+              },
+              {
+                "step": 320,
+                "index": 31883,
+                "noise": 2,
+                "group": "failure",
+                "loss": 0.0005277075106278062,
+                "trajectory_loss": 0.0005277075106278062,
+                "gradient_norm": 0.00014881050447002053,
+                "identity_weight": 1.0,
+                "edit_squared": 0.0
+              },
+              {
+                "step": 336,
+                "index": 95152,
+                "noise": 0,
+                "group": "failure",
+                "loss": 0.0002732634893618524,
+                "trajectory_loss": 0.0002732634893618524,
+                "gradient_norm": 0.00021956631098873913,
+                "identity_weight": 1.0,
+                "edit_squared": 0.0
+              },
+              {
+                "step": 352,
+                "index": 52498,
+                "noise": 1,
+                "group": "failure",
+                "loss": 0.00018446551985107362,
+                "trajectory_loss": 0.00018446551985107362,
+                "gradient_norm": 0.00025571402511559427,
+                "identity_weight": 1.0,
+                "edit_squared": 0.0
+              },
+              {
+                "step": 368,
+                "index": 20216,
+                "noise": 2,
+                "group": "failure",
+                "loss": 0.0027689423877745867,
+                "trajectory_loss": 0.0027679328341037035,
+                "gradient_norm": 0.042215291410684586,
+                "identity_weight": 0.0,
+                "edit_squared": 0.01009647361934185
+              },
+              {
+                "step": 384,
+                "index": 48857,
+                "noise": 0,
+                "group": "failure",
+                "loss": 0.0012573671992868185,
+                "trajectory_loss": 0.0012573671992868185,
+                "gradient_norm": 0.000362803868483752,
+                "identity_weight": 1.0,
+                "edit_squared": 0.0
+              },
+              {
+                "step": 400,
+                "index": 24952,
+                "noise": 1,
+                "group": "failure",
+                "loss": 0.0006238616770133376,
+                "trajectory_loss": 0.0006238616770133376,
+                "gradient_norm": 0.0011733549181371927,
+                "identity_weight": 1.0,
+                "edit_squared": 0.0
+              },
+              {
+                "step": 416,
+                "index": 39941,
+                "noise": 2,
+                "group": "failure",
+                "loss": 0.0012287530116736889,
+                "trajectory_loss": 0.0012287530116736889,
+                "gradient_norm": 0.001703866058960557,
+                "identity_weight": 1.0,
+                "edit_squared": 0.0
+              },
+              {
+                "step": 432,
+                "index": 68337,
+                "noise": 0,
+                "group": "failure",
+                "loss": 5.0914386520162225e-05,
+                "trajectory_loss": 5.0914386520162225e-05,
+                "gradient_norm": 7.03280238667503e-05,
+                "identity_weight": 1.0,
+                "edit_squared": 0.0
+              },
+              {
+                "step": 448,
+                "index": 47441,
+                "noise": 1,
+                "group": "failure",
+                "loss": 3.499606464174576e-05,
+                "trajectory_loss": 3.499606464174576e-05,
+                "gradient_norm": 4.1743107431102544e-05,
+                "identity_weight": 1.0,
+                "edit_squared": 0.0
+              },
+              {
+                "step": 464,
+                "index": 70302,
+                "noise": 2,
+                "group": "failure",
+                "loss": 0.00040171865839511156,
+                "trajectory_loss": 0.0004012926365248859,
+                "gradient_norm": 0.003423387883231044,
+                "identity_weight": 0.0,
+                "edit_squared": 0.004260136280208826
+              },
+              {
+                "step": 480,
+                "index": 35693,
+                "noise": 0,
+                "group": "failure",
+                "loss": 0.010478422045707703,
+                "trajectory_loss": 0.010477667674422264,
+                "gradient_norm": 0.04235493019223213,
+                "identity_weight": 0.0,
+                "edit_squared": 0.007541201543062925
+              },
+              {
+                "step": 496,
+                "index": 1458,
+                "noise": 1,
+                "group": "failure",
+                "loss": 3.2017414923757315e-05,
+                "trajectory_loss": 3.2017414923757315e-05,
+                "gradient_norm": 6.797207606723532e-05,
+                "identity_weight": 1.0,
+                "edit_squared": 0.0
+              },
+              {
+                "step": 511,
+                "index": 67212,
+                "noise": 1,
+                "group": "intermediate_retention",
+                "loss": 0.0013673454523086548,
+                "trajectory_loss": 0.0,
+                "gradient_norm": 0.002716285642236471,
+                "identity_weight": 1.0,
+                "edit_squared": 0.0
+              }
+            ],
+            "seconds": 189.26272147399868,
+            "true_downstream_mixture_training": true,
+            "experts_frozen": true,
+            "base_frozen": true,
+            "exact_identity_available": true,
+            "no_outcome_additivity_assumed": true,
+            "GT_PDMS_not_deployment_inputs": true,
+            "validation_fitted": false,
+            "test_accessed": false
+          },
+          "checkpoint": {
+            "step": 512,
+            "path": "behavior_routers/joint_router_0037a05db05c56c7dc58adcc/step0512.npz",
+            "sha256": "be8205b3a11d5437e325f8af68518a5d236c99810e0a6097be5b16443d8bdc6b"
+          },
+          "multiplier": 1.0,
+          "identity_threshold": 0.5
+        }
+      }
+    }
+  ],
+  "optimization": {
+    "block": "interface_pre",
+    "group": "valid_mean",
+    "cap": 0.02,
+    "steps": 4,
+    "noise_indices": [
+      0,
+      1,
+      2
+    ]
+  },
+  "checkpoint_sha256": "23fb949b10387efeff87e093703d5faf41b61b9e5ead16d4076661e3c7c08a20"
+}

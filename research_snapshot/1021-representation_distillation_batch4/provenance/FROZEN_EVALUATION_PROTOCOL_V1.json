@@ -1,0 +1,73 @@
+{
+  "status": "FROZEN_BEFORE_STUDENT_FULL_TEST_EVALUATION",
+  "time": "2026-10-21T13:06:48.173707+00:00",
+  "groups": [
+    {
+      "group": "H",
+      "path": "configs/distillation_main_v4/H.json",
+      "sha256": "e9baba6b3d546404544e2a2e2c3e7f2808884a798e58ad1fea7514227fdf683a",
+      "run_id": "distillation_main_v4_H",
+      "node": "replacement_a1"
+    },
+    {
+      "group": "T",
+      "path": "configs/distillation_main_v4/T.json",
+      "sha256": "9d4c9fdd44d2f8ad4ff05fb57173a1746ce507fb3b7b7c3794054823e866bf6e",
+      "run_id": "distillation_main_v4_T",
+      "node": "replacement_a2"
+    },
+    {
+      "group": "HT",
+      "path": "configs/distillation_main_v4/HT.json",
+      "sha256": "b2e8d6a9fb9f019aefddb35280e1f415fef7e43d118f2d621e2c53cb943a9fb6",
+      "run_id": "distillation_main_v4_HT",
+      "node": "replacement_self0"
+    }
+  ],
+  "teacher_snapshot_sha256": "c6d5f9ec1e7eac2202c33458e485d92ed420076527dd89be82f1f84c72157c1a",
+  "primary_checkpoint": "Final fifth epoch, identical scene/noise exposure",
+  "secondary_checkpoint": "Best old-five-noise development PDMS among the five predefined epoch ends; alias if identical",
+  "model_choice_uses_test_or_new_noise": false,
+  "train_population": 103288,
+  "training_unique_scenes": 85339,
+  "validation_population": 17475,
+  "test_population": 12146,
+  "full_navtrain_noises": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "new_validation_noises": [
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "test_noises": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "primary_reporting": "Full navtrain including train and validation; also report each separately",
+  "new_noise_teacher_not_rescored": true,
+  "new_noise_absorption_ratio_forbidden": true,
+  "Base_old_five": "Immutable audited first42 actual outputs",
+  "Base_new_five": "Fresh same-input same-complete-noise RL Base; old S0 trajectory and score replay checked",
+  "test_rows_sha256": "bf32bead6a65f6626132ecb72d791bf94bde1ad86a1c0877675f2ab1b73a4b5c",
+  "train_rows_sha256": "d7f146da650ff965b945c12718bccf774d632f5d50052518be52546262fa47f9",
+  "no_GT": true,
+  "no_online_teacher_or_PDMS_or_repair_selection": true,
+  "all_scenes_including_E_evaluated": true,
+  "statistical_unit": "Scene, with session bootstrap; five draws are correlated within each scene",
+  "student_training_repeats_not_faked_by_action_noises": true
+}

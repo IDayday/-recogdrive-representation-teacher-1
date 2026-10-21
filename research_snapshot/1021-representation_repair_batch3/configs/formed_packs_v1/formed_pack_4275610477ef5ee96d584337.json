@@ -1,0 +1,2267 @@
+{
+  "candidate_scope": "formed",
+  "checkpoint_sha256": "23fb949b10387efeff87e093703d5faf41b61b9e5ead16d4076661e3c7c08a20",
+  "entries": [
+    {
+      "id": "formed_008f140377aef2c04238cb47",
+      "kind": "batch1_action_or_postprocess",
+      "definition": {
+        "root": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis",
+        "arm": {
+          "fit": "r1_pooled_centered_unequal_region0__time4",
+          "candidate": "r1_pooled_centered_unequal_region0",
+          "route": "r1",
+          "step": 4,
+          "layer": 16,
+          "token": 6,
+          "r": 24,
+          "space": "candidate",
+          "method": "mean",
+          "alpha": 0.5,
+          "calibration": "n",
+          "gate": "none",
+          "cap": 0.05,
+          "mechanism": "target_time_calibration",
+          "timing_type": "late_transfer",
+          "control": true,
+          "control_kind": "haar_rotation",
+          "alternative_basis": "r1_pooled_centered_unequal_region0__haar2",
+          "id": "cr_26b18311905ae224",
+          "parent": "cr_774b7ee8eef1ab62"
+        }
+      },
+      "semantic": {
+        "fit": "r1_pooled_centered_unequal_region0__time4",
+        "candidate": "r1_pooled_centered_unequal_region0",
+        "route": "r1",
+        "step": 4,
+        "layer": 16,
+        "token": 6,
+        "r": 24,
+        "space": "candidate",
+        "method": "mean",
+        "alpha": 0.5,
+        "calibration": "n",
+        "gate": "none",
+        "cap": 0.05,
+        "mechanism": "target_time_calibration",
+        "timing_type": "late_transfer",
+        "control": true,
+        "control_kind": "haar_rotation",
+        "alternative_basis": "r1_pooled_centered_unequal_region0__haar2"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/candidate_repair_v1__final_test.json",
+          "sha256": "b854a71b1da35f94d4ec6320df790e7c8772b38e8be05af715382462272c8aca"
+        }
+      ],
+      "aliases": [
+        "cr_26b18311905ae224"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_06a3b1a179c9bf09e8ce6d46",
+      "kind": "batch1_upstream",
+      "definition": {
+        "root": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis",
+        "arm": {
+          "fit_path": "vlm_repair_v1/final/fits/ungated_973d3a55a27aeaf1__haar0.npz",
+          "fit_sha256": "fad96b029c64d126ae1be453d6825a55e568329ef86e49212c45fda968d095e0",
+          "fit_id": "878d4cf17958e70513a9",
+          "block": "bridge_pre",
+          "group": "thumbnail_mean",
+          "method": "contract",
+          "alpha": 1.0,
+          "cap": 0.1,
+          "gate": "none",
+          "config": {
+            "kind": "success_pca128_shrink_qda",
+            "r": 128,
+            "ks": null,
+            "kf": null,
+            "equal": null
+          },
+          "centering": "uncentered",
+          "r": 128,
+          "parent": "vr_9e7a943f62a03d9984",
+          "ungated_parent": "vr_9b4453800cb5569742",
+          "control_kind": "haar_rotation",
+          "control": true,
+          "control_parent": "ungated_973d3a55a27aeaf1",
+          "construction_replicate": 0,
+          "id": "null_1f15692cc8891b70d2"
+        }
+      },
+      "semantic": {
+        "fit_path": "vlm_repair_v1/final/fits/ungated_973d3a55a27aeaf1__haar0.npz",
+        "fit_sha256": "fad96b029c64d126ae1be453d6825a55e568329ef86e49212c45fda968d095e0",
+        "block": "bridge_pre",
+        "group": "thumbnail_mean",
+        "method": "contract",
+        "alpha": 1.0,
+        "cap": 0.1,
+        "gate": "none",
+        "config": {
+          "kind": "success_pca128_shrink_qda",
+          "r": 128,
+          "ks": null,
+          "kf": null,
+          "equal": null
+        },
+        "centering": "uncentered",
+        "r": 128,
+        "control_kind": "haar_rotation",
+        "control": true,
+        "control_parent": "ungated_973d3a55a27aeaf1",
+        "construction_replicate": 0
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/vlm_repair_v1__final_test.json",
+          "sha256": "532eabcdf0fdea715cfc338878a91cac9f315035f3a24f064fc8fe354d0b02a8"
+        }
+      ],
+      "aliases": [
+        "null_1f15692cc8891b70d2"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_06c00fa4b32155faaf810052",
+      "kind": "batch1_upstream",
+      "definition": {
+        "root": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis",
+        "arm": {
+          "fit_path": "vlm_repair_v1/global_funnel/gates/vr_2cce3fe5fd7c120c0f.npz",
+          "fit_sha256": "fc1585b2b9a1b6454a017759ceee9853d5717136d6b654c1e55f6cf1d9a43bf8",
+          "fit_id": "f16be6b7319e6d75c071",
+          "block": "vision_23",
+          "group": "patch_mean",
+          "method": "support_projection",
+          "alpha": 1.0,
+          "cap": 0.1,
+          "gate": "none",
+          "config": {
+            "kind": "basis_residual",
+            "ks": 128,
+            "kf": 128,
+            "r": 128,
+            "equal": true
+          },
+          "centering": "pooled_centered",
+          "r": 128,
+          "parent": "vr_2cce3fe5fd7c120c0f",
+          "ungated_parent": "vr_a76ed505b44077a0d9",
+          "oracle_diagnostic": true,
+          "id": "vlm_ungated_4c52f51db2e01a1acc"
+        }
+      },
+      "semantic": {
+        "fit_path": "vlm_repair_v1/global_funnel/gates/vr_2cce3fe5fd7c120c0f.npz",
+        "fit_sha256": "fc1585b2b9a1b6454a017759ceee9853d5717136d6b654c1e55f6cf1d9a43bf8",
+        "block": "vision_23",
+        "group": "patch_mean",
+        "method": "support_projection",
+        "alpha": 1.0,
+        "cap": 0.1,
+        "gate": "none",
+        "config": {
+          "kind": "basis_residual",
+          "ks": 128,
+          "kf": 128,
+          "r": 128,
+          "equal": true
+        },
+        "centering": "pooled_centered",
+        "r": 128
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/vlm_ungated_primary__failure_gated.json",
+          "sha256": "2f96fd9a62eb5ec219de3e2f81c1704460a26a5d13902c6dbb19678a1e63da89"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/vlm_ungated_observation_qda__failure_gated.json",
+          "sha256": "079734eea1f739c6dd6877329f404a6d98dcbb09790f45a165e9307420ae0108"
+        }
+      ],
+      "aliases": [
+        "vlm_ungated_4c52f51db2e01a1acc",
+        "ungated_3473150436c5dc27"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_11a659b81370c56789fd7d46",
+      "kind": "batch1_action_or_postprocess",
+      "definition": {
+        "root": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis",
+        "arm": {
+          "fit": "r1_pooled_centered_unequal_region0__time4",
+          "candidate": "r1_pooled_centered_unequal_region0",
+          "route": "r1",
+          "step": 4,
+          "layer": 16,
+          "token": 6,
+          "r": 24,
+          "space": "candidate",
+          "method": "mean",
+          "alpha": 0.5,
+          "calibration": "n",
+          "gate": "none",
+          "cap": 0.05,
+          "mechanism": "target_time_calibration",
+          "timing_type": "late_transfer",
+          "control": true,
+          "control_kind": "reverse",
+          "id": "cr_ffd60fe7e54241c9",
+          "parent": "cr_774b7ee8eef1ab62"
+        }
+      },
+      "semantic": {
+        "fit": "r1_pooled_centered_unequal_region0__time4",
+        "candidate": "r1_pooled_centered_unequal_region0",
+        "route": "r1",
+        "step": 4,
+        "layer": 16,
+        "token": 6,
+        "r": 24,
+        "space": "candidate",
+        "method": "mean",
+        "alpha": 0.5,
+        "calibration": "n",
+        "gate": "none",
+        "cap": 0.05,
+        "mechanism": "target_time_calibration",
+        "timing_type": "late_transfer",
+        "control": true,
+        "control_kind": "reverse"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/candidate_repair_v1__final_test.json",
+          "sha256": "b854a71b1da35f94d4ec6320df790e7c8772b38e8be05af715382462272c8aca"
+        }
+      ],
+      "aliases": [
+        "cr_ffd60fe7e54241c9"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_13cde5b1429bab9dd3c0a906",
+      "kind": "batch1_upstream",
+      "definition": {
+        "root": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis",
+        "arm": {
+          "fit_path": "vlm_repair_v1/global_funnel/gates/vr_2cce3fe5fd7c120c0f.npz",
+          "fit_sha256": "fc1585b2b9a1b6454a017759ceee9853d5717136d6b654c1e55f6cf1d9a43bf8",
+          "fit_id": "f16be6b7319e6d75c071",
+          "block": "vision_23",
+          "group": "patch_mean",
+          "method": "support_projection",
+          "alpha": 1.0,
+          "cap": 0.1,
+          "gate": "benefit",
+          "config": {
+            "kind": "basis_residual",
+            "ks": 128,
+            "kf": 128,
+            "r": 128,
+            "equal": true
+          },
+          "centering": "pooled_centered",
+          "r": 128,
+          "parent": "vr_2cce3fe5fd7c120c0f",
+          "gate_threshold": 0.0,
+          "id": "vr_a76ed505b44077a0d9"
+        }
+      },
+      "semantic": {
+        "fit_path": "vlm_repair_v1/global_funnel/gates/vr_2cce3fe5fd7c120c0f.npz",
+        "fit_sha256": "fc1585b2b9a1b6454a017759ceee9853d5717136d6b654c1e55f6cf1d9a43bf8",
+        "block": "vision_23",
+        "group": "patch_mean",
+        "method": "support_projection",
+        "alpha": 1.0,
+        "cap": 0.1,
+        "gate": "benefit",
+        "config": {
+          "kind": "basis_residual",
+          "ks": 128,
+          "kf": 128,
+          "r": 128,
+          "equal": true
+        },
+        "centering": "pooled_centered",
+        "r": 128,
+        "gate_threshold": 0.0
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/vlm_repair_v1__final_test.json",
+          "sha256": "532eabcdf0fdea715cfc338878a91cac9f315035f3a24f064fc8fe354d0b02a8"
+        }
+      ],
+      "aliases": [
+        "vr_a76ed505b44077a0d9"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_13e3aa0f133cb11fd850161e",
+      "kind": "batch1_upstream",
+      "definition": {
+        "root": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis",
+        "arm": {
+          "fit_path": "vlm_repair_v1/final/fits/vr_a3ef5ad4d30f40b883__haar1.npz",
+          "fit_sha256": "4ce8f0647953f2f30a0d289bb2bfd980434adac811ad2cad7219ab184c39611d",
+          "fit_id": "f839974b37ed12b8fa50",
+          "block": "interface_post",
+          "group": "requirements_v2",
+          "method": "contract",
+          "alpha": 2.0,
+          "cap": 0.2,
+          "gate": "none",
+          "config": {
+            "kind": "full",
+            "ks": null,
+            "kf": null,
+            "r": null,
+            "equal": null
+          },
+          "centering": "uncentered",
+          "r": 384,
+          "parent": "vr_eda36039303c355b85",
+          "control_kind": "haar_rotation",
+          "control": true,
+          "control_parent": "vr_a3ef5ad4d30f40b883",
+          "construction_replicate": 1,
+          "id": "null_9f6ddbcaa6ebe42b97"
+        }
+      },
+      "semantic": {
+        "fit_path": "vlm_repair_v1/final/fits/vr_a3ef5ad4d30f40b883__haar1.npz",
+        "fit_sha256": "4ce8f0647953f2f30a0d289bb2bfd980434adac811ad2cad7219ab184c39611d",
+        "block": "interface_post",
+        "group": "requirements_v2",
+        "method": "contract",
+        "alpha": 2.0,
+        "cap": 0.2,
+        "gate": "none",
+        "config": {
+          "kind": "full",
+          "ks": null,
+          "kf": null,
+          "r": null,
+          "equal": null
+        },
+        "centering": "uncentered",
+        "r": 384,
+        "control_kind": "haar_rotation",
+        "control": true,
+        "control_parent": "vr_a3ef5ad4d30f40b883",
+        "construction_replicate": 1
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/vlm_repair_v1__final_test_semantic.json",
+          "sha256": "e9831e673be58e90c111f3fcf287d6322e365273621e216ef19dc389e942df87"
+        }
+      ],
+      "aliases": [
+        "null_9f6ddbcaa6ebe42b97"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_15439a85a0a3a5f6fbbe61b6",
+      "kind": "batch1_upstream",
+      "definition": {
+        "root": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis",
+        "arm": {
+          "fit_path": "vlm_repair_v1/final/fits/qneighbor_ungated_01938f6e2330feac__haar2.npz",
+          "fit_sha256": "2c44d9d7e930a870caf7d7f3f8059b25ef87c953cf9e979d8d8e81d2cb59cd83",
+          "fit_id": "47c76ebb210dafe0d326",
+          "block": "vision_23",
+          "group": "thumbnail_mean",
+          "method": "contract",
+          "alpha": 1.0,
+          "cap": 0.1,
+          "gate": "none",
+          "config": {
+            "kind": "success_pca",
+            "r": 256,
+            "ks": null,
+            "kf": null,
+            "equal": null,
+            "replicate": null
+          },
+          "centering": "uncentered",
+          "r": 256,
+          "parent": "vr_9393e056aab436c0a8",
+          "ungated_parent": "vr_953aea793f4293d6ee",
+          "control_kind": "haar_rotation",
+          "control": true,
+          "control_parent": "qneighbor_ungated_01938f6e2330feac",
+          "construction_replicate": 2,
+          "id": "null_5023aaa4652eb9e7f7"
+        }
+      },
+      "semantic": {
+        "fit_path": "vlm_repair_v1/final/fits/qneighbor_ungated_01938f6e2330feac__haar2.npz",
+        "fit_sha256": "2c44d9d7e930a870caf7d7f3f8059b25ef87c953cf9e979d8d8e81d2cb59cd83",
+        "block": "vision_23",
+        "group": "thumbnail_mean",
+        "method": "contract",
+        "alpha": 1.0,
+        "cap": 0.1,
+        "gate": "none",
+        "config": {
+          "kind": "success_pca",
+          "r": 256,
+          "ks": null,
+          "kf": null,
+          "equal": null,
+          "replicate": null
+        },
+        "centering": "uncentered",
+        "r": 256,
+        "control_kind": "haar_rotation",
+        "control": true,
+        "control_parent": "qneighbor_ungated_01938f6e2330feac",
+        "construction_replicate": 2
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/vlm_repair_v1__final_test_qneighbor.json",
+          "sha256": "da51a0997c1b0cba8c17644f5efced2411f7e7353dd40114544915ad02fbb3e9"
+        }
+      ],
+      "aliases": [
+        "null_5023aaa4652eb9e7f7"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_17b5ad2c774daf1f977804df",
+      "kind": "batch1_action_or_postprocess",
+      "definition": {
+        "root": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis",
+        "arm": {
+          "id": "ungated_b46cba8fe3a91ccc",
+          "method": "legacy",
+          "legacy_arm": {
+            "method": "mean",
+            "source": "p",
+            "layer": 6,
+            "steps": [
+              4
+            ],
+            "k": 8,
+            "alpha": 0.5,
+            "tokens": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "cap": 0.05,
+            "gate": "none",
+            "id": "benefit_gate_50de88521d78",
+            "benefit_threshold": 0.0,
+            "parent": "mean_p_l6_a0.5_20135a1a"
+          },
+          "route": "legacy",
+          "candidate": "legacy",
+          "cap": 0.05,
+          "control": true,
+          "oracle_diagnostic": true,
+          "ungated_parent": "legacy_pdms_priority"
+        }
+      },
+      "semantic": {
+        "method": "mean",
+        "source": "p",
+        "layer": 6,
+        "steps": [
+          4
+        ],
+        "k": 8,
+        "alpha": 0.5,
+        "tokens": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "cap": 0.05,
+        "gate": "none",
+        "benefit_threshold": 0.0
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/legacy_ungated_test__failure_gated.json",
+          "sha256": "4faa0777c4a81829e85206e84c035cce6313efcaf71bddb2bad3fa58f811a213"
+        }
+      ],
+      "aliases": [
+        "ungated_b46cba8fe3a91ccc"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_249ffac7d31d32538f83d42a",
+      "kind": "batch1_upstream",
+      "definition": {
+        "root": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis",
+        "arm": {
+          "fit_path": "vlm_repair_v1/final/fits/ungated_973d3a55a27aeaf1__haar2.npz",
+          "fit_sha256": "aa6f76daf6e1c02caa87489fd17b558110526f194b46e74d80f9bd1329a4136f",
+          "fit_id": "878d4cf17958e70513a9",
+          "block": "bridge_pre",
+          "group": "thumbnail_mean",
+          "method": "contract",
+          "alpha": 1.0,
+          "cap": 0.1,
+          "gate": "none",
+          "config": {
+            "kind": "success_pca128_shrink_qda",
+            "r": 128,
+            "ks": null,
+            "kf": null,
+            "equal": null
+          },
+          "centering": "uncentered",
+          "r": 128,
+          "parent": "vr_9e7a943f62a03d9984",
+          "ungated_parent": "vr_9b4453800cb5569742",
+          "control_kind": "haar_rotation",
+          "control": true,
+          "control_parent": "ungated_973d3a55a27aeaf1",
+          "construction_replicate": 2,
+          "id": "null_dae683866e0e17fc7c"
+        }
+      },
+      "semantic": {
+        "fit_path": "vlm_repair_v1/final/fits/ungated_973d3a55a27aeaf1__haar2.npz",
+        "fit_sha256": "aa6f76daf6e1c02caa87489fd17b558110526f194b46e74d80f9bd1329a4136f",
+        "block": "bridge_pre",
+        "group": "thumbnail_mean",
+        "method": "contract",
+        "alpha": 1.0,
+        "cap": 0.1,
+        "gate": "none",
+        "config": {
+          "kind": "success_pca128_shrink_qda",
+          "r": 128,
+          "ks": null,
+          "kf": null,
+          "equal": null
+        },
+        "centering": "uncentered",
+        "r": 128,
+        "control_kind": "haar_rotation",
+        "control": true,
+        "control_parent": "ungated_973d3a55a27aeaf1",
+        "construction_replicate": 2
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/vlm_repair_v1__final_test.json",
+          "sha256": "532eabcdf0fdea715cfc338878a91cac9f315035f3a24f064fc8fe354d0b02a8"
+        }
+      ],
+      "aliases": [
+        "null_dae683866e0e17fc7c"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_2a512a4371ae1e9f0d254626",
+      "kind": "batch1_action_or_postprocess",
+      "definition": {
+        "root": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis",
+        "arm": {
+          "fit": "r2_uncentered_equal_region14",
+          "candidate": "r2_uncentered_equal_region14",
+          "route": "r2",
+          "step": 4,
+          "layer": 13,
+          "token": 6,
+          "r": 4,
+          "space": "candidate",
+          "method": "contract",
+          "alpha": 0.5,
+          "calibration": "n",
+          "gate": "benefit",
+          "cap": 0.05,
+          "benefit_path": "candidate_repair_v1/gates/cr_de02484dcb5ba5f6.npz",
+          "benefit_threshold": 0.0,
+          "parent": "cr_ece3a3e1d5b3268a",
+          "control": true,
+          "control_kind": "reverse",
+          "id": "cr_0aeb4030e823aa29"
+        }
+      },
+      "semantic": {
+        "fit": "r2_uncentered_equal_region14",
+        "candidate": "r2_uncentered_equal_region14",
+        "route": "r2",
+        "step": 4,
+        "layer": 13,
+        "token": 6,
+        "r": 4,
+        "space": "candidate",
+        "method": "contract",
+        "alpha": 0.5,
+        "calibration": "n",
+        "gate": "benefit",
+        "cap": 0.05,
+        "benefit_path": "candidate_repair_v1/gates/cr_de02484dcb5ba5f6.npz",
+        "benefit_threshold": 0.0,
+        "control": true,
+        "control_kind": "reverse"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/candidate_repair_v1__final_test.json",
+          "sha256": "b854a71b1da35f94d4ec6320df790e7c8772b38e8be05af715382462272c8aca"
+        }
+      ],
+      "aliases": [
+        "cr_0aeb4030e823aa29"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_2bafffe0e253d088bd03d029",
+      "kind": "batch1_upstream",
+      "definition": {
+        "root": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis",
+        "arm": {
+          "fit_path": "vlm_repair_v1/global_funnel/gates/vr_cf1ae134149e35d2b7.npz",
+          "fit_sha256": "80cf1b1deceb8f6f5d49bd8035e5e8afd8c3d56df0375c52d0858440287f0031",
+          "fit_id": "7ff047f4e23a4bed2b12",
+          "block": "language_input",
+          "group": "valid_mean",
+          "method": "contract",
+          "alpha": 1.0,
+          "cap": 0.0125,
+          "gate": "none",
+          "config": {
+            "kind": "basis_residual",
+            "ks": 16,
+            "kf": 8,
+            "r": 8,
+            "equal": false
+          },
+          "centering": "uncentered",
+          "r": 8,
+          "parent": "vr_cf1ae134149e35d2b7",
+          "ungated_parent": "vr_f3d42bf12df1082b32",
+          "oracle_diagnostic": true,
+          "id": "vlm_ungated_1470c214cbf727140d"
+        }
+      },
+      "semantic": {
+        "fit_path": "vlm_repair_v1/global_funnel/gates/vr_cf1ae134149e35d2b7.npz",
+        "fit_sha256": "80cf1b1deceb8f6f5d49bd8035e5e8afd8c3d56df0375c52d0858440287f0031",
+        "block": "language_input",
+        "group": "valid_mean",
+        "method": "contract",
+        "alpha": 1.0,
+        "cap": 0.0125,
+        "gate": "none",
+        "config": {
+          "kind": "basis_residual",
+          "ks": 16,
+          "kf": 8,
+          "r": 8,
+          "equal": false
+        },
+        "centering": "uncentered",
+        "r": 8
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/vlm_ungated_primary__failure_gated.json",
+          "sha256": "2f96fd9a62eb5ec219de3e2f81c1704460a26a5d13902c6dbb19678a1e63da89"
+        }
+      ],
+      "aliases": [
+        "vlm_ungated_1470c214cbf727140d"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_37d3d9c610997935a618cc6a",
+      "kind": "batch1_upstream",
+      "definition": {
+        "root": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis",
+        "arm": {
+          "fit_path": "vlm_repair_v1/global_funnel/gates/vr_cf1ae134149e35d2b7.npz",
+          "fit_sha256": "80cf1b1deceb8f6f5d49bd8035e5e8afd8c3d56df0375c52d0858440287f0031",
+          "fit_id": "7ff047f4e23a4bed2b12",
+          "block": "language_input",
+          "group": "valid_mean",
+          "method": "contract",
+          "alpha": 1.0,
+          "cap": 0.0125,
+          "gate": "soft",
+          "config": {
+            "kind": "basis_residual",
+            "ks": 16,
+            "kf": 8,
+            "r": 8,
+            "equal": false
+          },
+          "centering": "uncentered",
+          "r": 8,
+          "parent": "vr_cf1ae134149e35d2b7",
+          "gate_threshold": 2.15125288682088,
+          "id": "vr_f3d42bf12df1082b32"
+        }
+      },
+      "semantic": {
+        "fit_path": "vlm_repair_v1/global_funnel/gates/vr_cf1ae134149e35d2b7.npz",
+        "fit_sha256": "80cf1b1deceb8f6f5d49bd8035e5e8afd8c3d56df0375c52d0858440287f0031",
+        "block": "language_input",
+        "group": "valid_mean",
+        "method": "contract",
+        "alpha": 1.0,
+        "cap": 0.0125,
+        "gate": "soft",
+        "config": {
+          "kind": "basis_residual",
+          "ks": 16,
+          "kf": 8,
+          "r": 8,
+          "equal": false
+        },
+        "centering": "uncentered",
+        "r": 8,
+        "gate_threshold": 2.15125288682088
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/vlm_repair_v1__final_test.json",
+          "sha256": "532eabcdf0fdea715cfc338878a91cac9f315035f3a24f064fc8fe354d0b02a8"
+        }
+      ],
+      "aliases": [
+        "vr_f3d42bf12df1082b32"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_3b65aa133cdffd27d237bad1",
+      "kind": "batch1_action_or_postprocess",
+      "definition": {
+        "root": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis",
+        "arm": {
+          "fit": "r1_pooled_centered_unequal_region0__time4",
+          "candidate": "r1_pooled_centered_unequal_region0",
+          "route": "r1",
+          "step": 4,
+          "layer": 16,
+          "token": 6,
+          "r": 24,
+          "space": "candidate",
+          "method": "mean",
+          "alpha": 0.5,
+          "calibration": "n",
+          "gate": "none",
+          "cap": 0.05,
+          "mechanism": "target_time_calibration",
+          "timing_type": "late_transfer",
+          "control": true,
+          "control_kind": "haar_rotation",
+          "alternative_basis": "r1_pooled_centered_unequal_region0__haar0",
+          "id": "cr_9d319bed3a1d64ed",
+          "parent": "cr_774b7ee8eef1ab62"
+        }
+      },
+      "semantic": {
+        "fit": "r1_pooled_centered_unequal_region0__time4",
+        "candidate": "r1_pooled_centered_unequal_region0",
+        "route": "r1",
+        "step": 4,
+        "layer": 16,
+        "token": 6,
+        "r": 24,
+        "space": "candidate",
+        "method": "mean",
+        "alpha": 0.5,
+        "calibration": "n",
+        "gate": "none",
+        "cap": 0.05,
+        "mechanism": "target_time_calibration",
+        "timing_type": "late_transfer",
+        "control": true,
+        "control_kind": "haar_rotation",
+        "alternative_basis": "r1_pooled_centered_unequal_region0__haar0"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/candidate_repair_v1__final_test.json",
+          "sha256": "b854a71b1da35f94d4ec6320df790e7c8772b38e8be05af715382462272c8aca"
+        }
+      ],
+      "aliases": [
+        "cr_9d319bed3a1d64ed"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_4103cb341142ef82d33d3ca6",
+      "kind": "batch1_upstream",
+      "definition": {
+        "root": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis",
+        "arm": {
+          "fit_path": "vlm_repair_v1/global_funnel/gates/vr_2cce3fe5fd7c120c0f.npz",
+          "fit_sha256": "fc1585b2b9a1b6454a017759ceee9853d5717136d6b654c1e55f6cf1d9a43bf8",
+          "fit_id": "f16be6b7319e6d75c071",
+          "block": "vision_23",
+          "group": "patch_mean",
+          "method": "support_projection",
+          "alpha": 1.0,
+          "cap": 0.1,
+          "gate": "external_observation_qda_hard",
+          "config": {
+            "kind": "basis_residual",
+            "ks": 128,
+            "kf": 128,
+            "r": 128,
+            "equal": true
+          },
+          "centering": "pooled_centered",
+          "r": 128,
+          "parent": "vr_2cce3fe5fd7c120c0f",
+          "id": "obs_qda_f9869f96a93bc8c62c85",
+          "ungated_parent": "vr_a76ed505b44077a0d9",
+          "observation_gate": {
+            "fit": {
+              "status": "PASS",
+              "time": "2026-10-17T04:38:01.318124+00:00",
+              "id": "4eb07dba5c2c5fe591b7",
+              "cell": "bridge_3__thumbnail_mean",
+              "block": "bridge_3",
+              "group": "thumbnail_mean",
+              "config": {
+                "kind": "success_pca",
+                "r": 64,
+                "ks": null,
+                "kf": null,
+                "equal": null,
+                "replicate": null
+              },
+              "centering": "pooled_centered",
+              "path": "vlm_repair_v1/fits/4eb07dba5c2c5fe591b7.npz",
+              "sha256": "c4666002d00a2645c6a8e0ee5d79cb99139768b86d90200319b663956780b175",
+              "spec": {
+                "cell": "bridge_3__thumbnail_mean",
+                "block": "bridge_3",
+                "group": "thumbnail_mean",
+                "config": {
+                  "kind": "success_pca",
+                  "r": 64,
+                  "ks": null,
+                  "kf": null,
+                  "equal": null,
+                  "replicate": null
+                },
+                "centering": "pooled_centered",
+                "metrics": {
+                  "auc": 0.7378640994510135,
+                  "weighted_ap": 0.0587403828591065,
+                  "standardized_gap": 0.8216680427782924,
+                  "gap_training_units": 8.674447413306863,
+                  "session_positive_fraction": 0.8583333333333333,
+                  "session_macro_gap": 3.6023532334754558,
+                  "session_p": 3.0251617516112974e-15,
+                  "sessions_with_both": 120.0,
+                  "class_prevalence": 0.024104234527687295
+                },
+                "auc_fold_min": 0.7039309346567393,
+                "auc_fold_std": 0.03147002814597037,
+                "other_sampling_seeds": [
+                  {
+                    "seed_index": 1,
+                    "metrics": {
+                      "auc": 0.7411279254732759,
+                      "weighted_ap": 0.05958573452172804,
+                      "standardized_gap": 0.833760217163581,
+                      "gap_training_units": 8.813325262524366,
+                      "session_positive_fraction": 0.8487394957983193,
+                      "session_macro_gap": 3.703688406750287,
+                      "session_p": 1.3740888207732859e-14,
+                      "sessions_with_both": 119.0,
+                      "class_prevalence": 0.023720878189065354
+                    }
+                  },
+                  {
+                    "seed_index": 2,
+                    "metrics": {
+                      "auc": 0.7484959342234667,
+                      "weighted_ap": 0.062133115528820435,
+                      "standardized_gap": 0.8631730139202901,
+                      "gap_training_units": 9.057913493901747,
+                      "session_positive_fraction": 0.8487394957983193,
+                      "session_macro_gap": 3.663326058074215,
+                      "session_p": 1.955210573879093e-12,
+                      "sessions_with_both": 119.0,
+                      "class_prevalence": 0.024026681281868228
+                    }
+                  }
+                ],
+                "source_result_sha256": "6e990da0c5ae74c8373318cb23c1281365a31e4d21bbdfdbb6b2b5516046736c",
+                "moment": {
+                  "path": "vlm_repair_v1/rapid/moments/bridge_3__thumbnail_mean.npz",
+                  "sha256": "3bf3b8a65e59e15f8502f2d76c4f5b08ac2c812c135547461a113a467754baa4"
+                },
+                "cell_proof_path": "vlm_repair_v1/cells/bridge_3__thumbnail_mean.json",
+                "analysis_source": "cached_quadratic_cv",
+                "stable_cv_region": true,
+                "neighbor_supported": 2,
+                "neighbor_auc": [
+                  0.7462369351773649,
+                  0.750441234691723
+                ],
+                "selection_readout": "fixed_5_percent_shrink_QDA",
+                "existing_qda_confirmation_id": "qda_control_e83a2218ff628279293c",
+                "late_group": "qda_bridge_r64"
+              },
+              "source_sha256": "34597bab3e4a07503205c24d4c68bd38b63e95d042c4be7ad4bcb8c022332d4f",
+              "cell_proof_path": "vlm_repair_v1/cells/bridge_3__thumbnail_mean.json",
+              "r": 64,
+              "full_dim": 1536,
+              "native_source": "full valid exploration only",
+              "class_sizes": [
+                74900,
+                1850
+              ],
+              "continuous_quality_cases": 85813,
+              "quality_preconditioner": "full projected covariance",
+              "haar_applicable": true,
+              "full_covariance_ot": true,
+              "cutoff_degenerate": false
+            },
+            "quantile": 0.95,
+            "threshold": 6.397722146829359,
+            "missing": "retain_base",
+            "id": "qda_risk_821bd9c49e68872da88a",
+            "column": 0
+          },
+          "underlying_arm_id": "ungated_3473150436c5dc27",
+          "policy_definition": "Use the complete fixed ungated-parent trajectory if the natural-observation risk exceeds the frozen exploration-high quantile; otherwise use the exact frozen Base. No PDMS/GT at runtime."
+        }
+      },
+      "semantic": {
+        "fit_path": "vlm_repair_v1/global_funnel/gates/vr_2cce3fe5fd7c120c0f.npz",
+        "fit_sha256": "fc1585b2b9a1b6454a017759ceee9853d5717136d6b654c1e55f6cf1d9a43bf8",
+        "block": "vision_23",
+        "group": "patch_mean",
+        "method": "support_projection",
+        "alpha": 1.0,
+        "cap": 0.1,
+        "gate": "external_observation_qda_hard",
+        "config": {
+          "kind": "basis_residual",
+          "ks": 128,
+          "kf": 128,
+          "r": 128,
+          "equal": true
+        },
+        "centering": "pooled_centered",
+        "r": 128,
+        "observation_gate": {
+          "fit": {
+            "status": "PASS",
+            "time": "2026-10-17T04:38:01.318124+00:00",
+            "id": "4eb07dba5c2c5fe591b7",
+            "cell": "bridge_3__thumbnail_mean",
+            "block": "bridge_3",
+            "group": "thumbnail_mean",
+            "config": {
+              "kind": "success_pca",
+              "r": 64,
+              "ks": null,
+              "kf": null,
+              "equal": null,
+              "replicate": null
+            },
+            "centering": "pooled_centered",
+            "path": "vlm_repair_v1/fits/4eb07dba5c2c5fe591b7.npz",
+            "sha256": "c4666002d00a2645c6a8e0ee5d79cb99139768b86d90200319b663956780b175",
+            "spec": {
+              "cell": "bridge_3__thumbnail_mean",
+              "block": "bridge_3",
+              "group": "thumbnail_mean",
+              "config": {
+                "kind": "success_pca",
+                "r": 64,
+                "ks": null,
+                "kf": null,
+                "equal": null,
+                "replicate": null
+              },
+              "centering": "pooled_centered",
+              "metrics": {
+                "auc": 0.7378640994510135,
+                "weighted_ap": 0.0587403828591065,
+                "standardized_gap": 0.8216680427782924,
+                "gap_training_units": 8.674447413306863,
+                "session_positive_fraction": 0.8583333333333333,
+                "session_macro_gap": 3.6023532334754558,
+                "session_p": 3.0251617516112974e-15,
+                "sessions_with_both": 120.0,
+                "class_prevalence": 0.024104234527687295
+              },
+              "auc_fold_min": 0.7039309346567393,
+              "auc_fold_std": 0.03147002814597037,
+              "other_sampling_seeds": [
+                {
+                  "seed_index": 1,
+                  "metrics": {
+                    "auc": 0.7411279254732759,
+                    "weighted_ap": 0.05958573452172804,
+                    "standardized_gap": 0.833760217163581,
+                    "gap_training_units": 8.813325262524366,
+                    "session_positive_fraction": 0.8487394957983193,
+                    "session_macro_gap": 3.703688406750287,
+                    "session_p": 1.3740888207732859e-14,
+                    "sessions_with_both": 119.0,
+                    "class_prevalence": 0.023720878189065354
+                  }
+                },
+                {
+                  "seed_index": 2,
+                  "metrics": {
+                    "auc": 0.7484959342234667,
+                    "weighted_ap": 0.062133115528820435,
+                    "standardized_gap": 0.8631730139202901,
+                    "gap_training_units": 9.057913493901747,
+                    "session_positive_fraction": 0.8487394957983193,
+                    "session_macro_gap": 3.663326058074215,
+                    "session_p": 1.955210573879093e-12,
+                    "sessions_with_both": 119.0,
+                    "class_prevalence": 0.024026681281868228
+                  }
+                }
+              ],
+              "source_result_sha256": "6e990da0c5ae74c8373318cb23c1281365a31e4d21bbdfdbb6b2b5516046736c",
+              "moment": {
+                "path": "vlm_repair_v1/rapid/moments/bridge_3__thumbnail_mean.npz",
+                "sha256": "3bf3b8a65e59e15f8502f2d76c4f5b08ac2c812c135547461a113a467754baa4"
+              },
+              "cell_proof_path": "vlm_repair_v1/cells/bridge_3__thumbnail_mean.json",
+              "analysis_source": "cached_quadratic_cv",
+              "stable_cv_region": true,
+              "neighbor_supported": 2,
+              "neighbor_auc": [
+                0.7462369351773649,
+                0.750441234691723
+              ],
+              "selection_readout": "fixed_5_percent_shrink_QDA",
+              "existing_qda_confirmation_id": "qda_control_e83a2218ff628279293c",
+              "late_group": "qda_bridge_r64"
+            },
+            "source_sha256": "34597bab3e4a07503205c24d4c68bd38b63e95d042c4be7ad4bcb8c022332d4f",
+            "cell_proof_path": "vlm_repair_v1/cells/bridge_3__thumbnail_mean.json",
+            "r": 64,
+            "full_dim": 1536,
+            "native_source": "full valid exploration only",
+            "class_sizes": [
+              74900,
+              1850
+            ],
+            "continuous_quality_cases": 85813,
+            "quality_preconditioner": "full projected covariance",
+            "haar_applicable": true,
+            "full_covariance_ot": true,
+            "cutoff_degenerate": false
+          },
+          "quantile": 0.95,
+          "threshold": 6.397722146829359,
+          "missing": "retain_base",
+          "id": "qda_risk_821bd9c49e68872da88a",
+          "column": 0
+        },
+        "underlying_arm_id": "ungated_3473150436c5dc27",
+        "policy_definition": "Use the complete fixed ungated-parent trajectory if the natural-observation risk exceeds the frozen exploration-high quantile; otherwise use the exact frozen Base. No PDMS/GT at runtime."
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/vlm_repair_v1__final_test_obs_qda_gate.json",
+          "sha256": "e5f61a0c339310f2ed67b375b5c93953432e899526e3d48ad41eb7d6478d56c2"
+        }
+      ],
+      "aliases": [
+        "obs_qda_f9869f96a93bc8c62c85"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_4a12ee785ec21a5fa86ac2d0",
+      "kind": "batch1_action_or_postprocess",
+      "definition": {
+        "root": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis",
+        "arm": {
+          "fit": "r1_pooled_centered_unequal_region0__time4",
+          "candidate": "r1_pooled_centered_unequal_region0",
+          "route": "r1",
+          "step": 4,
+          "layer": 16,
+          "token": 6,
+          "r": 24,
+          "space": "candidate",
+          "method": "mean",
+          "alpha": 0.5,
+          "calibration": "n",
+          "gate": "none",
+          "cap": 0.05,
+          "mechanism": "target_time_calibration",
+          "timing_type": "late_transfer",
+          "control": true,
+          "control_kind": "haar_rotation",
+          "alternative_basis": "r1_pooled_centered_unequal_region0__haar1",
+          "id": "cr_503fe19f2b9d9a01",
+          "parent": "cr_774b7ee8eef1ab62"
+        }
+      },
+      "semantic": {
+        "fit": "r1_pooled_centered_unequal_region0__time4",
+        "candidate": "r1_pooled_centered_unequal_region0",
+        "route": "r1",
+        "step": 4,
+        "layer": 16,
+        "token": 6,
+        "r": 24,
+        "space": "candidate",
+        "method": "mean",
+        "alpha": 0.5,
+        "calibration": "n",
+        "gate": "none",
+        "cap": 0.05,
+        "mechanism": "target_time_calibration",
+        "timing_type": "late_transfer",
+        "control": true,
+        "control_kind": "haar_rotation",
+        "alternative_basis": "r1_pooled_centered_unequal_region0__haar1"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/candidate_repair_v1__final_test.json",
+          "sha256": "b854a71b1da35f94d4ec6320df790e7c8772b38e8be05af715382462272c8aca"
+        }
+      ],
+      "aliases": [
+        "cr_503fe19f2b9d9a01"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_538141a7d9218884102ac196",
+      "kind": "batch1_upstream",
+      "definition": {
+        "root": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis",
+        "arm": {
+          "fit_path": "vlm_repair_v1/global_funnel/gates/vr_9e7a943f62a03d9984.npz",
+          "fit_sha256": "d9d29e59ac2bdb162f54038a9eca73dd6e37ba9b1bebb6dcaae6cce84989fe90",
+          "fit_id": "878d4cf17958e70513a9",
+          "block": "bridge_pre",
+          "group": "thumbnail_mean",
+          "method": "contract",
+          "alpha": 1.0,
+          "cap": 0.1,
+          "gate": "none",
+          "config": {
+            "kind": "success_pca128_shrink_qda",
+            "r": 128,
+            "ks": null,
+            "kf": null,
+            "equal": null
+          },
+          "centering": "uncentered",
+          "r": 128,
+          "parent": "vr_9e7a943f62a03d9984",
+          "ungated_parent": "vr_9b4453800cb5569742",
+          "control_kind": "reverse",
+          "control": true,
+          "control_parent": "ungated_973d3a55a27aeaf1",
+          "id": "null_422e7dda3ea861d5d6"
+        }
+      },
+      "semantic": {
+        "fit_path": "vlm_repair_v1/global_funnel/gates/vr_9e7a943f62a03d9984.npz",
+        "fit_sha256": "d9d29e59ac2bdb162f54038a9eca73dd6e37ba9b1bebb6dcaae6cce84989fe90",
+        "block": "bridge_pre",
+        "group": "thumbnail_mean",
+        "method": "contract",
+        "alpha": 1.0,
+        "cap": 0.1,
+        "gate": "none",
+        "config": {
+          "kind": "success_pca128_shrink_qda",
+          "r": 128,
+          "ks": null,
+          "kf": null,
+          "equal": null
+        },
+        "centering": "uncentered",
+        "r": 128,
+        "control_kind": "reverse",
+        "control": true,
+        "control_parent": "ungated_973d3a55a27aeaf1"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/vlm_repair_v1__final_test.json",
+          "sha256": "532eabcdf0fdea715cfc338878a91cac9f315035f3a24f064fc8fe354d0b02a8"
+        }
+      ],
+      "aliases": [
+        "null_422e7dda3ea861d5d6"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_590ab7cedab56aeda4b216fa",
+      "kind": "batch1_action_or_postprocess",
+      "definition": {
+        "root": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis",
+        "arm": {
+          "fit": "r2_uncentered_equal_region14",
+          "candidate": "r2_uncentered_equal_region14",
+          "route": "r2",
+          "step": 4,
+          "layer": 13,
+          "token": 6,
+          "r": 4,
+          "space": "candidate",
+          "method": "contract",
+          "alpha": 0.5,
+          "calibration": "n",
+          "gate": "benefit",
+          "cap": 0.05,
+          "benefit_path": "candidate_repair_v1/gates/cr_de02484dcb5ba5f6.npz",
+          "benefit_threshold": 0.0,
+          "parent": "cr_ece3a3e1d5b3268a",
+          "control": true,
+          "control_kind": "haar_rotation",
+          "alternative_basis": "r2_uncentered_equal_region14__haar1",
+          "id": "cr_cff5309e8f6f2a3e"
+        }
+      },
+      "semantic": {
+        "fit": "r2_uncentered_equal_region14",
+        "candidate": "r2_uncentered_equal_region14",
+        "route": "r2",
+        "step": 4,
+        "layer": 13,
+        "token": 6,
+        "r": 4,
+        "space": "candidate",
+        "method": "contract",
+        "alpha": 0.5,
+        "calibration": "n",
+        "gate": "benefit",
+        "cap": 0.05,
+        "benefit_path": "candidate_repair_v1/gates/cr_de02484dcb5ba5f6.npz",
+        "benefit_threshold": 0.0,
+        "control": true,
+        "control_kind": "haar_rotation",
+        "alternative_basis": "r2_uncentered_equal_region14__haar1"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/candidate_repair_v1__final_test.json",
+          "sha256": "b854a71b1da35f94d4ec6320df790e7c8772b38e8be05af715382462272c8aca"
+        }
+      ],
+      "aliases": [
+        "cr_cff5309e8f6f2a3e"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_5e8ce89988e39244168def05",
+      "kind": "batch1_upstream",
+      "definition": {
+        "root": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis",
+        "arm": {
+          "fit_path": "vlm_repair_v1/global_funnel/gates/vr_9393e056aab436c0a8.npz",
+          "fit_sha256": "c7404fa07def187634deb9c7e86f6cb46602dc98474c48ff84f42fab3a28534d",
+          "fit_id": "47c76ebb210dafe0d326",
+          "block": "vision_23",
+          "group": "thumbnail_mean",
+          "method": "contract",
+          "alpha": 1.0,
+          "cap": 0.1,
+          "gate": "none",
+          "config": {
+            "kind": "success_pca",
+            "r": 256,
+            "ks": null,
+            "kf": null,
+            "equal": null,
+            "replicate": null
+          },
+          "centering": "uncentered",
+          "r": 256,
+          "parent": "vr_9393e056aab436c0a8",
+          "ungated_parent": "vr_05bc484a854ad99060",
+          "control_kind": "reverse",
+          "control": true,
+          "control_parent": "late_ungated_d2e3712671561032",
+          "id": "null_1a1c71cc54626d874d"
+        }
+      },
+      "semantic": {
+        "fit_path": "vlm_repair_v1/global_funnel/gates/vr_9393e056aab436c0a8.npz",
+        "fit_sha256": "c7404fa07def187634deb9c7e86f6cb46602dc98474c48ff84f42fab3a28534d",
+        "block": "vision_23",
+        "group": "thumbnail_mean",
+        "method": "contract",
+        "alpha": 1.0,
+        "cap": 0.1,
+        "gate": "none",
+        "config": {
+          "kind": "success_pca",
+          "r": 256,
+          "ks": null,
+          "kf": null,
+          "equal": null,
+          "replicate": null
+        },
+        "centering": "uncentered",
+        "r": 256,
+        "control_kind": "reverse",
+        "control": true,
+        "control_parent": "late_ungated_d2e3712671561032"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/vlm_repair_v1__final_test_late.json",
+          "sha256": "5eb655895264b9c4502f93fa19e13c8c33c766a0cd2005c80902526bf35afe8f"
+        }
+      ],
+      "aliases": [
+        "null_1a1c71cc54626d874d"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_5f7c6de93995d8bce0c46dcc",
+      "kind": "batch1_upstream",
+      "definition": {
+        "root": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis",
+        "arm": {
+          "fit_path": "vlm_repair_v1/final/fits/qneighbor_ungated_01938f6e2330feac__haar0.npz",
+          "fit_sha256": "92e60e6d3e3677066fc917b636ce0af23e0c92a243505d22de844717e2535c8e",
+          "fit_id": "47c76ebb210dafe0d326",
+          "block": "vision_23",
+          "group": "thumbnail_mean",
+          "method": "contract",
+          "alpha": 1.0,
+          "cap": 0.1,
+          "gate": "none",
+          "config": {
+            "kind": "success_pca",
+            "r": 256,
+            "ks": null,
+            "kf": null,
+            "equal": null,
+            "replicate": null
+          },
+          "centering": "uncentered",
+          "r": 256,
+          "parent": "vr_9393e056aab436c0a8",
+          "ungated_parent": "vr_953aea793f4293d6ee",
+          "control_kind": "haar_rotation",
+          "control": true,
+          "control_parent": "qneighbor_ungated_01938f6e2330feac",
+          "construction_replicate": 0,
+          "id": "null_3b49d6867a5acfb3ac"
+        }
+      },
+      "semantic": {
+        "fit_path": "vlm_repair_v1/final/fits/qneighbor_ungated_01938f6e2330feac__haar0.npz",
+        "fit_sha256": "92e60e6d3e3677066fc917b636ce0af23e0c92a243505d22de844717e2535c8e",
+        "block": "vision_23",
+        "group": "thumbnail_mean",
+        "method": "contract",
+        "alpha": 1.0,
+        "cap": 0.1,
+        "gate": "none",
+        "config": {
+          "kind": "success_pca",
+          "r": 256,
+          "ks": null,
+          "kf": null,
+          "equal": null,
+          "replicate": null
+        },
+        "centering": "uncentered",
+        "r": 256,
+        "control_kind": "haar_rotation",
+        "control": true,
+        "control_parent": "qneighbor_ungated_01938f6e2330feac",
+        "construction_replicate": 0
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/vlm_repair_v1__final_test_qneighbor.json",
+          "sha256": "da51a0997c1b0cba8c17644f5efced2411f7e7353dd40114544915ad02fbb3e9"
+        }
+      ],
+      "aliases": [
+        "null_3b49d6867a5acfb3ac"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_60fb57a21dda2898439d73c2",
+      "kind": "batch1_upstream",
+      "definition": {
+        "root": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis",
+        "arm": {
+          "fit_path": "vlm_repair_v1/global_funnel/gates/vr_eda36039303c355b85.npz",
+          "fit_sha256": "c6e490b5513fc5cd90a31a4524c69da5541550b1835e420d3cc428f7e106a5ef",
+          "fit_id": "f839974b37ed12b8fa50",
+          "block": "interface_post",
+          "group": "requirements_v2",
+          "method": "contract",
+          "alpha": 2.0,
+          "cap": 0.2,
+          "gate": "none",
+          "config": {
+            "kind": "full",
+            "ks": null,
+            "kf": null,
+            "r": null,
+            "equal": null
+          },
+          "centering": "uncentered",
+          "r": 384,
+          "parent": "vr_eda36039303c355b85",
+          "id": "vr_a3ef5ad4d30f40b883"
+        }
+      },
+      "semantic": {
+        "fit_path": "vlm_repair_v1/global_funnel/gates/vr_eda36039303c355b85.npz",
+        "fit_sha256": "c6e490b5513fc5cd90a31a4524c69da5541550b1835e420d3cc428f7e106a5ef",
+        "block": "interface_post",
+        "group": "requirements_v2",
+        "method": "contract",
+        "alpha": 2.0,
+        "cap": 0.2,
+        "gate": "none",
+        "config": {
+          "kind": "full",
+          "ks": null,
+          "kf": null,
+          "r": null,
+          "equal": null
+        },
+        "centering": "uncentered",
+        "r": 384
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/vlm_repair_v1__final_test_semantic.json",
+          "sha256": "e9831e673be58e90c111f3fcf287d6322e365273621e216ef19dc389e942df87"
+        }
+      ],
+      "aliases": [
+        "vr_a3ef5ad4d30f40b883"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_64f7f53aa37556cf02338b99",
+      "kind": "batch1_action_or_postprocess",
+      "definition": {
+        "root": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis",
+        "arm": {
+          "fit": "r2_uncentered_equal_region14",
+          "candidate": "r2_uncentered_equal_region14",
+          "route": "r2",
+          "step": 4,
+          "layer": 13,
+          "token": 6,
+          "r": 4,
+          "space": "candidate",
+          "method": "contract",
+          "alpha": 0.5,
+          "calibration": "n",
+          "gate": "none",
+          "cap": 0.05,
+          "parent": "cr_de02484dcb5ba5f6",
+          "id": "ungated_f788b9ec900cf79f",
+          "oracle_diagnostic": true,
+          "ungated_parent": "cr_ece3a3e1d5b3268a"
+        }
+      },
+      "semantic": {
+        "fit": "r2_uncentered_equal_region14",
+        "candidate": "r2_uncentered_equal_region14",
+        "route": "r2",
+        "step": 4,
+        "layer": 13,
+        "token": 6,
+        "r": 4,
+        "space": "candidate",
+        "method": "contract",
+        "alpha": 0.5,
+        "calibration": "n",
+        "gate": "none",
+        "cap": 0.05
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/legacy_ungated_test__failure_gated.json",
+          "sha256": "4faa0777c4a81829e85206e84c035cce6313efcaf71bddb2bad3fa58f811a213"
+        }
+      ],
+      "aliases": [
+        "ungated_f788b9ec900cf79f"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_671a80759d6520da4278c293",
+      "kind": "batch1_upstream",
+      "definition": {
+        "root": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis",
+        "arm": {
+          "fit_path": "vlm_repair_v1/global_funnel/gates/vr_eda36039303c355b85.npz",
+          "fit_sha256": "c6e490b5513fc5cd90a31a4524c69da5541550b1835e420d3cc428f7e106a5ef",
+          "fit_id": "f839974b37ed12b8fa50",
+          "block": "interface_post",
+          "group": "requirements_v2",
+          "method": "contract",
+          "alpha": 2.0,
+          "cap": 0.2,
+          "gate": "none",
+          "config": {
+            "kind": "full",
+            "ks": null,
+            "kf": null,
+            "r": null,
+            "equal": null
+          },
+          "centering": "uncentered",
+          "r": 384,
+          "parent": "vr_eda36039303c355b85",
+          "control_kind": "reverse",
+          "control": true,
+          "control_parent": "vr_a3ef5ad4d30f40b883",
+          "id": "null_f4097290173133999c"
+        }
+      },
+      "semantic": {
+        "fit_path": "vlm_repair_v1/global_funnel/gates/vr_eda36039303c355b85.npz",
+        "fit_sha256": "c6e490b5513fc5cd90a31a4524c69da5541550b1835e420d3cc428f7e106a5ef",
+        "block": "interface_post",
+        "group": "requirements_v2",
+        "method": "contract",
+        "alpha": 2.0,
+        "cap": 0.2,
+        "gate": "none",
+        "config": {
+          "kind": "full",
+          "ks": null,
+          "kf": null,
+          "r": null,
+          "equal": null
+        },
+        "centering": "uncentered",
+        "r": 384,
+        "control_kind": "reverse",
+        "control": true,
+        "control_parent": "vr_a3ef5ad4d30f40b883"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/vlm_repair_v1__final_test_semantic.json",
+          "sha256": "e9831e673be58e90c111f3fcf287d6322e365273621e216ef19dc389e942df87"
+        }
+      ],
+      "aliases": [
+        "null_f4097290173133999c"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_6f4c5ef9e9c7264941812d33",
+      "kind": "batch1_upstream",
+      "definition": {
+        "root": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis",
+        "arm": {
+          "fit_path": "vlm_repair_v1/final/fits/late_ungated_d2e3712671561032__haar2.npz",
+          "fit_sha256": "278f6824fb2caf14d29a5262dabba6a8613c0b044edc42ced93befbd584b1305",
+          "fit_id": "47c76ebb210dafe0d326",
+          "block": "vision_23",
+          "group": "thumbnail_mean",
+          "method": "contract",
+          "alpha": 1.0,
+          "cap": 0.1,
+          "gate": "none",
+          "config": {
+            "kind": "success_pca",
+            "r": 256,
+            "ks": null,
+            "kf": null,
+            "equal": null,
+            "replicate": null
+          },
+          "centering": "uncentered",
+          "r": 256,
+          "parent": "vr_9393e056aab436c0a8",
+          "ungated_parent": "vr_05bc484a854ad99060",
+          "control_kind": "haar_rotation",
+          "control": true,
+          "control_parent": "late_ungated_d2e3712671561032",
+          "construction_replicate": 2,
+          "id": "null_5610dfbe232db7e711"
+        }
+      },
+      "semantic": {
+        "fit_path": "vlm_repair_v1/final/fits/late_ungated_d2e3712671561032__haar2.npz",
+        "fit_sha256": "278f6824fb2caf14d29a5262dabba6a8613c0b044edc42ced93befbd584b1305",
+        "block": "vision_23",
+        "group": "thumbnail_mean",
+        "method": "contract",
+        "alpha": 1.0,
+        "cap": 0.1,
+        "gate": "none",
+        "config": {
+          "kind": "success_pca",
+          "r": 256,
+          "ks": null,
+          "kf": null,
+          "equal": null,
+          "replicate": null
+        },
+        "centering": "uncentered",
+        "r": 256,
+        "control_kind": "haar_rotation",
+        "control": true,
+        "control_parent": "late_ungated_d2e3712671561032",
+        "construction_replicate": 2
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/vlm_repair_v1__final_test_late.json",
+          "sha256": "5eb655895264b9c4502f93fa19e13c8c33c766a0cd2005c80902526bf35afe8f"
+        }
+      ],
+      "aliases": [
+        "null_5610dfbe232db7e711"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_73ea9292a0866cf78f4aacdd",
+      "kind": "batch1_action_or_postprocess",
+      "definition": {
+        "root": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis",
+        "arm": {
+          "method": "mean",
+          "source": "p",
+          "layer": 6,
+          "steps": [
+            4
+          ],
+          "k": 8,
+          "alpha": 0.5,
+          "tokens": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "cap": 0.05,
+          "gate": "benefit",
+          "id": "benefit_gate_50de88521d78",
+          "benefit_path": "repair_v1/gates/mean_p_l6_a0.5_20135a1a.npz",
+          "benefit_threshold": 0.0,
+          "parent": "mean_p_l6_a0.5_20135a1a"
+        }
+      },
+      "semantic": {
+        "method": "mean",
+        "source": "p",
+        "layer": 6,
+        "steps": [
+          4
+        ],
+        "k": 8,
+        "alpha": 0.5,
+        "tokens": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "cap": 0.05,
+        "gate": "benefit",
+        "benefit_path": "repair_v1/gates/mean_p_l6_a0.5_20135a1a.npz",
+        "benefit_threshold": 0.0
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/repair_v1__final_test.json",
+          "sha256": "cbec97835e16da3b98e536df3fb299709a3507b572f69ab7c1dec110b8cad3f3"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/candidate_repair_v1__final_test.json",
+          "sha256": "b854a71b1da35f94d4ec6320df790e7c8772b38e8be05af715382462272c8aca"
+        }
+      ],
+      "aliases": [
+        "benefit_gate_50de88521d78",
+        "legacy_pdms_priority"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_7a72fecac54d99a2570b823f",
+      "kind": "batch1_action_or_postprocess",
+      "definition": {
+        "root": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis",
+        "arm": {
+          "fit": "r2_uncentered_equal_region14",
+          "candidate": "r2_uncentered_equal_region14",
+          "route": "r2",
+          "step": 4,
+          "layer": 13,
+          "token": 6,
+          "r": 4,
+          "space": "candidate",
+          "method": "contract",
+          "alpha": 0.5,
+          "calibration": "n",
+          "gate": "benefit",
+          "cap": 0.05,
+          "benefit_path": "candidate_repair_v1/gates/cr_de02484dcb5ba5f6.npz",
+          "benefit_threshold": 0.0,
+          "parent": "cr_de02484dcb5ba5f6",
+          "id": "cr_ece3a3e1d5b3268a"
+        }
+      },
+      "semantic": {
+        "fit": "r2_uncentered_equal_region14",
+        "candidate": "r2_uncentered_equal_region14",
+        "route": "r2",
+        "step": 4,
+        "layer": 13,
+        "token": 6,
+        "r": 4,
+        "space": "candidate",
+        "method": "contract",
+        "alpha": 0.5,
+        "calibration": "n",
+        "gate": "benefit",
+        "cap": 0.05,
+        "benefit_path": "candidate_repair_v1/gates/cr_de02484dcb5ba5f6.npz",
+        "benefit_threshold": 0.0
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/candidate_repair_v1__final_test.json",
+          "sha256": "b854a71b1da35f94d4ec6320df790e7c8772b38e8be05af715382462272c8aca"
+        }
+      ],
+      "aliases": [
+        "cr_ece3a3e1d5b3268a"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_7be08a0267ee4461dc107fbe",
+      "kind": "batch1_action_or_postprocess",
+      "definition": {
+        "root": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis",
+        "arm": {
+          "method": "quality",
+          "source": "n",
+          "layer": 6,
+          "steps": [
+            2
+          ],
+          "k": 8,
+          "alpha": 0.25,
+          "tokens": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "cap": 0.05,
+          "gate": "none",
+          "control": false,
+          "early_quality": true,
+          "id": "early_quality_623ee7f924e8"
+        }
+      },
+      "semantic": {
+        "method": "quality",
+        "source": "n",
+        "layer": 6,
+        "steps": [
+          2
+        ],
+        "k": 8,
+        "alpha": 0.25,
+        "tokens": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "cap": 0.05,
+        "gate": "none",
+        "control": false,
+        "early_quality": true
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/repair_v1__final_test.json",
+          "sha256": "cbec97835e16da3b98e536df3fb299709a3507b572f69ab7c1dec110b8cad3f3"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/candidate_repair_v1__final_test.json",
+          "sha256": "b854a71b1da35f94d4ec6320df790e7c8772b38e8be05af715382462272c8aca"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/legacy_ungated_test__failure_gated.json",
+          "sha256": "4faa0777c4a81829e85206e84c035cce6313efcaf71bddb2bad3fa58f811a213"
+        }
+      ],
+      "aliases": [
+        "early_quality_623ee7f924e8",
+        "legacy_safety_priority",
+        "ungated_88dc65191d245777"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_7bf16e85fb601b22bb96945d",
+      "kind": "batch1_action_or_postprocess",
+      "definition": {
+        "root": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis",
+        "arm": {
+          "fit": "r2_pooled_centered_unequal_region8",
+          "candidate": "r2_pooled_centered_unequal_region8",
+          "route": "r2",
+          "step": 4,
+          "layer": 15,
+          "token": 6,
+          "r": 24,
+          "space": "candidate",
+          "method": "mlp_replay",
+          "alpha": 1.0,
+          "calibration": "p",
+          "gate": "none",
+          "cap": 0.05,
+          "parent": "cr_fba51686f50d16ab",
+          "id": "ungated_1fa14e7e7b0f2bb4",
+          "oracle_diagnostic": true,
+          "ungated_parent": "cr_9deaf63467a50bd5"
+        }
+      },
+      "semantic": {
+        "fit": "r2_pooled_centered_unequal_region8",
+        "candidate": "r2_pooled_centered_unequal_region8",
+        "route": "r2",
+        "step": 4,
+        "layer": 15,
+        "token": 6,
+        "r": 24,
+        "space": "candidate",
+        "method": "mlp_replay",
+        "alpha": 1.0,
+        "calibration": "p",
+        "gate": "none",
+        "cap": 0.05
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/legacy_ungated_test__failure_gated.json",
+          "sha256": "4faa0777c4a81829e85206e84c035cce6313efcaf71bddb2bad3fa58f811a213"
+        }
+      ],
+      "aliases": [
+        "ungated_1fa14e7e7b0f2bb4"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_8c9580dce3482650a9482ee6",
+      "kind": "batch1_action_or_postprocess",
+      "definition": {
+        "root": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis",
+        "arm": {
+          "fit": "r2_uncentered_equal_region14",
+          "candidate": "r2_uncentered_equal_region14",
+          "route": "r2",
+          "step": 4,
+          "layer": 13,
+          "token": 6,
+          "r": 4,
+          "space": "candidate",
+          "method": "contract",
+          "alpha": 0.5,
+          "calibration": "n",
+          "gate": "benefit",
+          "cap": 0.05,
+          "benefit_path": "candidate_repair_v1/gates/cr_de02484dcb5ba5f6.npz",
+          "benefit_threshold": 0.0,
+          "parent": "cr_ece3a3e1d5b3268a",
+          "control": true,
+          "control_kind": "haar_rotation",
+          "alternative_basis": "r2_uncentered_equal_region14__haar0",
+          "id": "cr_34060367c563239a"
+        }
+      },
+      "semantic": {
+        "fit": "r2_uncentered_equal_region14",
+        "candidate": "r2_uncentered_equal_region14",
+        "route": "r2",
+        "step": 4,
+        "layer": 13,
+        "token": 6,
+        "r": 4,
+        "space": "candidate",
+        "method": "contract",
+        "alpha": 0.5,
+        "calibration": "n",
+        "gate": "benefit",
+        "cap": 0.05,
+        "benefit_path": "candidate_repair_v1/gates/cr_de02484dcb5ba5f6.npz",
+        "benefit_threshold": 0.0,
+        "control": true,
+        "control_kind": "haar_rotation",
+        "alternative_basis": "r2_uncentered_equal_region14__haar0"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/candidate_repair_v1__final_test.json",
+          "sha256": "b854a71b1da35f94d4ec6320df790e7c8772b38e8be05af715382462272c8aca"
+        }
+      ],
+      "aliases": [
+        "cr_34060367c563239a"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_9daee56a32d53d40fa7019ff",
+      "kind": "batch1_action_or_postprocess",
+      "definition": {
+        "root": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis",
+        "arm": {
+          "fit": "r1_pooled_centered_unequal_region0__time4",
+          "candidate": "r1_pooled_centered_unequal_region0",
+          "route": "r1",
+          "step": 4,
+          "layer": 16,
+          "token": 6,
+          "r": 24,
+          "space": "candidate",
+          "method": "mean",
+          "alpha": 0.5,
+          "calibration": "n",
+          "gate": "none",
+          "cap": 0.05,
+          "mechanism": "target_time_calibration",
+          "timing_type": "late_transfer",
+          "id": "cr_774b7ee8eef1ab62"
+        }
+      },
+      "semantic": {
+        "fit": "r1_pooled_centered_unequal_region0__time4",
+        "candidate": "r1_pooled_centered_unequal_region0",
+        "route": "r1",
+        "step": 4,
+        "layer": 16,
+        "token": 6,
+        "r": 24,
+        "space": "candidate",
+        "method": "mean",
+        "alpha": 0.5,
+        "calibration": "n",
+        "gate": "none",
+        "cap": 0.05,
+        "mechanism": "target_time_calibration",
+        "timing_type": "late_transfer"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/candidate_repair_v1__final_test.json",
+          "sha256": "b854a71b1da35f94d4ec6320df790e7c8772b38e8be05af715382462272c8aca"
+        }
+      ],
+      "aliases": [
+        "cr_774b7ee8eef1ab62"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_a634a08f6ae1938843816b15",
+      "kind": "batch1_action_or_postprocess",
+      "definition": {
+        "root": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis",
+        "arm": {
+          "fit": "r2_uncentered_equal_region14",
+          "candidate": "r2_uncentered_equal_region14",
+          "route": "r2",
+          "step": 4,
+          "layer": 13,
+          "token": 6,
+          "r": 4,
+          "space": "candidate",
+          "method": "contract",
+          "alpha": 0.5,
+          "calibration": "n",
+          "gate": "benefit",
+          "cap": 0.05,
+          "benefit_path": "candidate_repair_v1/gates/cr_de02484dcb5ba5f6.npz",
+          "benefit_threshold": 0.0,
+          "parent": "cr_ece3a3e1d5b3268a",
+          "control": true,
+          "control_kind": "haar_rotation",
+          "alternative_basis": "r2_uncentered_equal_region14__haar2",
+          "id": "cr_c71caf1d15f49805"
+        }
+      },
+      "semantic": {
+        "fit": "r2_uncentered_equal_region14",
+        "candidate": "r2_uncentered_equal_region14",
+        "route": "r2",
+        "step": 4,
+        "layer": 13,
+        "token": 6,
+        "r": 4,
+        "space": "candidate",
+        "method": "contract",
+        "alpha": 0.5,
+        "calibration": "n",
+        "gate": "benefit",
+        "cap": 0.05,
+        "benefit_path": "candidate_repair_v1/gates/cr_de02484dcb5ba5f6.npz",
+        "benefit_threshold": 0.0,
+        "control": true,
+        "control_kind": "haar_rotation",
+        "alternative_basis": "r2_uncentered_equal_region14__haar2"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/candidate_repair_v1__final_test.json",
+          "sha256": "b854a71b1da35f94d4ec6320df790e7c8772b38e8be05af715382462272c8aca"
+        }
+      ],
+      "aliases": [
+        "cr_c71caf1d15f49805"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_df32510f375b6caa9460e1d7",
+      "kind": "batch1_action_or_postprocess",
+      "definition": {
+        "root": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis",
+        "arm": {
+          "id": "trajectory_scale_1.02",
+          "method": "trajectory_scale",
+          "factor": 1.02,
+          "source": "action_space_control",
+          "cap": 0.0
+        }
+      },
+      "semantic": {
+        "method": "trajectory_scale",
+        "factor": 1.02
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/repair_v1__final_test.json",
+          "sha256": "cbec97835e16da3b98e536df3fb299709a3507b572f69ab7c1dec110b8cad3f3"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/candidate_repair_v1__final_test.json",
+          "sha256": "b854a71b1da35f94d4ec6320df790e7c8772b38e8be05af715382462272c8aca"
+        }
+      ],
+      "aliases": [
+        "trajectory_scale_1.02",
+        "scale_1.02"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_e235f9364ba38b67f3c39b62",
+      "kind": "batch1_action_or_postprocess",
+      "definition": {
+        "root": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis",
+        "arm": {
+          "id": "trajectory_scale_1.005",
+          "method": "trajectory_scale",
+          "factor": 1.005,
+          "source": "action_space_control",
+          "cap": 0.0
+        }
+      },
+      "semantic": {
+        "method": "trajectory_scale",
+        "factor": 1.005
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/repair_v1__final_test.json",
+          "sha256": "cbec97835e16da3b98e536df3fb299709a3507b572f69ab7c1dec110b8cad3f3"
+        },
+        {
+          "path": "/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/vlm_repair_v1/oracle_all/panels/candidate_repair_v1__final_test.json",
+          "sha256": "b854a71b1da35f94d4ec6320df790e7c8772b38e8be05af715382462272c8aca"
+        }
+      ],
+      "aliases": [
+        "trajectory_scale_1.005",
+        "scale_1.005"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    }
+  ],
+  "runtime_admission": "/mnt/workspace/ReCogDrive/1021-representation_repair_batch3/provenance/FORMED_RUNTIME_MULTI_DEVICE_ADMISSION.json",
+  "runtime_admission_sha256": "08097e3e817d308dd5da821b2ab793e64d6684aa0375e7fc2a4e88a0a1819676",
+  "catalog_sha256": "d1e5cb4547c887f31a70a1b8648c76f8f9f775bf2e2ddd5143b96a877e99862d",
+  "schedule_sha256": "2ccf9528101708a408502f8b87f813b1c8b0fbdd3a2c93a304c669ce834b7d10",
+  "id": "formed_pack_4275610477ef5ee96d584337",
+  "full_evaluation_required_without_unresolved_prescreen": true
+}

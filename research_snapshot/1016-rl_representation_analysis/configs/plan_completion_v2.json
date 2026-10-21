@@ -1,0 +1,61 @@
+{
+  "time": "2026-10-16T07:54:31.606516+00:00",
+  "scope": "complete PLAN route-one and route-two distribution requirements using existing observations only",
+  "source_run": "paired_formal_20261016T0728Z",
+  "starts": [
+    0,
+    20,
+    40,
+    60,
+    80
+  ],
+  "steps": "every actually executed step, separated by start and time",
+  "fit_subset": "exploration",
+  "fit_noise_group": 0,
+  "evaluate_subset": "validation",
+  "evaluate_noise_groups": [
+    0,
+    1
+  ],
+  "k_primary": 8,
+  "k_sensitivity": [
+    2,
+    4,
+    8,
+    16,
+    32
+  ],
+  "centering": [
+    "uncentered",
+    "pooled_exploration_center"
+  ],
+  "routes": [
+    "global_class_subspace_residual",
+    "paired_difference_svd",
+    "paired_class_subspace_residual"
+  ],
+  "min_fit_pairs": 8,
+  "min_fit_sessions": 5,
+  "min_validate_pairs": 20,
+  "min_validate_sessions": 8,
+  "distribution_metrics": [
+    "full projected mean vectors",
+    "full projected covariance matrices",
+    "mean difference",
+    "relative covariance difference",
+    "shared training-bin scalar histogram overlap",
+    "fixed direction AUC",
+    "session bootstrap mean difference CI"
+  ],
+  "continuous_quality": "ridge on full k-dimensional residual coordinates; include intermediate outcomes; coefficients/normalization exploration P0 only",
+  "mode_analysis": "independent paired fits at t0 by final failed branch mode (collision, offroad, TTC, progress); cross-mode heldout evaluation and principal-angle comparison",
+  "full_dim_stats": "final-quality high/fail mean and variance differences, paired distance and cosine",
+  "uncertainty": "session bootstrap500; cluster pair sign permutation1999; BH separately across primary k8 all-time route tests and t0 mode-transfer tests; sensitivity dimensions descriptive",
+  "shared_hist_bins": "32 quantile bins fitted on exploration P0 projected values; endpoints extended to +/-infinity",
+  "validation_basis_fixed": true,
+  "original_gt_quality_gate": false,
+  "new_inference": false,
+  "intervention": false,
+  "insufficient_contrasts": "record explicit unavailable/low-coverage status; do not inherit initialization labels or manufacture contrasts",
+  "identity": "5a1f2a6c1c70214d951fe45d24f0974007f39834404366303b1dec32c5ba502c"
+}

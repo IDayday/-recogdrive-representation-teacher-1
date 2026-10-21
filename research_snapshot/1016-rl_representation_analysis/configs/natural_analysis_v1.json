@@ -1,0 +1,60 @@
+{
+  "time": "2026-10-16T08:19:33.379406+00:00",
+  "route": "route1_natural_model_S0",
+  "source_population": "103288 original natural S0 trajectories, exact-replayed",
+  "successes": 90153,
+  "failures": 2288,
+  "intermediate": 10847,
+  "gt_initialization": false,
+  "steps": [
+    80,
+    60,
+    40,
+    20,
+    0
+  ],
+  "layers": "18 common 384D stages plus separate 512D output",
+  "tokens": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "fit_subset": "exploration collection sessions",
+  "validation_subset": "held-out collection sessions",
+  "split_seed": 20261016,
+  "k_primary": 8,
+  "k_sensitivity": [
+    2,
+    4,
+    8,
+    16,
+    32
+  ],
+  "centering": [
+    "uncentered",
+    "pooled_exploration_center"
+  ],
+  "spectra": "exact eigendecomposition of float64 full-population sufficient statistics",
+  "projection": "all original natural outputs projected into frozen exploration residual bases; primary coordinates float32 after float64 matmul",
+  "distribution": [
+    "mean vectors",
+    "covariance matrices",
+    "shared training quantile-bin overlap",
+    "failure AUROC",
+    "failure average precision"
+  ],
+  "continuous": "ridge fit from exact exploration moments including middle-quality outputs",
+  "main_test": "within each held-out collection session, scalar failure-minus-success mean; equal-session bootstrap500 and sign-flip1999",
+  "primary_family": 1520,
+  "fdr": "BH across all 5 steps * 19 stages * 8 tokens * 2 centers",
+  "dimensions_sensitivity": "descriptive energy/subspace/residual/mean-cov effects; no validation selection",
+  "statistics_units": "natural scene predictions, never GT pairs; session bootstrap preserves correlated scenes",
+  "test_cache_access": false,
+  "intervention": false,
+  "identity": "aa53f8aed2355f8de0523478a22c229ea6d771693d200017dd1a2a935d7ac2c7"
+}

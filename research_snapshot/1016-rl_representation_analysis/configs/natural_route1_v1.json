@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "time": "2026-10-16T08:04:30.481332+00:00",
+  "route": "route_one_natural_model_success_failure",
+  "source": "original natural RL S0 get_action without init_actions",
+  "baseline_run": "rl_s0_20261016T063037Z",
+  "baseline_identity": "faee7bb7c53bbdce363a13c59f1107dfa7be0c1d9547b6ba312c5d5c2955520c",
+  "manifest": "manifests/natural_s0.json",
+  "manifest_sha256": "d7f146da650ff965b945c12718bccf774d632f5d50052518be52546262fa47f9",
+  "samples": 103288,
+  "counts": {
+    "failure": 2288,
+    "high_quality": 90153,
+    "intermediate": 10847
+  },
+  "anchors": [
+    "0002267a294e52a7",
+    "0000be0b1dc65be3",
+    "0002317e1f755ca1"
+  ],
+  "seed_index": 0,
+  "seed_formula": "int(sha256(f\"{token}|20261008|0\".encode()).hexdigest()[:8],16)",
+  "steps": [
+    80,
+    60,
+    40,
+    20,
+    0
+  ],
+  "layers": 18,
+  "hidden_dim": 384,
+  "dit_output_dim": 512,
+  "precision": "float32 representations; float64 sums/second moments",
+  "chunk_size": 32,
+  "nodes": 2,
+  "devices_per_node": 16,
+  "capture": "all 5 native steps, all 18 common stages and separate 512D output, all 8 action tokens",
+  "trajectory_acceptance": "every captured trajectory must equal original saved S0 trajectory exactly, not tolerance only",
+  "labels": "original final S0 PDMS, only after exact trajectory replay; high>90 fail<70 middle retained",
+  "gt_initialization": false,
+  "paired_route2_candidates": false,
+  "scoring_reuse": "reuse original scores ONLY on exact saved-trajectory replay",
+  "stats": "per subset and final quality: n,sum_h,hTh,sum_y,sum_y2,sum_hy; double precision; merge by rank",
+  "raw_bytes_estimate": 123000000000,
+  "root_seed": 20261008,
+  "test_cache_access": false,
+  "identity": "2b9d639f20f11452eae5386981cf63792850f0e03c3424518710a34ab0d58f06"
+}

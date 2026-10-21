@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "time": "2026-10-16T07:22:54.375742+00:00",
+  "primary_start_t": 0,
+  "train_noise_group": 0,
+  "repeat_noise_group": 1,
+  "fit_subset": "exploration",
+  "test_subset": "validation",
+  "k_primary": 8,
+  "k_sensitivity": [
+    2,
+    4,
+    8,
+    16,
+    32
+  ],
+  "centering": [
+    "uncentered",
+    "pooled_exploration_center"
+  ],
+  "primary_route": "SVD of same-scene final high-minus-fail representations, mean direction projected to k=8 difference subspace; held-out within-pair ordering",
+  "primary_tests": "each of 18 common 384D stages plus separate 512D DiT output, each action token, heldout P0 and P1; BH FDR across 19*8*2=304 cells",
+  "uncertainty": "collection-session bootstrap, 500 replicates, seed20261016; cluster sign permutation 1999 replicates; no candidate treated as independent scene",
+  "secondary_routes": [
+    "paired class subspace plus residual",
+    "all final high/fail class subspace plus residual",
+    "continuous delta-PDMS ridge in paired difference space"
+  ],
+  "residual_threshold": 1e-06,
+  "relative_difference_numeric_floor": 1e-06,
+  "fit_rule": "all means, subspaces, probe coefficients fixed on exploration P0; no validation fitting or layer selection",
+  "featured_cell": "max exploration P0 difference-space top8 energy ratio; no validation selection",
+  "others": "all start levels: final quality combinations, trajectory drift, layer/token representation difference RMS; no pooling across t or diffusion step",
+  "full_dimension_stats": "after mandatory low-dimensional routes, report relative paired RMS and cosine/distance",
+  "causal_claim": false,
+  "repair_intervention": false
+}

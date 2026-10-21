@@ -1,0 +1,249 @@
+{
+  "captured_utc": "2026-10-21T22:41:06.483033+00:00",
+  "scope": "Local single PPU verification; no 8xA800 or full training claim",
+  "unit_tests": {
+    "passed": 21,
+    "command": "python -B -m unittest discover -s tests -v"
+  },
+  "syntax": {
+    "frozen_research_python_files": 905,
+    "portable_python_files": 25,
+    "all_passed": true
+  },
+  "CLI_help_entrypoints_passed": 18,
+  "official_RL_and_VLM_hashes": "PASS; full RL/VLM weight and relevant tokenizer/custom-model hashes verified",
+  "dependencies_used": {
+    "transformers": "4.37.0",
+    "tokenizers": "0.15.2",
+    "diffusers": "0.35.2",
+    "numpy": "1.26.4",
+    "scipy": "1.11.4",
+    "torchvision": "0.19.0",
+    "timm": "1.0.20",
+    "nuplan-devkit": "1.1.1",
+    "shapely": "2.1.2",
+    "flash-attn": "2.8.2+v0.1.0.ppu2.1.0.oe"
+  },
+  "transformers457": {
+    "status": "FAIL_RUNTIME_COMPATIBILITY",
+    "failure": "Qwen layer continuation RoPE tensor dimension mismatch: 12 versus 128",
+    "conclusion": "No numerical-equivalence result can be inferred from a failed forward pass"
+  },
+  "teacher_replay": {
+    "status": "PASS_REAL_THREE_CASE_FIXED_R2_RECORD_MODE",
+    "cases": [
+      {
+        "global_index": 0,
+        "token": "0000be0b1dc65be3",
+        "candidate": "vlm_ungated_1470c214cbf727140d",
+        "full_tokens": 2800,
+        "padding_tokens": 9,
+        "source_H_byte_exact": false,
+        "source_trajectory_byte_exact": false,
+        "source_trajectory_max_abs_error": 0.19582176208496094,
+        "target_backend_Base_scores": [
+          0.5833333333333334,
+          0.5833333333333334,
+          0.5833333333333334,
+          0.5833333333333334,
+          0.5833333333333334
+        ],
+        "target_backend_teacher_scores": [
+          1.0,
+          0.5833333333333334,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "source_teacher_scores": [
+          1.0,
+          0.5833333333333334,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "GT_used": false,
+        "source_Base_scores": [
+          0.5833333333333334,
+          0.5833333333333334,
+          0.5833333333333334,
+          0.5833333333333334,
+          0.5833333333333334
+        ]
+      },
+      {
+        "global_index": 6,
+        "token": "00030b9cfedf5613",
+        "candidate": "Base",
+        "full_tokens": 2800,
+        "padding_tokens": 10,
+        "source_H_byte_exact": false,
+        "source_trajectory_byte_exact": false,
+        "source_trajectory_max_abs_error": 1.164893627166748,
+        "target_backend_Base_scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "target_backend_teacher_scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "source_teacher_scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "GT_used": false,
+        "source_Base_scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "global_index": 3902,
+        "token": "09ac5980ffce5ee3",
+        "candidate": "vlm_ungated_1470c214cbf727140d",
+        "full_tokens": 2800,
+        "padding_tokens": 7,
+        "source_H_byte_exact": false,
+        "source_trajectory_byte_exact": false,
+        "source_trajectory_max_abs_error": 0.8390302658081055,
+        "target_backend_Base_scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "target_backend_teacher_scores": [
+          0.5833333333333334,
+          0.5833333333333334,
+          0.5833333333333334,
+          0.5833333333333334,
+          0.5833333333333334
+        ],
+        "source_teacher_scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "GT_used": false,
+        "source_Base_scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "exact_reference_status": "FAIL: all three H fingerprints and trajectories differ from the frozen source",
+    "version_causality": "Not isolated. Framework, numerical-kernel and scoring dependencies also differ; equality of the transformers version is insufficient.",
+    "trajectory_error_definition": "Maximum absolute difference over x, y and heading elements; mixed coordinate units"
+  },
+  "single_device_autograd": {
+    "status": "PASS_SINGLE_DEVICE_H_T_HT_FORWARD_BACKWARD",
+    "environment": {
+      "torch": "2.4.0",
+      "cuda": "12.4",
+      "device": "PPU-ZW810E",
+      "packages": {
+        "transformers": "4.37.0",
+        "diffusers": "0.35.2",
+        "numpy": "1.26.4",
+        "torchvision": "0.19.0",
+        "timm": "1.0.20",
+        "nuplan-devkit": "1.1.1"
+      }
+    },
+    "global_index": 3902,
+    "token": "09ac5980ffce5ee3",
+    "results": [
+      {
+        "group": "H",
+        "loss": 1.4810316562652588,
+        "H_loss": 1.4810316562652588,
+        "T_loss": null,
+        "parameters_with_gradient": 592,
+        "full_tokens": 2800,
+        "frozen_parameters_verified": true
+      },
+      {
+        "group": "T",
+        "loss": 0.00013371578825172037,
+        "H_loss": 1.4810316562652588,
+        "T_loss": 0.00013371578825172037,
+        "parameters_with_gradient": 592,
+        "full_tokens": 2800,
+        "frozen_parameters_verified": true
+      },
+      {
+        "group": "HT",
+        "loss": 1.4917570352554321,
+        "H_loss": 1.4810316562652588,
+        "T_loss": 0.00013371578825172037,
+        "parameters_with_gradient": 592,
+        "full_tokens": 2800,
+        "frozen_parameters_verified": true
+      }
+    ],
+    "trainable_parameters": 34008448,
+    "lora_modules": 292,
+    "optimizer_steps": 0,
+    "multi_GPU_training_verified": false
+  },
+  "metric_cache_rebuild": {
+    "status": "PASS_REAL_LOGS_AND_MAPS_CACHE_GENERATION",
+    "cases": 1,
+    "global_index": 0,
+    "existing_cache_used": false
+  },
+  "zero_student_evaluation": {
+    "status": "PASS_REAL_MATCHED_BASE_EVALUATION",
+    "cases": 1,
+    "noises": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "optimizer_steps": 0,
+    "global_index": 520,
+    "token": "014113378c925abf",
+    "max_abs_trajectory_difference_from_actual_Base": 0.0,
+    "Base_PDMS": 98.29393869220097,
+    "student_PDMS": 98.29393869220097,
+    "gain": 0.0
+  },
+  "paired_comparison_self_check": {
+    "status": "PASS",
+    "gain": 0.0,
+    "scope": "Same actual zero-student evaluation compared with itself; not a trained HT/T result"
+  },
+  "secrets_scan": {
+    "text_files_scanned": 1168,
+    "credential_matches": 0,
+    "private_key_matches": 0
+  },
+  "not_run": [
+    "NVIDIA A800 inference",
+    "8-rank NCCL/DDP preflight",
+    "full 103288-scene teacher rebuild",
+    "fresh H/T/HT 5-epoch training",
+    "full student navtrain/navtest evaluation"
+  ]
+}

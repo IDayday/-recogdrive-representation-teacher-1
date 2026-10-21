@@ -1,0 +1,2016 @@
+{
+  "candidate_scope": "formed",
+  "checkpoint_sha256": "23fb949b10387efeff87e093703d5faf41b61b9e5ead16d4076661e3c7c08a20",
+  "entries": [
+    {
+      "id": "formed_022197cd0363486f8791dc86",
+      "kind": "batch2_learned",
+      "definition": {
+        "kind": "learned",
+        "id": "behavior_arm_8e20e03c5491211e07e7",
+        "slot": 3,
+        "training_task": {
+          "id": "behavior_72d6c3b67432d5f598afeedb",
+          "system": "response_K7_seed0",
+          "K": 7,
+          "expert": 3,
+          "responsibility_meta": "analysis/outcome_groups/all/response_K7_seed0.json",
+          "block": "interface_pre",
+          "group": "valid_mean",
+          "heldout_fold": -1,
+          "fit_seed": 2026101801,
+          "fit_path": "fullspace_references/all/interface_pre.npz",
+          "fit_sha256": "edd828cba1f2e17bf8658284c75100911a0cf09a2178c9d38e50cd70f0c44725",
+          "rank": 32,
+          "cap": 0.1,
+          "space_control": "full",
+          "steps": 768,
+          "checkpoints": [
+            256,
+            512,
+            768
+          ],
+          "learning_rate": 0.003,
+          "edit_penalty": 0.0001,
+          "retention_weight": 2.0,
+          "training_noise_indices": [
+            0,
+            1,
+            2
+          ]
+        },
+        "checkpoint": {
+          "step": 256,
+          "path": "learned_experts/native_v4_behavior_72d6c3b67432d5f598afeedb/step0256.npz",
+          "sha256": "3700dde80ac5da4b73fd5f915f68a53568be630b899d01a878bd584ae67d82ea"
+        },
+        "strength": 1.0
+      },
+      "semantic": {
+        "kind": "learned",
+        "block": "interface_pre",
+        "group": "valid_mean",
+        "cap": 0.1,
+        "strength": 1.0,
+        "checkpoint_sha256": "3700dde80ac5da4b73fd5f915f68a53568be630b899d01a878bd584ae67d82ea",
+        "checkpoint_path": "learned_experts/native_v4_behavior_72d6c3b67432d5f598afeedb/step0256.npz",
+        "training_task": "behavior_72d6c3b67432d5f598afeedb"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/analysis/expert_library_selection/library_f588fdcff8781edaa96f4765.json",
+          "sha256": "d0ad32886826f9b71aadacaf6da8d1a19f557f23e8a5bd77f345ea37e0a68622"
+        }
+      ],
+      "aliases": [
+        "behavior_arm_8e20e03c5491211e07e7"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_077860d711e62891c5f817cd",
+      "kind": "batch2_learned",
+      "definition": {
+        "id": "em_arm_428a6ef0ffcf084acaaf1f19",
+        "kind": "learned",
+        "slot": 1,
+        "training_task": {
+          "id": "em_behavior_4cf09f73f0185a89e03bdca1",
+          "system": "response_em1_K6_seed0",
+          "K": 6,
+          "expert": 1,
+          "responsibility_meta": "analysis/response_refinement/all/response_K6_seed0_em1.json",
+          "block": "interface_pre",
+          "group": "valid_mean",
+          "heldout_fold": -1,
+          "fit_seed": 2026101801,
+          "fit_path": "fullspace_references/all/interface_pre.npz",
+          "fit_sha256": "edd828cba1f2e17bf8658284c75100911a0cf09a2178c9d38e50cd70f0c44725",
+          "rank": 32,
+          "cap": 0.1,
+          "space_control": "full",
+          "steps": 512,
+          "checkpoints": [
+            256,
+            512
+          ],
+          "learning_rate": 0.003,
+          "edit_penalty": 0.0001,
+          "retention_weight": 2.0,
+          "training_noise_indices": [
+            0,
+            1,
+            2
+          ],
+          "formation_round": 1,
+          "parent_system": "response_K6_seed0"
+        },
+        "checkpoint": {
+          "step": 512,
+          "path": "learned_experts/native_v4_em_behavior_4cf09f73f0185a89e03bdca1/step0512.npz",
+          "sha256": "fe4f33210a78f5bd1fe3245530113311fbc39ea4c6cabae83c71defd7073b261"
+        },
+        "strength": 1.0
+      },
+      "semantic": {
+        "kind": "learned",
+        "block": "interface_pre",
+        "group": "valid_mean",
+        "cap": 0.1,
+        "strength": 1.0,
+        "checkpoint_sha256": "fe4f33210a78f5bd1fe3245530113311fbc39ea4c6cabae83c71defd7073b261",
+        "checkpoint_path": "learned_experts/native_v4_em_behavior_4cf09f73f0185a89e03bdca1/step0512.npz",
+        "training_task": "em_behavior_4cf09f73f0185a89e03bdca1"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/analysis/variant_library_selection/variant_library_e1c4c1679918b4a0802cec52.json",
+          "sha256": "6d8e71d3e9d76a1f041d84ae10f069b636c99abfafb2627771aa90ddfb0816b7"
+        }
+      ],
+      "aliases": [
+        "em_arm_428a6ef0ffcf084acaaf1f19"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_0ae63355880d70c82fa8e397",
+      "kind": "batch2_learned",
+      "definition": {
+        "id": "em_arm_e090b78ab3adddbdb5d6e3f6",
+        "kind": "learned",
+        "slot": 2,
+        "training_task": {
+          "id": "em_behavior_71b7d2c56cbba056a23dbf10",
+          "system": "correction_em1_K7_seed0",
+          "K": 7,
+          "expert": 2,
+          "responsibility_meta": "analysis/response_refinement/all/correction_K7_seed0_em1.json",
+          "block": "interface_pre",
+          "group": "valid_mean",
+          "heldout_fold": -1,
+          "fit_seed": 2026101801,
+          "fit_path": "fullspace_references/all/interface_pre.npz",
+          "fit_sha256": "edd828cba1f2e17bf8658284c75100911a0cf09a2178c9d38e50cd70f0c44725",
+          "rank": 32,
+          "cap": 0.1,
+          "space_control": "full",
+          "steps": 512,
+          "checkpoints": [
+            256,
+            512
+          ],
+          "learning_rate": 0.003,
+          "edit_penalty": 0.0001,
+          "retention_weight": 2.0,
+          "training_noise_indices": [
+            0,
+            1,
+            2
+          ],
+          "formation_round": 1,
+          "parent_system": "correction_K7_seed0"
+        },
+        "checkpoint": {
+          "step": 512,
+          "path": "learned_experts/native_v4_em_behavior_71b7d2c56cbba056a23dbf10/step0512.npz",
+          "sha256": "e40e9f698b12f667463fd7ad547abbf24a06d4e56b7fd70694fd0f7e4b047588"
+        },
+        "strength": 1.0
+      },
+      "semantic": {
+        "kind": "learned",
+        "block": "interface_pre",
+        "group": "valid_mean",
+        "cap": 0.1,
+        "strength": 1.0,
+        "checkpoint_sha256": "e40e9f698b12f667463fd7ad547abbf24a06d4e56b7fd70694fd0f7e4b047588",
+        "checkpoint_path": "learned_experts/native_v4_em_behavior_71b7d2c56cbba056a23dbf10/step0512.npz",
+        "training_task": "em_behavior_71b7d2c56cbba056a23dbf10"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/analysis/variant_library_selection/variant_library_3eb6fdc221f4d09e59a8e610.json",
+          "sha256": "2510181080e254f5aeef37627865f0322e939dbce33a9b1f0dfd75c5209cfcf5"
+        }
+      ],
+      "aliases": [
+        "em_arm_e090b78ab3adddbdb5d6e3f6"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_de6737b75fddc70fa20891c7",
+      "kind": "batch2_delta",
+      "definition": {
+        "id": "causal_arm_9b1353fbdf9ed2499ab1947c",
+        "kind": "delta",
+        "fit": {
+          "status": "FIT_NOT_BEHAVIOR_EVALUATED",
+          "time": "2026-10-17T23:19:44.495433+00:00",
+          "id": "delta_8625f72fee94d69ecd5788ed",
+          "path": "delta_experts/delta_86/delta_8625f72fee94d69ecd5788ed.npz",
+          "sha256": "96a78cc83ec207e8f0aad5db2c28bc87920203017ef061ec72e520c6ddfdd1bd",
+          "block": "interface_pre",
+          "group": "valid_mean",
+          "cap": 0.1,
+          "input_rank": 1536,
+          "output_rank": 128,
+          "ridge": 0.01,
+          "fit_seed": 2026101803,
+          "heldout_fold": -1,
+          "system": "representation_K5_seed2",
+          "K": 5,
+          "expert": 0,
+          "responsibility_meta": "analysis/initial_groups/all/representation_K5_seed2.json",
+          "source": "outcome_causal_fit_62eecaacf37a650784f38471",
+          "target": "Actually effective per-case hidden delta; zero retention targets",
+          "normalized_training_error": 0.4560076234015425,
+          "causal_output_space_rank": 1536,
+          "teacher_improved_cases": 1817,
+          "effective_cases": 610.8514274088999,
+          "retained_successes": 1024,
+          "retained_intermediate": 256,
+          "safety_targets": false,
+          "deployment_uses_GT_or_PDMS": false
+        },
+        "strength": 1.0,
+        "slot": 0
+      },
+      "semantic": {
+        "kind": "delta",
+        "block": "interface_pre",
+        "group": "valid_mean",
+        "cap": 0.1,
+        "strength": 1.0,
+        "fit_sha256": "96a78cc83ec207e8f0aad5db2c28bc87920203017ef061ec72e520c6ddfdd1bd",
+        "fit_path": "delta_experts/delta_86/delta_8625f72fee94d69ecd5788ed.npz",
+        "fit_id": "delta_8625f72fee94d69ecd5788ed"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/analysis/causal_library_selection/causal_library_4ced8440e7f94051a32d1c70.json",
+          "sha256": "0ac31371a3786428b360e06d7ebf0152979273465bb48a3853575da888f81800"
+        }
+      ],
+      "aliases": [
+        "causal_arm_9b1353fbdf9ed2499ab1947c"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_de7390abaa75caef46cc9215",
+      "kind": "batch2_delta",
+      "definition": {
+        "id": "causal_arm_e19c304d162b5123ba5163a8",
+        "kind": "delta",
+        "fit": {
+          "status": "FIT_NOT_BEHAVIOR_EVALUATED",
+          "time": "2026-10-17T23:20:34.053528+00:00",
+          "id": "delta_55789f4a7f7351bf293fa155",
+          "path": "delta_experts/delta_55/delta_55789f4a7f7351bf293fa155.npz",
+          "sha256": "b76dda2e1e4dc3c0fd3cd8f059e0a0f5c96857e7d24e21b6da59f0de5a7960d6",
+          "block": "interface_pre",
+          "group": "valid_mean",
+          "cap": 0.1,
+          "input_rank": 1536,
+          "output_rank": 128,
+          "ridge": 0.1,
+          "fit_seed": 2026101802,
+          "heldout_fold": -1,
+          "system": "correction_K7_seed1",
+          "K": 7,
+          "expert": 5,
+          "responsibility_meta": "analysis/outcome_groups/all/correction_K7_seed1.json",
+          "source": "outcome_causal_fit_004aa47f10f02ba5378089ad",
+          "target": "Actually effective per-case hidden delta; zero retention targets",
+          "normalized_training_error": 0.7742478243170839,
+          "causal_output_space_rank": 1536,
+          "teacher_improved_cases": 1817,
+          "effective_cases": 1380.4566648608925,
+          "retained_successes": 1024,
+          "retained_intermediate": 256,
+          "safety_targets": false,
+          "deployment_uses_GT_or_PDMS": false
+        },
+        "strength": 1.0,
+        "slot": 5
+      },
+      "semantic": {
+        "kind": "delta",
+        "block": "interface_pre",
+        "group": "valid_mean",
+        "cap": 0.1,
+        "strength": 1.0,
+        "fit_sha256": "b76dda2e1e4dc3c0fd3cd8f059e0a0f5c96857e7d24e21b6da59f0de5a7960d6",
+        "fit_path": "delta_experts/delta_55/delta_55789f4a7f7351bf293fa155.npz",
+        "fit_id": "delta_55789f4a7f7351bf293fa155"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/analysis/causal_library_selection/causal_library_65bfa5495bf74b5590794a36.json",
+          "sha256": "745e36dda2c6a0fc1f2902f8f81e384ba6905bc239408dc5532314fd0a0bbc73"
+        }
+      ],
+      "aliases": [
+        "causal_arm_e19c304d162b5123ba5163a8"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_dfc24c55e4a402865aa87ea2",
+      "kind": "batch2_delta",
+      "definition": {
+        "id": "causal_arm_20df8c0046c57b53cff58a55",
+        "kind": "delta",
+        "fit": {
+          "status": "FIT_NOT_BEHAVIOR_EVALUATED",
+          "time": "2026-10-17T23:20:08.782007+00:00",
+          "id": "delta_0218a9ea2c71970e28d64e47",
+          "path": "delta_experts/delta_02/delta_0218a9ea2c71970e28d64e47.npz",
+          "sha256": "b5d26aa3a45518180e1d404845ede4c42be0a7569f7eb0a06f658e87386a8c11",
+          "block": "interface_pre",
+          "group": "valid_mean",
+          "cap": 0.1,
+          "input_rank": 1536,
+          "output_rank": 128,
+          "ridge": 0.01,
+          "fit_seed": 2026101802,
+          "heldout_fold": -1,
+          "system": "response_K5_seed1",
+          "K": 5,
+          "expert": 1,
+          "responsibility_meta": "analysis/outcome_groups/all/response_K5_seed1.json",
+          "source": "outcome_causal_fit_a9b06004cedd900c07b8ad3b",
+          "target": "Actually effective per-case hidden delta; zero retention targets",
+          "normalized_training_error": 0.6630793728604045,
+          "causal_output_space_rank": 1536,
+          "teacher_improved_cases": 1817,
+          "effective_cases": 1453.4864430933073,
+          "retained_successes": 1024,
+          "retained_intermediate": 256,
+          "safety_targets": false,
+          "deployment_uses_GT_or_PDMS": false
+        },
+        "strength": 1.0,
+        "slot": 1
+      },
+      "semantic": {
+        "kind": "delta",
+        "block": "interface_pre",
+        "group": "valid_mean",
+        "cap": 0.1,
+        "strength": 1.0,
+        "fit_sha256": "b5d26aa3a45518180e1d404845ede4c42be0a7569f7eb0a06f658e87386a8c11",
+        "fit_path": "delta_experts/delta_02/delta_0218a9ea2c71970e28d64e47.npz",
+        "fit_id": "delta_0218a9ea2c71970e28d64e47"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/analysis/causal_library_selection/causal_library_f63a5b0ae6202c2c7dd02813.json",
+          "sha256": "c79614edf3c7460ff4c523a546119cc7f36300101def2284e0da0ee72186551d"
+        }
+      ],
+      "aliases": [
+        "causal_arm_20df8c0046c57b53cff58a55"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_dfe1dadd2d7468456e5ed0e2",
+      "kind": "batch2_delta",
+      "definition": {
+        "id": "causal_arm_31e3ac07b56904d7b692459b",
+        "kind": "delta",
+        "fit": {
+          "status": "FIT_NOT_BEHAVIOR_EVALUATED",
+          "time": "2026-10-17T23:19:48.066045+00:00",
+          "id": "delta_162808e1e4b27634cf3ef08a",
+          "path": "delta_experts/delta_16/delta_162808e1e4b27634cf3ef08a.npz",
+          "sha256": "371df9f87d6cdfab47c2d51f5f6e905e52965f1f87b181f084feec81bd5400a3",
+          "block": "interface_pre",
+          "group": "valid_mean",
+          "cap": 0.1,
+          "input_rank": 1536,
+          "output_rank": 128,
+          "ridge": 0.01,
+          "fit_seed": 2026101803,
+          "heldout_fold": -1,
+          "system": "representation_K6_seed2",
+          "K": 6,
+          "expert": 3,
+          "responsibility_meta": "analysis/initial_groups/all/representation_K6_seed2.json",
+          "source": "outcome_causal_fit_244e1b8601ee568dceb82f5e",
+          "target": "Actually effective per-case hidden delta; zero retention targets",
+          "normalized_training_error": 0.39571393761564466,
+          "causal_output_space_rank": 1536,
+          "teacher_improved_cases": 1817,
+          "effective_cases": 502.0045911674313,
+          "retained_successes": 1024,
+          "retained_intermediate": 256,
+          "safety_targets": false,
+          "deployment_uses_GT_or_PDMS": false
+        },
+        "strength": 1.0,
+        "slot": 3
+      },
+      "semantic": {
+        "kind": "delta",
+        "block": "interface_pre",
+        "group": "valid_mean",
+        "cap": 0.1,
+        "strength": 1.0,
+        "fit_sha256": "371df9f87d6cdfab47c2d51f5f6e905e52965f1f87b181f084feec81bd5400a3",
+        "fit_path": "delta_experts/delta_16/delta_162808e1e4b27634cf3ef08a.npz",
+        "fit_id": "delta_162808e1e4b27634cf3ef08a"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/analysis/causal_library_selection/causal_library_3d6e0e5c2f50b21a8d87f891.json",
+          "sha256": "62726bb7eccb47bdba6e9c2a12218c8e037437661fcd6c4f693d8f36859b07d1"
+        }
+      ],
+      "aliases": [
+        "causal_arm_31e3ac07b56904d7b692459b"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_e006e17e26e87ce13285aa36",
+      "kind": "batch2_delta",
+      "definition": {
+        "id": "causal_arm_0a7cfaf6c9365c76ac21b948",
+        "kind": "delta",
+        "fit": {
+          "status": "FIT_NOT_BEHAVIOR_EVALUATED",
+          "time": "2026-10-17T23:20:11.366104+00:00",
+          "id": "delta_07537be2a892f36627ba02e1",
+          "path": "delta_experts/delta_07/delta_07537be2a892f36627ba02e1.npz",
+          "sha256": "c21a517e096a28a19fed7d5e80d1e28a95bc98df827964a7c59e3433d79b86f4",
+          "block": "interface_pre",
+          "group": "valid_mean",
+          "cap": 0.1,
+          "input_rank": 1536,
+          "output_rank": 32,
+          "ridge": 0.01,
+          "fit_seed": 2026101803,
+          "heldout_fold": -1,
+          "system": "response_K6_seed2",
+          "K": 6,
+          "expert": 2,
+          "responsibility_meta": "analysis/outcome_groups/all/response_K6_seed2.json",
+          "source": "outcome_causal_fit_656704ebde21c3bf64381004",
+          "target": "Actually effective per-case hidden delta; zero retention targets",
+          "normalized_training_error": 0.7289740354711131,
+          "causal_output_space_rank": 1536,
+          "teacher_improved_cases": 1817,
+          "effective_cases": 1387.6505784020167,
+          "retained_successes": 1024,
+          "retained_intermediate": 256,
+          "safety_targets": false,
+          "deployment_uses_GT_or_PDMS": false
+        },
+        "strength": 1.0,
+        "slot": 2
+      },
+      "semantic": {
+        "kind": "delta",
+        "block": "interface_pre",
+        "group": "valid_mean",
+        "cap": 0.1,
+        "strength": 1.0,
+        "fit_sha256": "c21a517e096a28a19fed7d5e80d1e28a95bc98df827964a7c59e3433d79b86f4",
+        "fit_path": "delta_experts/delta_07/delta_07537be2a892f36627ba02e1.npz",
+        "fit_id": "delta_07537be2a892f36627ba02e1"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/analysis/causal_library_selection/causal_library_36f2cd8fbad8ec51d336d9bb.json",
+          "sha256": "b8106822106a6ad1fb5f4bb3e613e3e5dd021fa3c450a06d24c8429c5b8f502f"
+        }
+      ],
+      "aliases": [
+        "causal_arm_0a7cfaf6c9365c76ac21b948"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_e074387e61482bc3e4344d94",
+      "kind": "batch2_delta",
+      "definition": {
+        "id": "causal_arm_a4b83cf3a1634a103463b5f5",
+        "kind": "delta",
+        "fit": {
+          "status": "FIT_NOT_BEHAVIOR_EVALUATED",
+          "time": "2026-10-17T23:20:06.442795+00:00",
+          "id": "delta_dcefb33ce4a9f2e88882cbb5",
+          "path": "delta_experts/delta_dc/delta_dcefb33ce4a9f2e88882cbb5.npz",
+          "sha256": "75f6dd325fa3f9dc8e4dda5fe49caef83a19fc76f29eeb5c3a1269d72e8f8be8",
+          "block": "interface_pre",
+          "group": "valid_mean",
+          "cap": 0.1,
+          "input_rank": 1536,
+          "output_rank": 128,
+          "ridge": 0.01,
+          "fit_seed": 2026101803,
+          "heldout_fold": -1,
+          "system": "response_K5_seed2",
+          "K": 5,
+          "expert": 0,
+          "responsibility_meta": "analysis/outcome_groups/all/response_K5_seed2.json",
+          "source": "outcome_causal_fit_89c59e92ae12d126bab37ab0",
+          "target": "Actually effective per-case hidden delta; zero retention targets",
+          "normalized_training_error": 0.6495876029034066,
+          "causal_output_space_rank": 1536,
+          "teacher_improved_cases": 1817,
+          "effective_cases": 1534.6211846054227,
+          "retained_successes": 1024,
+          "retained_intermediate": 256,
+          "safety_targets": false,
+          "deployment_uses_GT_or_PDMS": false
+        },
+        "strength": 1.0,
+        "slot": 0
+      },
+      "semantic": {
+        "kind": "delta",
+        "block": "interface_pre",
+        "group": "valid_mean",
+        "cap": 0.1,
+        "strength": 1.0,
+        "fit_sha256": "75f6dd325fa3f9dc8e4dda5fe49caef83a19fc76f29eeb5c3a1269d72e8f8be8",
+        "fit_path": "delta_experts/delta_dc/delta_dcefb33ce4a9f2e88882cbb5.npz",
+        "fit_id": "delta_dcefb33ce4a9f2e88882cbb5"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/analysis/causal_library_selection/causal_library_105e81e368ac8d317a8e22a9.json",
+          "sha256": "911ae0ec297e090702a609374e3c84f42ce0327a7dbb8d95ee4f3f0d50fbc39d"
+        }
+      ],
+      "aliases": [
+        "causal_arm_a4b83cf3a1634a103463b5f5"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_e1762f32b85bb22ca20a9ade",
+      "kind": "batch2_delta",
+      "definition": {
+        "id": "causal_arm_776eea40b6466f7a0e9adbfb",
+        "kind": "delta",
+        "fit": {
+          "status": "FIT_NOT_BEHAVIOR_EVALUATED",
+          "time": "2026-10-17T23:19:50.396675+00:00",
+          "id": "delta_ca13c6b4adfdd4f15339bdc7",
+          "path": "delta_experts/delta_ca/delta_ca13c6b4adfdd4f15339bdc7.npz",
+          "sha256": "d8ae67a1b81670f299a6bf00ebdda01535aa4bd9190aed4c0f0dd1615cb57813",
+          "block": "interface_pre",
+          "group": "valid_mean",
+          "cap": 0.1,
+          "input_rank": 1536,
+          "output_rank": 128,
+          "ridge": 0.01,
+          "fit_seed": 2026101802,
+          "heldout_fold": -1,
+          "system": "representation_K7_seed1",
+          "K": 7,
+          "expert": 6,
+          "responsibility_meta": "analysis/initial_groups/all/representation_K7_seed1.json",
+          "source": "outcome_causal_fit_613f926d54bc353a71d241f7",
+          "target": "Actually effective per-case hidden delta; zero retention targets",
+          "normalized_training_error": 0.5239942652107256,
+          "causal_output_space_rank": 1536,
+          "teacher_improved_cases": 1817,
+          "effective_cases": 788.1125117016229,
+          "retained_successes": 1024,
+          "retained_intermediate": 256,
+          "safety_targets": false,
+          "deployment_uses_GT_or_PDMS": false
+        },
+        "strength": 1.0,
+        "slot": 6
+      },
+      "semantic": {
+        "kind": "delta",
+        "block": "interface_pre",
+        "group": "valid_mean",
+        "cap": 0.1,
+        "strength": 1.0,
+        "fit_sha256": "d8ae67a1b81670f299a6bf00ebdda01535aa4bd9190aed4c0f0dd1615cb57813",
+        "fit_path": "delta_experts/delta_ca/delta_ca13c6b4adfdd4f15339bdc7.npz",
+        "fit_id": "delta_ca13c6b4adfdd4f15339bdc7"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/analysis/causal_library_selection/causal_library_e00bfbd09d98334278c9de32.json",
+          "sha256": "2449f6409a3d1d9ba6d1e058f011956104ae2392e074b6b5ec7d30c361b9e8fa"
+        }
+      ],
+      "aliases": [
+        "causal_arm_776eea40b6466f7a0e9adbfb"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_e17a2a27d19cb5c50134a875",
+      "kind": "batch2_delta",
+      "definition": {
+        "id": "causal_arm_4a0fa21252f2f4f4e02aa2d3",
+        "kind": "delta",
+        "fit": {
+          "status": "FIT_NOT_BEHAVIOR_EVALUATED",
+          "time": "2026-10-17T23:20:12.905266+00:00",
+          "id": "delta_77899af6e15cf9df7b5f5d84",
+          "path": "delta_experts/delta_77/delta_77899af6e15cf9df7b5f5d84.npz",
+          "sha256": "535dad6feb42eeca983c61f39ee816c7ffe44c8bcdb34e372ea585d5d8c745b5",
+          "block": "interface_pre",
+          "group": "valid_mean",
+          "cap": 0.1,
+          "input_rank": 1536,
+          "output_rank": 128,
+          "ridge": 0.01,
+          "fit_seed": 2026101803,
+          "heldout_fold": -1,
+          "system": "response_K7_seed2",
+          "K": 7,
+          "expert": 1,
+          "responsibility_meta": "analysis/outcome_groups/all/response_K7_seed2.json",
+          "source": "outcome_causal_fit_45d0d9580cbc2e995a2a5ae6",
+          "target": "Actually effective per-case hidden delta; zero retention targets",
+          "normalized_training_error": 0.6695857609679855,
+          "causal_output_space_rank": 1536,
+          "teacher_improved_cases": 1817,
+          "effective_cases": 1546.179919024711,
+          "retained_successes": 1024,
+          "retained_intermediate": 256,
+          "safety_targets": false,
+          "deployment_uses_GT_or_PDMS": false
+        },
+        "strength": 1.0,
+        "slot": 1
+      },
+      "semantic": {
+        "kind": "delta",
+        "block": "interface_pre",
+        "group": "valid_mean",
+        "cap": 0.1,
+        "strength": 1.0,
+        "fit_sha256": "535dad6feb42eeca983c61f39ee816c7ffe44c8bcdb34e372ea585d5d8c745b5",
+        "fit_path": "delta_experts/delta_77/delta_77899af6e15cf9df7b5f5d84.npz",
+        "fit_id": "delta_77899af6e15cf9df7b5f5d84"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/analysis/causal_library_selection/causal_library_4947f62c67448631c9201ecf.json",
+          "sha256": "88af684945eaf71e93dddffaeacb03685ec5a3f20c435302b97bb245bc8e40e3"
+        }
+      ],
+      "aliases": [
+        "causal_arm_4a0fa21252f2f4f4e02aa2d3"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_e412ca9946f7019d2355f3ae",
+      "kind": "batch2_delta",
+      "definition": {
+        "id": "causal_arm_f90297431279702931598da8",
+        "kind": "delta",
+        "fit": {
+          "status": "FIT_NOT_BEHAVIOR_EVALUATED",
+          "time": "2026-10-17T23:20:38.639852+00:00",
+          "id": "delta_7f804ae2a9f2829b435b7817",
+          "path": "delta_experts/delta_7f/delta_7f804ae2a9f2829b435b7817.npz",
+          "sha256": "031f8d7c77ed9c2232d661baf730b14a9500bc8bcfafbfd9a371098ab99e8a4f",
+          "block": "interface_pre",
+          "group": "valid_mean",
+          "cap": 0.1,
+          "input_rank": 1536,
+          "output_rank": 128,
+          "ridge": 0.01,
+          "fit_seed": 2026101802,
+          "heldout_fold": -1,
+          "system": "correction_K8_seed1",
+          "K": 8,
+          "expert": 3,
+          "responsibility_meta": "analysis/outcome_groups/all/correction_K8_seed1.json",
+          "source": "outcome_causal_fit_ac646ec9085b20bb8cadd22a",
+          "target": "Actually effective per-case hidden delta; zero retention targets",
+          "normalized_training_error": 0.6308857712373052,
+          "causal_output_space_rank": 1536,
+          "teacher_improved_cases": 1817,
+          "effective_cases": 1293.3062849416938,
+          "retained_successes": 1024,
+          "retained_intermediate": 256,
+          "safety_targets": false,
+          "deployment_uses_GT_or_PDMS": false
+        },
+        "strength": 1.0,
+        "slot": 3
+      },
+      "semantic": {
+        "kind": "delta",
+        "block": "interface_pre",
+        "group": "valid_mean",
+        "cap": 0.1,
+        "strength": 1.0,
+        "fit_sha256": "031f8d7c77ed9c2232d661baf730b14a9500bc8bcfafbfd9a371098ab99e8a4f",
+        "fit_path": "delta_experts/delta_7f/delta_7f804ae2a9f2829b435b7817.npz",
+        "fit_id": "delta_7f804ae2a9f2829b435b7817"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/analysis/causal_library_selection/causal_library_bc6eb1404fbc6bf6fc33090d.json",
+          "sha256": "f0a9844d02aac2a9ba4f55116641df64086d5d93579d91662155366fdcd16ecd"
+        }
+      ],
+      "aliases": [
+        "causal_arm_f90297431279702931598da8"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_e5f05b6839c95c1b58f94542",
+      "kind": "batch2_delta",
+      "definition": {
+        "id": "causal_arm_98c6f5dcdbcd53bfe37658bd",
+        "kind": "delta",
+        "fit": {
+          "status": "FIT_NOT_BEHAVIOR_EVALUATED",
+          "time": "2026-10-17T23:20:35.297010+00:00",
+          "id": "delta_1b029b3921b76fe7d09ea6b4",
+          "path": "delta_experts/delta_1b/delta_1b029b3921b76fe7d09ea6b4.npz",
+          "sha256": "1a0ffbfb6a1f28b5a444de28cf06e39019f82eda9c6210e7beaec4015a68ca20",
+          "block": "interface_pre",
+          "group": "valid_mean",
+          "cap": 0.1,
+          "input_rank": 1536,
+          "output_rank": 128,
+          "ridge": 0.01,
+          "fit_seed": 2026101802,
+          "heldout_fold": -1,
+          "system": "correction_K7_seed1",
+          "K": 7,
+          "expert": 4,
+          "responsibility_meta": "analysis/outcome_groups/all/correction_K7_seed1.json",
+          "source": "outcome_causal_fit_38cdd980bf6a47f49e961ac6",
+          "target": "Actually effective per-case hidden delta; zero retention targets",
+          "normalized_training_error": 0.650587380444436,
+          "causal_output_space_rank": 1536,
+          "teacher_improved_cases": 1817,
+          "effective_cases": 1322.2696782952275,
+          "retained_successes": 1024,
+          "retained_intermediate": 256,
+          "safety_targets": false,
+          "deployment_uses_GT_or_PDMS": false
+        },
+        "strength": 1.0,
+        "slot": 4
+      },
+      "semantic": {
+        "kind": "delta",
+        "block": "interface_pre",
+        "group": "valid_mean",
+        "cap": 0.1,
+        "strength": 1.0,
+        "fit_sha256": "1a0ffbfb6a1f28b5a444de28cf06e39019f82eda9c6210e7beaec4015a68ca20",
+        "fit_path": "delta_experts/delta_1b/delta_1b029b3921b76fe7d09ea6b4.npz",
+        "fit_id": "delta_1b029b3921b76fe7d09ea6b4"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/analysis/causal_library_selection/causal_library_65bfa5495bf74b5590794a36.json",
+          "sha256": "745e36dda2c6a0fc1f2902f8f81e384ba6905bc239408dc5532314fd0a0bbc73"
+        }
+      ],
+      "aliases": [
+        "causal_arm_98c6f5dcdbcd53bfe37658bd"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_e6710026bffc5851af60d96a",
+      "kind": "batch2_delta",
+      "definition": {
+        "id": "causal_arm_d93330611498970bff731f78",
+        "kind": "delta",
+        "fit": {
+          "status": "FIT_NOT_BEHAVIOR_EVALUATED",
+          "time": "2026-10-17T23:19:47.525702+00:00",
+          "id": "delta_8be2d9aed2a96c5bb372a0f7",
+          "path": "delta_experts/delta_8b/delta_8be2d9aed2a96c5bb372a0f7.npz",
+          "sha256": "45ad4a554b9edc2a4c86d39849d5bb6648b4aba20f37aa06e027936e95fc01fe",
+          "block": "interface_pre",
+          "group": "valid_mean",
+          "cap": 0.1,
+          "input_rank": 1536,
+          "output_rank": 128,
+          "ridge": 0.01,
+          "fit_seed": 2026101802,
+          "heldout_fold": -1,
+          "system": "representation_K6_seed1",
+          "K": 6,
+          "expert": 0,
+          "responsibility_meta": "analysis/initial_groups/all/representation_K6_seed1.json",
+          "source": "outcome_causal_fit_7b4d34db4ae4cd2e8d5ddb22",
+          "target": "Actually effective per-case hidden delta; zero retention targets",
+          "normalized_training_error": 0.4466588093132787,
+          "causal_output_space_rank": 1536,
+          "teacher_improved_cases": 1817,
+          "effective_cases": 532.2511093899811,
+          "retained_successes": 1024,
+          "retained_intermediate": 256,
+          "safety_targets": false,
+          "deployment_uses_GT_or_PDMS": false
+        },
+        "strength": 1.0,
+        "slot": 0
+      },
+      "semantic": {
+        "kind": "delta",
+        "block": "interface_pre",
+        "group": "valid_mean",
+        "cap": 0.1,
+        "strength": 1.0,
+        "fit_sha256": "45ad4a554b9edc2a4c86d39849d5bb6648b4aba20f37aa06e027936e95fc01fe",
+        "fit_path": "delta_experts/delta_8b/delta_8be2d9aed2a96c5bb372a0f7.npz",
+        "fit_id": "delta_8be2d9aed2a96c5bb372a0f7"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/analysis/causal_library_selection/causal_library_5fcbd22a0f6926d9f24782d3.json",
+          "sha256": "68f6661034360e28a9759ef0ea940682493ea2b9bc51166d70807252055bf6ab"
+        }
+      ],
+      "aliases": [
+        "causal_arm_d93330611498970bff731f78"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_ebd5ecdb70ee0337f1cc3da3",
+      "kind": "batch2_delta",
+      "definition": {
+        "id": "causal_arm_345aba8d7388e5892142c0b0",
+        "kind": "delta",
+        "fit": {
+          "status": "FIT_NOT_BEHAVIOR_EVALUATED",
+          "time": "2026-10-17T23:20:34.251692+00:00",
+          "id": "delta_9549e1f4485c0d851f8b7e59",
+          "path": "delta_experts/delta_95/delta_9549e1f4485c0d851f8b7e59.npz",
+          "sha256": "7b613f225e206d443c73d341181bb4dc3ac84cc0a719f1a395249a6bd81c6cab",
+          "block": "interface_pre",
+          "group": "valid_mean",
+          "cap": 0.1,
+          "input_rank": 1536,
+          "output_rank": 128,
+          "ridge": 0.01,
+          "fit_seed": 2026101802,
+          "heldout_fold": -1,
+          "system": "correction_K7_seed1",
+          "K": 7,
+          "expert": 0,
+          "responsibility_meta": "analysis/outcome_groups/all/correction_K7_seed1.json",
+          "source": "outcome_causal_fit_caed9e51c529c3931055d5fe",
+          "target": "Actually effective per-case hidden delta; zero retention targets",
+          "normalized_training_error": 0.6623301798849472,
+          "causal_output_space_rank": 1536,
+          "teacher_improved_cases": 1817,
+          "effective_cases": 1536.3133604187144,
+          "retained_successes": 1024,
+          "retained_intermediate": 256,
+          "safety_targets": false,
+          "deployment_uses_GT_or_PDMS": false
+        },
+        "strength": 1.0,
+        "slot": 0
+      },
+      "semantic": {
+        "kind": "delta",
+        "block": "interface_pre",
+        "group": "valid_mean",
+        "cap": 0.1,
+        "strength": 1.0,
+        "fit_sha256": "7b613f225e206d443c73d341181bb4dc3ac84cc0a719f1a395249a6bd81c6cab",
+        "fit_path": "delta_experts/delta_95/delta_9549e1f4485c0d851f8b7e59.npz",
+        "fit_id": "delta_9549e1f4485c0d851f8b7e59"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/analysis/causal_library_selection/causal_library_65bfa5495bf74b5590794a36.json",
+          "sha256": "745e36dda2c6a0fc1f2902f8f81e384ba6905bc239408dc5532314fd0a0bbc73"
+        }
+      ],
+      "aliases": [
+        "causal_arm_345aba8d7388e5892142c0b0"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_eca75c9aa587a478257858cf",
+      "kind": "batch2_delta",
+      "definition": {
+        "id": "causal_arm_0e8900cd42006e33c6256ad2",
+        "kind": "delta",
+        "fit": {
+          "status": "FIT_NOT_BEHAVIOR_EVALUATED",
+          "time": "2026-10-17T23:19:58.234251+00:00",
+          "id": "delta_e064df1ff75fe75407aa4d03",
+          "path": "delta_experts/delta_e0/delta_e064df1ff75fe75407aa4d03.npz",
+          "sha256": "31a5bbc2cb041904e4f1bf94b9f77983a06925f406a8e202c81f892c593a5d20",
+          "block": "interface_pre",
+          "group": "valid_mean",
+          "cap": 0.1,
+          "input_rank": 1536,
+          "output_rank": 128,
+          "ridge": 0.01,
+          "fit_seed": 2026101803,
+          "heldout_fold": -1,
+          "system": "representation_K8_seed2",
+          "K": 8,
+          "expert": 6,
+          "responsibility_meta": "analysis/initial_groups/all/representation_K8_seed2.json",
+          "source": "outcome_causal_fit_d3ca36ae5acfac159e1f8aa7",
+          "target": "Actually effective per-case hidden delta; zero retention targets",
+          "normalized_training_error": 0.36738975044447686,
+          "causal_output_space_rank": 1536,
+          "teacher_improved_cases": 1817,
+          "effective_cases": 362.1960729079288,
+          "retained_successes": 1024,
+          "retained_intermediate": 256,
+          "safety_targets": false,
+          "deployment_uses_GT_or_PDMS": false
+        },
+        "strength": 1.0,
+        "slot": 6
+      },
+      "semantic": {
+        "kind": "delta",
+        "block": "interface_pre",
+        "group": "valid_mean",
+        "cap": 0.1,
+        "strength": 1.0,
+        "fit_sha256": "31a5bbc2cb041904e4f1bf94b9f77983a06925f406a8e202c81f892c593a5d20",
+        "fit_path": "delta_experts/delta_e0/delta_e064df1ff75fe75407aa4d03.npz",
+        "fit_id": "delta_e064df1ff75fe75407aa4d03"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/analysis/causal_library_selection/causal_library_dde7f8781d1a020faa6e9493.json",
+          "sha256": "cb11d3a896dd4825a9876c4e5591efb5ba044b8bb4f3de231bfbd9a7c39966b1"
+        }
+      ],
+      "aliases": [
+        "causal_arm_0e8900cd42006e33c6256ad2"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_ee23f1eba6dd7f1af91cf48c",
+      "kind": "batch2_delta",
+      "definition": {
+        "id": "causal_arm_b9e5c311a0eb0320762d6cf8",
+        "kind": "delta",
+        "fit": {
+          "status": "FIT_NOT_BEHAVIOR_EVALUATED",
+          "time": "2026-10-17T23:20:05.888202+00:00",
+          "id": "delta_52f61bbb0fed6b03cecf65cb",
+          "path": "delta_experts/delta_52/delta_52f61bbb0fed6b03cecf65cb.npz",
+          "sha256": "8867e08b5303c7e99a4b1fb3abdfe8b008bee9c5ce4e31b49ec467ca57e1084d",
+          "block": "interface_pre",
+          "group": "valid_mean",
+          "cap": 0.1,
+          "input_rank": 1536,
+          "output_rank": 128,
+          "ridge": 0.01,
+          "fit_seed": 2026101803,
+          "heldout_fold": -1,
+          "system": "response_K4_seed2",
+          "K": 4,
+          "expert": 3,
+          "responsibility_meta": "analysis/outcome_groups/all/response_K4_seed2.json",
+          "source": "outcome_causal_fit_3261fe49c7954421dcb66b3c",
+          "target": "Actually effective per-case hidden delta; zero retention targets",
+          "normalized_training_error": 0.6734252710255422,
+          "causal_output_space_rank": 1536,
+          "teacher_improved_cases": 1817,
+          "effective_cases": 1633.4248276295004,
+          "retained_successes": 1024,
+          "retained_intermediate": 256,
+          "safety_targets": false,
+          "deployment_uses_GT_or_PDMS": false
+        },
+        "strength": 1.0,
+        "slot": 3
+      },
+      "semantic": {
+        "kind": "delta",
+        "block": "interface_pre",
+        "group": "valid_mean",
+        "cap": 0.1,
+        "strength": 1.0,
+        "fit_sha256": "8867e08b5303c7e99a4b1fb3abdfe8b008bee9c5ce4e31b49ec467ca57e1084d",
+        "fit_path": "delta_experts/delta_52/delta_52f61bbb0fed6b03cecf65cb.npz",
+        "fit_id": "delta_52f61bbb0fed6b03cecf65cb"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/analysis/causal_library_selection/causal_library_3136825589dbf03df9b92636.json",
+          "sha256": "d17be51472fffd1ed2382dc683e2febf8195b5e6c41e265a485418b96e986b88"
+        }
+      ],
+      "aliases": [
+        "causal_arm_b9e5c311a0eb0320762d6cf8"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_f09e0d11f8e380c3678f82b4",
+      "kind": "batch2_delta",
+      "definition": {
+        "id": "causal_arm_ca912fd8c74d44b1c2bad45a",
+        "kind": "delta",
+        "fit": {
+          "status": "FIT_NOT_BEHAVIOR_EVALUATED",
+          "time": "2026-10-17T23:20:12.661615+00:00",
+          "id": "delta_e7fa4e823f7f3a0c9d558513",
+          "path": "delta_experts/delta_e7/delta_e7fa4e823f7f3a0c9d558513.npz",
+          "sha256": "246b3a5507e0e32fc9c326bd87f98ab5198667d2e379aeebc5bb7464848a2554",
+          "block": "interface_pre",
+          "group": "valid_mean",
+          "cap": 0.1,
+          "input_rank": 1536,
+          "output_rank": 128,
+          "ridge": 0.01,
+          "fit_seed": 2026101802,
+          "heldout_fold": -1,
+          "system": "response_K7_seed1",
+          "K": 7,
+          "expert": 5,
+          "responsibility_meta": "analysis/outcome_groups/all/response_K7_seed1.json",
+          "source": "outcome_causal_fit_531ea7eaef63e5edbc2f9654",
+          "target": "Actually effective per-case hidden delta; zero retention targets",
+          "normalized_training_error": 0.6418446709887736,
+          "causal_output_space_rank": 1536,
+          "teacher_improved_cases": 1817,
+          "effective_cases": 1316.0981558959716,
+          "retained_successes": 1024,
+          "retained_intermediate": 256,
+          "safety_targets": false,
+          "deployment_uses_GT_or_PDMS": false
+        },
+        "strength": 1.0,
+        "slot": 5
+      },
+      "semantic": {
+        "kind": "delta",
+        "block": "interface_pre",
+        "group": "valid_mean",
+        "cap": 0.1,
+        "strength": 1.0,
+        "fit_sha256": "246b3a5507e0e32fc9c326bd87f98ab5198667d2e379aeebc5bb7464848a2554",
+        "fit_path": "delta_experts/delta_e7/delta_e7fa4e823f7f3a0c9d558513.npz",
+        "fit_id": "delta_e7fa4e823f7f3a0c9d558513"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/analysis/causal_library_selection/causal_library_d712935ed7be1ae7fdfa5f29.json",
+          "sha256": "6b06ffe63968cf9f502233d7698ed2babde8c50ab2699a819acf6bd412d79224"
+        }
+      ],
+      "aliases": [
+        "causal_arm_ca912fd8c74d44b1c2bad45a"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_f14266453c832b4d5ecd7cfa",
+      "kind": "batch2_delta",
+      "definition": {
+        "id": "causal_arm_0bbcb2298d53bc134c449dd1",
+        "kind": "delta",
+        "fit": {
+          "status": "FIT_NOT_BEHAVIOR_EVALUATED",
+          "time": "2026-10-17T23:20:12.482336+00:00",
+          "id": "delta_2e1c808aa489f32ed8399597",
+          "path": "delta_experts/delta_2e/delta_2e1c808aa489f32ed8399597.npz",
+          "sha256": "422b0ac0413d2575ed3f8bcb8f2938d58fc7500d9763bea35c45fab972347937",
+          "block": "interface_pre",
+          "group": "valid_mean",
+          "cap": 0.1,
+          "input_rank": 1536,
+          "output_rank": 128,
+          "ridge": 0.01,
+          "fit_seed": 2026101802,
+          "heldout_fold": -1,
+          "system": "response_K7_seed1",
+          "K": 7,
+          "expert": 0,
+          "responsibility_meta": "analysis/outcome_groups/all/response_K7_seed1.json",
+          "source": "outcome_causal_fit_c75af446578943c412dc8eea",
+          "target": "Actually effective per-case hidden delta; zero retention targets",
+          "normalized_training_error": 0.6719006654866584,
+          "causal_output_space_rank": 1536,
+          "teacher_improved_cases": 1817,
+          "effective_cases": 1548.9431207714244,
+          "retained_successes": 1024,
+          "retained_intermediate": 256,
+          "safety_targets": false,
+          "deployment_uses_GT_or_PDMS": false
+        },
+        "strength": 1.0,
+        "slot": 0
+      },
+      "semantic": {
+        "kind": "delta",
+        "block": "interface_pre",
+        "group": "valid_mean",
+        "cap": 0.1,
+        "strength": 1.0,
+        "fit_sha256": "422b0ac0413d2575ed3f8bcb8f2938d58fc7500d9763bea35c45fab972347937",
+        "fit_path": "delta_experts/delta_2e/delta_2e1c808aa489f32ed8399597.npz",
+        "fit_id": "delta_2e1c808aa489f32ed8399597"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/analysis/causal_library_selection/causal_library_d712935ed7be1ae7fdfa5f29.json",
+          "sha256": "6b06ffe63968cf9f502233d7698ed2babde8c50ab2699a819acf6bd412d79224"
+        }
+      ],
+      "aliases": [
+        "causal_arm_0bbcb2298d53bc134c449dd1"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_f1a6ca04bb52514686d0ef32",
+      "kind": "batch2_delta",
+      "definition": {
+        "id": "causal_arm_16959399fb59fb3c67a5f841",
+        "kind": "delta",
+        "fit": {
+          "status": "FIT_NOT_BEHAVIOR_EVALUATED",
+          "time": "2026-10-17T23:20:06.330548+00:00",
+          "id": "delta_d5b05204a60223c541867851",
+          "path": "delta_experts/delta_d5/delta_d5b05204a60223c541867851.npz",
+          "sha256": "316003ef52628e946139fc1abffcf13160cdb5d5a013ef20bcb57a9679d462f7",
+          "block": "interface_pre",
+          "group": "valid_mean",
+          "cap": 0.1,
+          "input_rank": 1536,
+          "output_rank": 128,
+          "ridge": 0.01,
+          "fit_seed": 2026101803,
+          "heldout_fold": -1,
+          "system": "response_K4_seed2",
+          "K": 4,
+          "expert": 2,
+          "responsibility_meta": "analysis/outcome_groups/all/response_K4_seed2.json",
+          "source": "outcome_causal_fit_ef94d602f17285ed2ec91fae",
+          "target": "Actually effective per-case hidden delta; zero retention targets",
+          "normalized_training_error": 0.6682888053319287,
+          "causal_output_space_rank": 1536,
+          "teacher_improved_cases": 1817,
+          "effective_cases": 1369.9631567895874,
+          "retained_successes": 1024,
+          "retained_intermediate": 256,
+          "safety_targets": false,
+          "deployment_uses_GT_or_PDMS": false
+        },
+        "strength": 1.0,
+        "slot": 2
+      },
+      "semantic": {
+        "kind": "delta",
+        "block": "interface_pre",
+        "group": "valid_mean",
+        "cap": 0.1,
+        "strength": 1.0,
+        "fit_sha256": "316003ef52628e946139fc1abffcf13160cdb5d5a013ef20bcb57a9679d462f7",
+        "fit_path": "delta_experts/delta_d5/delta_d5b05204a60223c541867851.npz",
+        "fit_id": "delta_d5b05204a60223c541867851"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/analysis/causal_library_selection/causal_library_3136825589dbf03df9b92636.json",
+          "sha256": "d17be51472fffd1ed2382dc683e2febf8195b5e6c41e265a485418b96e986b88"
+        }
+      ],
+      "aliases": [
+        "causal_arm_16959399fb59fb3c67a5f841"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_f1be900043bddfeb4f6cf6dd",
+      "kind": "batch2_delta",
+      "definition": {
+        "id": "causal_arm_42d785ced5653fb1468116c5",
+        "kind": "delta",
+        "fit": {
+          "status": "FIT_NOT_BEHAVIOR_EVALUATED",
+          "time": "2026-10-17T23:20:51.277096+00:00",
+          "id": "delta_67bbffbc8ec574b3f5b0161d",
+          "path": "delta_experts/delta_67/delta_67bbffbc8ec574b3f5b0161d.npz",
+          "sha256": "12b56ce765c99a0c69a58cb70b30f0164c2e44e50e54f99ce7039aa5e92624b4",
+          "block": "interface_pre",
+          "group": "valid_mean",
+          "cap": 0.1,
+          "input_rank": 1536,
+          "output_rank": 32,
+          "ridge": 0.01,
+          "fit_seed": 2026101803,
+          "heldout_fold": -1,
+          "system": "correction_K8_seed2",
+          "K": 8,
+          "expert": 7,
+          "responsibility_meta": "analysis/outcome_groups/all/correction_K8_seed2.json",
+          "source": "outcome_causal_fit_8baf1512e9234c236c3deb75",
+          "target": "Actually effective per-case hidden delta; zero retention targets",
+          "normalized_training_error": 0.7255303056023306,
+          "causal_output_space_rank": 1536,
+          "teacher_improved_cases": 1817,
+          "effective_cases": 1427.9687868981032,
+          "retained_successes": 1024,
+          "retained_intermediate": 256,
+          "safety_targets": false,
+          "deployment_uses_GT_or_PDMS": false
+        },
+        "strength": 1.0,
+        "slot": 7
+      },
+      "semantic": {
+        "kind": "delta",
+        "block": "interface_pre",
+        "group": "valid_mean",
+        "cap": 0.1,
+        "strength": 1.0,
+        "fit_sha256": "12b56ce765c99a0c69a58cb70b30f0164c2e44e50e54f99ce7039aa5e92624b4",
+        "fit_path": "delta_experts/delta_67/delta_67bbffbc8ec574b3f5b0161d.npz",
+        "fit_id": "delta_67bbffbc8ec574b3f5b0161d"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/analysis/causal_library_selection/causal_library_769af40a8b570023a12e2c6a.json",
+          "sha256": "34a1d24025c67f30d406f23b737baf3ddbc3b6c70cdb55b5f7f77fe53f15be7e"
+        }
+      ],
+      "aliases": [
+        "causal_arm_42d785ced5653fb1468116c5"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_f296088279a9434d5c9058b5",
+      "kind": "batch2_delta",
+      "definition": {
+        "id": "causal_arm_e674cc863f71bee39dba2692",
+        "kind": "delta",
+        "fit": {
+          "status": "FIT_NOT_BEHAVIOR_EVALUATED",
+          "time": "2026-10-17T23:19:46.244321+00:00",
+          "id": "delta_7e6ac8f644f256d0b859967c",
+          "path": "delta_experts/delta_7e/delta_7e6ac8f644f256d0b859967c.npz",
+          "sha256": "cf3470e32e74c75790638fc7bfc5198c59b278d94cbd4370b9917331320971a3",
+          "block": "interface_pre",
+          "group": "valid_mean",
+          "cap": 0.1,
+          "input_rank": 1536,
+          "output_rank": 128,
+          "ridge": 0.01,
+          "fit_seed": 2026101803,
+          "heldout_fold": -1,
+          "system": "representation_K5_seed2",
+          "K": 5,
+          "expert": 4,
+          "responsibility_meta": "analysis/initial_groups/all/representation_K5_seed2.json",
+          "source": "outcome_causal_fit_07fc28eadede1739d4e5f768",
+          "target": "Actually effective per-case hidden delta; zero retention targets",
+          "normalized_training_error": 0.593043860633797,
+          "causal_output_space_rank": 1536,
+          "teacher_improved_cases": 1817,
+          "effective_cases": 1092.2945771966429,
+          "retained_successes": 1024,
+          "retained_intermediate": 256,
+          "safety_targets": false,
+          "deployment_uses_GT_or_PDMS": false
+        },
+        "strength": 1.0,
+        "slot": 4
+      },
+      "semantic": {
+        "kind": "delta",
+        "block": "interface_pre",
+        "group": "valid_mean",
+        "cap": 0.1,
+        "strength": 1.0,
+        "fit_sha256": "cf3470e32e74c75790638fc7bfc5198c59b278d94cbd4370b9917331320971a3",
+        "fit_path": "delta_experts/delta_7e/delta_7e6ac8f644f256d0b859967c.npz",
+        "fit_id": "delta_7e6ac8f644f256d0b859967c"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/analysis/causal_library_selection/causal_library_4ced8440e7f94051a32d1c70.json",
+          "sha256": "0ac31371a3786428b360e06d7ebf0152979273465bb48a3853575da888f81800"
+        }
+      ],
+      "aliases": [
+        "causal_arm_e674cc863f71bee39dba2692"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_f2a210e856ff1c07c17e2849",
+      "kind": "batch2_delta",
+      "definition": {
+        "id": "causal_arm_f825bcce8c4ae46f726542c1",
+        "kind": "delta",
+        "fit": {
+          "status": "FIT_NOT_BEHAVIOR_EVALUATED",
+          "time": "2026-10-17T23:20:37.345255+00:00",
+          "id": "delta_06117a3412088d7e1146fdd9",
+          "path": "delta_experts/delta_06/delta_06117a3412088d7e1146fdd9.npz",
+          "sha256": "a3b45343b660f05ac51862a138e54ca2f11df60cb7a549868075cf104fad948b",
+          "block": "interface_pre",
+          "group": "valid_mean",
+          "cap": 0.1,
+          "input_rank": 1536,
+          "output_rank": 32,
+          "ridge": 0.01,
+          "fit_seed": 2026101802,
+          "heldout_fold": -1,
+          "system": "correction_K8_seed1",
+          "K": 8,
+          "expert": 1,
+          "responsibility_meta": "analysis/outcome_groups/all/correction_K8_seed1.json",
+          "source": "outcome_causal_fit_cca3d9b751180f3d6a44dd52",
+          "target": "Actually effective per-case hidden delta; zero retention targets",
+          "normalized_training_error": 0.6951758893714514,
+          "causal_output_space_rank": 1536,
+          "teacher_improved_cases": 1817,
+          "effective_cases": 826.3613227284047,
+          "retained_successes": 1024,
+          "retained_intermediate": 256,
+          "safety_targets": false,
+          "deployment_uses_GT_or_PDMS": false
+        },
+        "strength": 1.0,
+        "slot": 1
+      },
+      "semantic": {
+        "kind": "delta",
+        "block": "interface_pre",
+        "group": "valid_mean",
+        "cap": 0.1,
+        "strength": 1.0,
+        "fit_sha256": "a3b45343b660f05ac51862a138e54ca2f11df60cb7a549868075cf104fad948b",
+        "fit_path": "delta_experts/delta_06/delta_06117a3412088d7e1146fdd9.npz",
+        "fit_id": "delta_06117a3412088d7e1146fdd9"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/analysis/causal_library_selection/causal_library_bc6eb1404fbc6bf6fc33090d.json",
+          "sha256": "f0a9844d02aac2a9ba4f55116641df64086d5d93579d91662155366fdcd16ecd"
+        }
+      ],
+      "aliases": [
+        "causal_arm_f825bcce8c4ae46f726542c1"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_f2d4d617e0ee154422c2d5ab",
+      "kind": "batch2_delta",
+      "definition": {
+        "id": "causal_arm_1b006be6054d1e87d0b43143",
+        "kind": "delta",
+        "fit": {
+          "status": "FIT_NOT_BEHAVIOR_EVALUATED",
+          "time": "2026-10-17T23:19:36.736585+00:00",
+          "id": "delta_793f86f1b44c1efae578add4",
+          "path": "delta_experts/delta_79/delta_793f86f1b44c1efae578add4.npz",
+          "sha256": "80c96f626630e72f3bdfe6b9df50afbfd160f1a6cace72cd44332bb7f921b6b6",
+          "block": "interface_pre",
+          "group": "valid_mean",
+          "cap": 0.1,
+          "input_rank": 1536,
+          "output_rank": 128,
+          "ridge": 0.01,
+          "fit_seed": 2026101802,
+          "heldout_fold": -1,
+          "system": "representation_K4_seed1",
+          "K": 4,
+          "expert": 0,
+          "responsibility_meta": "analysis/initial_groups/all/representation_K4_seed1.json",
+          "source": "outcome_causal_fit_3a62f0dd528c7ee0f9060958",
+          "target": "Actually effective per-case hidden delta; zero retention targets",
+          "normalized_training_error": 0.5612106038232187,
+          "causal_output_space_rank": 1536,
+          "teacher_improved_cases": 1817,
+          "effective_cases": 871.1366538398704,
+          "retained_successes": 1024,
+          "retained_intermediate": 256,
+          "safety_targets": false,
+          "deployment_uses_GT_or_PDMS": false
+        },
+        "strength": 1.0,
+        "slot": 0
+      },
+      "semantic": {
+        "kind": "delta",
+        "block": "interface_pre",
+        "group": "valid_mean",
+        "cap": 0.1,
+        "strength": 1.0,
+        "fit_sha256": "80c96f626630e72f3bdfe6b9df50afbfd160f1a6cace72cd44332bb7f921b6b6",
+        "fit_path": "delta_experts/delta_79/delta_793f86f1b44c1efae578add4.npz",
+        "fit_id": "delta_793f86f1b44c1efae578add4"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/analysis/causal_library_selection/causal_library_a24343b5058fa3ebf572cdc3.json",
+          "sha256": "94dab5f7a84e634b9357066fbcf5d974af3159df0fa94d491799684f95a5c4b2"
+        }
+      ],
+      "aliases": [
+        "causal_arm_1b006be6054d1e87d0b43143"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_f3e80244926d720cc6998741",
+      "kind": "batch2_delta",
+      "definition": {
+        "id": "causal_arm_58285dbf7f908a257e0eb732",
+        "kind": "delta",
+        "fit": {
+          "status": "FIT_NOT_BEHAVIOR_EVALUATED",
+          "time": "2026-10-17T23:20:40.318580+00:00",
+          "id": "delta_c8172fd9715fd5a3a16d9f11",
+          "path": "delta_experts/delta_c8/delta_c8172fd9715fd5a3a16d9f11.npz",
+          "sha256": "001aaf5f951793de2f67c7340aa5e4c0aa567d8ca56be44715753e0bbfcb2d96",
+          "block": "interface_pre",
+          "group": "valid_mean",
+          "cap": 0.1,
+          "input_rank": 1536,
+          "output_rank": 128,
+          "ridge": 0.01,
+          "fit_seed": 2026101802,
+          "heldout_fold": -1,
+          "system": "correction_K8_seed1",
+          "K": 8,
+          "expert": 4,
+          "responsibility_meta": "analysis/outcome_groups/all/correction_K8_seed1.json",
+          "source": "outcome_causal_fit_bfbf88469d6ded281ce7b8b6",
+          "target": "Actually effective per-case hidden delta; zero retention targets",
+          "normalized_training_error": 0.6577911289231937,
+          "causal_output_space_rank": 1536,
+          "teacher_improved_cases": 1817,
+          "effective_cases": 1516.0359332482183,
+          "retained_successes": 1024,
+          "retained_intermediate": 256,
+          "safety_targets": false,
+          "deployment_uses_GT_or_PDMS": false
+        },
+        "strength": 1.0,
+        "slot": 4
+      },
+      "semantic": {
+        "kind": "delta",
+        "block": "interface_pre",
+        "group": "valid_mean",
+        "cap": 0.1,
+        "strength": 1.0,
+        "fit_sha256": "001aaf5f951793de2f67c7340aa5e4c0aa567d8ca56be44715753e0bbfcb2d96",
+        "fit_path": "delta_experts/delta_c8/delta_c8172fd9715fd5a3a16d9f11.npz",
+        "fit_id": "delta_c8172fd9715fd5a3a16d9f11"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/analysis/causal_library_selection/causal_library_bc6eb1404fbc6bf6fc33090d.json",
+          "sha256": "f0a9844d02aac2a9ba4f55116641df64086d5d93579d91662155366fdcd16ecd"
+        }
+      ],
+      "aliases": [
+        "causal_arm_58285dbf7f908a257e0eb732"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_f42fe4408eab72cb4deebc8a",
+      "kind": "batch2_delta",
+      "definition": {
+        "id": "causal_arm_6ff547006363df998ffc4b6b",
+        "kind": "delta",
+        "fit": {
+          "status": "FIT_NOT_BEHAVIOR_EVALUATED",
+          "time": "2026-10-17T23:19:51.881620+00:00",
+          "id": "delta_1da15d81d40609455c784265",
+          "path": "delta_experts/delta_1d/delta_1da15d81d40609455c784265.npz",
+          "sha256": "259e28ec03038ed43f11555502461e900a91a6c1820fa5e73646f3e5e1461439",
+          "block": "interface_pre",
+          "group": "valid_mean",
+          "cap": 0.1,
+          "input_rank": 1536,
+          "output_rank": 128,
+          "ridge": 0.01,
+          "fit_seed": 2026101802,
+          "heldout_fold": -1,
+          "system": "representation_K7_seed1",
+          "K": 7,
+          "expert": 4,
+          "responsibility_meta": "analysis/initial_groups/all/representation_K7_seed1.json",
+          "source": "outcome_causal_fit_65a53a9f1123ffaf4ca11b16",
+          "target": "Actually effective per-case hidden delta; zero retention targets",
+          "normalized_training_error": 0.43403764003619416,
+          "causal_output_space_rank": 1536,
+          "teacher_improved_cases": 1817,
+          "effective_cases": 422.80362963862916,
+          "retained_successes": 1024,
+          "retained_intermediate": 256,
+          "safety_targets": false,
+          "deployment_uses_GT_or_PDMS": false
+        },
+        "strength": 1.0,
+        "slot": 4
+      },
+      "semantic": {
+        "kind": "delta",
+        "block": "interface_pre",
+        "group": "valid_mean",
+        "cap": 0.1,
+        "strength": 1.0,
+        "fit_sha256": "259e28ec03038ed43f11555502461e900a91a6c1820fa5e73646f3e5e1461439",
+        "fit_path": "delta_experts/delta_1d/delta_1da15d81d40609455c784265.npz",
+        "fit_id": "delta_1da15d81d40609455c784265"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/analysis/causal_library_selection/causal_library_e00bfbd09d98334278c9de32.json",
+          "sha256": "2449f6409a3d1d9ba6d1e058f011956104ae2392e074b6b5ec7d30c361b9e8fa"
+        }
+      ],
+      "aliases": [
+        "causal_arm_6ff547006363df998ffc4b6b"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_f54a89da8a46ac26135d619a",
+      "kind": "batch2_delta",
+      "definition": {
+        "id": "causal_arm_818531705a20eda2c3cd08ca",
+        "kind": "delta",
+        "fit": {
+          "status": "FIT_NOT_BEHAVIOR_EVALUATED",
+          "time": "2026-10-17T23:20:33.507972+00:00",
+          "id": "delta_8d1bef3b962befd14b1004f1",
+          "path": "delta_experts/delta_8d/delta_8d1bef3b962befd14b1004f1.npz",
+          "sha256": "e11097dc5adb7367b659c9bbf38f6aa940531435fbec60c342a7c5ad83399cb0",
+          "block": "interface_pre",
+          "group": "valid_mean",
+          "cap": 0.1,
+          "input_rank": 1536,
+          "output_rank": 128,
+          "ridge": 0.1,
+          "fit_seed": 2026101803,
+          "heldout_fold": -1,
+          "system": "correction_K7_seed2",
+          "K": 7,
+          "expert": 3,
+          "responsibility_meta": "analysis/outcome_groups/all/correction_K7_seed2.json",
+          "source": "outcome_causal_fit_c23a7d7b7e423c801de7dc53",
+          "target": "Actually effective per-case hidden delta; zero retention targets",
+          "normalized_training_error": 0.7699593708698845,
+          "causal_output_space_rank": 1536,
+          "teacher_improved_cases": 1817,
+          "effective_cases": 1354.741844766845,
+          "retained_successes": 1024,
+          "retained_intermediate": 256,
+          "safety_targets": false,
+          "deployment_uses_GT_or_PDMS": false
+        },
+        "strength": 1.0,
+        "slot": 3
+      },
+      "semantic": {
+        "kind": "delta",
+        "block": "interface_pre",
+        "group": "valid_mean",
+        "cap": 0.1,
+        "strength": 1.0,
+        "fit_sha256": "e11097dc5adb7367b659c9bbf38f6aa940531435fbec60c342a7c5ad83399cb0",
+        "fit_path": "delta_experts/delta_8d/delta_8d1bef3b962befd14b1004f1.npz",
+        "fit_id": "delta_8d1bef3b962befd14b1004f1"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/analysis/causal_library_selection/causal_library_abb4241dffeb7bb4c6a14703.json",
+          "sha256": "4f6981d0edf23e0627384ab0090db42e0064c0d9f008c9795037b93243bcc94d"
+        }
+      ],
+      "aliases": [
+        "causal_arm_818531705a20eda2c3cd08ca"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_f6066d4775337aade724fc7b",
+      "kind": "batch2_delta",
+      "definition": {
+        "id": "causal_arm_6524192e112ae82a6cd05996",
+        "kind": "delta",
+        "fit": {
+          "status": "FIT_NOT_BEHAVIOR_EVALUATED",
+          "time": "2026-10-17T23:20:14.709450+00:00",
+          "id": "delta_c41d6a80251b7ff24a5ddac0",
+          "path": "delta_experts/delta_c4/delta_c41d6a80251b7ff24a5ddac0.npz",
+          "sha256": "01ce6e1b8db4660c302258068dd9c525e1d36d2eb93034c4aac1adb39b75599b",
+          "block": "interface_post",
+          "group": "valid_mean",
+          "cap": 0.1,
+          "input_rank": 384,
+          "output_rank": 128,
+          "ridge": 0.01,
+          "fit_seed": 2026101802,
+          "heldout_fold": -1,
+          "system": "correction_K6_seed1",
+          "K": 6,
+          "expert": 0,
+          "responsibility_meta": "analysis/outcome_groups/all/correction_K6_seed1.json",
+          "source": "outcome_causal_fit_5fceaad7f8255368428a6979",
+          "target": "Actually effective per-case hidden delta; zero retention targets",
+          "normalized_training_error": 0.7824762993977247,
+          "causal_output_space_rank": 384,
+          "teacher_improved_cases": 1564,
+          "effective_cases": 512.8004861773268,
+          "retained_successes": 1024,
+          "retained_intermediate": 256,
+          "safety_targets": false,
+          "deployment_uses_GT_or_PDMS": false
+        },
+        "strength": 1.0,
+        "slot": 0
+      },
+      "semantic": {
+        "kind": "delta",
+        "block": "interface_post",
+        "group": "valid_mean",
+        "cap": 0.1,
+        "strength": 1.0,
+        "fit_sha256": "01ce6e1b8db4660c302258068dd9c525e1d36d2eb93034c4aac1adb39b75599b",
+        "fit_path": "delta_experts/delta_c4/delta_c41d6a80251b7ff24a5ddac0.npz",
+        "fit_id": "delta_c41d6a80251b7ff24a5ddac0"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/analysis/causal_library_selection/causal_library_d720861bba02ac18d52b698d.json",
+          "sha256": "1347d8f2c2f6dfef18d64d06804aba3b4ff78db4b7754ede4d5972e5b21c40ab"
+        }
+      ],
+      "aliases": [
+        "causal_arm_6524192e112ae82a6cd05996"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_f7e69fc54d7d6c4533818e78",
+      "kind": "batch2_delta",
+      "definition": {
+        "id": "causal_arm_5e3e4d40ec3dc7a0deaffe69",
+        "kind": "delta",
+        "fit": {
+          "status": "FIT_NOT_BEHAVIOR_EVALUATED",
+          "time": "2026-10-17T23:19:44.756218+00:00",
+          "id": "delta_cc9c0cc5413b9e96f458ecf8",
+          "path": "delta_experts/delta_cc/delta_cc9c0cc5413b9e96f458ecf8.npz",
+          "sha256": "66be0de8fd67447ccc418f9e2579afdf6cbb8331a7e05654f7c515b4d82684e4",
+          "block": "interface_pre",
+          "group": "valid_mean",
+          "cap": 0.1,
+          "input_rank": 1536,
+          "output_rank": 128,
+          "ridge": 0.01,
+          "fit_seed": 2026101803,
+          "heldout_fold": -1,
+          "system": "representation_K5_seed2",
+          "K": 5,
+          "expert": 2,
+          "responsibility_meta": "analysis/initial_groups/all/representation_K5_seed2.json",
+          "source": "outcome_causal_fit_dbbd65628f844b64e8e98cc6",
+          "target": "Actually effective per-case hidden delta; zero retention targets",
+          "normalized_training_error": 0.08385384322897534,
+          "causal_output_space_rank": 1536,
+          "teacher_improved_cases": 1817,
+          "effective_cases": 74.96407146349249,
+          "retained_successes": 1024,
+          "retained_intermediate": 256,
+          "safety_targets": false,
+          "deployment_uses_GT_or_PDMS": false
+        },
+        "strength": 1.0,
+        "slot": 2
+      },
+      "semantic": {
+        "kind": "delta",
+        "block": "interface_pre",
+        "group": "valid_mean",
+        "cap": 0.1,
+        "strength": 1.0,
+        "fit_sha256": "66be0de8fd67447ccc418f9e2579afdf6cbb8331a7e05654f7c515b4d82684e4",
+        "fit_path": "delta_experts/delta_cc/delta_cc9c0cc5413b9e96f458ecf8.npz",
+        "fit_id": "delta_cc9c0cc5413b9e96f458ecf8"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/analysis/causal_library_selection/causal_library_4ced8440e7f94051a32d1c70.json",
+          "sha256": "0ac31371a3786428b360e06d7ebf0152979273465bb48a3853575da888f81800"
+        }
+      ],
+      "aliases": [
+        "causal_arm_5e3e4d40ec3dc7a0deaffe69"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_f876160aecb2efa0b657e41b",
+      "kind": "batch2_delta",
+      "definition": {
+        "id": "causal_arm_64c81168a701fd447b24ec0e",
+        "kind": "delta",
+        "fit": {
+          "status": "FIT_NOT_BEHAVIOR_EVALUATED",
+          "time": "2026-10-17T23:20:16.374836+00:00",
+          "id": "delta_25dd0d0db71d3c5f678c34bf",
+          "path": "delta_experts/delta_25/delta_25dd0d0db71d3c5f678c34bf.npz",
+          "sha256": "6fe294186fd733d59052b865b5c4493c11d0a17e9ec627fff98c9e09e6a139a7",
+          "block": "interface_pre",
+          "group": "valid_mean",
+          "cap": 0.1,
+          "input_rank": 1536,
+          "output_rank": 128,
+          "ridge": 0.01,
+          "fit_seed": 2026101802,
+          "heldout_fold": -1,
+          "system": "response_K8_seed1",
+          "K": 8,
+          "expert": 4,
+          "responsibility_meta": "analysis/outcome_groups/all/response_K8_seed1.json",
+          "source": "outcome_causal_fit_ef64cd4a23d15d973a0012a6",
+          "target": "Actually effective per-case hidden delta; zero retention targets",
+          "normalized_training_error": 0.6565271067500471,
+          "causal_output_space_rank": 1536,
+          "teacher_improved_cases": 1817,
+          "effective_cases": 1502.8497478449697,
+          "retained_successes": 1024,
+          "retained_intermediate": 256,
+          "safety_targets": false,
+          "deployment_uses_GT_or_PDMS": false
+        },
+        "strength": 1.0,
+        "slot": 4
+      },
+      "semantic": {
+        "kind": "delta",
+        "block": "interface_pre",
+        "group": "valid_mean",
+        "cap": 0.1,
+        "strength": 1.0,
+        "fit_sha256": "6fe294186fd733d59052b865b5c4493c11d0a17e9ec627fff98c9e09e6a139a7",
+        "fit_path": "delta_experts/delta_25/delta_25dd0d0db71d3c5f678c34bf.npz",
+        "fit_id": "delta_25dd0d0db71d3c5f678c34bf"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/analysis/causal_library_selection/causal_library_118b48a56168e9773b2e1683.json",
+          "sha256": "907fdccb4a5998b087f0c5413c8df85aa7967aecaf9fbcad3da1da94100e7700"
+        }
+      ],
+      "aliases": [
+        "causal_arm_64c81168a701fd447b24ec0e"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_faacb5a4ec2649e9488bcd99",
+      "kind": "batch2_delta",
+      "definition": {
+        "id": "causal_arm_aeda43182dbdfe3afdf3861a",
+        "kind": "delta",
+        "fit": {
+          "status": "FIT_NOT_BEHAVIOR_EVALUATED",
+          "time": "2026-10-17T23:20:34.592739+00:00",
+          "id": "delta_908a8fcfa7e57610d6da2001",
+          "path": "delta_experts/delta_90/delta_908a8fcfa7e57610d6da2001.npz",
+          "sha256": "90de776bd413ec3a66140a783e2e1eabaf492c483a7c9a658a9bf47d76c3b8c2",
+          "block": "interface_pre",
+          "group": "valid_mean",
+          "cap": 0.1,
+          "input_rank": 1536,
+          "output_rank": 128,
+          "ridge": 0.01,
+          "fit_seed": 2026101802,
+          "heldout_fold": -1,
+          "system": "correction_K7_seed1",
+          "K": 7,
+          "expert": 2,
+          "responsibility_meta": "analysis/outcome_groups/all/correction_K7_seed1.json",
+          "source": "outcome_causal_fit_a8ccb779c1d6972831be39f4",
+          "target": "Actually effective per-case hidden delta; zero retention targets",
+          "normalized_training_error": 0.630008368729328,
+          "causal_output_space_rank": 1536,
+          "teacher_improved_cases": 1817,
+          "effective_cases": 863.7269093858221,
+          "retained_successes": 1024,
+          "retained_intermediate": 256,
+          "safety_targets": false,
+          "deployment_uses_GT_or_PDMS": false
+        },
+        "strength": 1.0,
+        "slot": 2
+      },
+      "semantic": {
+        "kind": "delta",
+        "block": "interface_pre",
+        "group": "valid_mean",
+        "cap": 0.1,
+        "strength": 1.0,
+        "fit_sha256": "90de776bd413ec3a66140a783e2e1eabaf492c483a7c9a658a9bf47d76c3b8c2",
+        "fit_path": "delta_experts/delta_90/delta_908a8fcfa7e57610d6da2001.npz",
+        "fit_id": "delta_908a8fcfa7e57610d6da2001"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/analysis/causal_library_selection/causal_library_65bfa5495bf74b5590794a36.json",
+          "sha256": "745e36dda2c6a0fc1f2902f8f81e384ba6905bc239408dc5532314fd0a0bbc73"
+        }
+      ],
+      "aliases": [
+        "causal_arm_aeda43182dbdfe3afdf3861a"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    },
+    {
+      "id": "formed_fe6710be5c9b219f2c85cf74",
+      "kind": "batch2_delta",
+      "definition": {
+        "id": "causal_arm_d79a0f0c4001787a2eb53554",
+        "kind": "delta",
+        "fit": {
+          "status": "FIT_NOT_BEHAVIOR_EVALUATED",
+          "time": "2026-10-17T23:19:57.023609+00:00",
+          "id": "delta_812fccb753c8d00b4a7299f6",
+          "path": "delta_experts/delta_81/delta_812fccb753c8d00b4a7299f6.npz",
+          "sha256": "73c14a9049f4ceea32bee1b657fc7a67f2483bcbb51b7aad9f5c2b0ea9627d7b",
+          "block": "interface_pre",
+          "group": "valid_mean",
+          "cap": 0.1,
+          "input_rank": 128,
+          "output_rank": 128,
+          "ridge": 0.01,
+          "fit_seed": 2026101802,
+          "heldout_fold": -1,
+          "system": "representation_K8_seed1",
+          "K": 8,
+          "expert": 6,
+          "responsibility_meta": "analysis/initial_groups/all/representation_K8_seed1.json",
+          "source": "outcome_causal_fit_e42048cf738401f495e26f75",
+          "target": "Actually effective per-case hidden delta; zero retention targets",
+          "normalized_training_error": 0.8538945324585464,
+          "causal_output_space_rank": 1536,
+          "teacher_improved_cases": 1817,
+          "effective_cases": 467.9596644802614,
+          "retained_successes": 1024,
+          "retained_intermediate": 256,
+          "safety_targets": false,
+          "deployment_uses_GT_or_PDMS": false
+        },
+        "strength": 1.0,
+        "slot": 6
+      },
+      "semantic": {
+        "kind": "delta",
+        "block": "interface_pre",
+        "group": "valid_mean",
+        "cap": 0.1,
+        "strength": 1.0,
+        "fit_sha256": "73c14a9049f4ceea32bee1b657fc7a67f2483bcbb51b7aad9f5c2b0ea9627d7b",
+        "fit_path": "delta_experts/delta_81/delta_812fccb753c8d00b4a7299f6.npz",
+        "fit_id": "delta_812fccb753c8d00b4a7299f6"
+      },
+      "sources": [
+        {
+          "path": "/mnt/workspace/ReCogDrive/1018-representation_repair_batch2/analysis/causal_library_selection/causal_library_dae42d3b712c81f7b51fec88.json",
+          "sha256": "fedc49c65fe8664daa7da27470453633b72523b4f97526286c3c2bbea729b2d3"
+        }
+      ],
+      "aliases": [
+        "causal_arm_d79a0f0c4001787a2eb53554"
+      ],
+      "scope": "formed_whole_exploration_fit",
+      "asset_audit": "PENDING",
+      "runtime_audit": "PENDING",
+      "full_evaluation_required_without_unresolved_prescreen": true
+    }
+  ],
+  "runtime_admission": "/mnt/workspace/ReCogDrive/1021-representation_repair_batch3/provenance/FORMED_RUNTIME_MULTI_DEVICE_ADMISSION.json",
+  "runtime_admission_sha256": "08097e3e817d308dd5da821b2ab793e64d6684aa0375e7fc2a4e88a0a1819676",
+  "catalog_sha256": "d1e5cb4547c887f31a70a1b8648c76f8f9f775bf2e2ddd5143b96a877e99862d",
+  "schedule_sha256": "2ccf9528101708a408502f8b87f813b1c8b0fbdd3a2c93a304c669ce834b7d10",
+  "id": "formed_pack_27aa9e7a4d42ffb95c559e5c",
+  "full_evaluation_required_without_unresolved_prescreen": true
+}

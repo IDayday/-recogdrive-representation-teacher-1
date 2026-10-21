@@ -1,0 +1,64 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>RL S0训练集基线</title>
+<style>body{max-width:1000px;margin:35px auto;font:16px/1.7 sans-serif;color:#222;padding:0 20px}table{border-collapse:collapse;width:100%}th,td{border:1px solid #ddd;padding:8px;text-align:center}pre{white-space:pre-wrap;font-size:13px}.left{text-align:left}</style>
+<h1>ReCogDrive RL S0训练集基线</h1><p>记录时间：2026-10-16T06:52:15.875209+00:00。本轮完成冻结RL权重在navtrain上的自然推理与评分，为后续表征观察建立失败池。</p>
+<p><strong>平均PDMS：94.8803</strong>；完整覆盖103,288个场景，缺失、重复与无效输出均为0。</p>
+<table><tr><th>质量类别</th><th>阈值（百分制）</th><th>场景数</th></tr>
+<tr><td>失败</td><td>&lt;70</td><td>2,288</td></tr>
+<tr><td>中间质量</td><td>70至90（含端点）</td><td>10,847</td></tr>
+<tr><td>高质量成功</td><td>&gt;90</td><td>90,153</td></tr></table>
+<p>碰撞分项未满分：500；道路合规分项未满分：671；零分：1,094。失败池已保存，GT高质量筛选及表征采集尚未开展。</p>
+<p>两节点各16卡完成并行冒烟后进入正式分片。同一场景使用固定S0种子；86条保存轨迹由原始NAVSIM入口独立重评分，全部分项最大差异为0，32个正式推理进程均已退出。</p>
+<details><summary>协议、来源与适用范围</summary><p>使用官方RL规划头及冻结VLM特征；复用训练集特征缓存，不复用旧轨迹或成绩。规划头FP32、batch=1、eval/no_grad、随机DDIM五步，eta=1；S0根种子20261008，逐场景SHA256映射。GRPO训练旧策略参数不参与推理，其余活跃权重严格完整加载。</p>
+<p>这是navtrain上的单次固定随机采样基线。没有训练或修复，没有读取navtest缓存或成绩，不据此声明测试集泛化或稳定失败概率。</p><pre>{
+  &quot;status&quot;: &quot;COMPLETE&quot;,
+  &quot;time&quot;: &quot;2026-10-16T06:52:15.875209+00:00&quot;,
+  &quot;run_id&quot;: &quot;rl_s0_20261016T063037Z&quot;,
+  &quot;identity&quot;: &quot;faee7bb7c53bbdce363a13c59f1107dfa7be0c1d9547b6ba312c5d5c2955520c&quot;,
+  &quot;cohort&quot;: &quot;navtrain&quot;,
+  &quot;checkpoint_sha256&quot;: &quot;23fb949b10387efeff87e093703d5faf41b61b9e5ead16d4076661e3c7c08a20&quot;,
+  &quot;samples&quot;: 103288,
+  &quot;expected&quot;: 103288,
+  &quot;unique_tokens&quot;: 103288,
+  &quot;missing&quot;: 0,
+  &quot;duplicates&quot;: 0,
+  &quot;invalid&quot;: 0,
+  &quot;mean_pdms_100&quot;: 94.88028885145462,
+  &quot;quality_counts&quot;: {
+    &quot;failure&quot;: 2288,
+    &quot;high_quality&quot;: 90153,
+    &quot;intermediate&quot;: 10847
+  },
+  &quot;component_means&quot;: {
+    &quot;no_at_fault_collisions&quot;: 0.9954980249399736,
+    &quot;drivable_area_compliance&quot;: 0.993503601580048,
+    &quot;ego_progress&quot;: 0.9037242275274671,
+    &quot;time_to_collision_within_bound&quot;: 0.9839962047866161,
+    &quot;comfort&quot;: 0.999922546665634,
+    &quot;driving_direction_compliance&quot;: 0.9757280613430408
+  },
+  &quot;collision_cases&quot;: 500,
+  &quot;offroad_cases&quot;: 671,
+  &quot;zero_score_cases&quot;: 1094,
+  &quot;pdms_quantiles&quot;: {
+    &quot;0&quot;: 0.0,
+    &quot;0.1&quot;: 88.89416472165952,
+    &quot;0.25&quot;: 93.12387837598638,
+    &quot;0.5&quot;: 98.50315385244545,
+    &quot;0.75&quot;: 100.0,
+    &quot;0.9&quot;: 100.0,
+    &quot;1&quot;: 100.0
+  },
+  &quot;root_seed&quot;: 20261008,
+  &quot;seed_index&quot;: 0,
+  &quot;independent_rescore_samples&quot;: 86,
+  &quot;max_rescore_difference&quot;: 0.0,
+  &quot;all_32_workers_exited&quot;: true,
+  &quot;no_training&quot;: true,
+  &quot;test_cache_access&quot;: false,
+  &quot;artifacts&quot;: {
+    &quot;scores&quot;: &quot;/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/runs/rl_s0_20261016T063037Z/delivery/scores.csv&quot;,
+    &quot;failure_pool&quot;: &quot;/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/runs/rl_s0_20261016T063037Z/delivery/failure_pool.csv&quot;,
+    &quot;source&quot;: &quot;/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/provenance/source_snapshot.json&quot;,
+    &quot;protocol&quot;: &quot;/mnt/workspace/ReCogDrive/1016-rl_representation_analysis/configs/baseline.json&quot;
+  }
+}</pre></details></html>
